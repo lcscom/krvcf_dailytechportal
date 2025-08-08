@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Broadcom 통합 기술 포털 (2025-08-09 02:32:09)</title>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background:#f0f2f5;
+    margin:0;
+    padding:0;
+  }
+  .navbar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: 50px;
+    background-color: #004080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    z-index: 9999;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-weight: bold;
+    color: white;
+  }
+  .navbar-brand {
+    position: absolute;
+    left: 20px;
+    font-size: 18px;
+    user-select: none;
+  }
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  .navbar a:hover, .navbar a:focus {
+    background-color: #0066cc;
+    outline: none;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 80px auto 40px;
+    padding: 0 20px 40px;
+  }
+  h1 {
+    color:#333;
+    text-align:center;
+    margin-bottom:30px;
+    word-break: keep-all;
+  }
+  h2 {
+    color:#0055aa;
+    border-bottom:2px solid #0055aa;
+    padding-bottom:5px;
+    margin-top:40px;
+  }
+
+  /* 콘텐츠 박스 스타일 */
+  .article, .blog-item {
+    background:#fff; border:1px solid #d0d0d0; border-radius:8px;
+    padding:15px 20px; margin-bottom:20px; box-shadow:0 2px 4px rgba(0,0,0,0.08);
+  }
+  .article a, .blog-title a {
+    font-size:17px; font-weight:bold; color:#0066cc; text-decoration:none;
+  }
+  .article a:hover, .blog-title a:hover {
+    text-decoration: underline;
+  }
+  .summary, .cve-title {
+    font-size:14px; color:#555; margin:8px 0;
+  }
+  .details, .cve-details {
+    font-size:12px; color:#777; display:flex; flex-wrap:wrap; gap:10px;
+  }
+  .detail-item, .cve-detail-item {
+    white-space: nowrap;
+  }
+  .detail-label, .cve-detail-label {
+    font-weight: bold; color:#333; margin-right:5px;
+  }
+
+  /* CVE severity 별 색상 */
+  .cve-article {
+    background:#fff;
+    border:1px solid #d0d0d0;
+    border-radius:8px;
+    margin-bottom:20px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.08);
+  }
+  .cve-critical {
+    border-left: 6px solid #d70000;
+  }
+  .cve-high {
+    border-left: 6px solid #0047ab;
+  }
+  .cve-medium {
+    border-left: 6px solid #007acc;
+  }
+  .cve-id-header {
+    background-color: #0066cc;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .cve-title {
+    font-size: 15px;
+    color: #444;
+    padding: 12px 15px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .cve-title a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .cve-title a:hover {
+    text-decoration: underline;
+  }
+  .cve-details {
+    font-size: 12px;
+    color: #777;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 15px 12px 15px;
+  }
+  .cve-detail-item {
+    white-space: nowrap;
+  }
+  .cve-detail-label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 5px;
+  }
+
+  /* 블로그 스타일 */
+  .blog-item {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+  }
+  .blog-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .blog-image {
+    flex: 0 0 160px;
+    max-width: 160px;
+    margin-right: 20px;
+  }
+  .blog-image img {
+    width: 160px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  }
+  .blog-content {
+    flex: 1;
+  }
+  .blog-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 6px 0;
+    color: #007acc;
+    word-break: break-word;
+  }
+  .blog-meta {
+    font-size: 13px;
+    color: #555;
+  }
+  .blog-meta a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .blog-meta a:hover {
+    text-decoration: underline;
+  }
+
+  /* 모바일 반응형 */
+  @media (max-width: 768px) {
+    .navbar {
+      height: auto;
+      flex-wrap: wrap;
+      padding: 10px 20px;
+    }
+    .navbar-brand {
+      position: relative;
+      left: auto;
+      font-size: 16px;
+      margin-bottom: 8px;
+      text-align: center;
+      width: 100%;
+    }
+    .navbar a {
+      margin: 5px 10px;
+      font-size: 16px;
+      padding: 6px 10px;
+      flex-grow: 1;
+      text-align: center;
+    }
+    .blog-item {
+      flex-direction: column;
+    }
+    .blog-image {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      margin: 0 0 10px 0;
+    }
+    .blog-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+    .container {
+      padding: 20px 10px 40px;
+      margin: 100px auto 40px;
+      max-width: 100%;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-brand">KR-VCF</div>
+  <a href="#blog_section">블로그</a>
+  <a href="#pn_section">Product News</a>
+  <a href="#td_section">Tech Docs</a>
+  <a href="#kb_section">Knowledge Base</a>
+  <a href="#cve_section">CVE 정보</a>
+</div>
+
+<div class="container">
+<h1>Broadcom 통합 기술 포털 (2025-08-09 02:32:09)</h1>
+
+<h2 id="blog_section">1. 블로그 (최근 3일 내 모든 게시물)</h2>
+
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/explore/see-you-at-the-party/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/explore/wp-content/uploads/sites/139/2025/08/69137-vmwx25-grphc-explore-party-promo-1920x1080-1.jpg?w=752&h=423&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/explore/see-you-at-the-party/" target="_blank" rel="noopener noreferrer">파티의 기발한 숲으로 들어가십시오</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/explore/" target="_blank" rel="noopener noreferrer">Explore</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/explore/explore-insider-perks/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/explore/wp-content/uploads/sites/139/2025/07/Explore-Insiders-VIP-Seating-Sign.jpg?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/explore/explore-insider-perks/" target="_blank" rel="noopener noreferrer">독점 특전 대기 : VMware Explore 2025에 대한 내부자 안내서</a></h3>
+    <div class="blog-meta">2025-08-07 | 블로그: <a href="https://blogs.vmware.com/explore/" target="_blank" rel="noopener noreferrer">Explore</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/vcf-breakroom-chats-episode-46-nvidia-guest-speaker/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/cloud-foundation/wp-content/uploads/sites/75/2025/08/VCF-Breakroom-Chats-Final-Selected-featured-image.png?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/vcf-breakroom-chats-episode-46-nvidia-guest-speaker/" target="_blank" rel="noopener noreferrer">VCF 브레이크 룸 채팅 에피소드 46 : VCF 9.0의 NVIDIA와 함께 VMware Private AI Foundation의 진화에 대해 알아보십시오.</a></h3>
+    <div class="blog-meta">2025-08-07 | 블로그: <a href="https://blogs.vmware.com/cloud-foundation/" target="_blank" rel="noopener noreferrer">Cloud Foundation</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/08/virtually-speaking-whats-new-with-nsx-in-vmware-cloud-foundation-9-0/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/cloud-foundation/wp-content/uploads/sites/75/2025/08/vsp-cover-nsx-vcf-9.png?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/08/virtually-speaking-whats-new-with-nsx-in-vmware-cloud-foundation-9-0/" target="_blank" rel="noopener noreferrer">사실상 말하기 : VMware Cloud Foundation의 NSX의 새로운 기능 9.0</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/cloud-foundation/" target="_blank" rel="noopener noreferrer">Cloud Foundation</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/accelerate-private-cloud-deployment-with-vcf-9-0/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/cloud-foundation/wp-content/uploads/sites/75/2025/08/VCF-Breakroom-Chats-Final-Selected-featured-image-1-e1754495865740.png?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/accelerate-private-cloud-deployment-with-vcf-9-0/" target="_blank" rel="noopener noreferrer">VCF 브레이크 룸 채팅 에피소드 47 : VCF 9.0으로 프라이빗 클라우드 배포 가속화</a></h3>
+    <div class="blog-meta">2025-08-07 | 블로그: <a href="https://blogs.vmware.com/cloud-foundation/" target="_blank" rel="noopener noreferrer">Cloud Foundation</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/vcf-breakroom-chats-episode-46-nvidia-guest-speaker/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/cloud-foundation/wp-content/uploads/sites/75/2025/08/VCF-Breakroom-Chats-Final-Selected-featured-image.png?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/vcf-breakroom-chats-episode-46-nvidia-guest-speaker/" target="_blank" rel="noopener noreferrer">VCF 브레이크 룸 채팅 에피소드 46 : VCF 9.0의 NVIDIA와 함께 VMware Private AI Foundation의 진화에 대해 알아보십시오.</a></h3>
+    <div class="blog-meta">2025-08-07 | 블로그: <a href="https://blogs.vmware.com/management/" target="_blank" rel="noopener noreferrer">Management</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/08/virtually-speaking-whats-new-with-nsx-in-vmware-cloud-foundation-9-0/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/cloud-foundation/wp-content/uploads/sites/75/2025/08/vsp-cover-nsx-vcf-9.png?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/08/virtually-speaking-whats-new-with-nsx-in-vmware-cloud-foundation-9-0/" target="_blank" rel="noopener noreferrer">사실상 말하기 : VMware Cloud Foundation의 NSX의 새로운 기능 9.0</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/management/" target="_blank" rel="noopener noreferrer">Management</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/accelerate-private-cloud-deployment-with-vcf-9-0/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/cloud-foundation/wp-content/uploads/sites/75/2025/08/VCF-Breakroom-Chats-Final-Selected-featured-image-1-e1754495865740.png?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/accelerate-private-cloud-deployment-with-vcf-9-0/" target="_blank" rel="noopener noreferrer">VCF 브레이크 룸 채팅 에피소드 47 : VCF 9.0으로 프라이빗 클라우드 배포 가속화</a></h3>
+    <div class="blog-meta">2025-08-07 | 블로그: <a href="https://blogs.vmware.com/management/" target="_blank" rel="noopener noreferrer">Management</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/vcf-breakroom-chats-episode-46-nvidia-guest-speaker/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/cloud-foundation/wp-content/uploads/sites/75/2025/08/VCF-Breakroom-Chats-Final-Selected-featured-image.png?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/vcf-breakroom-chats-episode-46-nvidia-guest-speaker/" target="_blank" rel="noopener noreferrer">VCF 브레이크 룸 채팅 에피소드 46 : VCF 9.0의 NVIDIA와 함께 VMware Private AI Foundation의 진화에 대해 알아보십시오.</a></h3>
+    <div class="blog-meta">2025-08-07 | 블로그: <a href="https://blogs.vmware.com/vsphere/" target="_blank" rel="noopener noreferrer">vSphere</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/08/virtually-speaking-whats-new-with-nsx-in-vmware-cloud-foundation-9-0/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/cloud-foundation/wp-content/uploads/sites/75/2025/08/vsp-cover-nsx-vcf-9.png?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/08/virtually-speaking-whats-new-with-nsx-in-vmware-cloud-foundation-9-0/" target="_blank" rel="noopener noreferrer">사실상 말하기 : VMware Cloud Foundation의 NSX의 새로운 기능 9.0</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/vsphere/" target="_blank" rel="noopener noreferrer">vSphere</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/accelerate-private-cloud-deployment-with-vcf-9-0/" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/cloud-foundation/wp-content/uploads/sites/75/2025/08/VCF-Breakroom-Chats-Final-Selected-featured-image-1-e1754495865740.png?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/cloud-foundation/2025/08/07/accelerate-private-cloud-deployment-with-vcf-9-0/" target="_blank" rel="noopener noreferrer">VCF 브레이크 룸 채팅 에피소드 47 : VCF 9.0으로 프라이빗 클라우드 배포 가속화</a></h3>
+    <div class="blog-meta">2025-08-07 | 블로그: <a href="https://blogs.vmware.com/vsphere/" target="_blank" rel="noopener noreferrer">vSphere</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  <div class="blog-image"><a href="https://blogs.vmware.com/vmware-japan/2025/08/inside-look-roadshow.html" target="_blank" rel="noopener noreferrer"><img src="https://blogs.vmware.com/vmware-japan/wp-content/uploads/sites/132/2025/08/Feature.jpg?w=576&h=324&crop=1" alt="Thumbnail"></a></div>
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blogs.vmware.com/vmware-japan/2025/08/inside-look-roadshow.html" target="_blank" rel="noopener noreferrer">VCF 9 런칭 이벤트 : Inside Look Roadshow 소개 (1)</a></h3>
+    <div class="blog-meta">2025-08-07 | 블로그: <a href="https://blogs.vmware.com/vmware-japan/" target="_blank" rel="noopener noreferrer">VMware Japan</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://williamlam.com/2025/08/ms-a2-vcf-9-0-lab-configuring-external-idp-for-multiple-vcf-automation-organizations.html" target="_blank" rel="noopener noreferrer">MS-A2 VCF 9.0 실험실 : 여러 VCF 자동화 조직의 외부 IDP 구성</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="http://lmoglie.blogspot.com/2025/08/nsx-kb406460-nsxopsagent-on-esxi-node.html" target="_blank" rel="noopener noreferrer">[NSX -KB406460] ESXI 노드에서 NSX_OPSAGENT</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="http://vm-guru.com/news/vmware-vcf-9-poster" target="_blank" rel="noopener noreferrer">업데이트 된 건축 포스터 VMware Cloud Foundation 9</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://chriscolotti.us/technology/proxmox-backup-4-0-with-s3-tech-preview/" target="_blank" rel="noopener noreferrer">S3 Tech 미리보기가있는 Proxmox 백업 4.0</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://blog.scottlowe.org/2025/08/08/technology-short-take-187/" target="_blank" rel="noopener noreferrer">기술 쇼트 187</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://digitalthoughtdisruption.com/2025/08/08/powercli-vs-vsphere-cli-comparison/?utm_source=rss&utm_medium=rss&utm_campaign=powercli-vs-vsphere-cli-comparison" target="_blank" rel="noopener noreferrer">PowerCli vs vsphere CLI : VMware Automation에 사용하는시기</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://chipx86.blog/2025/08/08/what-if-using-conditional-css-variables/" target="_blank" rel="noopener noreferrer">경우 ()?조건부 CSS 변수 사용</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://virtual-it.pl/15023-vmware-cloud-foundation-z-wyroznieniem-globee-awards-for-technology.html" target="_blank" rel="noopener noreferrer">Globee Awards for Technology와 함께 VMware Cloud Foundation</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://nolabnoparty.com/en/5-reasons-to-choose-object-first-ootbi-as-veeam-repository/" target="_blank" rel="noopener noreferrer">객체를 선택 해야하는 5 가지 이유 First Ootbi로 Veeam 저장소로</a></h3>
+    <div class="blog-meta">2025-08-08 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+  </div>
+</div>
+<div class="blog-item">
+  
+  <div class="blog-content">
+    <h3 class="blog-title"><a href="https://virtual-it.pl/15022-mercusys-mr37be-wi-fi-7-w-przystepnej-cenie.html" target="_blank" rel="noopener noreferrer">Mercusys MR37BE -WI -FI 7 저렴한 가격으로</a></h3>
+    <div class="blog-meta">2025-08-07 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+  </div>
+</div><h2 id="pn_section">2. Product News</h2>
+
+<div class="article">
+ <a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/legal-notices/0/25175" target="_blank" rel="noopener noreferrer">VMware vSphere Enterprise Plus SPD</a>
+ <div class="summary"></div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> SYMLA25175</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-05</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/legal-notices/0/24503" target="_blank" rel="noopener noreferrer">VMware Cloud Foundation Edge (VCFE) SPD</a>
+ <div class="summary"></div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> VCDLA24503</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Cloud Foundation</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-05</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/legal-notices/0/24361" target="_blank" rel="noopener noreferrer">VMware vSphere Foundation (VVF) SPD</a>
+ <div class="summary"></div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> VCDLA24361</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere Foundation</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-05</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/legal-notices/0/24359" target="_blank" rel="noopener noreferrer">VMware Cloud Foundation (VCF) SPD</a>
+ <div class="summary"></div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> VCDLA24359</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Cloud Foundation</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-05</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/legal-notices/0/24368" target="_blank" rel="noopener noreferrer">VMware Private AI Foundation with NVIDIA</a>
+ <div class="summary"></div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> VCDLA24368</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Private AI Foundation</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-05</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/legal-notices/0/24360" target="_blank" rel="noopener noreferrer">VMware vSAN SPD</a>
+ <div class="summary"></div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> VCDLA24360</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSAN</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-05</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/release-announcements/0/35993" target="_blank" rel="noopener noreferrer">MaaS Product Licensing Guide 4.0 - August 2025</a>
+ <div class="summary"></div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> VADRA35993</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Cloud Foundation</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-02</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/critical-alerts/0/36011" target="_blank" rel="noopener noreferrer">Production environments using vDefend Firewall in NSX 3.2.x / 4.0.x / 4.1.x / 4.2.0-4.2.2 are advised of the following critical impacts</a>
+ <div class="summary"></div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> VADCA36011</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware NSX</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-06</div>
+ </div>
+</div><h2 id="td_section">3. Tech Docs</h2>
+
+<div class="article">
+ <a href="https://techdocs.broadcom.com/content/broadcom/techdocs/us/en/vmware-cis/vsphere/vsphere-supervisor/8-0/using-tkg-service-with-vsphere-supervisor/administering-kubernetes-releases-for-tkg-service-clusters/understanding-tkr-resolution.html" target="_blank" rel="noopener noreferrer">Understanding TKr Resolution</a>
+ <div class="summary">This topic describes how the system resolves TKr images. TKr Resolution When the Cluster object is created or updated, the Kubernetes API server invokes the TKr Resolver mutating webhook. The Cluster (or its ClusterClass) must have the run.tanzu.vmware.com/resolve-tkr annotation. Otherwise, TKr resolution is skipped entirely. The TKr Resolver uses the value of the run.tanzu.vmware.com/resolve-tkr annotation as a label query to constrain the set of candidate TKrs. An empty string selects all TKrs....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> Documentation</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> vSphere Supervisor</div>
+ </div>
+</div>
+<h2 id="kb_section">4. Knowledge Base</h2>
+
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=278681" target="_blank" rel="noopener noreferrer">VMware to Broadcom Support Frequently Asked Questions</a>
+ <div class="summary">On May 6, 2024, all VMware Support portals (VMware Customer Connect, etc.) and related services, tools, and assets were migrated to the Broadcom Support Portal. IMPORTANT: If Broadcom account activation fails or is unsuccessful, see VMware migrated u....,Table of Contents Support portal and account management Licensing Downloading VMware products Case management Education Product Fulfillment Notifications and subscriptions Partners Contact us Self-service Support portal and account management General....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 278681</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> N/A</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=323788" target="_blank" rel="noopener noreferrer">Converting a snapshot file to memory dump using the vmss2core tool</a>
+ <div class="summary">This article provides steps to convert a snapshot file to a memory dump using the vmss2core tool. Developers can use this tool to debug guest operating systems and applications by converting a virtual machine checkpoint into a core dump file. The che....,vmss2core is used to convert a suspended virtual machine's snapshot into a core dump for analysis. Depending on where the VM is running (VMware Workstation, Fusion, or ESXi), the steps differ slightly. For VMware Workstation 7.x and Above or Fusion 3....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 323788</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Desktop Hypervisor,VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=391170" target="_blank" rel="noopener noreferrer">Deprecated devices in ESX 9.0 and implications for support</a>
+ <div class="summary">This article provides information about deprecated devices and drivers in ESX 9.0 and implications for support.,A number of I/O devices have been marked as "Restricted" in ESX 9.0 as a result of the devices being EOL'd by the device vendors. VMware device deprecation policy mandates I/O hardware devices to continue to operate for the duration of a full major r....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 391170</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=341568" target="_blank" rel="noopener noreferrer">Packet capture on ESXi using the pktcap-uw tool</a>
+ <div class="summary">This article provides information on using the pktcap-uw tool for packet capture and analysis. The pktcap-uw tool is an enhanced packet capture and analysis tool that can be used in place of the legacy tcpdump-uw tool and is included by default in ....,As a starting point, refer to ESXi Network Troubleshooting Tools, specifically to the section titled "Pktcap-uw". Under that title, look for the following graphic: Packet captures are done by entering commands at the command line of a session via S....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 341568</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=367866" target="_blank" rel="noopener noreferrer">Unable to see LLDP information on ESXi hosts using Intel X710 (or any Intel 700 series) adapters with the i40en device driver</a>
+ <div class="summary">You are expecting to see LLDP packets in a packet capture on a vmnic at UplinkSndKernel and UplinkRcvKernel capture point. When you look at Configure > Physical Adapters > vmnicN on a vSphere client, and select LLDP, you see that "LLDP information is....,Step 1: Confirm that vmnics on the host are using the i40en driver: SSH with root privileges into the ESXi host Command --> "esxcli network nic list" Example output: Name PCI Device Driver Admin Status Link Status Speed Duplex MAC Address ....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 367866</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=390592" target="_blank" rel="noopener noreferrer">"Some appliance components are not functioning properly." Error displayed when attempting to log in to NSX manager</a>
+ <div class="summary">The following error is shown in the browser when trying to access NSX Manager UI: Some appliance components are not functioning properly. Component health: SEARCH:UNKNOWN, MANAGER:UNKNOWN, NODE_MGMT:UP, UI:UP. Error code: 101 cbm_oom.hprof dump file....,For resolution and workaround see NSX is impacted by JDK-8330017: ForkJoinPool stops executing tasks due to ctl field Release Count (RC) overflow.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 390592</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware NSX</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=387251" target="_blank" rel="noopener noreferrer">After updating vCenter to 7.0U3v, 8.0U3b or later, some last year performance chart metrics have higher values than before.</a>
+ <div class="summary">After updating vCenter to 7.0U3v, 8.0U3b or later, some performance metrics (e.g. CPU > Ready) in 'Last year' chart shows higher values than before.,The calculation logic was fixed in vCenter 7.0U3v, 8.0U3b or later. The calculated values before updating to vCenter 7.0U3v, 8.0U3b are incorrect, and the values after the update are correct.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 387251</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vCenter Server</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=376571" target="_blank" rel="noopener noreferrer">Aria Automations Requests stuck on Initialization</a>
+ <div class="summary">Requests in Aria Automation reach and then get stuck at the Initialization stage provisioning-service-app logs show message: Service not found: http://10.244.xxx.xxx:8282/provisioning/resource-enumeration-tasks 2024-09-05T14:00:27.265Z WARN provisio....,Resolution to this involves making changes to the appliance. it is recommended to take snapshots of the appliance via LCM > vra environment > the 3 dots > take snapshot prior to making any changes in the appliance. Aria Automation will be unavailable....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 376571</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=404054" target="_blank" rel="noopener noreferrer">CSP-97577: Patch instructions to upgrade platform components in VMware Identity Manager 3.3.7</a>
+ <div class="summary">This article provides important information to upgrade the below EOL components. EOL Component Version Photon 3 4 Java 8 11.0.27 Tomcat - 8.5 9.0.106 Postgres 9.6 14.15 OpenSearch 1.3.5 2.8.0 Angular XLTS 1.9.1 1.9.7 RabbitMQ - 3.10.7/3.12.4 3.13.3....,Prerequisites Note: The total downtime is approximately 1 hour to apply the vIDM patch. It is recommended to upgrade instances of unsupported versions to newer, supported versions first before applying the patch. This procedure will not work fo....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 404054</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=372076" target="_blank" rel="noopener noreferrer">NSX error "Certificate chain of compute manager "VC-FQDN"/"VC-shortname" is invalid (Error code: 90204)"</a>
+ <div class="summary">Compute Manager appears to be DOWN in NSX UI. When the machine SSL certificate on a vCenter Server is updated or replaced with a new custom machine SSL certificate, NSX will need to validate the new certificate in order to reestablish a connection wi....,Verify if the thumbprint shown by NSX matches the thumbprint provided by the vCenter, by running the following command on the vCenter Server: echo | openssl s_client -connect localhost:443 2>/dev/null | openssl x509 -noout -fingerprint -sha256 The fo....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 372076</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware NSX,VMware vCenter Server</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=397290" target="_blank" rel="noopener noreferrer">vSphere Client service has stopped working</a>
+ <div class="summary">Unable to access vSphere Client with an error: vSphere Client service has stopped working. For troubleshooting refer Skyline Health Diagnostics. Learn more by checking VMware vSphere Documentation and Support. For appliance administration, navigate t....,As a workaround, restart vsphere-ui service. # service-control --restart vsphere-ui This is fixed in vCenter Server 7.0 Update3d. It prevents creating direct response route (static page) upon vsphere-ui service health failure.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 397290</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vCenter Server</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=317503" target="_blank" rel="noopener noreferrer">VLSR - Calculating Bandwidth Requirements for vSphere Replication</a>
+ <div class="summary">Storage and network bandwidth requirements can increase when using vSphere Replication. Besides the network transfers of replicated data from the primary site to the vSphere Replication server, and the transfers from the vSphere Replication server to....,To calculate the amount of bandwidth that vSphere Replication requires, you must calculate your average data change rate within an RPO period, divided by your link speed. Identify the average data change rate within your RPO by calculating the averag....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 317503</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Live Recovery,VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=399070" target="_blank" rel="noopener noreferrer">#PF Exception 14 in world ######:vmnic7-pollW IP ########## addr ##########</a>
+ <div class="summary">PSOD on the ESXi with the following details: Panic Message: @BlueScreen: #PF Exception 14 in world #####:vmnic7-pollW IP ########### addr ########### Backtrace: #############:[#############]NetPollWorldCallback@vmkernel#nover+#### stack: ##########....,Check with your hardware vendor as there might be issues with the hardware platform or the processor.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 399070</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=319370" target="_blank" rel="noopener noreferrer">Resolving NSX-NCP Pod Stuck in CrashLoopBackOff due to NSX Search Service Error</a>
+ <div class="summary">The NSX-NCP (NSX Container Plugin) Pod remains stuck in a CrashLoopBackOff state. Upon inspecting the logs of the nsx-ncp container of the NSX-NCP Pod,an error message indicating an issue with the NSX Search service is seen: vmware_nsxlib.v3.exceptio....,Solution 1: Restart the NSX Search Service Follow these steps to restart the NSX Search service and resolve the issue. If this solution doesn't resolve the problem, proceed to Solution 2. Open an SSH session to every NSX Manager appliance VM as the a....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 319370</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> N/A</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=317548" target="_blank" rel="noopener noreferrer">Any HPE Server Running VMware ESXi 6.x/7.0 with certain HPE Emulex network adapters can fail with "F/W indicated the UE is not recoverable"</a>
+ <div class="summary">The host is disconnected, fail to ping and SSH Emulex Corporation HP FlexFabric adapters appear offline with one of these devices: Emulex OneConnect OCe14000 iSCSI CNA Emulex OneConnect OCe11100 10Gb iSCSI Initiator Emulex OneConnect OCe11100 iSCSI C....,To resolve this issue, please contact HPE.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 317548</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=394831" target="_blank" rel="noopener noreferrer">How to unregister email subscription from old usage meter.</a>
+ <div class="summary">The ask is to release email subscription from old usage meter because the status of the usage meter is changed from old partner to new partner and the usage mater is not used anymore. Registration of Usage Meter fails with error "The registration of....,When a Usage Meter is registered to a cloud organization that has been deactivated, there is no specific un-registration process. The current recommended approach is to Deploy Usage Meter and power off the legacy Usage Meter.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 394831</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Usage Meter</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=318685" target="_blank" rel="noopener noreferrer">Full ramdisk '/var' causes /var/log/EMU/mili/mili2d.log to stop logging</a>
+ <div class="summary">Symptoms: Host not responding Connecting to the host ESXi you see /var or /tmp folder at 100% The /var/log/EMU/mili/mili2d.log contains these messages: YYYY:MM:DD hh:mm:ss 5x3x2x7, ERROR:MILI_enumerate_elxiscsi:Failed to initialize User Init with sta....,This issue is resolved in VMware ESXi 6.7 P01 Download link: https://support.broadcom.com/group/ecx/productdownloads?subfamily=VMware+vSphere&tab=Solutions search for the patch: ESXi670-201912001 Workaround: To workaround this issue： Remove the mili....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 318685</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=402126" target="_blank" rel="noopener noreferrer">Packet loss for Guest VLAN Tagged traffic with Intel card with ENS and VMDQ features</a>
+ <div class="summary">Constant packet loss occurs when you have the following condition A VM with 802.1Q enabled (Guest VLAN Tagging Portgroup or Trunked Segment) ENS mode is used (so the application running on the VM most likely uses DPDK in order to be optimised ) N....,As mentioned, turning off the VMDQ feature (that is disabled by default with i40en 2.9.2 or later and icen 1.14.2 or later (so you do not even need to disable it with the intnetcli extension beforehand) does not seem to solve this specific probl....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 402126</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware NSX,VMware vSphere ESX 7.x</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=313232" target="_blank" rel="noopener noreferrer">VCHA safety pre-steps to and post steps to be followed while executing certificate management workflows like : Machine SSL cert update and Trusted Roots Certificate updates</a>
+ <div class="summary">The pre-step is a safety net so that the changes made on the Vcenter during an certificate management operation are safely replicated to the Passive node of the VCHA cluster. Certificate upgrade is a heavy operation that updates the VECS database, se....,To resolve the issue, please follow the below mentioned steps: Ensure VCHA cluster is healthy before performing the NDC operation. This ensures smooth replication to the Passive node during certificate upgrades. Use VCHA "Maintenance Mode" to avoid a....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 313232</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=312385" target="_blank" rel="noopener noreferrer">"Authentication failed", "bad directory" or "server disk full" error when preforming NSX backup to Windows SFTP server</a>
+ <div class="summary">NSX-T backups are failing with errors such as "bad directory path" or "sftp server disk full" or "authentication failed to fileserver". OR we may see the "Either backup server login failed or unauthorized access to backup directory" OR we may see th....,Ensure you use the supported versions of Windows and Openssh. VMware NSX 4.2 Configure Backups VMware NSX-T Datacenter 3.2 Configure Backups Enable long paths in Windows server: Edit the local group policy on the SFTP server and enable win32 long pa....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 312385</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware NSX,VMware NSX-T Data Center</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=325839" target="_blank" rel="noopener noreferrer">Directory synchronization fails with error 'Connector Communication failed with Response'</a>
+ <div class="summary">This article provides resolution when the config-state.json has corrupted or become blank or reset with default values. Symptoms: Running the Directory sync in vRealize Automation 7.x fails. In vRealize Automation 7.x UI, you see error: Connector Com....,Verify the primary tenant (VSPHERE.LOCAL) config-state.json for corruption even though the issue is observed in some secondary tenants. Corruption can be confirmed If the files is of zero size or the data is like: { "isConfigured" : false, "vers....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 325839</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=399201" target="_blank" rel="noopener noreferrer">#PF Exception 14 in world xxxxxxx:vmnic7-pollW IP ########## addr ########## にて ESXi の PSOD (purple screen of death) が発生</a>
+ <div class="summary">免責事項: これは英文の記事「#PF Exception 14 in world ######:vmnic7-pollW IP ########## addr ##########」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 ESXi にて下記詳細が表示される PSOD が発生します。 #############:[#############]NetPollWorld....,ハードウェア・プラットフォームやプロセッサーに問題があるかもしれないので、ハードウェア・ベンダーに確認してください。</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 399201</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=313210" target="_blank" rel="noopener noreferrer">VMware Cloud Foundation SDDC Manager Recovery Scripts</a>
+ <div class="summary">As part of recovering from a failure in a VMware Cloud Foundation system, one of the following actions was performed: The NSX-V manager VM was redeployed. One, two, or three nodes of a NSX-T manager cluster was redeployed. A vCenter Server was redepl....,There are two procedures that resolve the above noted outcomes. One or both should be run, depending on the action you took. If you replaced an appliance or a host, follow the Refresh SDDC Manager SSH Keys procedure. If you replaced a host, in additi....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 313210</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Cloud Foundation</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=322098" target="_blank" rel="noopener noreferrer">vCloud Usage Meter 4.8 has collection error - "Failed to collect SPBM usage data"</a>
+ <div class="summary">Symptoms: The following notification is received in vCloud Usage Meter 4.8 web application after a vCenter Server is added for metering: "Failed to collect SPBM usage data",To resolve this issue, increase the connection timeout values. Procedure Take a snapshot of the Usage Meter appliance in vSphere. Log in as root to Usage Meter 4.8 and enable SSH: service sshd start SSH connect to the appliance as usagemeter: ssh ....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 322098</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Usage Meter</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=344748" target="_blank" rel="noopener noreferrer">Patching VCSA from 8.x is failing with "Installation of one or more containers failed"</a>
+ <div class="summary">To address the patch failures that error out with "Patching containers failed" while patching vCenter from 8.x. vmon.log : YYYY-MM-DDT03:55:42.227Z In(05) host-2065 Constructed command: /storage/containers/vc-ws1a-broker/f6b....,This issue is fixed in : vCenter 8.0U3g Workaround: Revert back to snapshot taken before patching. Delete the below container folders as mentioned in above logs and re-run the patching. /storage/containers/vc-ws1a-broker/f6b616b765efe15183f0e4938340....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 344748</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vCenter Server 8.0</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=317178" target="_blank" rel="noopener noreferrer">IPFIX Profile is stuck in "In Progress" state and cannot be deleted</a>
+ <div class="summary">NSX-T Data Center integrated as a data source to Aria Operations for Networks On the NSX UI, under Plan & Troubleshoot -> IPFIX -> Firewall IPFIX Profiles, the profile is greyed out and has a status of In Progress ,This issue is resolved in NSX-T Datacenter 3.2.0.1 and above, see Download Broadcom products and software Workaround: Please open a Support Request and a member of the NSX support team will assist with the removal of this configuration.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 317178</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware NSX</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=314899" target="_blank" rel="noopener noreferrer">Custom resources and actions fail to execute after deleting and re-adding the Orchestrator integration</a>
+ <div class="summary">Symptoms: An Orchestrator instance added to Aria Automation has been deleted and re-added. Resource actions previously added from this Orchestrator instance fail with: " — Failed There was a problem while building the execution co....,For resource actions, these can be manually removed and re-added in the Aria Automation UI, this will resolve the conflict with the Aria Orchestrator integration id. To resolve the issue with existing custom resource types that are referenced in cust....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 314899</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=330630" target="_blank" rel="noopener noreferrer">Troubleshooting when logging into vCloud Usage Meter fails</a>
+ <div class="summary">Symptoms: Logging in to the vCloud Usage Meter UI fails with the error: Exception occured while processing / Message: java.lang.RuntimeException: No session is bound to current thread, a session must be created via Session.create and bound to the....,To troubleshoot this issue, determine if the database corrupted or full. To check if the database is corrupted: Verify if vCloud Usage Meter has been installed recently. In such case, the Postgres Database must have been overwritten by the import....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 330630</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Usage Meter</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=392465" target="_blank" rel="noopener noreferrer">Error: "Invalid or inaccessible datastore" when configuring replications</a>
+ <div class="summary">Configuring a new replication fails in Cloud Director Availability, and you see the error: Invalid or inaccessible datastore In the /opt/vmware/h4/cloud/log/cloud.log file on the destination site, you see a similar entry: DATE TIME DEBUG - [UI-######....,When the certificate of the Replicator Service expires, you must replace it with the new self-signed or CA-signed certificate as per documentation at Replace the SSL certificate of the Replicator Service.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 392465</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Cloud Director</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406337" target="_blank" rel="noopener noreferrer">Aria Operations for logs Account disconnected from Password Management SDDC Manager</a>
+ <div class="summary">Admin account for Aria Operations for Logs shows as disconnected in SDDC manager.,Reset the Aria Operations for Logs admin password to match the save password in SDDC manager: SSH to any node in the Aria Operations for Logs as root Run the following command to observe whether the admin account is locked: /usr/lib/loginsight/applic....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406337</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=391300" target="_blank" rel="noopener noreferrer">Error: "validation error on field 'email': The email address may contain invalid characters or be missing an @'" when trying to edit a SAML user in VMware Cloud Director</a>
+ <div class="summary">You are unable to edit the SAML user that is already imported in VMware Cloud Director. You are unable to disable the SAML user. When you try to disable the user you get an error: [ #######-####-####-####-############ ] validation error on field 'ema....,The code fix to mitigate the user detail pre validation is included in VCD 10.6.1.1 and later releases. To workaround this issue please contact Broadcom Support and note this Article ID (391300) in the problem description. For more information, see C....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 391300</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Cloud Director</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=405447" target="_blank" rel="noopener noreferrer">Upgrading To VMware Cloud Director 10.6</a>
+ <div class="summary">This article intends to be a one-stop place to provide information for upgrading VMware Cloud Director,Read the target version Release Notes and be aware of Known Issues. Reference the Interop Matrix to confirm the target Cloud Director version is compatible with other integrations in the environment and plan to upgrade those if necessary. Also confir....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 405447</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Cloud Director</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=400827" target="_blank" rel="noopener noreferrer">Unable to remediate ESXi 8.0U2 host with using desired image with VMware VMTools as removed component</a>
+ <div class="summary">This article provides steps to remediate a host running ESXi 8.0U2 using a desired image to remove a package Scan is failing on hosts with version 80U2 and vCenter on version 80U3, when desired image is configured with removed components (for exampl....,A workaround to this error would be to perform a double remediation Delete Removed components from the Desired Image. Remediate Cluster with Desired Image (without any Removed Components configured). Once hosts are remediated to 8.0 U3, configure VMw....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 400827</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi 8.0</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406141" target="_blank" rel="noopener noreferrer">Replacing the VMware Identity Manager (vIDM) SSL certificates in Aria Suite Lifecycle Manager fails with error code LCMVIDM74068.</a>
+ <div class="summary">When replacing the VMware Identity Manager (vIDM) SSL certificates using Aria Suite Lifecycle Manager, it fails, and you receive an error: Error Code: LCMVIDM74068. Failed to create SSH connection to the host(s). Refer to VMware Aria Suite Lifecycle ....,To resolve this issue: Ensure SSH is enabled on the VMware Identity Manager node. Unable to login to VMware Identity Manager SSH sessions using root user Ensure that the root password on the VMware Identity manager is not expired. Root password reset....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406141</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406541" target="_blank" rel="noopener noreferrer">Unable to list the TKR and vmimages (virtualmachineimages) from the supervisor cluster</a>
+ <div class="summary">- When you run the kubectl get tkr or vmimges on the supervisor the output shows no resources. # kubectl get tkr -A No resources found # kubectl get virtualmachineimages -A No resources found - While looking at the vmware-system-vmop-controller-manag....,From vCenter UI: Navigate to Menu -> Content Libraries Right-click a content library and select the -> edit the content library Uncheck Apply Security Policy box Restart the content library service from VCSA SSH # service-control --restart content....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406541</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> N/A</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406655" target="_blank" rel="noopener noreferrer">Configuration of bond0 on bare metal edge node fails with error, "bond0: option mode: unable to set because the bond device has slaves"</a>
+ <div class="summary">After the installation of a new bare metal edge node, bond0 interface needs to be configured for management networking. There are only 2 network adapters configured on the Edge node. And the same set of network adapters need to be configured for mana....,"in-band" management can be only be configured with one interface. For configuring In-band management, please refer below commands: set interface mac vlan in-band plane mgmt (Static) set interface ethA. ip gate....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406655</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware NSX</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406579" target="_blank" rel="noopener noreferrer">Dashboard Widget Fails with “Object Custom Script Not Found” Error - Manual Recreation Required</a>
+ <div class="summary">The “Certificate Expiry Remaining Days” dashboard widget fails to load and shows the following error: Object Custom Script on ######### not found. Extra info: #########, executescript, Identifiers - VCID = #######-####-####-####-#############, #### =....,The missing widget needs to be manually recreated to restore its functionality. This will allow the script to run as expected and generate the reports with accurate data. https://techdocs.broadcom.com/us/en/vmware-cis/aria/aria-operations/8-18/vmware....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406579</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=398814" target="_blank" rel="noopener noreferrer">Aria Automation / Orchestrator Node stuck when booting up with error message message: "Soft lockup - CPU stuck for 30s"</a>
+ <div class="summary">Aria Orchestrator node marked as Not Ready when viewing from kubectl get node The Aria Orchestrator node is not accessible by SSH. When viewing the node from remote console, we see message: "Soft lockup - CPU stuck for 30s",Validate in vCenter, that the VM is not having a high CPU utilization,. Validate that enough resources are present on the host on which the vm resides. Validate KB395309 Take Non-memory snapshots of the Aria Automation / Orchestrator Cluster nodes. ....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 398814</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406281" target="_blank" rel="noopener noreferrer">vmnicX down / up alerts in cluster with message "packets completion seems stuck, issuing reset" in logs</a>
+ <div class="summary">Frequent alerts regarding vmnic going down and up are reported in the cluster when using icen driver version 1.14.2.0 vmkwarning.log shows lock and reset messages on the nic: YYYY-MM-DDThh:mm:ss.014Z Wa(180) vmkwarning: cpu0:2375364)WARNING: netsched....,Upgrade icen driver to 2.1.1.0 version.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406281</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=390921" target="_blank" rel="noopener noreferrer">Addressing CVE-2023-52604 / CVE-2024-34459 / CVE-2024-10979 / CVE-2025-1094 on vCenter 7.0</a>
+ <div class="summary">Following vulnerabilities are reported in the vCenter 7.0: Version 7.0.3 Build: 24322018 Plugin ID:203815 CVE-2023-52604 :Photon OS 3.0: Linux PHSA-2024-3.0-0738 Plugin ID:203815 CVE-2024-34459 :Photon OS 3.0: Libxml2 PHSA-2024-3.0-0787 Plugin ID:213....,The above vulnerabilities are addressed in vCenter Server 7.0 U3v (Build 24730281). Please update the vCenter Server to version 7.0 Update 3v, which includes the fix. Refer to : Patching/Updating VMware vCenter Server Appliance VCSA through Applianc....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 390921</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere ESXi</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406668" target="_blank" rel="noopener noreferrer">Failed to fetch topology from all known nodes: [FQDN, FQDN, ...] in Validate the Single Sign-On (SSO) Ring Topology task</a>
+ <div class="summary">Unable to delete workload domain from SDDC Manager. SDDC Manager UI shows following error. domainmanager.log 2025-08-05T04:13:46.736+0000 DEBUG [vcf_dm,9ef1c81a71cc355f,36d5] [c.v.v.v.s.s.e.SsoRestCommandExecutor,dm-exec-19] Creating new session t....,To release the excess sessions and allow the operation to proceed, restart the vapi-endpoint service (and related services) on each vCenter Server managed by the SDDC Manager. SSH into each vCenter Server using the root user. Run the following comman....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406668</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware SDDC Manager</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406555" target="_blank" rel="noopener noreferrer">vSphere Pods fail with error "A specified parameter was not correct: DistributedVirtualPortgroup: ErrImagePull"</a>
+ <div class="summary">Supervisor Services fail to start vSphere Pods on ESXi hosts vSphere Pod deployments fail on ESXi hosts but may succeed on Supervisor VMs ( Control Plane ) nodes. The pod describe displays the below error : A specified parameter was not correct: Di....,Redeploy the supervisor in a fully supported network configuration referring the below documentation . Networking for vSphere Supervisor</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406555</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=405444" target="_blank" rel="noopener noreferrer">Upgrading to Aria Operations 8.18.x</a>
+ <div class="summary">This article intends to be a one-stop place to provide information for upgrading Aria Operations.,Execute the Pre-Upgrade readiness Assessment Tool and action any reported issues Read the target version Release Notes and be aware of Known Issues. Confirm the target Aria Operations version is compatible with other products in the environment. Also....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 405444</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406581" target="_blank" rel="noopener noreferrer">HCX RAV, Cold, VMotion Migration fails with the error: "A specified parameter was not correct : Cannot connect to host"</a>
+ <div class="summary">In the HCX UI > Migration > Mobility Group > Select the affected migration, the following error is seen: vMotion failed. System Error. Source side error is : Source side relocate failed for the virtual machine. A specified parameter was not correct: ....,The IX Management interface must be able to access any of the ESXi VMkernel adapters set up for vSphere Replication or the ESXi Management network for NFC (TCP 902) connections. If the IP address of the VMkernel adapter is not reachable through the D....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406581</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware HCX</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406578" target="_blank" rel="noopener noreferrer">Brownfield convert task fails during "Installing SDDC Manager VCSA certificate" phase.</a>
+ <div class="summary">Brownfield convert or import task fails during "Installing SDDC Manager VCSA certificate" phase with following error: Logs on SDDC Manager (/var/log/vmware/vcf/domainmanager/domainmanager.log) will show similar to below snippets: YYYY-MM-DDThh:mm:ss ....,Take a snapshot of the SDDC manager VM and follow the steps below: SSH to SDDC Manager with vcf user and su to root. Back up the /etc/hosts file: cp /etc/hosts /etc/hosts.bak Edit the /etc/hosts file: vi /etc/hosts Comment out the line where the ....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406578</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware SDDC Manager</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=342529" target="_blank" rel="noopener noreferrer">Error: "Subnets 192.168.255.###/2# and 192.168.255.225/27 are overlapping." when configuring a routed network</a>
+ <div class="summary">When configuring a new VMware Cloud Director (VDC) with an edge and a internal routed network you get an error similar to [ ########-####-####-####-############] Subnets 192.168.255.###/2# and 192.168.255.225/27 are overlapping. ,This is a known issue affecting VMware Cloud Director. You can create a new Edge Service Gateway via VCD API defining a different "serviceNetworkDefinition" parameter that doesn't overlap with the internal routed network.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 342529</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Cloud Director</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406701" target="_blank" rel="noopener noreferrer">After deleting failed control plane node from guest cluster the corresponding machine and virtualmachine are not removed</a>
+ <div class="summary">On a guest cluster, a new control plane node did not provision correctly, so the customer deleted the node to trigger the rollout of a new control plane. A new control pane node was not created and, on the Supervisor, the corresponding machine and v....,1. On the guest cluster, remove old stale member, , matching the ip address IP address of 10.###.###.###, from etcd as per KB 319400: Stale ETCD member prevents vSphere with Tanzu Guest Cluster Upgrade 2. On the Supervisor, delete....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406701</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=405441" target="_blank" rel="noopener noreferrer">Upgrading To Aria Suite Lifecycle 8.18</a>
+ <div class="summary">This article intends to provide information to enable a successful upgrade to VMware Aria Suite Lifecycle 8.18,Read the target version Release Notes and be aware of Known Issues. Ensure ports required for the upgrade are open e.g. 443/8080 see VMware Ports & Protocols. Ensure that you have a recent backup Download the required upgrade file from the Broadcom S....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 405441</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=406670" target="_blank" rel="noopener noreferrer">Stale username in SDDC Password Management</a>
+ <div class="summary">A stale username was shown in SDDC Password Management. Confirmed this account is abandoned,1. Double confirm this username isabandoned 2. Take SDDC snapshot 3. Use the API to clear 1. Obtain Token ACCESS_TOKEN=$(curl -vd '{"username" : "administrator@vsphere.local", "password" : ""}' -H "Content-Type: application/json" -X POST ht....</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 406670</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware SDDC Manager</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-07</div>
+ </div>
+</div>
+<div class="article">
+ <a href="https://knowledge.broadcom.com/external/article?articleNumber=405832" target="_blank" rel="noopener noreferrer">CPU|Total Capacity cluster metric is not consistent.</a>
+ <div class="summary">'CPU | Total Capacity (MHz)' metric on the Cluster Compute Resource object fluctuates as per chart below:,This is expected behavior if the ESXi Host is in "not responding" state. The Cluster Compute Resource's 'CPU | Total Capacity (MHz)' will decrease until the ESXi host is brought back and is in connected state.</div>
+ <div class="details">
+   <div class="detail-item"><span class="detail-label">Article ID:</span> 405832</div>
+   <div class="detail-item"><span class="detail-label">Product:</span> VMware Aria Suite</div>
+   <div class="detail-item"><span class="detail-label">Updated Date:</span> 2025-08-08</div>
+ </div>
+</div><h2 id="cve_section">5. CVE 정보</h2>
+
+<div class="cve-article cve-medium">
+  <div class="cve-id-header">VCDSA35964</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35964" target="_blank" rel="noopener noreferrer">VMSA-2025-0014: VMware vCenter updates address a denial-of-service vulnerability (CVE-2025-41241)</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> VMware Cloud Foundation,V...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-29</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-31</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> MEDIUM</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VCDSA35877</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35877" target="_blank" rel="noopener noreferrer">VMSA-2025-0013: VMware ESXi, Workstation, Fusion, and Tools updates address multiple vulnerabilities (CVE-2025-41236, CVE-2025-41237, CVE-2025-41238, CVE-2025-41239)</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> VMware Cloud Foundation,V...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-15</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-16</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-high">
+  <div class="cve-id-header">VTDSA35984</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35984" target="_blank" rel="noopener noreferrer">Product Release Advisory - Stemcells (Ubuntu Jammy) 1.866</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> HIGH</div>
+  </div>
+</div>
+<div class="cve-article cve-medium">
+  <div class="cve-id-header">VTDSA35983</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35983" target="_blank" rel="noopener noreferrer">Product Release Advisory - Single Sign-On for VMware Tanzu Application Service 1.16.11</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> MEDIUM</div>
+  </div>
+</div>
+<div class="cve-article cve-high">
+  <div class="cve-id-header">VTDSA35982</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35982" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry Windows 10.0.8</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> HIGH</div>
+  </div>
+</div>
+<div class="cve-article cve-high">
+  <div class="cve-id-header">VTDSA35981</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35981" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry Windows 6.0.18+LTS-T</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> HIGH</div>
+  </div>
+</div>
+<div class="cve-article cve-high">
+  <div class="cve-id-header">VTDSA35980</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35980" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry Windows 4.0.38+LTS-T</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> HIGH</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35979</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35979" target="_blank" rel="noopener noreferrer">Product Release Advisory - Spring Cloud Services for VMware Tanzu 3.3.8</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-high">
+  <div class="cve-id-header">VTDSA35978</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35978" target="_blank" rel="noopener noreferrer">Product Release Advisory - Scheduler 2.0.19</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> HIGH</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35977</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35977" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry isolation segment 10.2.1+LTS-T</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35976</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35976" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry isolation segment 10.0.8</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35975</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35975" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry isolation segment 6.0.18+LTS-T</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35974</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35974" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry isolation segment 4.0.38+LTS-T</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35973</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35973" target="_blank" rel="noopener noreferrer">Product Release Advisory - File Integrity Monitoring for VMware Tanzu 2.1.47</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35972</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35972" target="_blank" rel="noopener noreferrer">Product Release Advisory - Spring Cloud Data Flow for VMware Tanzu 1.14.7</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35971</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35971" target="_blank" rel="noopener noreferrer">Product Release Advisory - Anti-Virus for VMware Tanzu 2.4.0</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35970</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35970" target="_blank" rel="noopener noreferrer">Product Release Advisory - GenAI on Tanzu Platform for Cloud Foundry 10.2.1</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35969</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35969" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry 10.2.1+LTS-T</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35968</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35968" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry 10.0.8</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35967</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35967" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry 6.0.18+LTS-T</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-critical">
+  <div class="cve-id-header">VTDSA35966</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35966" target="_blank" rel="noopener noreferrer">Product Release Advisory - Tanzu Platform for Cloud Foundry 4.0.38+LTS-T</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> Tanzu Kubernetes Runtime,...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-24</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-25</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> CRITICAL</div>
+  </div>
+</div>
+<div class="cve-article cve-high">
+  <div class="cve-id-header">VTDSA35935</div>
+  <div class="cve-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/35935" target="_blank" rel="noopener noreferrer">Product Release Advisory - VMware Tanzu for Postgres on Kubernetes 4.2.1</a></div>
+  <div class="cve-details">
+    <div class="cve-detail-item"><span class="cve-detail-label">Product/Component:</span> VMware Tanzu Data Service...</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Published Date:</span> 2025-07-11</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Updated Date:</span> 2025-07-11</div>
+    <div class="cve-detail-item"><span class="cve-detail-label">Severity:</span> HIGH</div>
+  </div>
+</div></div></body></html>
