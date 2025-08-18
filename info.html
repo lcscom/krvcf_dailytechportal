@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-08-18 06:01:10</title>
+    <title>Broadcom 기술 포털 - 2025-08-18 12:01:16</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-08-18 06:01:10)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-08-18 12:01:16)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -932,6 +932,90 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=404988" target="_blank" rel="noopener noreferrer">VCF Installer Fails to Create Services Platform Cluster During Automation Appliance Deployment</a></div>
+                <div class="summary">Symptoms: During a migration from a standard vSphere environment to VMware Cloud Foundation (VCF) 9.0, the deployment and configuration of the Automation Appliance fails. The VCF installer displays the following error messages: ERROR: Not all ESXi ho....,In vCenter, ensure that all ESXi hosts in the affected cluster are correctly connected to the specified datastore. Check the Cluster Name for any spaces. If found, rename the cluster to remove spaces, and re-run the VCF 9.0 Installation/Migration pro....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 404988</span>
+                    <span><span class="detail-label">Product:</span> VMware SDDC Manager,VCF Automation</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=308546" target="_blank" rel="noopener noreferrer">Performing a rescan of the storage on an ESXi host</a></div>
+                <div class="summary">This article explains how to perform a rescan of storage devices. A rescan of storage devices is needed when a storage device has been added, removed, expanded or changed from the array. For information on troubleshooting LUN connectivity issues, see....,Methods to perform a rescan: Using the VMware vSphere Client Using the ESXi Command Line Interface Note: Performing a rescan does not cause a service interruption. Using the VMware vSphere Client To rescan using the web vSphere Client: Log in t....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 308546</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=318856" target="_blank" rel="noopener noreferrer">Troubleshooting ESXi datastore or VMFS volume that is full or near capacity</a></div>
+                <div class="summary">Capacity Guidelines ESXi hosts store all files necessary for virtual machine operation in a VMware Virtual Machine File System (VMFS). Proper capacity management is critical as this file system is required for any operations related to virtual machin....,What to do about a full VMware VMFS file system When a VMFS is full, there are several courses of action: Increase capacity: A VMFS file system may be stored on an external storage array. Depending on the features of the storage array, it may be poss....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 318856</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=392494" target="_blank" rel="noopener noreferrer">Async patch tool fails with error "Running the following command(s) as su user has failed"</a></div>
+                <div class="summary">Attempts to install patches using Async patch tool command ./vcf-async-patch-tool -i /path/to/inputspec --du broadcom_support_email --sddcSSOUser SSOuser --sddcSSHUser vcf --it ONLINE --proxyServer fails with error "Running the following command(s) ....,Ensure SDDC public URLs are added to the proxy whitelist to allow download of VMwareCompatibilityData.json file Apart from above resolution, for VCF 5.1, review Update compatibility endpoint for VCF 5.1 deployments</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 392494</span>
+                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=407532" target="_blank" rel="noopener noreferrer">"High pNic RX/TX Pause rate detected" on vmnic with little to no throughput/packets</a></div>
+                <div class="summary">Symptoms: The alert "High pNic RX/TX Pause rate detected on vmnicX" is seen on vSAN hosts. Where vmnicX could be the standby vmnic or even the active vmnic which little to no throughput or packets passing through it, as seen from the vSphere Client >....,No action is needed here, the vmnic driver would inform ESXi host to increase the number of queues to handle the IOs. Once IOs start increasing, the amount of Flow control packets would reduce as the vmnic deploys enough queues to handle the IOs. The....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 407532</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=401187" target="_blank" rel="noopener noreferrer">'General vSAN error' while removing the disk from vSAN diskgroup</a></div>
+                <div class="summary">Symptoms: Removing the disk from a vSAN disk group may fail with 'General vSAN error'. Removing the disk via ESXi CLI using the command 'esxcli vsan storage remove -u ' will report below error. Unable to remove device: Failed to get V....,To fix the vsanmgmtd memory leak issue, upgrade both vCenter and ESXi to version 7.0U3c or later. Please find the below article for your reference: vSAN Management (vsanmgmt service) memory leak issue Workaround: Restart the vsanmgmtd service to clea....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 401187</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=406938" target="_blank" rel="noopener noreferrer">Error LCMPATCHUPDATE16002 while applying VMware Aria Suite Lifecycle 8.18.0 Patch 3</a></div>
+                <div class="summary">Installing VMware Aria Suite Lifecycle 8.18.0 Patch 3 fails with below error: Error Code: LCMPATCHUPDATE16002 Error while creating local patch file com.vmware.vrealize.lcm.commons.patch.exceptions.PatchException: Error while creating local patch file....,To resolve this, follow the steps in VMware Aria Suite Lifecycle 8.18 Patch 3 Installation Runbook</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 406938</span>
+                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=405427" target="_blank" rel="noopener noreferrer">User with subresource access does not have permission to create/modify the following fields:(enabled)</a></div>
                 <div class="summary">User with subresource access does not have permission to create/modify the following fields:(enabled) User on the Avi controller needs the SUBRESOURCE_POOL_ENABLED subresource enabled to allow the user to disable/enable the pool. ,Modify the role assigned to the user as below. Below is the role having write permission to edit the pool and pool members, but does not have permission to disable/enable the pool. Make a note of the privileges[2] which allow write access to the pool....</div>
                 <div class="details">
@@ -1369,102 +1453,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 386065</span>
                     <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-15</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=406917" target="_blank" rel="noopener noreferrer">Data center went down, attempting to bring the cluster online, but nodes stuck at "waiting for analytics" after everything is up</a></div>
-                <div class="summary">1. The Continuous Availability (CA) cluster is stuck at "Going online", and the nodes are stuck at "waiting for analytics" after a site-wide network outage. 2. All nodes' VMs are up and working normally in vCenter. 3. On all the nodes' SSH sessions, ....,1. SSH into the Primary node as root, and manually take the cluster offline by running the following command: $VMWARE_PYTHON_BIN $VCOPS_BASE/../vmware-vcopssuite/utilities/sliceConfiguration/bin/vcopsConfigureRoles.py --action bringSliceOffline --off....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 406917</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-15</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=407452" target="_blank" rel="noopener noreferrer">Project Quota Displays Incorrect VM Count After Deletion</a></div>
-                <div class="summary">Customers using VMware Aria Automation may observe that the VM quota displayed at the project level does not accurately reflect the current number of deployed virtual machines, particularly after VMs have been deleted. For example, if a project is co....,Workaround: 1. Verify Current Project VM Count via API: You can check the VM count that the Aria Automation UI and internal systems use for project quotas by calling the following API endpoint: GET https://automationFQDN/iaas/api/projects?$filter=nam....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 407452</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-15</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=406382" target="_blank" rel="noopener noreferrer">Workload Domains are deleted and recreated in VCFOps 9.0 without deleting from VCFA</a></div>
-                <div class="summary">VMware Cloud Foundation (VCF) Automation is experiencing continuous login failures to its internal service account (e.g., svc-vcfa_uid@vsphere.local) within the associated vCenter Server. These failures manifest as "Invalid User Name" error events, o....,To resolve the persistent login failures and re-establish proper communication, the stale vCenter record must be removed from VCF Automation, and the vCenter instance then refreshed. Steps to unregister the problematic vCenter from VCF Automation: ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 406382</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite,VCF Automation</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-15</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=403448" target="_blank" rel="noopener noreferrer">Error: Unable to restore the VMware Cloud Director sever configuration</a></div>
-                <div class="summary">When attempting to restore VMware Cloud Director it fails with the following error in the UI: Unable to restore the VMware Cloud Director sever configuration In the /var/log/vcd/restore.log you see entries similar to: | DEBUG | Invoking as root: /opt....,VMware Engineering is aware of this issue and it will be addressed in a future release of VMware Cloud Director. Workaround To workaround the issue please perform the following steps: Extract the files from the backup zip folder that was created when....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 403448</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-15</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=318636" target="_blank" rel="noopener noreferrer">Troubleshooting vMotion fails with network errors</a></div>
-                <div class="summary">You see errors similar to: Example 1: The VMotion failed because the ESX hosts were not able to connect over the VMotion network. Please check your VMotion network settings and physical network configuration. VMotion [184329483:] failed to cr....,To resolve this issue: Check for IP address conflicts on the vMotion network. Note: Each host in the cluster should have a vMotion vmkernel, assigned a unique IP address. Check for packet loss over the vMotion network. Try having the source host pi....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 318636</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-15</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=373614" target="_blank" rel="noopener noreferrer">Error: "no cipher suites in common" and the Cloud Director portal fails to come online</a></div>
-                <div class="summary">Cloud Director portal fails to come online and application is down. The product has been upgraded from an earlier version. Within the log file /opt/vmware/vcloud-director/logs/cell-runtime.log an error similar to the following is observed DEBUG | ....,To resolve this matter enable additional SSL Ciphers which are compatible with the SSL certificate in use. Follow the instructions outlined in the documentation Managing the List of Allowed SSL Ciphers in VMware Cloud Director to update the enabled c....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 373614</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-15</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=407160" target="_blank" rel="noopener noreferrer">After vCenter upgrade from 7.x to 8.x, ADFS user logins fail via PowerCLI and API calls when the ADFS Identity Provider is reconfigured on vCenter</a></div>
-                <div class="summary">After upgrading vCenter from 7.x to 8.x and updating the ADFS configuration (client secret change, certificate renewal, etc.), preconfigured users using an old AD Identity Source are failing to log in with username/passwords using PowerCLI and API ca....,It is by design that we preserve the old identity sources in 7.0, but replace them entirely in 8.0 when an external identity provider is configured. This is desirable because leaving the old identity sources intact in the backend can lead to unintend....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 407160</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager,VMware vCenter Server 8.0</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-15</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=322103" target="_blank" rel="noopener noreferrer">SRM collection error is received after adding vCenter Server to Usage Meter</a></div>
-                <div class="summary">The Usage Meter web application shows an SRM collection error. The collection-vcenter-error.log shows the following error that shows the expiry date of the SRM certificate. ERROR | ter collector thread | com.vmware.um.vccollector.VCCollector | vCente....,To resolve the Usage Meter SRM collection error, do the following: Take a snapshot of your SRM appliance. Change the SRM appliance certificate. Follow the steps to change the site recovery manager appliance certificate. In Usage Meter web application....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 322103</span>
-                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-08-15</span>
                 </div>
             </div>
