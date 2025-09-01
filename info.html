@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-09-01 06:01:29</title>
+    <title>Broadcom 기술 포털 - 2025-09-01 12:01:10</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-01 06:01:29)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-01 12:01:10)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -937,6 +937,54 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=376593" target="_blank" rel="noopener noreferrer">sps-access log files not being compressing as expected</a></div>
+                <div class="summary">sps-access logs are not being compressed causing /storage/log to steadily increase in size cd /storage/log/vmware/vmware-sps Run command: find . -type f -print0 | xargs -0 du -h | sort -rh | head -n 10 Example output 763M ./vmware/vmware-sps/sps-a....,Option1. Upgrade to vCenter 70U3q or 80U3 as issue has been resolved & fixed Option2. Disable sps-access logging *** SNAPSHOTS AND/OR BACKUPS OF VCSA OR THE FILE BEFORE ANY MODIFICATIONS*** 1. SSH to the VCSA as root 2. vi /usr/lib/vmware-vpx/sps/co....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 376593</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-31</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=378474" target="_blank" rel="noopener noreferrer">Login to vCenter Server with External Identity Providers for SSO account stops working</a></div>
+                <div class="summary">You can configure an external identity provider for federated authentication. vSphere 8.0 Update 1 and later supports Okta. vSphere 8.0 Update 2 and later supports Microsoft Entra ID (formerly called Azure AD). Starting in vSphere 8.0 Update 3, vSphe....,VMware engineering are aware of this issue and are currently working on a solution. In the meantime, to work around the issue please follow the steps listed below. 1. Take a snapshot of vcenter VMware recommends to have an offline Snapshot (virtua....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 378474</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-31</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=408747" target="_blank" rel="noopener noreferrer">vmware-vpxd service crash with core dump "core.vpxd-worker.xxxxxxx" on vCenter Server</a></div>
+                <div class="summary">You will observe core dumps generated for each crash in the /var/core core.vpxd-worker.xxxxxxx. /var/log/vmware/vpxd/vpxd.log will contains snippets similar to below, YYYY-MM-DDThh:mm:ss error vpxd[34811] [Originator@6876 sub=Memory checker] Current....,Permanent Fix: Work with your backup vendor to transition from the deprecated RetrieveProperties API to RetrievePropertiesEx (utilizing ContinueRetrievePropertiesEx as necessary). Workarounds: Reduce Concurrent Backups: Split large backup jobs into s....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 408747</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vCenter Server 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-31</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=380879" target="_blank" rel="noopener noreferrer">SDDC Manager UI bundle download and OBTU bundle download (run on SDDC Manager) encountering issues downloading bundles via a proxy</a></div>
+                <div class="summary">The download of a patch using both the SDDC Manager UI and the OBTU (run on SDDC Manager) is failing validation with a checksum error - Bundle bundle-XXXXXX. checksum does not match, Bundle checksum: ************************************************....,A case should be raised with Broadcom support so that the resolution can be worked through.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 380879</span>
+                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-08-31</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=395543" target="_blank" rel="noopener noreferrer">Download patch bundle with Async Patch Tool failed with "unable to find valid certification path to requested target"</a></div>
                 <div class="summary">Download patch bundle with Async Patch Tool in SDDC Manager failed with below messages: [main] DEBUG [com.vmware.vcf.secure.truststore.DynamicTrustManager] Error checking certificate chain</div>
                 <div class="details">
@@ -1434,54 +1482,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 319433</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-29</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=315455" target="_blank" rel="noopener noreferrer">vpxd service failing to start with error : "value too long for type character varying(30)"</a></div>
-                <div class="summary">VPXD service fails to start. Service crashes with a core dump. /var/log/vmware/vpxd/vpxd.log reports an error similar to YYY-MM-DDTHH:MIN. error vpxd[23758] [Originator@6876 sub=Default opID=DbParallelLoad-####] [VdbStatement] SQL execution failed:....,This requires offline log bundle analysis of vpxd core dump. Please consult Broadcom Support by creating a new Support Case and upload vCenter logs for further review.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 315455</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-29</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=395907" target="_blank" rel="noopener noreferrer">vLCM remains unresponsive at "Checking for recommended images/Checking for HCL compatibility issues"</a></div>
-                <div class="summary">Hardware Compatibility List (HCL) checks enable the user perform hardware compatibility checks against the set desired image to detect any compatibility issues that may arise during upgrade. HCL checks are done against the hardware present and desire....,There are known issues with Lenovo XClarity Integrator (LXCI) version 8.6.0 and earlier releases that can cause VLCM tasks to get stuck or experience timeouts. To avoid these problems, please update to LXCI version 9.0.0 or higher, as these later rel....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 395907</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-29</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=405838" target="_blank" rel="noopener noreferrer">VM Migration Fails with "Network Not Accessible" Error Due to NSX Segment Inaccessibility on Partially Configured Host</a></div>
-                <div class="summary">While attempting to migrate a virtual machine (VM) to a host configured with NSX, the following error may be observed during the "Select Networks" step: Currently connected network interface 'Network adapter 1' uses network 'DVSwitch[...] NSX port gr....,Verify NSX Host Installation Status: Login to NSX Manager. Navigate to System > Fabric > Nodes > Host Transport Nodes. Ensure the affected host is in "Success" or "Up" state. If it's in "Not Ready", proceed with the steps below. Reinstall NSX on the ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 405838</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-08-29</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=399945" target="_blank" rel="noopener noreferrer">SDDC Manager Certificate Installation task Fails Without Error Details in UI</a></div>
-                <div class="summary">When replacing the certificate for the SDDC component only (i.e., without performing a certificate replacement for any other component), the certificate validation succeeds in the UI. However, the certificate installation operation subsequently fails....,Steps to perform before retrying the certificate replacement: Take a snapshot of the SDDC Manager VM. SSH to the SDDC Manager as the vcf user and switch to root. Back up the /etc/hosts file: cp /etc/hosts /etc/hosts.bak Edit the /etc/hosts file: vi /....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 399945</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-08-29</span>
                 </div>
             </div>
