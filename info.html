@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-09-08 12:01:12</title>
+    <title>Broadcom 기술 포털 - 2025-09-08 18:01:17</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-08 12:01:12)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-08 18:01:17)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -921,6 +921,222 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=401626" target="_blank" rel="noopener noreferrer">Upgrade of vCenter fails with error "WCP service installation failed"</a></div>
+                <div class="summary">vCenter server upgrade fails with error "WCP service installation failed": vCenter installer UI would show similar error. WCP service installation failed : Traceback (most recent call last): File "/usr/lib/vmware-wcp/firstboot/wcp-firstboot.py", line....,Ensure that the vCenter Server does not contain duplicate roles named "Administrator" or "Admin" before the upgrade . Note: Ensure there is valid backup/offline snapshot of the VCSA prior to implementing the workaround. Refer to VMware vCenter in Enh....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 401626</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409475" target="_blank" rel="noopener noreferrer">vMotion Fails Due to Expired NSX Certificates on Host Transport Nodes</a></div>
+                <div class="summary">Virtual machine (VM) vMotion operations fail for VMs residing on NSX segments. This issue typically manifests when the underlying ESXi hosts, which are configured as NSX Transport Nodes, transition into a "Failed" state within the NSX-T Manager UI. T....,Run the CARR Script: Using Certificate Analyzer, Results and Recovery (CARR) Script to fix certificate related issues in NSX Note: Ensure you have appropriate administrative access to the NSX Managers and the hosts, as required by the script's instru....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409475</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=322096" target="_blank" rel="noopener noreferrer">Proxy configuration in Usage Meter initialization wizard fails</a></div>
+                <div class="summary">Symptoms: Usage Meter initialization fails after proxy connection to Usage Insight is tried to be configured. The following error is received in the Usage Meter initialization wizard: Failed to authenticate with proxy. The Usage Meter logs show the f....,This is a known issue in Usage Meter 4.3 and the fix is planned for Usage Meter 4.5.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 322096</span>
+                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=405684" target="_blank" rel="noopener noreferrer">Remote Backup Failure Due to "Error while creating a SSH client connection: not a valid RSA private key file"</a></div>
+                <div class="summary">When configuring remote backup on Avi, a new SSH user is created, and the private key from the backup server is imported. Mostly the key is in OpenSSH format on backup servers. If the key is pasted in OpenSSH format, Avi shows the error: Fail to gene...., Check the backup failure reason in the logs: /var/lib/avi/log/scheduler.log Look for the error message: not a valid RSA private key file Convert the SSH private key to RSA format on the backup server: ssh-keygen -p -m PEM -f Re-i....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 405684</span>
+                    <span><span class="detail-label">Product:</span> VMware Avi Load Balancer</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=320523" target="_blank" rel="noopener noreferrer">"The entity xxxxx is undergoing maintenance operations" message when attempting to perform actions on a vApp VM with an Organization user in Cloud Director</a></div>
+                <div class="summary">Symptoms: Attempting to perform actions against a vApp or VM as an Organization level user in the Cloud Director Tenant UI. Many operations on the vApp or VM, for example the Edit options, are greyed out. On screens where the VM power operations are ....,To allow Organization users to perform operations on the vApp again disable maintenance mode. This can be done by using the Cloud Director API's exitMaintenanceMode operation against the vApp in question, VMware Cloud Director API, User Operations, P....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 320523</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=343081" target="_blank" rel="noopener noreferrer">vCenter HA Basic Mode fails during Passive/Witness cloning when using NFSv3 Datastore</a></div>
+                <div class="summary">When configuring vCenter High Availability (VCHA) in Basic mode, the process may get stuck or fail at 96% or 33% if the vCenter Server appliance is stored on an NFSv3 datastore. During repeated attempts to configure VCHA using the automatic cloning m....,Option 1: Use the Same ESXi Host for Clone Operations To avoid clone failures: Ensure that the source (Active) and target ESXi hosts for the Passive and Witness nodes are the same host during VCHA deployment. To avoid DRS anti-affinity rule errors wh....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 343081</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vCenter Server 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409593" target="_blank" rel="noopener noreferrer">NFSv3 データストアを使用している場合、Passive/Witness クローン作成中に vCenter HA 基本モードが失敗する</a></div>
+                <div class="summary">Symptoms: 免責事項：これは英文の記事「vCenter HA Basic Mode fails during Passive/Witness cloning when using NFSv3 Datastore」の日本語訳です。 記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 vCenter High Availability (VCHA) を基本モードで構成する場合、vCenter....,オプション 1: クローン操作において同じ ESXi ホストを指定する クローンの失敗を回避するには: VCHA のデプロイ中に、パッシブ ノードと監視ノードのソース (アクティブ) ESXi ホストとターゲット ESXi ホストが同じホストであることを確認します。 すべての VCHA ノードを同じホストに展開するときに DRS アンチアフィニティ ルール エラーを回避するには、次の手順を実行します。 a. 左側インベントリ最上部のvCenter Serverを選択します。 b. [構成] ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409593</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vCenter Server 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=384716" target="_blank" rel="noopener noreferrer">Error: 'The task was canceled by a user' while trying to create custom portal themes in VMware Cloud Director</a></div>
+                <div class="summary">Trying to create custom portal themes in VMware Cloud Director UI, the uploaded branding theme operation times out after more than 1 hour running. It fails with an error: com.vmware.vcloud.api.presentation.service.TaskCanceledException: The task was ....,To resolve the issue: Navigate to Administration > Public Address using the System Administrator account inside VMware Cloud Director UI. Edit the page where it is written Web Poral and enter the HTTP Base URL and the HTTPS Base URL. Now edit the pag....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 384716</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=408123" target="_blank" rel="noopener noreferrer">NSX BGP sessions flap for VRF due to TCP port reuse</a></div>
+                <div class="summary">BGP sessions are configured between same pair of source and destination IP on more than 1 VRFs on a given edge. At least one of these session is configured incorrectly with mismatching AS number. This flap is expected. The session which is configure....,This is a known issue impacting VMware NSX. Workaround To mitigate this issue, ensure that all BGP peering configurations for VRFs on an edge node and underlying network connectivity (e.g., VLANs, IP addressing) are accurate before establishing ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 408123</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=321573" target="_blank" rel="noopener noreferrer">HCX - NE appliances in HA mode experience intermittent failover</a></div>
+                <div class="summary">HCX Network Extension (NE) Appliance VMs running in High Availability (HA) mode may experience intermittent Standby to Active failover.,This issue is fixed in HCX version 4.8.2. Workaround: If HCX Manager & NE Appliances already upgraded and running with version 4.8.0, one of the below approaches can be followed to avoid HA failover and subsequent network glitch over extended datapat....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 321573</span>
+                    <span><span class="detail-label">Product:</span> VMware HCX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=381813" target="_blank" rel="noopener noreferrer">"Error: One or more relationships exist for object with id TransportNode/[UUID] from NSGroup/[UUID]" when editing NSX prepared host or attempting to uninstall NSX</a></div>
+                <div class="summary">NSX was removed/disabled as a data source within VRNI, at some point in the past. Any attempt to change configuration within NSX or uninstall NSX from a host may fail with error. Error: One or more relationships exist for object with id TransportNode....,This issue is resolved in VMware NSX 4.2.2, available at Broadcom downloads. If you are having difficulty finding and downloading software, please review the Download Broadcom products and software KB. To workaround the issue, if vRNI is still in u....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 381813</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-07</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=368758" target="_blank" rel="noopener noreferrer">Downloading VMware Tools</a></div>
+                <div class="summary">Learn how to download VMware Tools from the Broadcom Support portal.,Go to the VMware Tools download page. If prompted, log in to the Broadcom Support portal using your existing account, or register for an account. On the download page, select a version of VMware Tools, and then select a release. A list of installatio....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 368758</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware Desktop Hypervisor</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-07</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=344094" target="_blank" rel="noopener noreferrer">False Duplicate IP Address on Microsoft Windows virtual machines on ESXi</a></div>
+                <div class="summary">You see an APIPA address (169.254.X.X) IP listed as preferred and the static IP listed as a duplicate when you run the command: ipconfig /all You may also notice any of the following: Assigning an IP address, you see a duplicate IP address conflict....,To resolve this issue, use one of these solutions: Turn off gratuitous ARPs on the physical switch This is the quickest was to resolve this for multiple VM's. The commands to disable this are specific to the manufacturer, refer to the manufacture doc....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 344094</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-07</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409430" target="_blank" rel="noopener noreferrer">"Manager disk usage high" alarm reported on NSX Manager nodes.</a></div>
+                <div class="summary">Below alarm is reported on all or any NSX manager nodes. Alarm triggered on the NSX Manager node indicates a high disk usage on the /repository partition: "The disk usage for the Manager node disk partition /repository has reached 86%, which is at or....,First validate what is the current version of NSX. It can be checked from the About page on NSX UI or it can also be done by running the below command from Admin shell on NSX manager node: get version After validating the version, please remove the ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409430</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-07</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=398171" target="_blank" rel="noopener noreferrer">NSX UI reports an alarm related to the threshold of the Edge Cluster capacity.</a></div>
+                <div class="summary">When logged into the NSX UI, there is an alarm stated as below. "The number of objects defined in the system for Edge Clusters has reached 10 which is above the minimum capacity threshold of 70.0%" In NSX /var/log/syslog, below message is seen in the....,To support additional Edge clusters, resize the NSX Manager to Large or Extra Large, which allows for up to 265 Edge clusters. The documentation for resizing the NSX managers can be found at Resize an NSX Manager Node</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 398171</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-07</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409579" target="_blank" rel="noopener noreferrer">vmware-vmon service fails to start with error: "Job for vmware-vmon.service failed because the control process exited with error code"</a></div>
+                <div class="summary">When attempting to start services on the vCenter Server Appliance (VCSA), the vmware-vmon service fails to start. Error Snippet Running service-control --start --all shows the following error: root@VCFQDN [ /etc ]# service-control --start --all Opera....,Take a backup of /etc/profile: cp /etc/profile /etc/profile.bak Edit the file: vi /etc/profile Remove or comment out the TMOUT entries: # export TMOUT=600 # readonly TMOUT Save and exit the editor. Restart the service: service-control --stop --all ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409579</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-07</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409157" target="_blank" rel="noopener noreferrer">Steps to Add a New Virtual Disk to an existing HCX Manager.</a></div>
+                <div class="summary">This article provides steps to add a new virtual disk in an existing HCX manager. This KB is more specific for upscaling the HCX manager form factor, with further reference to the parent KB: HCX - Increasing HCX Manager Disk Space for HCX Software Ve....,To create a new virtual disk for an existing HCX Manager, follow these steps: Log in as root on the Linux virtual machine. Run this command and make note of the sdx entries: bash ls /dev/sd* Log in to the vCenter Server using the vSphere Client. In t....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409157</span>
+                    <span><span class="detail-label">Product:</span> VMware HCX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-07</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409574" target="_blank" rel="noopener noreferrer">[vcf] Unable to deply new Management Domain with FIPS enabled</a></div>
+                <div class="summary">Symptoms When we perform a management domain deployment with FIPS enabled in the spec file. The first attempt of the bringup might fail at this stage, as per the screenshot below. If you click the retry after a minute, the check will succeed. ....,The engineering team is aware of the issue. Workaround Retry the operation in the cloud builder post failure; this will succeed. Fix The issue will be fixed in VCF 9.1.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409574</span>
+                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-07</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409569" target="_blank" rel="noopener noreferrer">インターネットに接続していない環境でも CEIP の「インターネット接続ステータス」が「接続済み」状態になる</a></div>
                 <div class="summary">インターネットに接続していない環境にもかかわらず、CEIP (カスタマ エクスペリエンス向上プログラム) の「インターネット接続ステータス」が「接続中」または「接続済み」と表示されます。,本事象は表示のみのなので、無視しても問題ありません。</div>
                 <div class="details">
@@ -945,12 +1161,36 @@
 
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409564" target="_blank" rel="noopener noreferrer">Login to vCenter Server with Entra ID User Fails with USER_NOT_FOUND</a></div>
+                <div class="summary">When attempting to log in to vCenter Server 8.x with an Entra ID user, login fails with the error USER_NOT_FOUND. This issue can occur if a user is removed from and later re-added to an Entra ID group that is synced with vCenter via SCIM. Even though....,1. Validate SCIM Provisioning Confirm that the affected user is being pushed from Entra ID and provisioned successfully by following: How to enable Entra ID for vCenter Server 2. Export and Validate Users in VIDB Step 1: Get vCenter Session ID ec....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409564</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-07</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=403438" target="_blank" rel="noopener noreferrer">DRS does not load balance VMs evenly across the cluster.</a></div>
                 <div class="summary">DRS does not load balance VMs evenly across the cluster. While reviewing host metrics on the UI will observe that some hosts show higher memory utilization while others show very low memory utilization. This behavior is specifically observed where a ....,To resolve this issue, it is advisable to disable 3D graphics if they are not being utilized.</div>
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 403438</span>
                     <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-09-06</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=407227" target="_blank" rel="noopener noreferrer">HCX Mobility Groups deleted via API remain in "draft" state when using the new HCX GUI</a></div>
+                <div class="summary">After mobility groups are deleted via API, they remain in the new UI on target HCX Manager. When looking at the legacy view, those mobility groups are no longer present. Unable to delete the Mobility Group in the new UI. Clicking on the 3 dots next ....,On the target/destination HCX Manager, try deleting the mobility group via the "legacy UI". If the mobility group does not exist in legacy UI and only shows in the "new ui" please use the following API to retrieve the mobility group ID: curl 'https:....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 407227</span>
+                    <span><span class="detail-label">Product:</span> VMware HCX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
                 </div>
             </div>
         </div>
@@ -1178,294 +1418,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 409520</span>
                     <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=319876" target="_blank" rel="noopener noreferrer">vCenter Server Appliance Upgrade Fails with “Internal error occurs during execution of upgrade process.” During Pre-checks</a></div>
-                <div class="summary">The upgrade of the vCenter Server Appliance fails during the pre-check phase. You may observe the following behaviors: The UI displays the message: “Internal error occurs during execution of upgrade process.” Review of the log file /var/log/vmware/up....,To resolve the issue: 1. Free Up Disk Space in /storage/log Identify large or obsolete log files under /storage/log. Safely delete unnecessary files following the steps outlined in the VMware KBs: vCenter log disk exhaustion or /storage/log full vCen....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 319876</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vCenter Server 8.0</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=320771" target="_blank" rel="noopener noreferrer">"Error occurred while fetching trusted root certificates" occurs while reviewing Trusted Root certificates using the vSphere Client</a></div>
-                <div class="summary">This article provides a way to unpublish and re-publish custom certificates in order to resolve the error in the vSphere Client: Navigating to vCenter > Menu > Administration > Certificate Management results in an error: Error occurred while fetchin....,Use the workaround to unpublish and re-publish the trusted root certificates. Workaround: To resolve the issue, you will need to unpublish and re-publish the custom certificates from VMDIR. To unpublish the certificates from VMDIR, you need the certi....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 320771</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=393889" target="_blank" rel="noopener noreferrer">Proactive Upgrade Review - Broadcom Advanced Support</a></div>
-                <div class="summary">With the purchase of Broadcom Advanced Support and a Support Account Manager (SAM), you can receive Proactive Upgrade Reviews (PUR) for runbooks and upgrade plans. The PUR Runbook Review aims to ensure that Broadcom Support receives essential informa....,Proactive Runbook Review Guidelines: Complete the PUR Questionnaire Form (this is only required for Proactive Upgrade Reviews, not Proactive Technical Reviews). Print the response as a PDF and upload to the case. The customer or SAM will create a L....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 393889</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Foundation</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=408721" target="_blank" rel="noopener noreferrer">Content Libraries syncing is very slow between vCenters</a></div>
-                <div class="summary">When attempting to publish an entire Content Library containing multiple VM templates to a subscribed Content Library, the publish operation is successfully queued as a task but fails to progress. The task remains in a "queued" state indefinitely and....,Increase the threadPool for the Content Library service. Take a snapshot of vCenter Backup the configuration file cp /etc/vmware-content-library/vdc.properties /root/vdc.properties Appending the following line to the bottom of /etc/vmware-content-lib....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 408721</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server 8.0</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409504" target="_blank" rel="noopener noreferrer">TKGi - Pods stuck in terminating status - KillContainer context deadline exceeded</a></div>
-                <div class="summary">pods are stuck in terminating status for a long time - NAMESPACE NAME READY STATUS RESTARTS AGE ### ######## 0/22 Termina....,There are known issues with runc-shim and containerd that can cause processes to get hung up. See Git issue: https://github.com/containerd/containerd/issues/8847 These fixes for runc-shim are included in v1.7.22 and v1.6.36 of containerd. If you are ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409504</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Kubernetes Grid Integrated Edition</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=385617" target="_blank" rel="noopener noreferrer">Transition to vSphere Lifecycle Manager (vLCM) Images using SDDC Manager</a></div>
-                <div class="summary">This article provides the steps to transition from vSphere Lifecycle Manager Baselines(VUM) to vSphere Lifecycle Manager Images(vLCM) in a SDDC managed environment.,Before proceeding please read the requirements from transitioning vSphere clusters from vLCM baseline management to vLCM image management. VCF Version Prerequisites PowerShell Method (Recommended) SDDC Manager API Method 9.0.x See Prerequisites for ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 385617</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager,VMware Cloud Foundation</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=345858" target="_blank" rel="noopener noreferrer">Corfu non-config compactor fails continuously after upgrading from NSX-T 3.1.3 to 3.2.0 with a SerializerException.</a></div>
-                <div class="summary">Alarm for /nonconfig partition disk usage high and very high are reported in the NSX Manager UI in the Alarms listing and can also be seen in System -> Appliances on the NSX Managers. Corfu non-config compactor fails continuously after upgrade from N....,This issue is resolved in VMware NSX 3.2.0.1 This issue is resolved in VMware NSX 4.2.0 Workaround: Contact Broadcom Support for assistance with working around this issue.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 345858</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=315179" target="_blank" rel="noopener noreferrer">Procedure to replace certificate for clustered vIDM using NSX-T load balancer and Aria Suite Lifecycle</a></div>
-                <div class="summary">This article intends to give a high-level overview of the process of replacing certificate on a vIDM cluster. Errors are shown about the system failing to start up or not accepting the certificate, for example: LCMVIDM71092 Failed to trust load balan....,Here is a set of steps for changing cert for a cluster where the LB is provided by NSX-T. (If your load balancer uses SSL passthrough setting, you should not need to replace any cert in the LB. In this case it comes directly from the nodes) Note: SSL....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 315179</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=403643" target="_blank" rel="noopener noreferrer">Accessing Aria Operations for Logs using vIDM authentication fails with the error: "Incorrect issuer in SAML AuthnRequest"</a></div>
-                <div class="summary">Trying to access Aria Operations for Logs using vIDM authentication, the pages redirect to vIDM, and it shows the error below : Incorrect issuer in SAML AuthnRequest." ,Open the Aria Operations for Logs UI and browse to Configuration >> Authentication >> Workspace ONE Access If there is a load balancer in front of your vIDM deployment, ensure that you are using the address of this Load Balancer in the host field. Cl....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 403643</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409393" target="_blank" rel="noopener noreferrer">Gemfire: How do you automate the download of gemfire management console jar?</a></div>
-                <div class="summary">Some customers may have a requirement from their security team to automate the download of gemfire management console jar. This article describes a way to do this using pivnet cli. The example shown is for the gemfire management console jar, but can ....,# Prerequisites: 1. Login to https://support.broadcom.com/ and select My Dashboard. 2. Under Quick Links on the right, select Tanzu API Token then click Request New Refresh Token. 3. Install pivnet-cli (see https://github.com/pivotal-cf/pivnet-cli) ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409393</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Gemfire</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=344917" target="_blank" rel="noopener noreferrer">Using the VCF Diagnostic Tool for vSphere (VDT)</a></div>
-                <div class="summary">VCF Diagnostic Tool for vSphere (formerly vSphere Diagnostic Tool) is a multi product diagnostic tool that can be run directly on a vCenter Server appliance. It executes a series of checks on the system configuration and reports user-friendly PASS/FA....,Download and Installation VDT 2 is now available! VDT 2 has been rewritten from the ground up to evolve from a simple collection of python scripts to a python based health reporting framework. This new version provides libraries that standardize the....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 344917</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=394221" target="_blank" rel="noopener noreferrer">"Operation failed. If the error persists, contact VMware support." when applying custom certificate</a></div>
-                <div class="summary">1. The custom cert is constructed successfully by following Configure a Certificate For Use With VMware Aria Operations. 2. Followed Manually validating custom certificate chain PEM file and confirmed all parts are valid. 3. But it shows a red underl....,1. Take snapshots of the nodes by following How to take a Snapshot of VMware Aria Operations. 2. Log in to all analytic nodes (primary, replica, data) as root via SSH or vSphere console. 3. Execute the following command to change the file permissions....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 394221</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=325171" target="_blank" rel="noopener noreferrer">vSAN objects in "nonavailability-related-incompliance" state.</a></div>
-                <div class="summary">The issue is noticed on the vSAN stretched cluster after renaming the fault domain. You may experience the following on a vSAN stretched cluster. vSAN Skyline Health in vCenter will report an object health warning with the object in "nonavailability-....,Restart the vsanmgmt service on all the hosts in the vSAN cluster using the below command. #/etc/init.d/vsanmgmtd restart</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 325171</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=402401" target="_blank" rel="noopener noreferrer">unable to see assessment policy when logged in as a different user on salt-config UI</a></div>
-                <div class="summary">When logged in as a AD user, users cannot see the existing assessment policy created with the account "root", Grant the role access to the minion target that is associated to the assessment. Administration > Role > AD user Role > targets > Enable the toggle "Targets" From the target list, grant "read-write" permission to the target in question</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 402401</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=401882" target="_blank" rel="noopener noreferrer">Esxi host boot stuck at "activating: software-iscsi"</a></div>
-                <div class="summary">Symptoms : ESXi host takes long time to boot. Boot screen will stuck at "activating: software-iscsi" screen for long time. ,Engage internal network team to ensure vmk0 can reach the discovery target IP addresses. Or Log in to the host via SSH and configure a static route for each discovery IP address to bypass vmk0 using command mentio....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 401882</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=408971" target="_blank" rel="noopener noreferrer">Cannot Add Supervisor Clusters (Kubernetes Zones) to Projects in Aria Automation UI: 100-Entry Display Limit</a></div>
-                <div class="summary">Users are unable to add Kubernetes Zones (supervisor clusters + Supervisor Namespaces) to projects within the VMware Aria Automation Assembler UI. This limitation prevents the enablement of Tanzu services for all intended stakeholders.,To successfully add Supervisor Clusters or Namespaces beyond the first 100 entries we recommend to use API. As this is on legacy vRA 8.x. it is recommended to submit a feature request.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 408971</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409346" target="_blank" rel="noopener noreferrer">Error while running workflow unusable: java.lang.RuntimeException: vim.fault.InvalidLogin...</a></div>
-                <div class="summary">Workflows leveraging the vRO vSphere vCenter Server plugin fail with an error similar to: https://:443/sdk (unusable: java.lang.RuntimeException: (vim.fault.InvalidLogin) { faultCause = null, faultMessage = null }) Expanding the vSphere vCenter....,To resolve this issue, you must configure the vSphere vCenter Server to use a "shared session" instead of a "session per user." This tells the plugin to maintain a single, shared authenticated session with vCenter, bypassing the per-user token expect....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409346</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=378697" target="_blank" rel="noopener noreferrer">Troubleshooting NSX L2 Bridging</a></div>
-                <div class="summary">When troubleshooting NSX Layer 2 (L2) Bridging, a specific set of data must be gathered at the time of the event. This article details what documentation is required and how to gather it prior to opening a support request with Broadcom.,Here are some troubleshooting steps that can be performed: Collect initial information about the problem with the L2 Bridge: Is this an initial installation assistance request? If so, please refer the customer to VMware Professional Services. What is....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 378697</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=312554" target="_blank" rel="noopener noreferrer">Configuring a LAG on a vSphere Distributed Switch Port Group when using LACP</a></div>
-                <div class="summary">This article provides information on configuring a LAG within the vSphere Distributed Switch while using Link Aggregation Control Protocol (LACP) on the physical switch.,Before Configuration Occurs: If the environment has multiple NICs that will be used in an LACP configuration, VMware by Broadcom recommends first creating the LAG on the Distributed Switch. After that, coordinate with the hardware vendor, configuring....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 312554</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409405" target="_blank" rel="noopener noreferrer">Datastore or LUN missing after reboot</a></div>
-                <div class="summary">After a host is rebooted, a once mounted LUN or datastore, is no longer seen by the ESXi host.,If these symptoms are seen, please contact Broadcom support so a metadata check using the vSphere On-disk Metadata Analyzer can be performed. In certain cases, the LUN is still seen by other hosts and data can be migrated off of it. If that is the ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409405</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=397340" target="_blank" rel="noopener noreferrer">NSX Upgrade fails with "Prepare edge upgrade bundle failed on edge TransportNode"</a></div>
-                <div class="summary">NSX Upgrade fails on NSX Edge Transport Node. NSX Upgrade UI reports: Edges upgrade has failed, check error details to determine if manual resolution is needed and 'Retry Upgrade' Error details is similar to Prepare edge upgrade bundle https://####/r....,This is a condition that may occur in a VMware NSX environment. To implement a valid configuration, update the certificate applied to the NSX Manager API service with a certificate that is valid from its perspective: Either by using a wildcard certif....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 397340</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409041" target="_blank" rel="noopener noreferrer">Configuration Management Adapter Instance not receiving data due to a "Failed to create the endpoint details" error</a></div>
-                <div class="summary">An Adapter instance not receiving data alert is triggered in Aria Operations (formerly vRealize Operations). The logs show a Failed to create the endpoint details error, which prevents the adapter from collecting data from multiple vCenter endpoints...., The recommended solution to resolve this issue is to put the cluster offline and then back online via the Aria Operations UI. Take the cluster offline. Wait for the status to update. Bring the cluster back online.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409041</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409104" target="_blank" rel="noopener noreferrer">Dashboard Import Error in VMware Aria Operations 8.18: "Dashboard Import Failed" or "Invalid File Uploaded"</a></div>
-                <div class="summary">When attempting to import a dashboard into VMware Aria Operations 8.18, the process fails with one of the following error messages: Dashboard import failed Invalid file uploaded ,To be able to import dashboard(s) successfully: Return to the source Aria Operations instance. Re-export the dashboard, ensuring the export includes all necessary parameters — particularly the Dashboard ID. Attempt the import again using the newly ex....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409104</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=385551" target="_blank" rel="noopener noreferrer">Error: "No configured Replicator Services" when pairing VMware Cloud Director Availability Cloud sites</a></div>
-                <div class="summary">When you try to pair two cloud sites you get an error similar to: Unable to pair the Manager Service 'https://tn-:8048' at site 'SiteA' to the Replicator Service 'https://' at site 'SiteB' On the replicator ap....,To resolve this issue make sure that the replicator is able to communicate with the tunnel on port 8048 To learn more about VMware Cloud Director Availability 4.x network requirements visit Network requirements and prerequisites in the Cloud Director....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 385551</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-09-05</span>
                 </div>
             </div>
