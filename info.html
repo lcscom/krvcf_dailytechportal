@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-09-12 12:01:29</title>
+    <title>Broadcom 기술 포털 - 2025-09-12 18:01:44</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-12 12:01:29)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-12 18:01:44)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -339,7 +339,7 @@
         <div class="card">
             <div class="card-image no-image">No Image</div>
             <div class="card-content">
-                <div class="card-title"><a href="http://vm-guru.com/news/vmware-vcf-9-william-lam-home-lab" target="_blank" rel="noopener noreferrer">배포를위한 William Lama의 가정 실험실 장비 VMware Cloud Foundation 9</a></div>
+                <div class="card-title"><a href="http://vm-guru.com/news/vmware-vcf-9-william-lam-home-lab" target="_blank" rel="noopener noreferrer">VMware Cloud Foundation 배포를위한 William Lama의 가정 실험실 장비 9</a></div>
                 <div class="meta">2025-09-11 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
             </div>
         </div>
@@ -1040,6 +1040,102 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409026" target="_blank" rel="noopener noreferrer">Insufficient free IP addresses to allocate from the pool error when allocating IP pools in NCP</a></div>
+                <div class="summary">TKGI Create a svc with a pool The svc with IP pool, with it's capacity 1 address, or only 1 IP address is free. In NCP logs, you see can the following error: IP_POOL_EXHAUSTED From NSX Manager logs we can see: [nsx@6876 comp="nsx-container-ncp"....,Workaround: Problem have been addressed in NCP 4.2.2, upgrade to patched TKGi version with fix with NCP 4.2.2 NCP bump to 4.2.2 will be provided in: TKGI 1.21.2 Patch, 1.22.3 Patch Alternative Workaround: Delete the old Service (SVC). Create a new S....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409026</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-12</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410020" target="_blank" rel="noopener noreferrer">Deleting a VM protected by vSAN Data Protection remains with 'null' vmdk objects</a></div>
+                <div class="summary">After deleting a Virtual machine configured for vSAN Data protection, the vmdk objects associated with that VM show the Path as 'null'. Example: From ESXI CLI, run the command "esxcli vsan debug object list | less" Object UUID: 5a3fb968-####-####-###....,To remove the null vdisk objects, please contact Broadcom Support. Steps to be followed to delete the VM which is part of protection group: Verify Protection Group Membership - Confirm that the VM is part of a vSAN Data Protection Protection Group. C....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410020</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-12</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=370893" target="_blank" rel="noopener noreferrer">OpenSSH Vulnerabilities CVE-2023-48795, CVE-2023-51384 and CVE-2023-51385</a></div>
+                <div class="summary">Customer vulnerability scanners will detect open SSH vulnerabilities. CVE-2023-48795 priority is medium (CVSS score 5.9) CVE-2023-51384 priority is medium (CVSS score is 5.5) CVE-2023-51385 priority is medium (CVSS score is 6.5),ESXi 7.x and 8.x are not vulnerable. Kindly note: The ESXi 8.0u3 has openssh version 9.6</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 370893</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi 7.0,VMware vSphere ESXi 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-12</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409760" target="_blank" rel="noopener noreferrer">Edge node MPA connectivity down due to transport node certificate expired</a></div>
+                <div class="summary">Edge nodes in unknown status with MPA connectivity down error You may see log entries similar to the following /var/log/syslog of manager node 2025-09-02T07:46:40.280Z nsx-mgr1.########.local NSX 1464 - [nsx@6876 comp="nsx-manager" errorCode="MP101" ....,1.Check the certificate host-cert.pem. #cd /etc/vmware/nsx/ #ls Sample output: appliance-info.xml host-cert.pem host-privkey.pem netopa.xml openssl-proxy.cnf controller-info.xml host-cfg.xml mpa-txn nsx-proxy.xml 2.Copy the origi....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409760</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=370585" target="_blank" rel="noopener noreferrer">Cannot disable DRS when the vCenter license has expired.</a></div>
+                <div class="summary">During the evaluation window (60 days from deployment) the customer had DRS enabled, and current situation is License expired. Customer has only vCenter License Standard which does not support the DRS functionality. Customer wants to turn off the DR....,Tried to Drag the Hosts out of the current cluster and tried to Turn of the DRS- It worked. To isolate the host and to save the vSAN configuration- entered "esxcfg-advcfg -s 1 /VSAN/IgnoreClusterMemberListupdates" on all 3 hosts checked esxcli v....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 370585</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSAN 7.x</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=322542" target="_blank" rel="noopener noreferrer">nestdb agent is down on an NSX prepared ESXi Host</a></div>
+                <div class="summary">ESX host prepared for NSX. VMs on an host cannot send and receive traffic. NSX configurations changes cannot be made on the host. The status of nsx-nestdb service shows as not running on the ESX host. Example : [root@esxi-host:~] /etc/init.d/nsx-ne....,This issue is resolved in VMware NSX 3.2.3.1 and 4.1.1 available at Broadcom Downloads. If you are having difficulty finding and downloading software, please review the Download Broadcom products and software KB. Workaround: Use the API /api/v1/trans....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 322542</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=344765" target="_blank" rel="noopener noreferrer">VM stops suddenly when vFAT partitions exists on the RDM of the VM.</a></div>
+                <div class="summary">Symptoms: VM stops suddenly during VM reconfiguration Power On fails with similar errors in vmware.log Log location: /vmfs/volumes/datastorename-ID/vmname/vmware.log YYYY-MM-DDT00:00:30.207Z| vmx| I125: AIOGNRC: Failed to open '/vmfs/volumes....,vFat partition on RDM is unsupported as per design by VMware This is an expected behavior if RDMs contain vFAT partitions</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 344765</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410180" target="_blank" rel="noopener noreferrer">Seeing Bulk Migration Slowness</a></div>
+                <div class="summary">Seeing bulk migration times of >30 days to seed and migrate. Transport analytics shows "up to 86 migrations" supported with a delta transfer size of "519GB" Available Bandwidth has diminished while bulk migrations are ongoing. The following is obse....,Workaround Enabling APR (application path resiliency) on the service mesh may provide better distribution of packets to RX queues. Utilize multiple service mesh's (IX appliances) to distribute migration workload. Resolution Upgrade to HCX 4.11.1 or ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410180</span>
+                    <span><span class="detail-label">Product:</span> VMware HCX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=385107" target="_blank" rel="noopener noreferrer">vCert - expired certificate replacement script</a></div>
                 <div class="summary">The vCert script is a menu-driven tool meant to provide management capability for most vCenter Server certificate-related operations ,Table of Contents Installation Running the Script Menu Options Check current certificates status View Certificate Info Manage Certificates Manage SSL Trust Anchors Check configurations Reset all certificates with VMCA-signed certificates ESXi certifi....</div>
                 <div class="details">
@@ -1441,126 +1537,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 323359</span>
                     <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=380348" target="_blank" rel="noopener noreferrer">CSP-97727: Patch instructions to upgrade Photon-OS Library</a></div>
-                <div class="summary">This article provides important information for upgrading the Photon OS libraries to fix security vulnerabilities. List of affected version Product Component Version(s) Applicable CVE(s) VMware Identity Manager Appliance 3.3.7 CVE-2024-36971,CVE-....,Before You Begin: It is recommended to upgrade instances of unsupported versions to newer, supported versions first before applying the patch. This procedure will not work for other versions. Please refer to the VMware Lifecycle Matrix https://suppor....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 380348</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410102" target="_blank" rel="noopener noreferrer">vSAN OSA cluster is reporting: Skyline health error vSAN cluster configuration Consistency: Data is encrypted with an out of date Data Encryption Key</a></div>
-                <div class="summary">vSAN health reports a vSAN cluster configuration consistency issue "Data is encrypted with an out of date Data Encryption Key", as seen in the below screenshot. ,Please reach out to your KMS vendor/team to see if they can assist in correcting any issues with the current key before attempting remediation. If your KMS vendor / team is not able to allow the out of date key for use, Click "Remediate inconsisten....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410102</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=317729" target="_blank" rel="noopener noreferrer">Diagnostics for VMware Cloud Foundation in Aria Operation Finding False Positive Tracking and Reporting</a></div>
-                <div class="summary">Diagnostics for VMware Cloud Foundation in Aria Operations is the replacement for Skyline Advisor and Skyline Health Diagnostics. Please see the following link for more details on Diagnostics for VMware Cloud Foundation - What is Diagnostics for VMw....,Currently have the following active findings which we are in the process of being fixing: Last Updated: September 11, 2025. AUTOMATION_CVE202522215_VMSA_202501 & AUTOMATION_CVE202522249_VMSA_202508 Comment: Findings for VMSA-2025-0001 and VMSA-2025-0....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 317729</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=336277" target="_blank" rel="noopener noreferrer">Configuring Windows PSC for High Availability SSL termination in vSphere 6.7</a></div>
-                <div class="summary">This article provides steps to configure Windows installed Platform Services Controller (PSC) 6.7 High Availability with SSL termination.,To configure the PSCs for load balancing, run the updateSSOConfig.py and updateLsEndpoint.py scripts. Notes: The updateSSOConfig.py script updates information local to each PSC and must be ran on all PSCs in the HA instance. The updateLsEndpoint.py s....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 336277</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=372284" target="_blank" rel="noopener noreferrer">Host halts with a purple diagnostic screen(PSOD) referencing Machine Check Exception (MCE)</a></div>
-                <div class="summary">When a purple diagnostic screen(PSOD) occurs on an ESXI host you may see a reference to "Machine Check Exception". At the ESXi console, the purple diagnostic screen will have entries similar to: VMware ESXi 7.#.# [Releasebuild-22348816 x86_64] Machin....,Reboot the Host: Restarting the ESXi host may temporarily restore functionality if the issue was caused by a transient hardware event. Engage Hardware Vendor: Contact your server hardware vendor with the captured MCE/PSOD data. A thorough hardware-le....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 372284</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409384" target="_blank" rel="noopener noreferrer">VSAN HA critical fail/inaccessible VMs, Due to mutiple vSAN stretched clusters sharing the same inter-site link and witness appliances are hosted on those clusters.</a></div>
-                <div class="summary">Mutiple vSAN clusters suffer HA events and VMs showing as inaccessible after inter-site link fails. The vSAN clusters are hosting each others witness appliance and share the same inter-site link. ,Per the Stretched cluster guide on page 7 Witness Host Location section. The witness host appliance must reside at a third, tertiary location that is not the location of either one of the data sites for the stretched cluster it is associated with.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409384</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409703" target="_blank" rel="noopener noreferrer">SCSI Controller is VMware certified error when remediating vSAN ESA nodes</a></div>
-                <div class="summary">vSAN ESA unable to be configured due to HCL warning about controller,Disable the controller via BIOS and ensure ESA supported NVMe drives are connected directly to CPU via PCIe</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409703</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409888" target="_blank" rel="noopener noreferrer">GPCC Usage tab does not sort correctly</a></div>
-                <div class="summary">The API returns Key Performance Indicators (CPU Time, disk read/write, memory consumption) as string values instead of numerical data types. This data type mismatch affects the sorting algorithm on the UI said, resulting in incorrect or non-functiona....,As of September 2025, a fix is being developed.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409888</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Data Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=406654" target="_blank" rel="noopener noreferrer">vCenter upgrade fails with Error: Internal error occurs during Export of VMware vSphere Auto Deploy</a></div>
-                <div class="summary">vCenter upgrade fails with below error message in Stage 2. In the source vCenter, below log snippets are available: From /var/log/vmware/upgrade/export-upgrade-runner.log: YYYY-MM-DDTHH:MM:SS INFO upgrade.states.component_states rbd:Export: struct.....,To resolve this, please follow the steps below: Take Snapshot of the vCenter (Offline Snapshots in case of Linked Mode vCenters). Delete the unwanted and old traces of the logs under /var/log/vmware/rbd. Once completed, restart the vCenter upgrade fr....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 406654</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=407509" target="_blank" rel="noopener noreferrer">vCenter Server vPostgres log rotation fails due to missing vmware_postgres_log and vmware_vtsdb_postgres_log after updating to vCenter 8.0U3g</a></div>
-                <div class="summary">Symptoms: Logs stop rotating for the following logs /var/log/vmware/vpostgres/postgresql.log /var/log/vmware/vtsdb/postgresql.log /storage/log partition will be 100% full.,Workaround: Using vi or other editor create the following files: Add the below entry /var/log/vmware/vpostgres/postgresql.log in file /etc/logrotate.d/vmware-additional-data.lr in line number 257. # From `vmware_postgres_log.lr` /var/log/vmware/vp....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 407509</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server 8.0</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-09-11</span>
                 </div>
             </div>
