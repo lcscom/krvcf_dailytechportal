@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-09-17 12:01:49</title>
+    <title>Broadcom 기술 포털 - 2025-09-17 18:02:02</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-17 12:01:49)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-17 18:02:02)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -932,11 +932,335 @@
         
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410622" target="_blank" rel="noopener noreferrer">"ERROR:127.0.0.1 : hostAddr is either loopback or link-local"というエラーメッセージがvCenter Serverで出力される</a></div>
-                <div class="summary">vCenter Serverのjournalログに下記のようなエラーメッセージが発生する。 MM DD hh:mm:ss xxxx python[3033259]: rbd [3033259]networkutil:ERROR:127.0.0.1 : hostAddr is either loopback or link-local,無害なメッセージとなります。</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=305744" target="_blank" rel="noopener noreferrer">"Unable to validate the submitted credential" error when logging into the Web Client with Smart Card Authentication</a></div>
+                <div class="summary">Symptoms: Logging into the Web Client with Smart Card Authentication fails with the error: Unable to validate the submitted credential In the /var/log/vmware/sso/vmware-sts-idmd.log file, you see entries similar to: [IdmCrlCache] LDAP CRL stores is n....,To resolve this issue, add a path to an accessible web server as a CRL Distribution Point on the issuing Certificate Authority, and publish Certificate Revocation Lists to that path . Note: This will require all user certificates to be re-issued. T....</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410622</span>
+                    <span><span class="detail-label">Article ID:</span> 305744</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410182" target="_blank" rel="noopener noreferrer">ESXi license does not change to evaluation license on vCenter Server UI after upgrading ESXi hosts.</a></div>
+                <div class="summary">After upgrading ESXi hosts from 7.x to 8.x, the ESXi license did not change to an evaluation license in the vCenter Server UI. This happened while vCenter Server was stopped during the ESXi host upgrade. Additionally, the license update process faile....,Disconnect and reconnect the host to sync license information while the vCenter Server is running.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410182</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=398524" target="_blank" rel="noopener noreferrer">Unable to login to vCenter when linked vCenters are down or unreachable</a></div>
+                <div class="summary">When linked vCenters are down or not reachable from the impacted vCenter, its services will not start. If you try to login on impacted vCenter UI, the URL in the browser is switching to a linked vCenter for the login and comes back to vCenter URL. In....,Take an offline snapshot of all vCenter in ELM https://knowledge.broadcom.com/external/article/313886/vmware-vcenter-in-enhanced-linked-mode-p.html When using multiple vCenter Server Appliances (VCSA) in the same Single Sign-on Domain, replicating in....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 398524</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410625" target="_blank" rel="noopener noreferrer">The error message "Failed to process WebSSO metadata java.lang.IllegalArgumentException: An error occurred while processing metadata during the vCenter Single Sign-On setup. Service provider validation failed." appears in the vsphere_client_virgo.log file</a></div>
+                <div class="summary">The following error message occurs in the vsphere_client_virgo.log of the vCenter Server, but login to the vSphere Client is successful. [YYYY-MM-DDThh:mm:ss.xxx+09:00] [ERROR] -nio-127.0.0.1-5090-exec-280 70007633 100996 ###### com.vmware.vsphere.cl....,If the error message occurs and you are not experiencing any issues with being unable to log in to the vSphere Client, it is a temporary message and there is no problem with just watching it.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410625</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410624" target="_blank" rel="noopener noreferrer">vCenter Serverのvsphere_client_virgo.logに「Failed to process WebSSO metadata java.lang.IllegalArgumentException: vCenter Single Sign-On のセットアップ時のメタデータの処理中にエラーが発生しました。サービス プロバイダの検証に失敗しました。」とのエラーメッセージが発生する</a></div>
+                <div class="summary">vCenter Serverのvsphere_client_virgo.logに下記のエラーメッセージが発生するが、vSphere Clientへのログインは成功している。 [YYYY-MM-DDThh:mm:ss.xxx+09:00] [ERROR] -nio-127.0.0.1-5090-exec-280 70007633 100996 ###### com.vmware.vsphere.client.security.websso.MetadataGeneratorImpl Faile....,対象のエラーメッセージが発生した場合、vSphere Clientへのログイン不可の事象が発生していない場合には一過性のメッセージとなるため、静観して問題ございません。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410624</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410186" target="_blank" rel="noopener noreferrer">vSphere UI Health Alarm が vCenter で頻繁にトリガーされる</a></div>
+                <div class="summary">免責事項：これは英文の記事「vSphere UI Health Alarm is triggered frequently in the vCenter」の日本語訳です。 記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 vSphere UI Health Alarm が vCenter で頻繁にトリガーされます。,KB Manually increasing the heap memory of components in vCenter Server 7.x and 8.x に従って、vSphere UI プロセスにヒープ メモリ (500 MB) を増やします。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410186</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=398184" target="_blank" rel="noopener noreferrer">Unexpected VCHA failover could happen due to health check failure of vc-ws1a-broker.</a></div>
+                <div class="summary">VCHA failover happens as an active node restarts due to health check failure of vc-ws1a-broker and it is seen in /var/log/vmware/vmon/vmon.log. In(05) host-2503 Running the API Health command as user In(05) ho....,This issue is fixed in vCenter server 8.0 U3g(Build 24853646). Workaround: To address this issue, stop the vc-ws1a-broker service and disable vc-ws1a-broker if external IDP such as Azure AD and Okta is not used. vmon-cli --stop vc-ws1a-broker vmon-cl....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 398184</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=370273" target="_blank" rel="noopener noreferrer">ESXi Host fails to remove from vCenter Inventory with error - The object or item referred to could not be found</a></div>
+                <div class="summary">ESXi Host fails to remove from vCenter Inventory with error "The object or item referred to could not be found. vDS dvs port ########-####-####-####-#######c554 cannot be found".,The resolution requires removing the host manually from VCDB (vCenter Database) : Ensure that the ESXi host to be removed has no active VMs and / or Templates running onto it and the ESXi host is in Maintenance Mode. SSH to vCenter with root credent....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 370273</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410638" target="_blank" rel="noopener noreferrer">ESXi settings are not persisted and cannot be saved after restoring an encrypted ESXi with its recovery key</a></div>
+                <div class="summary">After replacing the ESXi hardware, the encrypted ESXi was restored. When rebooting ESXi, a purple diagnostic screen appears and the system fails to boot, requiring the recovery key to be entered every boot. ESXi cannot save settings and an error occu....,Edit the boot options correctly again. ESXi boot failures due to system configuration issues - restore security configuration, decrypt system configuration, recover system configuration https://knowledge.broadcom.com/external/article/312109/esxi-boot....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410638</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410626" target="_blank" rel="noopener noreferrer">暗号化された ESXi をリカバリキーで復元した後、ESXi設定が永続化されない、または保存できない</a></div>
+                <div class="summary">ESXi のハードウェア交換などを実施後、暗号化された ESXi をリストアしました。 ESXi を再起動すると、紫色の診断画面が表示され、起動できない。起動するためにはリカバリキーの入力が毎回必要になる。 ESXi で設定の保存ができない。エラーが発生します。 [root@esx:~] vim-cmd hostsvc/firmware/backup_config (vmodl.fault.SystemError) { faultCause = (vmodl.MethodFault) null,....,ブートオプションを再度正しく編集します。 ESXi boot failures due to system configuration issues - restore security configuration, decrypt system configuration, recover system configuration https://knowledge.broadcom.com/external/article/312109/esxi-boot-failures-due-to-s....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410626</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=318571" target="_blank" rel="noopener noreferrer">Error: "Appliance is running low on memory. Add more memory to the machine" or Memory exhaustion on vCenter Server Appliance 7.x/8.x</a></div>
+                <div class="summary">vCenter Server recently upgraded or installed to 7.x/8.x. VAMI of vCenter Server Appliance will show Overall Health & Memory in Alert Status with the message: Appliance is running low on memory. Add more memory to the machine. High (more than 1GB) ....,This issue is resolved in vCenter Server 7.0 U2c. For more information, see VMware vCenter Server 7.0 Update 2c Release Notes Workaround: Stop and disable vmware-pod service so the percpu memory usage won't grow further. Login to VCSA using SSH Execu....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 318571</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410606" target="_blank" rel="noopener noreferrer">Appliance Management Service is not starting on the vCenter Server.</a></div>
+                <div class="summary">vCenter server will be accessible on UI, but VAMI page will not be accessible. The service 'applmgmt' failed to start. The 'applmgmt' log file /var/log/vmware/applmgmt/applmgmt.log may contain below messages: ######## [10492]ERROR:vmware.vherd.transp....,Restore the vCenter Server to the working state if you have a valid backup/snapshot available. (If VC is part of ELM: All VCs need to restore to the previously taken offline snapshot or backup) Reinstall vCenter Server if valid backup/snapshot is not....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410606</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410637" target="_blank" rel="noopener noreferrer">Email Notifications via the ITSM plugin for Deployments provisioned via Aria Automation randomly returns NULL values for hostname, IP Address and other fields</a></div>
+                <div class="summary">Random requests made via ITSM plugin returns Null values for hostname, IP and other fields in the email sent via ITSM plugin Email is triggered way before the deployment could complete in Aria Automation,A fix for this issue is scheduled to be included in an upcoming release of the ITSM plugin.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410637</span>
+                    <span><span class="detail-label">Product:</span> VMware Aria Suite,VMware vRealize Automation 8.x</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=405123" target="_blank" rel="noopener noreferrer">vCert tool Reports VMDIR certificate expired status</a></div>
+                <div class="summary">When checking the vCenter Server certificates using the vCert tool, the VMdir certificate is reported as expired. Trusted roots are not expired, and there are no issues with other services. When running option 1, “Check current certificate status,” i....,Workaround 1: Step 1: Backup and Remove the Stale Certificate File Navigate to the vmdir config directory cd /usr/lib/vmware-vmdir/share/config Create a backup of the existing file (optional) cp vmdircert.pem vmdircert.pem.backup Remove the stale ce....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 405123</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server 8.0,VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=407814" target="_blank" rel="noopener noreferrer">Host Battery Status - vSphere alert for ESXi host</a></div>
+                <div class="summary">vSphere Client will trigger the following alert for ESXi host(s) with a pop up as 'Host battery status' ,Engage the hardware vendor to conduct a detailed investigation of the Storage Controller Battery</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 407814</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410635" target="_blank" rel="noopener noreferrer">ProviderConsumptionOrg remains visible in NSX after disabling from vCF-A</a></div>
+                <div class="summary">After disabling the Provider Consumption Org feature in vCF-A, the ProviderConsumptionOrg entity continues to appear within NSX. Network mappings such as Transit Gateway, VPC, and Load Balancer (LB) configurations are still present.,This is expected behavior. Since the Provider Consumption Org cannot be deleted, its references and network mappings in NSX persist even after the feature is disabled. No further action is required. Disabling the feature stops its functionality but d....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410635</span>
+                    <span><span class="detail-label">Product:</span> VMware Aria Suite,VCF Automation</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410627" target="_blank" rel="noopener noreferrer">Error 'Failed to connect to the server: Connection reset' when performing test connection from Usage Meter</a></div>
+                <div class="summary">Usage Meter is not uploading usage data to Broadcom. Performing 'TEST CONNECTION' from Usage Meter, fails with the following errors: In '/var/log/vmware-um-platform/dss_error.log' on Usage Meter appliance, you notice the following errors: ERROR ---....,Usage Meter appliance requires connectivity to portal ‘eapi.broadcom.com’ to send usage data to Broadcom. Firewall and network policies must be reviewed in the environment to establish connectivity to the portal ‘eapi.broadcom.com’ on port 443.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410627</span>
+                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410629" target="_blank" rel="noopener noreferrer">vMotion operations failed due to Storage Policy Service (SPS) instability for VVOL VMs.</a></div>
+                <div class="summary">Vol VMs are failing to migrate with error: "A general System Error Occurred" due to Storage Policy Service (SPS) instability. Log evidence: In Envoy-access logs, we observed occurrences of http2.remote_reset and stream_idle_timeout errors. ---------....,Workaround: Restart sps service. service-control --restart vmware-sps However, before the workaround is attempted, please ensure that you collect hprof and the log bundle for vCenter and ESXi host (source and destination). Login in vcenter mob htt....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410629</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410050" target="_blank" rel="noopener noreferrer">VCF Usage Meter 9.0 へのアップグレード後、Usage Meter のサービスが起動しません。</a></div>
+                <div class="summary">免責事項：これは英文の記事「After upgrading to VCF Usage Meter 9.0, services of Usage Meter does not start.(410174)」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 復数のネットワーク アダプタを使用している vCloud Usage Meter 4.x を VCF Usage Meter 9....,複数のネットワーク アダプタを使用する構成では、デフォルト ゲートウェイが 1 つのみになるように構成します。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410050</span>
+                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410174" target="_blank" rel="noopener noreferrer">After upgrading to VCF Usage Meter 9.0, services of Usage Meter does not start.</a></div>
+                <div class="summary">After upgrading vCloud Usage Meter 4.x with multiple network adapters to VCF Usage Meter 9.0, the Usage Meter services does not start. Usage Meter web interface is not displayed. /var/log/messages contains entries similar to: YYYY-MM-DDThh:mm:ss.xxxx....,In a configuration with multiple network adapters, configure only one default gateway.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410174</span>
+                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410176" target="_blank" rel="noopener noreferrer">Usage Meter の VAMI にログインできません。</a></div>
+                <div class="summary">免責事項：これは英文の記事「Unable to login to the vCloud Usage Meter VAMI (378482)」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 Usage Meter の VAMI に長時間ログインした後、ログアウトすると、まれに cap-appliance-management.service が停止することがあります。 cap-ap....,CAP Appliance Management サービスを再起動します。 usagemeter ユーザーとして、SSH 経由で Usage Meter に接続します。 root ユーザーに切り替えます。 su 以下のコマンドを使用して cap-appliance-management.service を再起動します。 systemctl restart cap-appliance-management.service Note: CAP Appliance Management サービスの再起....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410176</span>
+                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=378482" target="_blank" rel="noopener noreferrer">Unable to login to the vCloud Usage Meter VAMI</a></div>
+                <div class="summary">After login Usage Meter VAMI for a long time, logout may cause cap-appliance-management.service to stop in rare cases. cap-appliance-management.service is stopped and login to the Usage Meter VAMI fails with the following error: Unable to Login In th....,Restart the CAP Appliance Management service. Connect through SSH to Usage Meter as usagemeter user. Switch to the root user. su Restart cap-appliance-management.service using below command: systemctl restart cap-appliance-management.service Note: Re....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 378482</span>
+                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=408403" target="_blank" rel="noopener noreferrer">Packet drops on ESXi when a VM is injecting a tagged (802.1q) frame.</a></div>
+                <div class="summary">This issue may occur in several scenarios where the following is true: The packets being dropped are tagged (802.1q) by the VM (especially an NSX edge VM or a 3rd party appliance VM). Guest Tagging/Nested Tagging is disabled for the port where the VM....,The DvPG/segment where the VM is attached can be made a trunk so that the guest tag is passed along or nested or guest tagging can be enabled, respectively: nsxdp-cli vswitch vlan nested set --allow -p -dvs Note that this is on....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 408403</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=388931" target="_blank" rel="noopener noreferrer">Unable to Download .vmem and .vmsn Files with Actual Size for VMs on vVOL/vSAN Datastore for Crash Dump Creation</a></div>
+                <div class="summary">Symptoms: The download size for vmem and vmsn files is displayed in kilobytes instead of the actual file size When VMs are residing on vVol/vSAN Datastore The same files download with correct size when its on VMFS datastore Failure to create a memo....,Follow below Steps to download .vmsn and .vmem files Find the Datastore of the VM by clicking datastores of the VM Select VM --> Click on Datastores Search for the files using below path Click on Datastore --> Files -->Browse Virtual machine f....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 388931</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410609" target="_blank" rel="noopener noreferrer">Aria Operations upgrade gets stuck at Step 6 of 14</a></div>
+                <div class="summary">Running Pre-Upgrade Readiness Assessment Tool or the actual upgrade process from 8.18.3 to 8.18.4 gets stuck at step 6 of 14 with no error messages provided. Step.6. indicates pre-check validation errors, commonly including: Password expiry for key....,To resolve this issue, perform the following actions: Take snapshot following the procedure provided here - Snapshot Creation in VMware Aria Operations Change the hostname following the instructions provided here - How to change a node hostname in Ar....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410609</span>
+                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409875" target="_blank" rel="noopener noreferrer">vCenter Server 8.0.3x では、オペレータ ユーザー ロールではポート 443 にアクセスできません。</a></div>
+                <div class="summary">Symptoms: 免責事項：これは英文の記事「Port 443 is not accessible to the Operator user role in vCenter Server 8.0.3x」の日本語訳です。 記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 作成されたユーザーは、vCenter Server 8.0.3x 以降のバージョン (VCF 9.0 を含む) のポート 443....,この問題を回避するには、次の方法を実施してください。 1) rootユーザーとして実行する rootユーザーであれば、ポート443にアクセスできます。 注：上記以外に iptablesコマンドを使用しファイアウォールを追加する方法もありますが、サポート対象外となります。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409875</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vCenter Server 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409874" target="_blank" rel="noopener noreferrer">Port 443 is not accessible to the Operator user role in vCenter Server 8.0.3x</a></div>
+                <div class="summary">The created user will not be able to access port 443 in vCenter Server 8.0.3x and later versions (including VCF 9.0), but will be able to access ports 80 and 22. When accessing port 443 with the openssl command, the following error will occur: test [....,To work around this issue, try the following: 1) Run as the root user Port 443 can be accessed by the root user. Note: Alternatively, you can add a firewall using the iptables command, but this method is not supported.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 409874</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vCenter Server 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410483" target="_blank" rel="noopener noreferrer">The VMware Tools installation fails, and the network connection is lost in the virtual machine when using the vmxnet3 adapter</a></div>
+                <div class="summary">The manual upgrade of VMware Tools fails (e.g., from version 12.3.5 to 12.5.2 or 12.5.3). After the upgrade, the network connection is lost in the virtual machine (VM) when using the vmxnet3 adapter. VMware Tools is uninstalled. The driver fails to i....,Retry the VMware Tools installation; it usually succeeds after one or two attempts. Contact the Guest OS vendor to determine the cause, which is typically related to security software or a permission issue.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410483</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
                 </div>
             </div>
@@ -948,6 +1272,18 @@
                 <div class="summary">The following error message appears in the journal log of the vCenter Server: MM DD hh:mm:ss xxxx python[3033259]: rbd [3033259]networkutil:ERROR:127.0.0.1 : hostAddr is either loopback or link-local,It's a harmless message.</div>
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 410623</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410622" target="_blank" rel="noopener noreferrer">"ERROR:127.0.0.1 : hostAddr is either loopback or link-local"というエラーメッセージがvCenter Serverで出力される</a></div>
+                <div class="summary">vCenter Serverのjournalログに下記のようなエラーメッセージが発生する。 MM DD hh:mm:ss xxxx python[3033259]: rbd [3033259]networkutil:ERROR:127.0.0.1 : hostAddr is either loopback or link-local,無害なメッセージとなります。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410622</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
                 </div>
@@ -1040,54 +1376,6 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410050" target="_blank" rel="noopener noreferrer">VCF Usage Meter 9.0 へのアップグレード後、Usage Meter のサービスが起動しません。</a></div>
-                <div class="summary">復数のネットワーク アダプタを使用している vCloud Usage Meter 4.x を VCF Usage Meter 9.0 にアップグレードした後、Usage Meter のサービスが起動しません。 Usage Meter の Web インターフェイスが表示されません。 Usage Meter の /var/log/messages には次のようなエントリが含まれています: YYYY-MM-DDThh:mm:ss.xxxxxx+00:00 um_hostname nmctl[XXXX]....,複数のネットワーク アダプタを使用する構成では、デフォルト ゲートウェイが 1 つのみになるように構成します。</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410050</span>
-                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410174" target="_blank" rel="noopener noreferrer">After upgrading to VCF Usage Meter 9.0, services of Usage Meter does not start.</a></div>
-                <div class="summary">After upgrading vCloud Usage Meter 4.x with multiple network adapters to VCF Usage Meter 9.0, the Usage Meter services does not start. Usage Meter web interface is not displayed. /var/log/messages contains entries similar to: YYYY-MM-DDThh:mm:ss.xxxx....,In a configuration with multiple network adapters, configure only one default gateway.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410174</span>
-                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=378482" target="_blank" rel="noopener noreferrer">Unable to login to the vCloud Usage Meter VAMI</a></div>
-                <div class="summary">After login Usage Meter VAMI for a long time, logout may cause cap-appliance-management.service to stop in rare cases. cap-appliance-management.service is stopped and login to the Usage Meter VAMI fails with the following error: Unable to Login In th....,Restart the CAP Appliance Management service. Connect through SSH to Usage Meter as usagemeter user. Switch to the root user. su Restart cap-appliance-management.service using below command: systemctl restart cap-appliance-management.service Note: Re....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 378482</span>
-                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410176" target="_blank" rel="noopener noreferrer">Usage Meter の VAMI にログインできません。</a></div>
-                <div class="summary">Usage Meter の VAMI に長時間ログインした後、ログアウトすると、まれに cap-appliance-management.service が停止することがあります。 cap-appliance-management.service が停止し、Usage Meter の VAMI へのログインが次のエラーで失敗します。 ログインできません。 Usage Meter のログ バンドルに含まれる cap-appliance-management.service.log に次のようなエン....,CAP Appliance Management サービスを再起動します。 usagemeter ユーザーとして、SSH 経由で Usage Meter に接続します。 root ユーザーに切り替えます。 su 以下のコマンドを使用して cap-appliance-management.service を再起動します。 systemctl restart cap-appliance-management.service Note: CAP Appliance Management サービスの再起....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410176</span>
-                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410445" target="_blank" rel="noopener noreferrer">Patching of the vCenter Server is stuck, and the RPM installation does not complete.</a></div>
                 <div class="summary">The update process seems stuck on RPM installation with below messages: update_microservice.log update_b2b_target:: executeInstallRpms:1938 - INFO - Installation of Photon RPMS completed successfully. update_b2b_target:: ....,The engineer is aware of the issue, and a timeout will be implemented in a future release if it cannot be started. As workaround, restore vCenter Server from snapshot or backup and verify that only a single lwsmd process is running before retrying th....</div>
                 <div class="details">
@@ -1153,294 +1441,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 410527</span>
                     <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410516" target="_blank" rel="noopener noreferrer">The root partition on the vCenter Server is full.</a></div>
-                <div class="summary">A warning alert for root disk exhaustion has been triggered on the vCenter UI summary page. A review of the df -h output shows that the root partition is using more than 80% of its capacity. Analyzing the used space on the root filesystem: The "messa....,Workaround: Take a snapshot of the vCenter VM. Access the vCenter VM via SSH using the root account and navigate to the root partition with the following command. cd /root Identify the files that are utilizing the most disk space (In this scenario, i....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410516</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=374371" target="_blank" rel="noopener noreferrer">ESXi host fails to run profile update command</a></div>
-                <div class="summary">ESXi host fails profile update with image downloaded from hostupdate.vmware.com with generic error.,It should be safe to delete any files from the /tmp directory since it is a temporary directory by default. These files can be moved to another location as well, rebooting the ESXi host will also clear out the /tmp directory.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 374371</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=396706" target="_blank" rel="noopener noreferrer">Orphaned container volumes cannot be deleted through vSphere Client</a></div>
-                <div class="summary">The associated vmdk files for the container volumes, pvc, pv has already been deleted. The container volumes are only showing on the vCenter UI : vCenter > datastore > Monitor > Cloud Native Storage > Container Volumes From the guest cluster or workl....,The ideal way to delete pvc and pv remains to be from the cli of respective guest cluster/workload cluster (in this case). k get pvc,pv -n namespace_name k delete pvc_complete_name -n namespace_name k delete pv_complete_name -n namespace_name If the ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 396706</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=313768" target="_blank" rel="noopener noreferrer">Unable to connect the host https://host-ip/sdk during NSX-T Upgrade</a></div>
-                <div class="summary">During the upgrade of NSX-T managers, hosts are not allowed to upgrade. The upgrade fails at the 'Performing dry-run of installation of NSX bits' step. The following error in upgrade-coordinator.log on the orchestrator node is present (/var/log/upgra....,In the vSphere client, go to the Host > Configure > System > Firewall > Connections: > Incoming > vSphere Web Client, ensure "Allowed IP addresses" includes the IP address of the orchestrator node (or is set to "All"). You can use netcat (nc) to co....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 313768</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=400724" target="_blank" rel="noopener noreferrer">One or more Manager nodes showing as degraded in the UI with multiple services down as seen after clicking the Details</a></div>
-                <div class="summary">Connecting to the console of the degraded Manager(s) reveals error messages reporting failure to start one or more services The /var/log/vmkernel log file within the ESXi host where the Manager VM resided contains storage-related warning messages s....,The following steps should help to restore connectivity to the NSX Manager node: Migrate NSX manager node from the affected host Reboot the NSX manager node after the migration</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 400724</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=319020" target="_blank" rel="noopener noreferrer">Support for Proxy ARP in NSX-T Data Center</a></div>
-                <div class="summary">This article provides information on VMware NSX-T support for Proxy ARP on the NSX-T Edge.,Proxy ARP is automatically enabled when a NAT rule or a load balancer VIP uses an IP address from the subnet of the Tier-0 gateway uplink. Proxy ARP can be considered in environments where IP subnets are limited and where it is problematic to use ne....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 319020</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=325116" target="_blank" rel="noopener noreferrer">Flow fails to display in the UI when system memory gets overloaded</a></div>
-                <div class="summary">Displaying flow in the NSX Intelligence User Interface (UI) fails. In NSX Intelligence node console, you see an error message similar to: INFO: task kworker/5:1:5539 blocked for more than 120 seconds. Not tainted 2.6.32-431.11.2.el6.x86_64 #1 "echo 0....,To resolve this issue: Wait for system to stabilize. It might take 20-30 minutes. Workaround: To work around this issue, leave the system idle and wait for it to recover.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 325116</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=381240" target="_blank" rel="noopener noreferrer">vSphere HA agent for ESXi host has an error: vSphere HA agent cannot be installed or configured</a></div>
-                <div class="summary">The following error messages are present when attempting to configure vSphere HA on ESXi hosts: "Cannot complete the configuration of the vSphere HA agent on the host. "Applying HA VIBs on the cluster encountered a failure." Similar logs are found ...., Review the network configuration of the ESXi host, validate the DNS settings are correct, and validate the DNS is reachable by the host from the management network by using vmkping. See the following documentation for testing connectivity using vmk....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 381240</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=321305" target="_blank" rel="noopener noreferrer">Enabling vSphere Distributed Switch health check in the vSphere Web Client</a></div>
-                <div class="summary">This article provides information on and steps to enable the vSphere Distributed Switch health check in the vSphere Web Client. Also follow these steps to disable the vDS Health Check.,The network configuration for the vSphere infrastructure is a two-step process, whereby users must configure the physical network switches to which the vSphere host is connected and then configure the VDS. There are key network parameters, such as VL....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 321305</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410160" target="_blank" rel="noopener noreferrer">Unable to configure LDAPS for AD authentication in Aria Operations for Logs</a></div>
-                <div class="summary">When require SSL box was checked, test connection was failing with AD authentication failed error message: ,1. Take snapshot of the Aria Operations for Logs nodes. 2. Back up the file located at /usr/java/default/conf/security/java.security using the below command: cp /usr/java/default/conf/security/java.security /usr/java/default/conf/security/java.secu....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410160</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=408189" target="_blank" rel="noopener noreferrer">Performing a change to a host on a vSphere Distributed Switch (vDS) or vSphere Standard Switch (vSS) fails with "An error occurred while communicating with the remote host ... The change has been rolled back"</a></div>
-                <div class="summary">When performing a change task on an ESXi host with respect to a virtual switch (vDS or vSS), the task fails with the error "An error occurred while communicating with the remote host. Network configuration change disconnected the host 'host-name' fro....,Identify how the result of the change is causing the host to lose connectivity to vCenter, such as examining the configuration of the NIC(s) that the host's management adapter would use if the change were to complete successfully, and resolve it. Onc....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 408189</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=304809" target="_blank" rel="noopener noreferrer">Build numbers and versions of VMware Tools</a></div>
-                <div class="summary">The below table lists the VMware Tools build numbers and versions., Version Release Date Build Number Tool Internal Version VMware Tools 13.0.1 07/15/2025 24843032 13313 VMware Tools 13.0.0 06/17/2025 24696409 13312 VMware Tools 12.5.3 07/15/2025 24819442 12451 VMware Tools 12.5.2 05/12/2025 24697584 12450....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 304809</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=395936" target="_blank" rel="noopener noreferrer">Accessing Storage polices in VMware Cloud Director is slow to open</a></div>
-                <div class="summary">When accessing storage policies in VMware Cloud Director it may take in excess of 10 seconds to open. This can also impact updating hard disks.,To resolve this issue, contact Broadcom Support and note this Article ID (395936) in the problem description. For more information, see Creating and managing Broadcom support cases.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 395936</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=320331" target="_blank" rel="noopener noreferrer">[VMC] DRaaS upgrade recommended practices</a></div>
-                <div class="summary">Recommended practices to perform SRM/VR upgrades on VMC and on-prem.,The VMware DRaaS engineering team upgrades the SRM/VR components on the customer's VMC SDDC. This doesn't need a separate request from the customer. The DRaaS team does it in a staggered fashion across the install base. The upgrade of the SDDC compon....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 320331</span>
-                    <span><span class="detail-label">Product:</span> VMware Live Recovery,VMware Cloud on AWS</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=326316" target="_blank" rel="noopener noreferrer">VMware vCenter Server versions and build numbers</a></div>
-                <div class="summary">This article provides a list of vCenter Server build numbers and versions.,This table lists the vCenter Server build numbers and versions. Table of Contents vCenter 9.0 vCenter Server 8.0 vCenter Server 7.0 vCenter Server Appliance 6.7 vCenter Server 6.7 (Windows) vCenter Server 6.5 and older Note: From vSphere 7.0 onwards....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 326316</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=323496" target="_blank" rel="noopener noreferrer">Aria Operations Scheduled Reports are sometimes blank</a></div>
-                <div class="summary">Aria Operations Scheduled reports in PDF or other format sometimes show as blank. When downloading the same report, it shows similar to: Generating a report manually shows the data ,To resolve the issue with scheduled reports returning no information, we recommend: Check sizing guidelines: VMware Cloud Foundation (VCF) Operations Sizing Guidelines Verify the schedule in Aria Operations and ensure that multiple reports are not....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 323496</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410274" target="_blank" rel="noopener noreferrer">Unable to reverse replication for the virtual machine. Disk is already used at path.</a></div>
-                <div class="summary">Unable to complete the Reprotect after running a Recovery plan. Unable to reverse replication for the virtual machine 'VM_name '. Group.Spec property 'Spec.vms.disks' is incorrect. Disk is already used at path: '######-####-####-####-########', filen....,This is a known limitation of vSphere Replication when used with disks configured in multi-writer mode. Virtual machines that utilize multi-writer disks are not supported for replication.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410274</span>
-                    <span><span class="detail-label">Product:</span> VMware Live Recovery</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=306806" target="_blank" rel="noopener noreferrer">Manually delete notification rules in Aria Operations</a></div>
-                <div class="summary">When navigating to Configure > Alerts > Notifications, the page does not load, or you see an error similar to: Alert Definition Ids '[AlertDefinition-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx]' not found. New notifications cannot be created and current no....,To resolve this issue, delete the offending notification rule(s) through the API or directly through the database. API Database - Aria Operations 8.10.x and higher Database - vRealize Operations 8.6.x and below Impact/Risks: Modifying the database ca....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 306806</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410426" target="_blank" rel="noopener noreferrer">VCD Database Backup Error: "Another Backup Creation is in Progress"</a></div>
-                <div class="summary">Getting error as 'Another Backup creation is in progress. Please retry later ' while trying to create VCD database backup,To resolve the issue, take snapshot of the cells and manually remove the stale backup.lock file: 1. SSH into the VCD Primary Cell and log in as root user. 2. Navigate to the /tmp directory: cd /tmp 3. Verify the presence of the lock file: ls -l....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410426</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410543" target="_blank" rel="noopener noreferrer">Bulk Migration replication queries</a></div>
-                <div class="summary">Are there any benefits to powering off the VMs a few hours prior to the switchover? Powering off the VMs prior to the switchover process would result in delta data from being created. Thus it would result in less final sync data to be processed whic....,See HCX Bulk Migration operations and best practices for more information.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410543</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=403524" target="_blank" rel="noopener noreferrer">Cloud Proxy is showing as Offline after deployment</a></div>
-                <div class="summary">On Aria Operations UI, the Cloud Proxy is showing as Offline.,Work with your DNS administrator to add a Forward and Reverse DNS entry for the Cloud Proxy. Once the DNS entries have been added, please reboot the Cloud Proxy in the vCenter. Once online, the Cloud Proxy should show connected in the Aria Operation....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 403524</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=377035" target="_blank" rel="noopener noreferrer">FATAL ERROR: 28 (CRC error) - ESXi Host not Booting</a></div>
-                <div class="summary">ESXi host fails while booting up with Fatal Error: 28 (CRC error). CRC error during decompression. Error: 28 (CRC error) while loading module: /vmx.v00 Fatal error: 28 (CRC error) As seen from host DCUI screenshot:,Steps to resolve hardware-related CRC Errors: Diagnose the storage boot device health Use tools available with your Hardware Vendor to test the storage device for read/write errors and bad sectors. If using an SD card as the boot device for ESXi, it ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 377035</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=326305" target="_blank" rel="noopener noreferrer">How to export VMDir information from vCenter Server Appliance</a></div>
-                <div class="summary">This article explains how to export the vmdir information from vCenter Server as an LDIF file using the ldapsearch command.,Notes: If the vSphere domain was changed from the default vsphere.local, ensure to change the values for dc. Exporting from vCenter Server Appliance using ldapsearch: Log in to vCenter Server Appliance using SSH and root credentials. Run this command....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 326305</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=385749" target="_blank" rel="noopener noreferrer">How to collect SDDC Manager logs</a></div>
-                <div class="summary">This article provides procedures for collecting diagnostic information from SDDC Manager. ,1. SSH into the SDDC Manager with the vcf user. 2. Elevate to root with the su command. 3. Run the following command to collect the SDDC manager logs (See additional information if additional logs/flags are required) /opt/vmware/sddc-support/sos --....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 385749</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-09-16</span>
                 </div>
             </div>
