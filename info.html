@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-09-28 12:01:55</title>
+    <title>Broadcom 기술 포털 - 2025-09-28 18:02:19</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-28 12:01:55)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-28 18:02:19)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -953,6 +953,90 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412035" target="_blank" rel="noopener noreferrer">vCLS VMs were orphaned in vSAN cluster, Retreat Mode didn't effect</a></div>
+                <div class="summary">vCLS VMs were orphaned in vSAN cluster, an incident had ever occurred in the cluster. After the vSAN cluster had resumed to healthy status, the orphaned vCLS VM still present. The issue couldn't fixed by entering and exiting the Retreat Mode. No task....,The issue was fixed after moving all hosts to a new cluster. 1.Create a new vSAN cluster in the vCenter 2.Move all hosts from original cluster to the new cluster. Refer KB389573, "Moving vSAN Hosts/Nodes from one cluster to another within the sam....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412035</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412041" target="_blank" rel="noopener noreferrer">Skyline in vCenter shows "Unable to query vSAN health information. Check vSphere Client logs for details."</a></div>
+                <div class="summary">When opening skyline from vSphere Client >> vCenter >> Monitor >> Skyline Health, an error occurred with message below. Unable to query vSAN health information. Check vSphere Client logs for details.,Disable CEIP from vCenter. For steps to disable CEIP, please find Join or Leave Customer Experience Improvement Program in vSphere Client.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412041</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411868" target="_blank" rel="noopener noreferrer">Skyline Health Diagnostics(SHD) offline update failed showing "Failed to validate package".</a></div>
+                <div class="summary">When performing offline update on SHD following Update using Offline Patch Bundle, after appliance restart, it shows "Failed to validate package - /opt/vmware-shd/vmware-shd/updates/package-pool/openjre8-1.8.0.382-1.ph3.x86_64.rpm. Bailing out" at UI....,Option 1: Manually replace mismatch manifest file Download manifest.xml file at the bottom of this page. Import it to //vmware-shd-patch-4.0.9/manifest/ and replace original manifest.xml file. Take a snapshot. Perform step 6....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 411868</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412033" target="_blank" rel="noopener noreferrer">The LWD protected VM failed to be relocated cross vCenter(cold migration)</a></div>
+                <div class="summary">A VM was relocated cross vCenter(cold migration), it's failed. The task was failed when the progress of vmdk copying reach 100%. Sometime, the host management agent hostd was crashed on the destination host. Some other VMs could be migrated. The VM w....,As the VM will be moved to another vCenter, the LWD protection should be disabled before relocated operation. 1.Download the tool "lwd-cleanup-util.py" from KB344906. "Putting ESXi into Maintenance mode, vMotioning or reconfiguring a VM fails due to ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412033</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vCenter Server 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412022" target="_blank" rel="noopener noreferrer">Duplicate uuid.bios and vc.uuid reported in 3rd-party backup solution after restore virtual machine</a></div>
+                <div class="summary">Virtual machine is restored with 3rd-party backup solution in vCenter Server. Duplicate uuid.bios and vc.uuid found in the existing virtual machine on vCenter after a 3rd-party backup solution restore virtual machine.,Unregister the restored virtual machine. To remove the virtual machine from the vCenter Server inventory, right-click the virtual machine and click Remove from Inventory. See Remove and Reregister VMs and VM Templates Back up the VM's configuration f....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412022</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412016" target="_blank" rel="noopener noreferrer">Configure the VAMI firewall to restrict vCenter access to specified IP addresses or subnets</a></div>
+                <div class="summary">The vCenter processes the firewall rules from top to bottom in a sequence. The order sequence is critical in defining the firewall rule correctly. The article is talking about how to configure firewall rule in vCenter Appliance Management Interface(V....,Access the VAMI address https://:5480 In Firewall click ADD In the New Firewall Rule specify details of the rule. For example: Network Interface: nic0 IP Address: xx.xx.xx.xx Subnet Prefix Length: 24 Action: Reject Click....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412016</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412032" target="_blank" rel="noopener noreferrer">Root account failed to login vCenter Server Appliance from ssh, but successful login from VAMI and DCUI</a></div>
+                <div class="summary">The root account was failed to login vCenter Server Appliance with ssh. "Access denied" was reported. The root account could login from VAMI and DCUI with same password. If the vCenter log bundle was collected. It's found that the root shell "does no....,1.Take a snapshot or backup of the vCenter Server Appliance before proceeding. 2.Login the VCSA from console, without the password. Refer the procedure in KB322247, Resetting root password in vCenter Server Appliance 6.5 / 6.7 / 7.x / 8.x Impleme....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412032</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411852" target="_blank" rel="noopener noreferrer">The virtual machine cannot be powered on, or a new virtual machine cannot be created in the NFS datastore</a></div>
                 <div class="summary">The NFS (Network File System) datastore appears to be functioning correctly from the ESXi command line: a file can be created using the touch command, and data can be written to the file using vi. The following error is observed in the hostd.log file....,Contact the NFS storage vendor to resolve the issue with the NFS datastore.</div>
                 <div class="details">
@@ -1449,102 +1533,6 @@
                 <div class="summary">Patching of vCenter in ELM fails at 80% with an error message "Invalid Type, expected String, instead got NoneType" Below error messages are observed in following logs: var/log/vmware/applmgmt/PatchRunner.log YYYY-MM-DD HH:MM:SSZ trustmanagement:Pat....,NOTE: Before applying the steps below, please take a snapshot (in powered-off state) of the vCenter Server Appliance. If the vCenter is part of a Linked Mode replication setup, please take offline snapshot all replicating nodes. Please refer VMware ....</div>
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 411750</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411562" target="_blank" rel="noopener noreferrer">LIagent not forwarding audit logs from SDDC to VMware Aria Operations for Logs</a></div>
-                <div class="summary">The preinstalled LIagent on the SDDC appliance does not send the 'audit.log' log by default. ,Ensure you have installed the Linux Systemd content pack on your Aria Operations for Logs Instance. Navigate to the 'Content Packs' menu, then 'Marketplace'. Find the 'Linux - Systemd' content pack, select and click 'Install' Confirm the content pack....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 411562</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411576" target="_blank" rel="noopener noreferrer">Repo Sync not working on NSX Manager post upgrade files being uploaded to NSX Manager and then manually removed</a></div>
-                <div class="summary">When attempting to upgrade NSX Manager, the upgrade files(.mub and .pub) are uploaded to NSX Manager. The file versions uploaded are past the supported version listed on Broadcom NSX Upgrade Path. To check NSX Upgrade Path: https://interopmatrix.bro....,Contact Broadom Support for assistance moving forward.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 411576</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=323978" target="_blank" rel="noopener noreferrer">Skipped VxRail cluster upgrade required patch binary: #####_VxRail-#.#.####- Composite-Upgrade-Slim-Package-for-8.0.x.zip is not available</a></div>
-                <div class="summary">VCF on VxRail Manager upgrade from 8.0.1xx to 8.0.2xx/8.0.3xx (or 8.0.2xx to 8.0.3xx) fails with the following error message in the task panel: ”Skipped VxRail cluster upgrade required patch binary: #####_VxRail-#.#.####- Composite-Upgrade-Slim-Pack....,Currently there is no resolution to the issue. Workaround: While the full automation of the upgrade process is being developed, the issue can be resolved by manually downloading the required bundle and executing the provided scripts to copy the artif....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 323978</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Foundation</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409707" target="_blank" rel="noopener noreferrer">"Retrieving available bundles failed" is observed at Bundle Management page on SDDC Manager</a></div>
-                <div class="summary">Error "Retrieving available bundles failed" is observed with below message in Bundle Management: Encountered fetching http://127.0.0.1/lcm/inventory/upgrades.api - Target VCF version 5.2.1.0 is lower than source VCF version 5.2.2.0,Please contact Broadcom Support for assistance and refer Knowledge Base article 409707.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409707</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=321445" target="_blank" rel="noopener noreferrer">Cell "FAIL" status for Multi-Cell Log Collection</a></div>
-                <div class="summary">Symptoms: When running vmware-vcd-support script with the following options (-l -m) to gather logs from all cells in the server group, the tool's "Tool Executed Status" may return a "FAIL" status for one or more of the cells. For example: Tool Exec....,To workaround the issue, identify the UUID's for all the currently active VCD cells that are part of the server-group, and delete the files in /opt/vmware/vcloud-director/data/transfers/cells that are NOT part of that active set/list. Note: When VCD....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 321445</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=399441" target="_blank" rel="noopener noreferrer">VM Network Adapter Error: 'Port Group Not Found</a></div>
-                <div class="summary">The VM VNIC's adapter, associated with a vSwitch or VDS port group, failed with the error: "Port group" could not be found.,Create a port group with an identical name, then assign the VM's vNIC adapter to it.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 399441</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=294388" target="_blank" rel="noopener noreferrer">GemFire - Troubleshooting Pulse Issue</a></div>
-                <div class="summary">To troubleshoot pulse view related issues. Pulse is not showing the correct number of members of VMWare GemFire clusters. Symptoms: The following are symptoms associated with this issue: Only locators are viewable in the Pulse view. Cache servers are....,Correct Classpath. Checklist: Check if all the servers are healthy using the gfsh > list members command. Check if the ClassPath has any other version of VMWare GemFire which conflicts with the version that is currently in use. Check if the ClassPath....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 294388</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Gemfire</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411551" target="_blank" rel="noopener noreferrer">The vCenter inventory for clusters and datacenters is not displaying. It keeps on loading.</a></div>
-                <div class="summary">All vCenter services are operational. No crash has been detected. The datacenters in the inventory continue to load without any clusters. As per /var/log/vmware/vpxd.logm we see ODBC error as below: Failed to get exclusive lock: P0001:1:ODBC erro....,Log in to the vSphere UI and create a snapshot of the vCenter VM. For vCenters in linked mode, perform an offline snapshot. Use PowerCLI to connect to the vCenter: Connect-VIServer -Server Retrieve the status of the hosts in the cluste....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 411551</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
                 </div>
