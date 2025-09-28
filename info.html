@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-09-29 00:01:44</title>
+    <title>Broadcom 기술 포털 - 2025-09-29 06:01:59</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-29 00:01:44)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-09-29 06:01:59)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -953,6 +953,18 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411616" target="_blank" rel="noopener noreferrer">Identify the target of inaccessible objects where the object path is unknown</a></div>
+                <div class="summary">When a vSAN cluster incurs inaccessible objects, there are several ways to determine what they are: Select the Cluster > Monitor > vSAN Skyline Health > vSAN object health: in the Health/Objects column there would be a row showing a red "Inaccessibl....,When vSAN objects are in a state where the path field is not being shown, the object owner can be changed which refreshes the state of the object. As part of the refresh, the path for what the objects reference can then be known. If so, then it can....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 411616</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-09-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412035" target="_blank" rel="noopener noreferrer">vCLS VMs were orphaned in vSAN cluster, Retreat Mode didn't effect</a></div>
                 <div class="summary">vCLS VMs were orphaned in vSAN cluster, an incident had ever occurred in the cluster. After the vSAN cluster had resumed to healthy status, the orphaned vCLS VM still present. The issue couldn't fixed by entering and exiting the Retreat Mode. No task....,The issue was fixed after moving all hosts to a new cluster. 1.Create a new vSAN cluster in the vCenter 2.Move all hosts from original cluster to the new cluster. Refer KB389573, "Moving vSAN Hosts/Nodes from one cluster to another within the sam....</div>
                 <div class="details">
@@ -1469,11 +1481,11 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411279" target="_blank" rel="noopener noreferrer">VMware Cloud Director cell service startup stuck at 54%</a></div>
-                <div class="summary">VMware Cloud Director(i.e. VCD) cell service startup stucks at 54% when com.vmware.vcloud.backend-core service fails to start /opt/vmware/vcloud-director/logs/cell.log reports: Application initialization detailed status report: 54% complete com.v....,The timeout value will be increased from 5 minutes to 10 minutes in future releases. In current release there's no way to modify the timeout value. Workaround would be to move the VCD from current datastore/cluster to another datastore/cluster with ....</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411950" target="_blank" rel="noopener noreferrer">Update CloudConfig Data via Extensibility in Aria Automation</a></div>
+                <div class="summary">Use case: Update/Create cloudconfig data as part of extensibility during a deployment. Reasons to perform CloudConfig update via Extensibility: - Deployment logic - CloudConfig variables or content needs to be updated based on certain deployment log....,Extensibility States to use for Update: Any extensibility state can be used as long as it exists before the system resource is created, and the event state supports the update of the customProperties. An example is the Compute Allocation event state ....</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 411279</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Article ID:</span> 411950</span>
+                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
                 </div>
             </div>
@@ -1481,11 +1493,11 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411950" target="_blank" rel="noopener noreferrer">Update CloudConfig Data via Extensibility in Aria Automation</a></div>
-                <div class="summary">Use case: Update/Create cloudconfig data as part of extensibility during a deployment. Reasons to perform CloudConfig update via Extensibility: - Deployment logic - CloudConfig variables or content needs to be updated based on certain deployment log....,Extensibility States to use for Update: Any extensibility state can be used as long as it exists before the system resource is created, and the event state supports the update of the customProperties. An example is the Compute Allocation event state ....</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411279" target="_blank" rel="noopener noreferrer">VMware Cloud Director cell service startup stuck at 54%</a></div>
+                <div class="summary">VMware Cloud Director(i.e. VCD) cell service startup stucks at 54% when com.vmware.vcloud.backend-core service fails to start /opt/vmware/vcloud-director/logs/cell.log reports: Application initialization detailed status report: 54% complete com.v....,The timeout value will be increased from 5 minutes to 10 minutes in future releases. In current release there's no way to modify the timeout value. Workaround would be to move the VCD from current datastore/cluster to another datastore/cluster with ....</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 411950</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
+                    <span><span class="detail-label">Article ID:</span> 411279</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
                 </div>
             </div>
@@ -1522,18 +1534,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 324302</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411940" target="_blank" rel="noopener noreferrer">NSX-T "del nsx" command fails with exception when uninstalling nsx from ESXi host after abrupt/forceful uninstallation of NSX manager</a></div>
-                <div class="summary">NSX-T is being uninstalled from Host Transport Node using the command 'del nsx'. Deleting the nsx vibs with command "nsxcli -c del nsx" gives below error: "%Exception when deleting nsx from host: ' error code: 4 stdout: delete_nsx_instance_from_host.....,Check if the vibs are still present on ESXi host: esxcli software vib list | grep nsx Ensure host is in maintenance mode Clear properties on all unused logical switches, run the following command on the impacted ESXi host(s): /usr/lib64/vmware/nsx-op....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 411940</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX,VMware NSX Data Center for vSphere</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-09-26</span>
                 </div>
             </div>
