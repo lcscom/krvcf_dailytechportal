@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-10-10 12:01:52</title>
+    <title>Broadcom 기술 포털 - 2025-10-10 18:01:57</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-10-10 12:01:52)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-10-10 18:01:57)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -932,6 +932,510 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296477" target="_blank" rel="noopener noreferrer">Queries hanging, waiting on connection with file /tmp/.s.GPMC.sock</a></div>
+                <div class="summary">DB is in hung state. Able to open psql session and enter query, but it hangs and does not return. A strace of the query porcess on the segment shows that it is waiting for a connection to file /tmp/.s.GPMC.sock [gpadmin@autchisdbs07 ~]$ strace -p 7....,Check segments and see that query is stuck on one segment. A strace of the query process on the segment shows that it is waiting for a connection to file /tmp/.s.GPMC.sock This is a GPCC agent file: [gpadmin@autchisdbs07 ~]$ strace -p 79688 strace: P....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296477</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296508" target="_blank" rel="noopener noreferrer">Query with incorrect sorting when using legacy planner in Greenplum Database (GPDB)</a></div>
+                <div class="summary">In some cases, when running a query similar to the one below with legacy planner, the result that the query returned might not be able to be sorted correctly. Please refer to the example below: -- example query (with optimizer=off) > select</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296508</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296479" target="_blank" rel="noopener noreferrer">Incorrect value for float8 when loaded with COPY (gpcopy and gprestore)</a></div>
+                <div class="summary">During COPY, the float value is changed. Steps: 1. Create a table with float8 data type. 2. Insert value: -74848942736333776000 3. Create another table with float8 column 4. Using COPY statement, load data from first table to second table 5. Ve....,The issue is with the GUC, extra_float_digits. Please review the following Documentation link: https://gpdb.docs.pivotal.io/5210/ref_guide/config_params/guc-list.html#extra_float_digits Excerpt from documentation: "extra_float_digits - Adjusts ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296479</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296487" target="_blank" rel="noopener noreferrer">How to access S3 storage with self-signed certificates with Pivotal Extension Framework (PXF)</a></div>
+                <div class="summary">How to setup Pivotal Extension Framework (PXF) when accessing a private S3 object storage cluster with a self-signed certificate. The PXF servers will need to recognize the self-signed certificate. This article covers how to configure PXF to store an....,Create a keystore of the certificate Create a keystore of the certificate in file in directory $PXF_CONF/conf, for example $PXF_CONF/conf cacerts. This can be located elsewhere in the PXF_CONF directory, specifically, in a directory that will get syn....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296487</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412179" target="_blank" rel="noopener noreferrer">How to find my Organization ID in the Cloud Service Console</a></div>
+                <div class="summary">The Organization ID needs to be shared with Support to receive assistance with services such as VMC and VLR. This article guides you to find your Organization ID.,Log in to the Cloud Service Console. In the Top right corner, you see a dropdown next to your name, click View Organization Details. You will see your Organization Name and the Organization ID. Note: If you do not see the View Organization Details ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412179</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud on AWS,VMware Live Recovery</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412189" target="_blank" rel="noopener noreferrer">How to Identify My Organization Roles in the Cloud Service Console</a></div>
+                <div class="summary">Need to know what Organization role and Service roles are assigned to my profile, / How to find my roles in my Organization.,Log in to the Cloud Service Console. On the Top right corner, you will see a dropdown next to your name, click My Account. The assigned Organization & Service roles are displayed . Note: You will view the service tile on the Home page only if the re....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412189</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud on AWS,VMware Live Recovery</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412185" target="_blank" rel="noopener noreferrer">How to set a Default Organization in the Cloud Service Console</a></div>
+                <div class="summary">I am part of multiple Organizations, and want to set one Organization as the default when I log in to the Cloud Service Console.,Log in to the Cloud Service Console. On the Top right corner, you will find a dropdown next to your name, click My Account. Click the My Preferences tab. The list of Organizations you have access to will be listed. 5.Select the Organization that you ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412185</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud on AWS,VMware Live Recovery</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296528" target="_blank" rel="noopener noreferrer">GPSS CPU Leak (R&D guidelines on what to collect)</a></div>
+                <div class="summary">This is internal article to help to troubleshoot the gpss issues. Feel free to edit and add more guidelines where necessary. Scenario 1 Customer noticed that the CPU on one of our ETL Servers increased from around 5% to a constant 40%. Checking htop ....,Workaround Restart it and re-submit its' jobs. After doing so, this gpss process consumes only 85% CPU. Guidelines from R&D on what to collect in situations like this: 1. re-run gpss with --debug-port parameter gpss --debug-port 9999 2. run the j....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296528</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296542" target="_blank" rel="noopener noreferrer">GPCC: pq: LDAP authentication failed for user "gpmon"</a></div>
+                <div class="summary">Running gpcc start or gpcc start -W fails with the following error: gpcc start -W Password for GPDB user gpmon: Starting the gpcc agents and webserver... pq: LDAP authentication failed for user "gpmon" ,Move the gpmon entries before the LDAP setting and run gpstop -u to reload the config. local gpperfmon gpmon md5 host all gpmon 127.0.0.1/28 md5 host all gpmon ::1/128 md5 host all gpmon samenet md5 host ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296542</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296926" target="_blank" rel="noopener noreferrer">Restoring data(views) failed with error "GROUP BY position -1 is not in select list (SQLSTATE 42P10)"</a></div>
+                <div class="summary">When we restore the data via gprestore, sometimes we might see the below error when restoring a view: 20231225:10:38:19 gprestore:gpadmin:gp-aio-rocky8:002282-[INFO]:-Restoring pre-data metadata Pre-data objects restored: 0 / 2 [--------------------....,R&D has already confirmed the root cause and the issue will be fixed under GPDB 6.27.0</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296926</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296658" target="_blank" rel="noopener noreferrer">Query performance drops significantly following upgrade from VMware Tanzu Greenplum 6.4.0 or higher</a></div>
+                <div class="summary">Due to a fix in VMware Tanzu Greenplum 6.5.0 and above, there can be a performance degradation for some queries with a Query Optimizer. The following is a detailed description of why this happens: Removed support of range predicates for dynamic parti....,This behavior can be reversed by upgrading to GPDB 6.13.0 or higher and setting optimizer_enable_range_predicate_dpe to on with the following command: gpconfig -c optimizer_enable_range_predicate_dpe -v on --skipvalidation gpstop -u</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296658</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=295220" target="_blank" rel="noopener noreferrer">GPSS job unexpectedly exit when there is segment failure</a></div>
+                <div class="summary">Issue When a segment goes down, there's chance that GPSS job will also exit with the following messages: 20230921 07:20:32.89143,343,debug,All workers of kafka reader gpopdata_json are finished 20230921 07:20:32.89144,343,debug,Channel gpopdata_json ....,Workaround The temporary workaround is to resubmit the job before restarting the job, e.g: 1. submit GPSS job 2. start GPSS job 3. stop GPSS job 4. resubmit GPSS job yaml file 5. start GPSS job Solution The solution would be upgrade to GPSS 1.11 or l....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 295220</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296336" target="_blank" rel="noopener noreferrer">GPTEXT - How to index large number of documents in batch</a></div>
+                <div class="summary">Indexing documents in GPTEXT is a memory consuming operation, therefore when indexing a large number of documents, the gptext.index() might fail due to exceeding the limitation of memory or due to timeout, with errors like the one below: java.util.c....,Let's assume we have a table named t1 like below. The index "demo.public.t1" was create based on id and content. Table "public.t1" Column | Type | Modifiers ---------+---....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296336</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296337" target="_blank" rel="noopener noreferrer">GPText search function may return wrong when the search was limited with time range</a></div>
+                <div class="summary">When using the GPText search function against a certain date period, sometimes the result could be wrong due to the code for formatting the timezone. Please refer to the example below: Let's assume our timezone setting is like below: $ gpconfig -s Ti....,Root cause: The column type in the table is 'timestamp' which is not affected by timezone but column type 'timestamptz' is. However, GPText converts values of 'timestamp' type as the same as 'timestamptz'. So the date will be updated with the timezon....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296337</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296373" target="_blank" rel="noopener noreferrer">How did GPCC calculate buffer/cache usage in cluster metrics page.</a></div>
+                <div class="summary">How did GPCC calculate buffer/cache usage in cluster metrics page. We may notice buffer/cache usage is near 100%, while memory used is less than 10% in GPCC cluster metrics page.,Here is how GPCC calculate the buffer/cache usage. + get the Buffers from /proc/meminfo. + get the Cached from /proc/meminfo. + get the SReclaimable (if it exists) from /proc/meminfo. + get the MemTotal from /proc/meminfo . + store the Cached +SRecla....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296373</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412519" target="_blank" rel="noopener noreferrer">The IP address of gateway by "esxcli network ip interface ipv4 get" command showed "0.0.0.0" after upgrading to ESXi 8.0.</a></div>
+                <div class="summary">After upgrading ESXi from 7.0 or before 8.0 U1 to 8.0 U1a or leter, the default gateway shown by esxcli network ip interface ipv4 get changed to "0.0.0.0" for vmk that did not have a default gateway configured. Note: Here is the example output. Envir....,The command output has changed in ESXi 8.0 U1a. The gateway setting has not changed and there is no impact.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412519</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296798" target="_blank" rel="noopener noreferrer">gpload error: unknown meta type 108 with send error message: line too long in file</a></div>
+                <div class="summary">When running gpload, the following error is seen: ERROR: gpfdist error: unknown meta type 108 (url_curl.c:1674) (seg0 slice1 xx.xx.xxxx:7000 pid=18219) Running gpload in very verbose mode reveals the following warning. WARN [1:1:0:7] send error mess....,Add the following to the gpload YAML file in the "Input" section: - MAX_LINE_LENGTH: 256000000</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296798</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296415" target="_blank" rel="noopener noreferrer">PG_AUTO_FAILOVER: all nodes down after enable SSL due to ceritificate issue</a></div>
+                <div class="summary">In pg_auto_failover, the user can enhance the network security by enabling the SSL (via command: # pg_autoctl enable ssl xxxx), refer to this document In some cases, After enabling the SSL, the user might notice all data nodes been marked as unhealth....,Troubleshooting steps: When the data node has been marked as unhealthy, please check the Postgres logs of the data node, below is an example: From the logs, we can see: The monitor is trying to connect to the data node with SSL, but failed: "could no....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296415</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=295578" target="_blank" rel="noopener noreferrer">How to retrieve the COMMENT for a Database object</a></div>
+                <div class="summary">In GPDB, comment stores a comment about a database object. These can be for tables, schemas, databases, etc. Further details about this feature and about how to add a comment to an object is available in the Greenplum Guide. At times you may need to ....,For a Table To get the comments for a table there are 2 methods: Options 1: Use the psql meta-command \dd pivtest1. The description column holds the COMMENT value. Object descriptions Schema | Name | Object | Description ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 295578</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296524" target="_blank" rel="noopener noreferrer">This query is not currently supported by GPDB. (dbsize.c:xxx) (entry db xxx ) (cdbdisp.c:xxx)</a></div>
+                <div class="summary">This issue occurs when a user tries to insert a subquery result into a table and the subquery includes a pg_relation_size() function. A sample query is shown below: create table test2 as select pg_relation_size(ta.schemaname || '."' ||ta.tablename ||....,We can try to workaround this issue by using the copy tool: Create a view for the selected query, for example, v1. Run copy: psql -c 'copy (select * from v1) to stdout' |psql -c "copy table_name from stdin"</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296524</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=393803" target="_blank" rel="noopener noreferrer">NSX installation failing on a vLCM enabled cluster</a></div>
+                <div class="summary">When using VMware Life Cycle Manager to deploy/upgrade NSX, the deployment of NSX to a host transport node fails after upgrading the host to ESXi 8.x.,Verify that communication on TCP port 9087 to the vCenter from NSX manager is allowed in firewalls, and smart switches.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 393803</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296293" target="_blank" rel="noopener noreferrer">GPText indexes in YELLOW - replicas are down - cannot be recovered</a></div>
+                <div class="summary">After power outage, replicas are down on GPText 3.2.0, gptext-recover did not recover the replicas. Both indexes on the cluster had replicas down: gptext-state --index=pivotal.dbo.products 20200903:08:57:22:066419 gptext-state:mdw1:gpadmin-[INFO]:-Ex....,Root Cause When doing recovery, a replica will ping its leader first. But if the “ping” takes more than a second, then the replica will think the “ping” failed and retry the “ping”. That’s the reason we can get many “failed to connect leader” errors ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296293</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413689" target="_blank" rel="noopener noreferrer">How to Delete a Content Library Associated with a Datastore</a></div>
+                <div class="summary">A situation in which a content library associated with an unnecessary data store needs to be deleted from the content library list.,You can delete it by following these steps: Open the content library in the vSphere Client. Select the relevant content library. Click [ACTIONS] > [Delete Content Library].</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413689</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296330" target="_blank" rel="noopener noreferrer">Standby master or mirror would show "FATAL the database system is in recovery mode" while gpstate shows the cluster is in sync in Pivotal Greenplum</a></div>
+                <div class="summary">Sometime, we may notice below FATAL error message in the standby master or mirror as below: 2020-03-17 00:23:01.276048 EDT,"gpadmin","template1",p5024,th-346093440,"172.28.8.2","7229",2020-03-17 00:23:01 EDT,0,,,seg-1,,,,,"FATAL","57M02","the databa....,This error message is a normal message for standby master or mirror while syncing. The reason of that is while standby or mirror is syncing, it would be in the recovery mode. If we connect them via utility mode at that time, this FATAL error message ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296330</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296441" target="_blank" rel="noopener noreferrer">Creating a plpython function requires superuser access in Greenplum</a></div>
+                <div class="summary">When you create a plpython function, only superuser access (db account) is allowed. Greenplum inherited this design from Postgresql.,Checklist: When you create a plpython function, only superuser access (db account) is allowed. Greenplum inherited this design from Postgresql. In Postgresql, it has below setting for each user-created language. https://www.postgresql.org/docs/8.4/c....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296441</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413701" target="_blank" rel="noopener noreferrer">Unable to login edge transport node using audit account</a></div>
+                <div class="summary">Log in attempt to the NSX edge node using the audit account abruptly closes the session. Admin and root accounts work as expected.,Deletion of any NSX local node users namely root, admin, audit, guestuser1, guestuser2, including the change of user id is not supported in any release before NSX 4.1. If the Linux utility command 'userdel' was used to delete the local node user/user....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413701</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296514" target="_blank" rel="noopener noreferrer">FAQ: Gpfdist and Informatica Compatibility</a></div>
+                <div class="summary">This article covers how to check Greenplum's gpfdist and Informatica Compatibility,For Informatica compatibility with gpfdist, we first need to go to the following Informatica page: https://docs.informatica.com/data-replication/data-replication/9-8-0-hotfix-2/installation-and-upgrade-guide/installing-data-replication/system-require....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296514</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412679" target="_blank" rel="noopener noreferrer">Power on a virtual machine from ESXi Host Client fails because an encryption key is missing.</a></div>
+                <div class="summary">Power on a virtual machine from ESXi Host Client fails with the following message. Failure - An encryption key is required. - The virtual machine is locked. - To unlock this virtual machine, you need the key with ID "#####...". - The required key is ....,Restore Native Key Provider via vSphere Client. Refer to Configuring and Managing vSphere Native Key Provider. You also need to check if ESXi host encryption mode is enabled. Please see Activate Host Encryption Mode Explicitly.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412679</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296907" target="_blank" rel="noopener noreferrer">Greenplum query fails with the error "interconnect may encounter a network error" due to an unstable network (UDP packet drop)</a></div>
+                <div class="summary">When there is a network issue between hosts of the Greenplum cluster, The query or the function may report the error like: “interconnect may encounter a network error, please check your network”. In the current release of Greenplum, there is a code ....,Both above scenario is related to unstable network. to confirm the network issue, please do below steps: Option#1, Enable the debug level of logs: set gp_log_interconnect to debug; set log_min_messages to debug5; Once those settings are enabled on ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296907</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296245" target="_blank" rel="noopener noreferrer">GPTEXT frequently asked questions (FAQ)</a></div>
+                <div class="summary">Internal FAQ on GPText,Is there a script that can quickly collect all GPTEXT logs? The latest gpmt release has included the ability to collect GPTEXT logs, see gpmt gp_log_collector gpsupport in 7.x does not have the gptext option. How much Solr instance(s) should I cre....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296245</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413694" target="_blank" rel="noopener noreferrer">Monthly Scheduled Report is not supported.</a></div>
+                <div class="summary">Customer may observe that the start time of the Monthly Scheduled Report generated is in the future.,There is no solution in current release, Aria Operations for Logs 8.18.x.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413694</span>
+                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296604" target="_blank" rel="noopener noreferrer">GPTEXT query failed with error: ERROR: could not access file "gptext-x.x.x": No such file or directory</a></div>
+                <div class="summary">Background: - In the old GPTEXT release, the lib file of gptext will be copied into $GPHOME folder and then load it when GPTEXT is running - In the latest version of GPTEXT (as of now is 3.9.1), the gptext process will no longer copy this file, inst....,Workaround: To fix this, we need correct the value of dynamic_library_path. the correct value should be similar to below, noted that the /opt/greenplum-text-3.9.1/ in the below example is $GPTXTHOME # source /opt/greenplum-text-3.9.1/greenplum-text_p....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 296604</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412822" target="_blank" rel="noopener noreferrer">What is needed in upgrading from VMware Aria Suite version 8.18.x to VMware Aria Suite version 8.18.y (newer)</a></div>
+                <div class="summary">Tips for upgrading from 8.18.x to 8.18.y (newest as of 2025) to protect against vulnerabilities. Step by step breakdown for upgrading from 8.18.x to 8.18.y (newest as of 2025),Confirm the version upgraded to is as described for 8.18.y (newest as of 2025) release note. Check the "Product Interoperability Matrix", to see if Aria Operations manager is compatible to the intended version to be upgraded to: https://interopmatrix....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412822</span>
+                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413497" target="_blank" rel="noopener noreferrer">Migrate option is not available under Lifecycle Management on Local NSX site in NSX Federation environment.</a></div>
+                <div class="summary">This is an NSX Federation environment where the Global site is managing multiple local sites. The migrate option is not visible on the local NSX manager node UI. Even after enabling the "migration-coordinator" service for NSX V2T migration on the lo....,This is an expected behavior. All NSX V to T migration activity will be performed through the Global managers. For further information, regarding NSX V2T migrations, please refer the administrative guide: Performing NSX V2T migrations</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413497</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=298717" target="_blank" rel="noopener noreferrer">Tanzu Kubernetes Grid Integrated Edition: TKGI: After applying ValidatinWebhookConfiguration every request goes timeout.</a></div>
+                <div class="summary">Problem description: Trying to use a ValidatinWebhookConfiguration. The configuration and all looks fine, but when they apply the config every request goes into a timeout and doesn't reach the destination. Tested it from the master directly with a n....,When ValidatinWebhookConfiguration is in place the service kube-apiserver on the master before sending the command for execution sends it to the configured validation webhook endpoint. All tests showed successful connectivity to the validation en....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 298717</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Kubernetes Grid Integrated Edition</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=297311" target="_blank" rel="noopener noreferrer">Unable to upgrade or create new clusters on TKGi/TKGs with NSX-T v3.2.x</a></div>
+                <div class="summary">Symptoms on tanzu side Can't create new clusters on TKGi/TKGs Can't upgrade clusters on TKGi (as it runs an errand deploying a new cluster which fails) Affected versions: TKGi: 1.16.x, 1.15.x and 1.14.x TKGs: vsphere 7.0u3x releases Symptoms on NSX....,Currently, there is a workaround. Rolling reboot of NSX-T manager cluster fixes the problem for some time, however can come back. Issue is resovled in NSX-T 3.2.3</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 297311</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Kubernetes Grid Integrated Edition</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413677" target="_blank" rel="noopener noreferrer">Index is currently out of sync for Host Transport Node. The system is attempting to recover. (Error code: 60515)</a></div>
+                <div class="summary">The NSX Manager is unable to properly load the Inventory page, as well as the nodes and cluster-related information under the Fabric tab. NSX manager UI display the below error: Edge list failed – Index is currently out of sync for resource_type: Phy....,If you believe you have encountered this issue, please open a support case with Broadcom Support and refer to this KB article. For more information, see Creating and managing Broadcom support cases.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413677</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=338897" target="_blank" rel="noopener noreferrer">HTTP Error 400 in vSphere Client: No matching request found for WebSSO response.</a></div>
+                <div class="summary">Unable to login if you enter your credentials again on a session that you left open and vCenter Server logged out of your account due to the timeout settings for the vSphere Client. Unable to login if you enter your credentials on a login screen open....,This is an expected behavior. Hitting in the bottom "Back to login screen" or refreshing the web browser before login is the correct process to log back into the vSphere Client. This couldn't be disabled as this is a security method that VMware impl....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 338897</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=400053" target="_blank" rel="noopener noreferrer">Issue updating Tanzu guest cluster to v1.29 and above due to pre-installed snapshot-controller package</a></div>
+                <div class="summary">Tanzu guest cluster is being updated to v1.29 or above There is an upstream "snapshot-controller" package already installed in the cluster k get tkc shows 'Ready = False' from the Supervisor CLI In the vSphere UI -> Supervisor -> Compute -> Tanzu....,Remove the non-standard upstream installation of the snapshot-controller package from the Guest Cluster</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 400053</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411722" target="_blank" rel="noopener noreferrer">ESXi host no longer part of vDS after the failed ESXi upgrade</a></div>
+                <div class="summary">ESXi host upgrade got hung and the host was rebooted. The host has no network connectivity after reboot. Logging in as root through DCUI and checking the vDS configuration with "net-dvs -l" command gives the following error: # net-dvs -l failed to ge....,As the host has corrupted data during the failed upgrade, the cleanest method to recover would be to reinstall ESXi host.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 411722</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413667" target="_blank" rel="noopener noreferrer">Error "The credentials were incorrect or the account specified has been locked., error code 403" when Modifying the NSX-T Manager Settings in VMware Cloud Director</a></div>
+                <div class="summary">Unable to modify the NSX-T Manager Settings in VMware Cloud Director. Error message shows: Error: [ ######-######-######-###### ] 无法连接到 NSX Manager - Unauthorized (com.vmware.vapi.std.errors.unauthorized) => { messages = [], data = struct => {error_m....,Change the language of the web browser to English. Edit the integrated NSX Manager Settings in VMware Cloud Director Provider portal again.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413667</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=321338" target="_blank" rel="noopener noreferrer">Enhanced Guest OS information for disks in vSphere 7.0</a></div>
+                <div class="summary">This article provides information on a new feature in VMware vSphere 7.0 where Guest OS partitions can be associated with the underlying virtual disks with the help of disk UUID (instead of SCSI ID).,As of VMware Tools 11.0 and vSphere 7.0, Guest OS partitions can be associated with the underlying virtual disks. This information is exposed through the vim.vm.GuestInfo.DiskInfo structure. Each Guest OS partition exposes the name and key of the vir....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 321338</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413656" target="_blank" rel="noopener noreferrer">Supervisor upgrade from 1.28 to 1.29 fails while configuring TMC component.</a></div>
                 <div class="summary">We see the following error on the Supervisor. ImageController configured SecretgenController configured LicenseOperatorController configured EnvProps configured ImageRegistry configured CsiController configured TMC configured Configuration error (sin....,1. SSH to the Supervisor and run the commands below to restart the deployments in the vmware-system-cert-manager namespace. kubectl rollout restart deployment -n vmware-system-cert-manager cert-manager-cainjector kubectl rollout restart deployment -n....</div>
                 <div class="details">
@@ -956,18 +1460,6 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410634" target="_blank" rel="noopener noreferrer">vCenter Server 7.0 をアップデートまたはアップグレードした後、vSphere Client と VAMI へのログインが読み込み中のままになります。</a></div>
-                <div class="summary">Firefox の古いバージョンを使用すると、次の問題が発生することがあります。 vSphere Client にログインした後、loading circle が表示されたままになります。 VAMI (vCenter Server Appliance Management Interface) のログイン画面が表示されずに、Loading... のままになります。 Note: ログイン認証後に空白の画面が表示されるケースもあります。 いずれの場合も読み込み中のままでエラー メッセージは出力されま....,使用しているブラウザを vSphere Client Software Requirements を満たすバージョンに更新してください。</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410634</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410630" target="_blank" rel="noopener noreferrer">After updating or upgrading vCenter Server 7.0, login to vSphere Client or VAMI remains in a loading state.</a></div>
                 <div class="summary">The following issues may occur using an older version of Firefox. After login to vSphere Client, loading circle remains displayed. Login screen of VAMI(vCenter Server Appliance Management Interface) is not displayed and remains loading. Note: In some....,Update browser being used to a version that meets vSphere Client Software Requirements.</div>
                 <div class="details">
@@ -980,527 +1472,11 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413501" target="_blank" rel="noopener noreferrer">Unable to add multiple ESXi hosts to VxRail cluster with error messages "Unable to create transport node collection with profile..."</a></div>
-                <div class="summary">When adding multiple ESXi hosts to VxRail cluster using SDDC manager user interface (Add VxRail Hosts) following symptom can be occur : ( If only one ESXi hosts is attempted to add to the VxRail cluster, this issue does not match.) - Failed the task....,This issue has been fixed in VCF 5.2.2 and later. To workaround the issue, - If SDDC manager UI is used, please add one at a time. - If you will use API, please add the hosts as a reference to following KB: https://knowledge.broadcom.com/external/ar....</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410634" target="_blank" rel="noopener noreferrer">vCenter Server 7.0 をアップデートまたはアップグレードした後、vSphere Client と VAMI へのログインが読み込み中のままになります。</a></div>
+                <div class="summary">Firefox の古いバージョンを使用すると、次の問題が発生することがあります。 vSphere Client にログインした後、loading circle が表示されたままになります。 VAMI (vCenter Server Appliance Management Interface) のログイン画面が表示されずに、Loading... のままになります。 Note: ログイン認証後に空白の画面が表示されるケースもあります。 いずれの場合も読み込み中のままでエラー メッセージは出力されま....,使用しているブラウザを vSphere Client Software Requirements を満たすバージョンに更新してください。</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413501</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412815" target="_blank" rel="noopener noreferrer">NSX Manager upgrade pre-check fails due to upgrade-coordinator processes are stuck</a></div>
-                <div class="summary">Upgrade pre-check failed with the following message. Unexpected error while upgrading upgrade unit: NSX Manager upgrade dry run failed. Do not proceed with the upgrade. Please collect the support bundle and contact VMWare GS. Retry pre-check also fai....,This issue is fixed in VMware NSX 4.2.1. Restart upgrade-coordinator service as admin on the NSX Manager where the pre-check invoked to unblock this situation. nsxmanager> restart service install-upgrade</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 412815</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=322247" target="_blank" rel="noopener noreferrer">Resetting the root password in vCenter Server Appliance</a></div>
-                <div class="summary">The root account password of VMware vCenter Server Appliance fails. The root account of the vCenter Server Appliance is locked or account is expired. The root account password has been lost or forgotten. You are unable to login to vCenter Server with....,Process to Reset the Root Password in vCenter Server Appliance(VCSA): To reset the root password for the vCenter Server Appliance: Before proceeding with the steps below, take both a backup and a snapshot of the vCenter Server Appliance. If the vCent....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 322247</span>
+                    <span><span class="detail-label">Article ID:</span> 410634</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413653" target="_blank" rel="noopener noreferrer">Aria suite lifecycle report LCMVRAVACONFIG590047 during Aria automation upgrade</a></div>
-                <div class="summary">vRLCM report LCMVRAVACONFIG590047 but the upgrade complete is marked. Still the Aria automation stay at the old version. Below error found in vRLCM log: Manifest cannot be downloaded from the repository,8.18.1 patch for Aria Automation 8.18 only supported in vRLCM. vracli method could only be used for standalone Aria Orchestrator appliance.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413653</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413651" target="_blank" rel="noopener noreferrer">Unlock vCenter Server localos user account</a></div>
-                <div class="summary">You are unable to login vCenter Server Appliance Management Interface with error "Exception in invoking authentication handler User account locked" The local account of the vCenter Server Appliance is locked. This KB provides the way to unlock vCente....,Process to unlock local user in vCenter Server Appliance(VCSA): 1. Log in to the VC via SSH or console with root and access the shell 2. check the number of failures with the following command: pam_tally2 --user=local_user_name -> If the number of fa....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413651</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411424" target="_blank" rel="noopener noreferrer">vCenter Server のパスワード更新後、Usage Meter のユーザーインターフェイス (UI) に「Credentials Verification Failure.」というエラーが表示されます。</a></div>
-                <div class="summary">vCenter Server のパスワード更新後、Usage Meter のユーザーインターフェイス (UI) に以下のエラーが表示されます: 「Credentials Verification Failure」 Usage Meter はこの vCenter Server インスタンスの計測が出来なくなっています。,この問題を解決するには、以下の手順を実施してください。 VCF usage meter Web インターフェイスのメイン メニュー バーで 製品 をクリックします。 左側のナビゲーション ペインで、 Cloud > vCenter を選択します。 製品ページで編集する vCenter Server インスタンスを特定し、編集 をクリックします。 パスワードを編集するには、Endpoint テキストボックス内のペンアイコンをクリックします。 Password テキストボックスに、インスタンスの新....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 411424</span>
-                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=383306" target="_blank" rel="noopener noreferrer">ESXi host upgrade fails with HostUpgrade.MissingDependencyVibs</a></div>
-                <div class="summary">Upgrading ESXi host from 7.x to 8.x fails with ESXi host upgrade fails with "Software or system configuration of host HOST.EXAMPLE.COM is incompatible. Check scan results for details". in, /var/log/vmware/vmware-updatemgr/vum-server/vmware-vum-server....,A custom install image may contain the vib in its ISO, where you can use the custom ISO instead (Engage Custom OS Vendor to validate the Dependency VIB's) Before removing the conflicting VIB, make sure that the VIB is not being used by the Network an....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 383306</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410916" target="_blank" rel="noopener noreferrer">Deployment of VMware Cloud Gateway 8.0.2 fails at On-premises SSO configuration step</a></div>
-                <div class="summary">Unable to deploy VMware Cloud Gateway 8.0.2,VMware Cloud Gateway for vSphere+ is a deprecated product that can no longer be deployed. Disconnect Subscribed vCenter Servers from vSphere+ Cloud Console and Apply License Keys</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410916</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=407365" target="_blank" rel="noopener noreferrer">"Failed to get controller list" when 'get controllers' is executed and NSX Transport node status is in 'unknown' state.</a></div>
-                <div class="summary">NSX Transport node status is in Unknown state Ping test from affected ESXi host to all NSX managers completes From the NSX UI, under Fabric --> Hosts --> (affected host), click on "view details" which shows Controller connectivity "Unknown" Command '....,The nsx-nestdb service can be restarted manually using the command: /etc/init.d/nsx-nestdb restart To validate the status of the nsx-nestdb service use the command: /etc/init.d/nsx-nestdb status The controllers are available when executing the get co....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 407365</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410446" target="_blank" rel="noopener noreferrer">IX Appliance RSA Private Key Displayed in HCX Manager app.log</a></div>
-                <div class="summary">When reviewing HCX Manager logs found in , the "RSA private key" for the IX appliance is seen. If HCX Manager is configured to send log messaging to syslog server, this key will be stored on syslog server.,Resolution: This is resolved in HCX 4.11.3. VMware HCX 4.11.3 Release Notes Workaround: Download and copy the attached file to HCX Manager. Extract the tar file: The file update-log-config.sh sh....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410446</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=323195" target="_blank" rel="noopener noreferrer">vCenter services vapi-endpoint and vpxd-svcs fail to start with "Unexpected status code: 404"</a></div>
-                <div class="summary">Impact/Risks: Warning: Before running the attached script, ensure proper snapshots have been taken of the SSO domain. This means all vCenters or PSCs that are in the SSO domain must be shutdown at the same time, then perform a snapshot of all machine....,To correct the value: Confirm the vmwSTSConnectionStrings value is invalid by running the command below (Note: This assumes vsphere.local. Change the domain name to match) ldapsearch -o ldif-wrap=no -LLL -H ldap://localhost -x -W -D "cn=administrat....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 323195</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413642" target="_blank" rel="noopener noreferrer">Unable to generate diagnostics report bundle through VxRail</a></div>
-                <div class="summary">Unable to generate diagnostics report bundle on vCenter Screen does not load, spins in circles: ,Contact Dell Support</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413642</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=379810" target="_blank" rel="noopener noreferrer">Configuring NO_PROXY in 8.0 UI returns an syntax error when using Wildcards or subnets</a></div>
-                <div class="summary">When trying to configure IP address / FQDN in the NO_PROXY text box in the VAMI you will see an error stating " Enter a valid list of comma separated FQDN or IP address" Trying to add a new host exclusion to the proxy settings on our vCenter, Gettin....,Please use the kb bellow to configure these values using SSH https://knowledge.broadcom.com/external/article/370265/how-to-configure-proxy-settings-for-vcen.html</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 379810</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413620" target="_blank" rel="noopener noreferrer">When adding or configuring a VM's network, no network is seen: "No items found"</a></div>
-                <div class="summary">When adding or configuring a VM's network, no network is seen, even when no filters are applied: "No items found",Create a Virtual Machine portgroup, or move the VM to a host that has a Virtual Machine portgroups configured. See Port Group Configuration for Virtual Machines for guidance on configuring a Virtual Machine portgroup on a standard switch.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413620</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=381319" target="_blank" rel="noopener noreferrer">"Unknown" status for NSX prepared host due to nestdb DOWN</a></div>
-                <div class="summary">NSX was recently upgraded to 4.2.x. During ESXi host boot/reboot the nestdb agent remains down. Controller connectivity of host shows "Unknown state" in host details overview of the NSX UI. Command 'nsxcli -c get controllers' returns % Failed to ge....,This issue is resolved in VMware NSX 4.2.1.1 available at Broadcom Downloads Steps to locate and download Broadcom products and software are available at Download Broadcom products and software Workaround: On the affected host manually start nestdb ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 381319</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX,VMware NSX Networking</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=324497" target="_blank" rel="noopener noreferrer">The resource 'Port-ID' is in use error when removing a host from vSphere Distributed Switch (vDS) when nothing is using it</a></div>
-                <div class="summary">When an ESXi host has no running virtual machines and is on Maintenance Mode, these symptoms are observed: Unable to remove an ESXi host from the vSphere Distributed Switch (vDS). Error similar to this is seen: The resource '###' is in use. Note: ....,The best way to remedy this will depend on which type of network connection is associated with the dvPort "###" in the error message. If it is determined that: The dvPort "###" is associated with a virtual machine or a virtual machine template, and T....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 324497</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413617" target="_blank" rel="noopener noreferrer">The resource 'Port-ID' is in use error when removing a host from vSphere Distributed Switch (vDS)</a></div>
-                <div class="summary">When attempting to remove a host from a vSphere Distributed Switch (vDS), the task fails with a status of "The resource '##' is in use".,Navigate to the host in vCenter and select Configure -> Networking -> Virtual Switches and see what VMs, VM templates, vmkernel adapters, or uplinks are still connected to the vDS and remove them. If the object is a VM, either move it off the host if....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413617</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413387" target="_blank" rel="noopener noreferrer">Aria Operations Upgrade Stuck at Stage 2 of 14 (Distributed)</a></div>
-                <div class="summary">During the upgrade of Aria Operations, the process may become stuck at Stage 2 of 14 when processing a Distributed PAK file. This issue is observed through the Admin UI > Software Update, where the upgrade does not progress beyond this stage. And thi....,Please follow the steps as below to resolve the issue and resume the upgrade Log in to the Admin UI as admin user account and take a note of the node(s) that are stuck at Stage 2 of 14. SSH into the affected node as the root user. Restart the CASA s....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413387</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=406661" target="_blank" rel="noopener noreferrer">The Bundle Transfer Utility fails to download the latest version of manifest with a 404 error message</a></div>
-                <div class="summary">Unable to download manifest files using the --bundleManifests option with Bundle Transfer Utility version 5.x or earlier. The lcm-bundle-transfer-util is returning a 404 error, as seen in the /var/log/vmware/vcf/lcm/lcm-debug.log file of the SDDC man....,Use Bundle Transfer Utility 9.0 or later to perform the download. The VCF Download Tool can be obtained from the Broadcom Support Portal by navigating to: My Downloads > VMware Cloud Foundation > VMware Cloud Foundation 9 > Drivers & Tools After ext....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 406661</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413605" target="_blank" rel="noopener noreferrer">"Unable to upgrade the database: Could not run cleanup for running jobs!" when updating VMware Cloud Director database</a></div>
-                <div class="summary">When upgrading the VMware Cloud Director database it exits with: "Unable to upgrade the database: Could not run cleanup for running jobs!" There are no failed tasks according to this knowledge article: "Unable to upgrade the database: Could not run c....,Increase the CPU and memory of the standby cells to match the primary within vCenter. The following KB can be followed: Recommended Procedure for resizing Cloud Director Appliances. Afterwards the database upgrade script should be re-attempted.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413605</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=387075" target="_blank" rel="noopener noreferrer">Recommended Procedure for resizing Cloud Director Appliances</a></div>
-                <div class="summary">VMware Validated Designs provide a comprehensive and prescriptive framework for the establishment and management of a software-defined data center. These designs incorporate a range of VMware products and solutions to create a standardized and valida....,Login to the Primary Appliance VAMI and take a backup of the Cloud Director Appliance Postgres Embedded Database. If your Appliances are powered on, take snapshots in vCenter of the Cloud Director Appliances with memory. Memory snapshots take longer ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 387075</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=396858" target="_blank" rel="noopener noreferrer">VxRail cluster is not ready for vLCM enablement</a></div>
-                <div class="summary">Enabling a vxRail cluster fails to Validate. Stops on "The VxRail cluster is not ready for vLCM enablement. Complete the recommended actions before enabling VMware vLCM" There is a compliance issue for nsx-lcp-bundle. You could try uploading the depo....,Contact Dell for assistance with VxRail. Use the next VxRail BOM that includes 8.0.3-0.55.24414501 or later. If there are still component downgrade issues presumably an even newer VxRail BOM should have component versions that are universally equal....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 396858</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411620" target="_blank" rel="noopener noreferrer">NSX alarm "Controller Channel To Transport Node Down" occurring repeatedly.</a></div>
-                <div class="summary">In the NSX Manager UI, the following alarm is seen to trigger repeatedly. Event Type Control Channel To Transport Node Down Description Controller service on Manager node 10.###.###.64 () to Transport node esxi70.example.com () do....,Anything that causes an interruption in the communication channel between the NSX Managers and the NSX-prepared ESXi transport nodes can cause this alarm to trigger. This includes rebooting the NSX-prepared ESXi transport node repeatedly. For additi....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 411620</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=318130" target="_blank" rel="noopener noreferrer">Build numbers and versions for VMware Aria Automation (formerly vRealize Automation)</a></div>
-                <div class="summary">How to Validate Your Version VMware Aria Automation 8.x CLI Method vracli version Note: For additional information, run the command with the --help argument. UI Method Navigate to the VMware Aria Automation Cloud Services Console at https://</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 318130</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413576" target="_blank" rel="noopener noreferrer">Getting the message "Dropped due to ARP failure" when testing routing in Traceflow</a></div>
-                <div class="summary">You are testing North-South connectivity and Traceflow shows "Dropped due to ARP failure," despite BGP peering being healthy and routes present in the forwarding table. Traceflow analysis reveals packets are "Dropped due to ARP failure" before reachi....,If the APIPA addresses are unexpected and are not configured purposefully, please investigate and resolve the DHCP service availability/reachability for vmk10 and vmk11 on the ESXi hosts. This includes: Verifying DHCP server reachability from the hos....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413576</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=380348" target="_blank" rel="noopener noreferrer">CSP-97727: Patch instructions to upgrade Photon-OS Library</a></div>
-                <div class="summary">Patch Superseded This patch (CSP-97727) has been superseded and is no longer available. Please install the latest cumulative update, CSP-102092, by following the instructions in KB 412021. Vulnerabilities Addressed by This (Superseded) Patch This art....,Prerequisites Version Support: It's recommended to upgrade any unsupported product versions to a supported version before applying this patch. Please refer to the VMware Product Lifecycle Matrix for a list of supported versions. Snapshots/Backups: It....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 380348</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410607" target="_blank" rel="noopener noreferrer">Corrupted vecs-cli Executable Impacts Certificate Mangement and VAMI based backups</a></div>
-                <div class="summary">[Errno 8] Exec format error: '/usr/lib/vmware-vmafd/bin/vecs-cli' This error may be seen in one more locations (logs, tool output, etc.). VAMI Backups Failing: In /var/log/vmware/applmgmt/backup.log, log messages similar to the following are found:....,To resolve the issue, replace the non-working vecs-cli executable with a healthy copy obtained from a working vCenter of the same version and build number. Steps: Identify a healthy VCSA running the exact same version and build number as the affected....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 410607</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413609" target="_blank" rel="noopener noreferrer">SRA command 'discoverArrays' failed</a></div>
-                <div class="summary">Symptoms: Discovering array pairs fails The following error message is displayed: SRA command 'discoverArrays' failed. Connection to storage system failed. Error : x509: certificate signed by unknown authority (possibly because of "x509....,Reach out to your storage array SRA support team for assistance. Most likely, the storage array certificate will need to be renewed or regenerated</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413609</span>
-                    <span><span class="detail-label">Product:</span> VMware Live Recovery</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411493" target="_blank" rel="noopener noreferrer">ESXi host not reachable after reboot or upgrade due to VDS(Virtual Distributed Switch) uplinks are lost</a></div>
-                <div class="summary">After an ESXi host reboot or upgrade, the host is not reachable on the network. The uplinks of the VDS are missing, the physical network adapter vmnic is not assigned to an uplink, and the network connectivity is lost on the VDS, as observed in the o....,Identify the mismatch between net-dvs and configstore (Refer to Knowledge Base article 367673 for details). # net-dvs -l | grep -E '^switch|common.alias' # configstorecli config current get -c esx -g network_vds -k switches | grep -E 'name|uu....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 411493</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412021" target="_blank" rel="noopener noreferrer">CSP-102092 Patch Instructions for VMware Identity Manager 3.3.7</a></div>
-                <div class="summary">This article provides instructions for upgrading VMware Identity Manager 3.3.7 to the CSP-102092 patch. It also covers the subsequent installation of VMware Aria Suite Lifecycle 8.18 Patch 5, which is a required step after patching Identity Manager. ....,Prerequisites Ensure your VMware Identity Manager is at version 3.3.7 GA or has a previously applied patch. Upgrade any unsupported versions before proceeding. Refer to the VMware Product Lifecycle Matrix for a list of supported versions. Take snapsh....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 412021</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=320783" target="_blank" rel="noopener noreferrer">"NT_STATUS_NOT_FOUND" error for file based backups of vCenter Server using the SMB protocol following update to 8.0U2</a></div>
-                <div class="summary">File based backups of vCenter Server via VAMI are configured to use SMB protocol. Both manual and scheduled backups which were previously working ok fail following update to 8.0U2. Backups now fail stating the following message: BackupManager encount....,Change the Backup location parameter in the backup settings to use the FQDN of the backup server rather than the shortname. See the Configure and Schedule Backups section of the vCenter Server Configuration documentation for setting this parameter. ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 320783</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413102" target="_blank" rel="noopener noreferrer">vCenter is repeatedly reporting "The ramdisk 'vsantraces' is full"</a></div>
-                <div class="summary">The following event of failure is logged by the vCenter, repetitively: The ramdisk 'vsantraces' is full. As a result the file /vsantraces/vsantraces--####-##-##T##h##m##s###--########-####.####.####-############.zst could not be written.,To resolve the issue, configure a persistent scratch location and follow steps from this article to resolve the issue The ramdisk 'vsantraces' is full If a dedicated VMFS/NFS datastore cannot be created, we may create a directory and move redirect vs....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413102</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413582" target="_blank" rel="noopener noreferrer">NSX-T 4.2.2.2 addresses CVE-2025-41251 and CVE-2025-41252</a></div>
-                <div class="summary">Vulnerability Scope: VMware NSX versions through 4.2.2.1 are anticipated to be vulnerable, as are certain vCenter Server versions (e.g., vCenter Server 8.0 Update 2b). NSX Partial Resolution: The NSX 4.2.2.2 update addresses CVE-2025-41251 and CVE-20....,This plan outlines the steps to take to address VMSA-2025-0016 Monitor for Official VMSA Release: Await the official publication of VMSA-2025-0016 on or after September 29, 2025. Access the advisory via the Broadcom Security Advisories portal. Revi....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413582</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=370826" target="_blank" rel="noopener noreferrer">How to update Aria Automation DNS property "Domain Search Path "</a></div>
-                <div class="summary">In case you need to update the additional DNS properties like DNS property "domains" is mapped as key "vami.domain.vRealize_Automation" in /opt/vmware/etc/vami/ovfEnv.xml DNS property "domain search" is mapped as key "vami.searchpath.vRealize_Automa....,In order to update and validate the DNS properties like: Domain Search Path, please follow the steps: Login to the Aria Automation Appliance console or ssh as root and stop services. /opt/scripts/deploy.sh --onlyClean Shutdown guest OS using LCM or v....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 370826</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413601" target="_blank" rel="noopener noreferrer">Unable to access ESXi host via https://IPADDRESS after adding the host to vCenter</a></div>
-                <div class="summary">The ESXi host is available via https://< IP_ADDRESS> once it is built. However, after it is added to the vCenter, the host is no longer accessible via https://< IP_ADDRESS>.,Add rules as required to the networking device to allow traffic.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413601</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=322609" target="_blank" rel="noopener noreferrer">Using a management interface other than vmk0 causes failure of migration from N-VDS to VDS</a></div>
-                <div class="summary">Symptoms: You're running NSX 3.x You're attempting to perform a migration from N-VDS to VDS One or more of the ESXi hosts to be migrated are configured to have a management vmkernel other than vmk0 When you run the command esxcfg-vmknic -l you see vm....,If you still haven't started the migration, please reconfigure the host to have vmk0 as management interface. Workaround: If you have already started the migration, the workaround would be as below: Apply the old Transport Node Profile, which was pre....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 322609</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=314364" target="_blank" rel="noopener noreferrer">VM Creation/Migration/Cloning fails with error: "A general system error occurred: PBM error occurred during PreCreateCheckCallback: Fault cause: pbm.fault.PBMFault; Non Existent Hubs given"</a></div>
-                <div class="summary">New Virtual machine/OVF deployment or cloning or VMotion or adding New Hard disk to an existing Virtual Machine fails with Error: "A general system error occurred: PBM error occurred during PreCreateCheckCallback: Fault cause: pbm.fault.NonExistentHu....,To resolve this issue, grant global Administrator access to (sps-#####) while preserving its specific feature privileges, please follow the below steps. Note: Please take a Snapshot of the vCenter server (Offline Snapshots of all the vCenter servers ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 314364</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413596" target="_blank" rel="noopener noreferrer">VAMI page for vCenter is inaccessible</a></div>
-                <div class="summary">VAMI page for vCenter is inaccessible Checking status of service systemctl status cap-lighttpd -l shows failed with the following: Duplicate config variable in conditional 0 global: xxxxxxxxx OR /var/lib/vmware/cap-lighttpd/lighttpd.conf line: ###....,Perform the following step: Take snapshot of the vCenter SSH to the appliance Change directory to /var/lib/vmware/cap-lighttpd/ Deleted duplicate entries (from the error) XXXXXXXXXXXXXX from the file lighttpd.conf OR Delete any lines (from the error....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413596</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=319356" target="_blank" rel="noopener noreferrer">How to Increase vIDM appliance disk space</a></div>
-                <div class="summary">This Article provides instructions on how to increase the disk size of all VMware Identity Manager (vIDM) nodes. After a series of upgrades, the VMware Identity Manager (vIDM) appliances may not have the correct disk size for the updated version.,Important Note: Delete any existing snapshots before resizing the hard disk, as disk size cannot be changed with active snapshots. Take new snapshots only after extending the disk. Since we are making disk changes and snapshot cannot be used as back ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 319356</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=374649" target="_blank" rel="noopener noreferrer">Route learned from eBGP neighbor is always preferred over same route learnt from inter-SR iBGP, even with high local preference on inter-SR iBGP route</a></div>
-                <div class="summary">Two edge nodes, edge1 and edge2. edge1 has eBGP peering with ISP1 and edge2 has eBGP peering with ISP2. They also have inter-SR enabled so there is iBGP peering as well. Both ISP1 and ISP2 are advertising same prefix. Edge2 has two routes in BGP tabl....,This is expected behavior. A route learned by an Edge node from a northbound router will always be preferred to the same route learned over inter-SR iBGP. It is not possible to change this preference.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 374649</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=396511" target="_blank" rel="noopener noreferrer">Failed to add new token-based URL in Lifecycle Manager, error "is invalid or cannot be reached now"</a></div>
-                <div class="summary">When adding new token-based URL on vCenter Lifecycle Manager it failed with following error. The download source https://dl.broadcom.com//PROD/COMP/ESX_HOST/main/vmw-depot-index.xml is invalid or cannot be reached now. To verify certificate....,To prevent this issue, ensure that communication between the vCenter Server and https://dl.broadcom.com is not decrypted and re-encrypted by the SSL introspection software, but can instead pass untouched.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 396511</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413595" target="_blank" rel="noopener noreferrer">VM Clone Operation Fails With "Failed to Quiesce the Virtual Machine" Error</a></div>
-                <div class="summary">When attempting to clone a powered-on Windows virtual machine, administrators may encounter errors such as: "An error occurred while quiescing the virtual machine. See the virtual machine's event log for details. An error occurred while taking a snap....,Recommended Solution: Update the disk configuration of the virtual machine so that all GPT disks contain a Microsoft Reserved (MSR) partition. Use Windows Disk Management or DiskPart to add an MSR partition to each GPT disk if missing. This ensures t....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413595</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=398825" target="_blank" rel="noopener noreferrer">BFD Down On External Interface In router UUID or BFD session for peer UUID is down.</a></div>
-                <div class="summary">BFD Down Alarm is triggered Packet capture on the physical NIC of the ESX where the Edge resides shows BFD packets being sent to the top of rack (TOR). pktcap-uw --uplink [pnic] --capture UplinkSndKernel,UplinkRcvKernel --ip [ip] --dstport 3784 -o - ....,This is a third party issue and will require engagement from the Top Of Rack (TOR) Switch Vendor</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 398825</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413551" target="_blank" rel="noopener noreferrer">Upgrade pre-check failed with vSAN health error, General vSAN error. Disk(s) diskid are unmounted, but are part of a mounted disk group.</a></div>
-                <div class="summary">VSAN disk group shows unhealthy. Examining disk status using 'esxcli vsan storage list' shows disks "In CMMDS: false". ,Remove and re-create the VSAN disk group in question. (Only do this if the disks are showing up as 'false' for "in CMMDS") 1. Place the ESXi host in question into maintenance mode, with ensure accessibility: esxcli system maintenanceMode set --ena....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413551</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-10-09</span>
                 </div>
             </div>
