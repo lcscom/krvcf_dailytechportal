@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-10-13 00:01:14</title>
+    <title>Broadcom 기술 포털 - 2025-10-13 06:01:26</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,10 +185,17 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-10-13 00:01:14)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-10-13 06:01:26)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
+        <div class="card">
+            <div class="card-image no-image">No Image</div>
+            <div class="card-content">
+                <div class="card-title"><a href="http://vcloud-lab.com/entries/powershell/broadcom-powercli-building-a-gui-to-check-vmware-ha-admission-control-compliance" target="_blank" rel="noopener noreferrer">Broadcom PowerCLI: VMware HA 승인 제어 규정 준수를 확인하기 위한 GUI 구축</a></div>
+                <div class="meta">2025-10-12 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+            </div>
+        </div>
         <div class="card">
             <div class="card-image no-image">No Image</div>
             <div class="card-content">
@@ -249,13 +256,6 @@
             <div class="card-image no-image">No Image</div>
             <div class="card-content">
                 <div class="card-title"><a href="https://cormachogan.com/2025/10/10/deploy-dsm-consumption-operator-in-air-gap-environment-using-harbor/" target="_blank" rel="noopener noreferrer">Harbor를 사용하여 Air-Gap 환경에 DSM Consumption Operator 배포</a></div>
-                <div class="meta">2025-10-10 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-image no-image">No Image</div>
-            <div class="card-content">
-                <div class="card-title"><a href="https://vmblog.com/archive/2025/10/10/bringing-business-and-engineering-data-together-under-one-big-opentelemetry-roof.aspx" target="_blank" rel="noopener noreferrer">하나의 큰 OpenTelemetry 지붕 아래 비즈니스 및 엔지니어링 데이터를 통합</a></div>
                 <div class="meta">2025-10-10 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
             </div>
         </div>
@@ -912,6 +912,18 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=408232" target="_blank" rel="noopener noreferrer">Resolving SSL Certificate Trust Errors When Running PowerShell Scripts for vLCM Transition via SDDC Manager</a></div>
+                <div class="summary">When executing PowerShell scripts for transitioning to vSphere Lifecycle Manager (vLCM) Images using SDDC Manager, you may encounter an SSL connection error: Error Message: [ERROR] SSL Connection error to SDDC Manager "". Please c....,You can resolve this issue by either installing a CA-signed certificate (recommended) or importing the existing SDDC Manager certificate into your workstation’s trusted certificate store. Option 1 — Install a CA-Signed Certificate (Recommended) Repla....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 408232</span>
+                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413869" target="_blank" rel="noopener noreferrer">NSX-T segment is not showing up at host cluster on vCenter</a></div>
                 <div class="summary">While connecting a newly created VM to a NSX Segment on vCenter UI, the NSX segment cannot be found among available networks. Below actions on vCenter UI are performed : -Select VM -Edit Settings -Search for the intended NSX segment at the Network A....,Go to NSX UI > Networking > Segments Find the Segment here and check which Transport Zone it belongs to. Then add this Transport Zone at the Host switch of the cluster's NSX configuration. If a Transport Node Profile is applied to this Cluster, then....</div>
                 <div class="details">
@@ -1032,6 +1044,18 @@
 
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=318766" target="_blank" rel="noopener noreferrer">Virtual machines lose network connectivity after a vMotion or crash with "reservation failed" errors</a></div>
+                <div class="summary">A virtual machine might fail with the following error message in vmware.log: YYYY-MM-DDTHH:MM:SS.sssZ| vcpu-1| W115: MONITOR PANIC: vmk: vcpu-0:P2M reservation failed after max retries A virtual machine might fail to enable its network adapter after ....,To workaround this issue, you need to increase the P2M buffer slots on the ESXi host. The host does not require a reboot after making this change. The new setting will only take effect on virtual machines when they are powered on or migrated onto the....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 318766</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413681" target="_blank" rel="noopener noreferrer">Manually installed VIBs are removed after adding new ESXi host in VCF Environment</a></div>
                 <div class="summary">VIBs are removed after adding new ESXi host from SDDC The VIBs are installed manually from ESXi directly The VIBs are not included in the vLCM image SDDC Manager applies the vLCM image after adding new host /var/log/vmware/vcf/domainmanager/domainman....,To Add the VIBs to Cluster Image and Install VIBs to ESXi Hosts: 1: Import the VIBs file to the vLCM 2: Edit Image for the cluster by adding the Add-on/Components 3: Check compliance and Remediate the ESXi Hosts</div>
                 <div class="details">
@@ -1061,6 +1085,18 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 326907</span>
                     <span><span class="detail-label">Product:</span> VMware vSAN,VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=390592" target="_blank" rel="noopener noreferrer">"Some appliance components are not functioning properly." Error displayed when attempting to log in to NSX manager due to JDK impacting corfu compactor</a></div>
+                <div class="summary">The following or similar alerts are displayed on the browser when trying to access NSX Manager UI: Some appliance components are not functioning properly. Component health: SEARCH:UNKNOWN, MANAGER:UNKNOWN, NODE_MGMT:UP, UI:UP. Error code: 101 Applic....,For resolution, see NSX is impacted by JDK-8330017: ForkJoinPool stops executing tasks due to ctl field Release Count (RC) overflow. To workaround this issue, do a rolling reboot of the NSX managers, as per the KB NSX is impacted by JDK-8330017: Fork....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 390592</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
                 </div>
             </div>
@@ -1421,42 +1457,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 412832</span>
                     <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412644" target="_blank" rel="noopener noreferrer">Create cluster error "Only alphanumeric characters along with - or space is allowed" display but it can use _ on VCF5.2.1</a></div>
-                <div class="summary">When create or rename Domain, Cluster, VDS or portgroup with invalid character, error "Only alphanumeric characters along with - or space is allowed" display and cannot click Next but can use _.,on VCF5.2.1, name can include letters, numbers, hyphens, and underscore and it can include spaces. . Notes: VCF 5.1.x and 5.2 cannot use underscore.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 412644</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413288" target="_blank" rel="noopener noreferrer">Ansible Opensource integration fails to vaildate with private key</a></div>
-                <div class="summary">Ansible Opensource integration fails to validate with private key for authentication as per Configure Ansible Open Source integration in Automation Assembler with the following error: Error: Failed to connect to machine after 3 retries [Error Referen....,Generate the Private Key for Ansible with the following command: ssh-keygen -t rsa -m PEM</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413288</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413535" target="_blank" rel="noopener noreferrer">Inaccessible objects occur after placing vSAN host into maintenance Mode.</a></div>
-                <div class="summary">When placing hosts into maintenance mode on a vSAN cluster, certain VMs might become inaccessible due to mismatch of the setting /VSAN/DeltaComponent on ESX hosts.,Make sure every host on the vSAN cluster parameter /VSAN/DeltaComponent is set to either 1 or 0. If the vSAN cluster is running on a later version than 7.0 U1 P02, it's recommended to set the value to 1 (enabled) across all nodes. To check the value ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413535</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
                 </div>
             </div>
