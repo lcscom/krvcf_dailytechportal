@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-10-13 18:01:25</title>
+    <title>Broadcom 기술 포털 - 2025-10-14 00:01:26</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-10-13 18:01:25)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-10-14 00:01:26)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -912,11 +912,299 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=388785" target="_blank" rel="noopener noreferrer">vSAN Skyline Health --- vSAN disk group layout</a></div>
+                <div class="summary">This article explains the Cluster Health- vSAN disk group layout check in the vSAN Health Service and provides details on why it might report a warning.,Q: What does the Cluster Health - vSAN disk group layout check do? vSAN requires disk group layout as 64 bit to support the large capacity drive. (32bit-to-64bit conversion: With the advent of large capacity drives, vSAN required to update its intern....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 388785</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=342912" target="_blank" rel="noopener noreferrer">how to restore the original scope authorities for uaa admin in tkgi</a></div>
+                <div class="summary">This KB explain how to restore the original scope authorities for uaa admin account used by TKGi Symptoms: When manipulating the scope authorities for the uaa admin account used by TKGi, you may have inadvertently assigned a wrong scope to the uaa ad....,uaa admin account is stored in the mysql database running on the pks-db VM under the pivotal-container-service deployment 1. Bosh ssh into the pks-db VM bosh -d pivotal-container-service-DEPLOYMENT ssh pks-db 2. backup the uaa database with mysqldump....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 342912</span>
+                    <span><span class="detail-label">Product:</span> VMware Tanzu Kubernetes Grid Integrated Edition</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413531" target="_blank" rel="noopener noreferrer">Unable to import Edge Cluster in VMware Cloud Director</a></div>
+                <div class="summary">When you try to import an edge cluster in VMware Cloud director (VCD) only 15 edge clusters are listed and you can't import the one you need. You have over 15 Edge clusters in the same NSX manager which are not yet imported in VCD.,This is a known issue affecting VCD 10.6.1 Workaround: To workaround this issue you can import the edge cluster using the API explorer: Get the edge cluster details via nsxt api go to vcd api explorer search for 'nsxtResources/edgeclusters' Give the....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413531</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=372846" target="_blank" rel="noopener noreferrer">Enable vSAN MOB on vCenter Server</a></div>
+                <div class="summary">vSAN MOB is disabled by default so if anyone need it access, we can enable it using RVC.,The following RVC commands can be used to enable/disable the vSAN MOB on VCSA: Login to vCenter server using SSH session. Login to RVC using command below. rvc administrator@vsphere.local@localhost Please run the commands below to enable an....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 372846</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN,VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413967" target="_blank" rel="noopener noreferrer">vpxd-svcs failing to start with "Could not find any solution users from SSO" due to machine account missing from certain groups</a></div>
+                <div class="summary">vCenters in ELM vpxd-svcs failing to start with: ERROR com.vmware.vim.vcauthenticate.servlets.AuthenticationHelper opId=] Hit ServiceCommunicationException while fetching admin group for the SSO Admin user : Administrator@vsphere.local com.vmware.ci....,Ensure offline snapshots of all nodes in the SSO domain are taken before commencing. The below assumes the SSO domain is the default vsphere.local - adjust this as needed for custom SSO names Group memberships can be checked with dir-cli: /usr/lib/....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413967</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=398781" target="_blank" rel="noopener noreferrer">Error while migrating vCenter virtual machine in vCenter UI "The object or item referred to could not be found" combined with "vDS dvs port 15254 cannot be found"</a></div>
+                <div class="summary">The error "The object or item referred to could not be found" combined with "vDS dvs port 15254 cannot be found" during a VM migration in vCenter 7.x and 8.x, typically indicates a mismatch or inconsistency between the distributed virtual switch (vD....,Follow one of the below 3 workarounds (Note: All require downtime) 1. Unregister the VM and re-register the VM back to different ESXi host. But since the ESXi host had some issue with itself having the vCenter we were not able to power off the VM to ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 398781</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413971" target="_blank" rel="noopener noreferrer">Error: "Error while starting vCenter services"</a></div>
+                <div class="summary">vCenter showing No healthy upstream While starting services we see services not starting STS logs reporting Signing certificate is not valid at Mon Oct 13 09:21:07 GMT 2025, cert validity And errors for Solution User Certificate [com.vmware.identit....,Add DNS resolution, read more at DNS Requirements for the vCenter Server Appliance As a workaround to start services add IP manually to VAMI_CONFIG_NET, read more at Update DNS Server IP address for vCenter Server</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413971</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412313" target="_blank" rel="noopener noreferrer">NSX managers became unreachable after fixing internal certificate expiry alarms</a></div>
+                <div class="summary">Internal certificate expiry alarms were fixed after executing CARR script as per KB 369034 on all 3 NSX managers. After executing, the script, the Host and Edge Transport nodes went disconnected from managers as shown below NSX managers were reboot....,This issue is being fixed from NSX releases 4.2.4 and 9.0.2 onwards.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412313</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413711" target="_blank" rel="noopener noreferrer">ESXi host goes into 'Not Responding' State After Firewall Changes or Edits.</a></div>
+                <div class="summary">Editing a firewall rule from the vCenter GUI, for a specific ESXi host within vCenter, results in the ESXi host entering 'Not Responding' state. This may also impact VMs, rendering them inaccessible. From the hostd logs presented in an SSH to the ho....,Performing a reboot, will re-push the default firewall rules needed for communication between ESXi host and vCenter.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413711</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413934" target="_blank" rel="noopener noreferrer">VMs on standard switch are not reachable when moving to virtual distributed switch</a></div>
+                <div class="summary">When VMs are moved to a portgroup on a DVS they lose connection VMs are on standard switch with no VLAN tagged on the portgroup VLAN is configured on the portgroup of the DVS,Ensure that the physical switch is correctly configured with the VLAN you wish to use for the VM traffic</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413934</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413949" target="_blank" rel="noopener noreferrer">Accessing pages from Storage polices list in VMware Cloud Director is very slow to open</a></div>
+                <div class="summary">When accessing the list of storage policies for tenants it is very slow to load and might take 20-30 seconds to load each page. It is also very slow when editing the storage policy or editing the storage policy of a disk. It takes 20-30 minutes to cr....,To resolve this issue, contact Broadcom Support and note this Article ID (413949) in the problem description. For more information, see Creating and managing Broadcom support cases.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413949</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413959" target="_blank" rel="noopener noreferrer">BGP peering goes down randomly every hour/couple of hours after vSphere upgrade.</a></div>
+                <div class="summary">Datapath Crashes due to port range configuration in Virtual Server/LB. The issue appeared right after upgrading vSphere to 7.0,Workaround: Configure multiple port ranges that should be equivalent to the actual single port range. Example: If a single port range is configured as 30200~30300 (that triggers the issue), instead, configure a multiple port range of 30200~30250,30....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413959</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413917" target="_blank" rel="noopener noreferrer">Slow login to vCenter server.</a></div>
+                <div class="summary">Login to the vCenter using Domain user and Administrator user both of them taking longer then expected. From the logs, we found that the vCenter was still fetching information from the old vCenter in the Enhanced Linked Mode (ELM) configuration. var....,To resolve this, repointed the vCenter to itself using the following command after taking vCenter snapshot: cmsso-util domain-repoint -m execute --src-emb-admin Administrator --dest-domain-name vsphere.local Splitting Enhanced Linked Mode (ELM)</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413917</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413940" target="_blank" rel="noopener noreferrer">USB device added on ESXi is getting disconnected from VM when configured</a></div>
+                <div class="summary">A USB is physically configured in the ESXi host. It is showing fine from the Putty session. When the USB device in a VM after adding USB controller, the VM reconfiguration is completed successfully. However, within few seconds, the USB disappears wit....,Before configuring USB in a VM, ensure VMtools are updated. Stop the pcscd service and usbarbitrator service on the ESXi host to prevent it from claiming CCID devices like the ACR40T. /etc/init.d/usbarbitrator stop && /etc/init.d/pcscd stop Power of....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413940</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413909" target="_blank" rel="noopener noreferrer">Attempting a cross vCenter migration with a user assigned a custom role fails with error : “You do not have the privilege ‘Register virtual machine’ on the selected folder.”</a></div>
+                <div class="summary">Cross vCenter migration failed with the following error message: “You do not have the privilege ‘Register virtual machine’ on the selected folder.” The issue was observed only when performing the migration using the custom role. Further verification ....,Ensure it has the following privileges in the customer role you have created : Virtual machine → Inventory → Register Virtual machine → Inventory → Create new Virtual machine → Inventory → Move Virtual machine → Configuration → Modify Click OK t....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413909</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412378" target="_blank" rel="noopener noreferrer">When trying to log in to Aria products using vIDM and an external Identity Provider we get "Error Incorrect issuer in SAML AuthnRequest."</a></div>
+                <div class="summary">While logging into any product using vIDM you may receive the error 'Error Incorrect issuer in SAML AuthnRequest.' In a clustered environment, you may receive the above error one in every three attempts. vIDM health is reported as Green in Aria Lifec....,The 'config-state.json' file needs to be updated with the correct values. Take snapshots of all nodes, without memory. Navigate to '/usr/local/horizon/TENNAT_NAME/####/' on all nodes. The Tennant name and ##### will vary. Open the current 'config-sta....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 412378</span>
+                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413932" target="_blank" rel="noopener noreferrer">Cannot Power On VCLS VM's on a New vSphere Cluster</a></div>
+                <div class="summary">Following upgrade/deployment of ESXi hosts 8.0U3 vcls vms appear but do not power on, vcls vm's show as in a powered of state with all options greyed out. In the UI you see the vcls vm cycle from appearing on the host to disappearing. By checking t....,Please enable cpu mwait feature on the server. For more information see: https://knowledge.broadcom.com/external/article/390674/vcls-vms-unable-to-power-on-with-no-host.html</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413932</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=319112" target="_blank" rel="noopener noreferrer">Product offerings for VMware NSX-T Data Center 3.2.x</a></div>
+                <div class="summary">This article provides information on licensing editions of VMware NSX-T and list of features associated with the various licensing editions in VMware NSX-T Data Center 3.2.x. New VMware NSX-T editions became available to order on August 5th, 2021. Th....,The following tables outline specific functions available by edition. NSX-T is available as a single download image with license keys required to enable specific functionality. Networking Feature NSX-T Editions Switching Professional Adva....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 319112</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX,VMware vDefend Firewall</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=406946" target="_blank" rel="noopener noreferrer">EVPN traffic drop due to RPF check failed</a></div>
+                <div class="summary">Tier-0 Gateway for EVPN Inline Mode is configured. MPLS is used between the source and destination. ICMP REQUEST on T0-uplink interface shows correct VTEP IPs for both source and destination. No. Time Source Destination Protocol Length Info 37 2025-0....,A separate VTEP loopback should be configured and made sure it should be known in the control plane.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 406946</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413938" target="_blank" rel="noopener noreferrer">Load Balancer Pool Health Monitor removed after editing Pool configuration in VMware Cloud Director Tenant UI</a></div>
+                <div class="summary">When editing a Load Balancer pool from the vCloud Director Tenant UI, the previously assigned Health Monitor is automatically removed from the pool in AVI Load Balancer After saving the pool, the Health Monitor still appears assigned in vCloud Direc....,This is a known issue and VMware will address this issue in a future version release. Avoid editing existing Load Balancer pools after assigning a Health Monitor. If changes must be made: Edit the pool in the Tenant Portal and apply the desired chang....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413938</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413911" target="_blank" rel="noopener noreferrer">Unable to mount the USB drive to the Virtual Machine.</a></div>
+                <div class="summary">The direct path I/O USB device is not being detected by the application running on the guest OS. When the USB device is connected using PCI passthrough, the device appears in the Device Manager; however, the application still fails to recognize it. ....,Check if there is a VIB available for the USB device that might provide necessary driver support. connnect to ESXi host SSH and use esxcli software vib list. Ensure USB controllers are enabled and no hardware-level restrictions are blocking detectio....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413911</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESX 8.x,VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413936" target="_blank" rel="noopener noreferrer">Cloning of a VM fails with "Error caused by file /vmfs/volumes/vsan:xxxx-xxxxx-xxxxx/###-#####-###/VM-name.vmdk"</a></div>
+                <div class="summary">Cloning of a VM fails with "Error caused by file /vmfs/volumes/vsan:xxxx-xxxxx-xxxxx/###-#####-###/VM-name.vmdk" The /var/run/log/hostd.log reports Input/output error 2025-10-03T08:35:22.227Z Er(163) Hostd[210#####] [Originator@6876 sub=DiskLib opID=....,In a vSAN environment, an Input/Output (I/O) error can occur due to checksum errors. It is recommended to have the vSAN logs reviewed by a vSAN support team to help identify the specific components reporting the checksum errors and recommendation. Pl....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413936</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410969" target="_blank" rel="noopener noreferrer">Aria Operations cloud proxy upgrade fails due to lack of enough free space in root partition</a></div>
                 <div class="summary">During an Aria operations upgrade, one or more cloud proxy nodes may fail to upgrade. In the /storage/db/vmware-vrops-cprc/status/upgrade/vRealize-Operations-Cloud-Proxy-build_number/cprc.upgrade.process.log on the cloud proxy node, you may find entr....,Check for large files under '/storage/db/vmware-vrops-cprc/upgrade/download' directory using the following command: du -sh * Remove any manually copied files that are consuming significant space (for example, upgrade .pak files) using 'rm'command. De....</div>
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 410969</span>
                     <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=398932" target="_blank" rel="noopener noreferrer">Getting error, "VCF Business Services console Test Failed due to "Http failure response for https://FQDN/api/v1/run_uploader: 500 OK" while testing Connection with VCF Business Services console portal"</a></div>
+                <div class="summary">Usage Meter is unable to send data to the VCF Business Services console portal (formerly known as Cloud Partner Navigator - CPN) and fails with below error: "Http failure response for https:///UM/api/v1/run_uploader: 500 OK". Please open a tic....,Required to secure a snapshot of the Usage Meter appliance and follow the below steps: Update the hostname in /etc/hosts file using vi editor. Replace Usage Meter certificate by following the document: VCF Usage Meter Certificate Management</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 398932</span>
+                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413912" target="_blank" rel="noopener noreferrer">SDRS generates recommendations to migrate the VM disk to a different datastore after adding a new disk to the VM</a></div>
+                <div class="summary">After editing the VM to add disks, powering it on displays the following message in the UI: vCenter Server recommends the following datastores for the virtual machines. Recommendations for virtual machines within the same datastore cluster are linked....,Clicking "Apply" will move the VM disks to the suggested/recommended datastore(s). However, there may be situations where you might not want to relocate the VM to the recommended datastore. Below are possible workarounds to successfully add a disk to....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413912</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
                 </div>
             </div>
@@ -960,6 +1248,18 @@
 
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413749" target="_blank" rel="noopener noreferrer">VAMI backup fails with error "BackupManager enountered an exception".</a></div>
+                <div class="summary">VAMI backup using NFS fails with error "BackupManager encountered an exception. See logs for details". In /var/log/vmware/applmgmt/applmgmt.log on the vCenter we see the following error: failed. rc: 32, stdout: , stderr: mount.nfs: Failed to resolve ....,In the VAMI backup settings use the IP address of the NFS server instead of the FQDN to do the VAMI backup.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413749</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=390698" target="_blank" rel="noopener noreferrer">VM experiences network interruption in an NSX environment</a></div>
                 <div class="summary">Virtual Machines (VMs) in an NSX overlay network may experience networking issues such as ping loss and reduced throughput. BFD tunnel flapping is consistently observed for particular vmk IP address in /var/run/log/vmkernel.log BFD_HandleStatusChang....,To resolve this issue, contact the hardware vendor (both for the server and the physical switch) to further troubleshoot and identify the root cause of the vmnic fault.</div>
                 <div class="details">
@@ -977,6 +1277,18 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 413919</span>
                     <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413921" target="_blank" rel="noopener noreferrer">Upgrade Precheck Failure in SDDC Manager: “Precheck Failed to Initialize java.lang.NullPointerException”</a></div>
+                <div class="summary">During the SDDC Manager upgrade from version 4.5.x to 5.x, the upgrade precheck process fails with the error message: Precheck failed to initialize java.lang.NullPointerException Upon reviewing the /var/log/vmware/vcf/lcm/lcm-debug.log, the followin....,Reboot the affected vCenter Server to reset the existing user session count. This action clears the active sessions and allows new connections to be established successfully. Restarting VMware vCenter Server Appliance services</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 413921</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Foundation,VMware vCenter Server</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-10-13</span>
                 </div>
             </div>
@@ -1068,6 +1380,18 @@
 
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=317776" target="_blank" rel="noopener noreferrer">Traceflow attempt in NSX GUI fails with " Traceflow on VLAN logical port InternalLogicalPort/portID requires INT (In-band Network Telemetry) to be enabled."</a></div>
+                <div class="summary">Below error message is observed when performing traceflow for vlan backed segments. Traceflow request failed. The request might be cancelled because it took more time than normal. Please retry. Error Message: Traceflow intent /infrattraceflows/ ....,Additional features have been enabled that allow Traceflow for VLAN-Backed Networks. This is accomplished by enabling In-band Network Telemetry (INT). Reference: Steps to enable In-band Network Telemetry (INT) to trace VLAN backed network. GET ht....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 317776</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-10-12</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=316522" target="_blank" rel="noopener noreferrer">ESXi host may crash with PSOD (purple screen of death) with the message: BlueScreen: NOT_IMPLEMENTED bora/vmkernel/main/world.c:2307</a></div>
                 <div class="summary">Symptoms: PSOD (purple screen of death) with the message: BlueScreen: NOT_IMPLEMENTED bora/vmkernel/main/world.c:2307 PSOD (purple screen of death) with the message: @BlueScreen: NMI IPI: Panic requested by another PCPU. RIPOFF(base):RBP:CS ALERT in ....,This issue is fixed by updating the HPE iLO Native driver component to v10.8.2 (or later). Download link: HPE iLO Native Driver for ESXi 7.0 Version 10.8.2 (or later) Reference Advisory link from HPE for this PSOD : https://support.hpe.com/hpesc/pu....</div>
                 <div class="details">
@@ -1138,354 +1462,6 @@
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413296" target="_blank" rel="noopener noreferrer">A certificate can only be applied to one node for service-type: CBM_CORFU.</a></div>
-                <div class="summary">Replacing the Corfu certificate with a CA-signed certificate fails with the following error A certificate can only be applied to one node for service-type: CBM_CORFU. This certificate is already being used by another node: UUID The certificate replac....,To resolve this issue, ensure that each NSX Manager node uses a unique certificate for the Corfu service. The same certificate cannot be shared across multiple nodes for the CBM_CORFU service type For more information on the certificate replacement p....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413296</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-12</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=401969" target="_blank" rel="noopener noreferrer">When performing a failback task on the SRM appliance, the recovery plan state shows 'Incomplete Recovery'</a></div>
-                <div class="summary">Symptoms: While performing failback, the task completes, and the state of the recovery plan shows 'incomplete recovery'. The protection group shows partially recovered: ,To resolve the issue, remove this VM from the protection group and added it to a new protection group after which the state of the VM was showing normal and also, the VM was showing the correct name. Run the recovery and it completes without any issu....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 401969</span>
-                    <span><span class="detail-label">Product:</span> VMware Live Recovery</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-12</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=304594" target="_blank" rel="noopener noreferrer">Troubleshooting ESX/ESXi virtual machine performance issues</a></div>
-                <div class="summary">This article provides information on isolating a performance issue on ESXi/ESX. Symptoms: Services running in guest virtual machines respond slowly. Applications running in the guest virtual machines respond intermittently. The guest virtual machine ....,Each step below provides instructions and links to the appropriate documents. The steps are ordered in the most appropriate sequence to isolate the issue and to identify the proper resolution. They are also ordered in the most appropriate sequence to....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 304594</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-12</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413317" target="_blank" rel="noopener noreferrer">Unable to add disk on vSAN ESA cluster using vCenter UI, getting an error as 'Unable to extract requested data. Check vSphere Client logs for details.'</a></div>
-                <div class="summary">vsan-plugin.log [yyyy-mm-ddThh:mm:ss.984Z][WARN ][8.0.203.10000:1239927531][urn:vmomi:ClusterComputeResource:domain-c11632:30a6db4c-5eb2-4e1c-822c-787806c0bae0][com.vmware.vsan.client.h5vsanui.cluster.configure.vsan.diskManagement] ["[MEASURE](20597 ....,Review the logs of the Security App (Entrust) and mitigate any issues identified on this app end. Reach out the security application support team.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413317</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-12</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413901" target="_blank" rel="noopener noreferrer">"Deleting fabric nodes from DB during inventory reconciliation" when restoring NSX backup</a></div>
-                <div class="summary">Restore NSX backup after inventory change, the following notification is seen: Deleting fabric nodes from DB during inventory reconciliation,Please confirm if those transport nodes has been removed after NSX backup. If that is the case, acknowledge this notification and proceed with restore.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413901</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-12</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413894" target="_blank" rel="noopener noreferrer">"Check compliance of cluster with image" task running on the vCenter for all vSphere clusters</a></div>
-                <div class="summary">On a cluster managed with a single image, a task runs in vCenter every minute "Check compliance of cluster with image".,Verify that the cluster image, including the image, vendor add-on, and additional components, is consistent with the components installed on the host. Steps: - Select Cluster > Updates > Image - Review "ESXi Version" , "Vendor Addon" , "Firmware and....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413894</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-12</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413900" target="_blank" rel="noopener noreferrer">Failed to install vIDM via vRLCM due to error LCMVSPHERECONFIG1000016</a></div>
-                <div class="summary">vIDM deployment failed due to below error: Error Code:LCMVSPHERECONFIG1000016 IO exception occurred while performing the operation.,fix the vCenter service issue and try to deploy vIDM again</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413900</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-12</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=400950" target="_blank" rel="noopener noreferrer">HCX Network tasks failing due to high memory usage by the "ndd" process</a></div>
-                <div class="summary">While performing an HCX network task, such as extension, unextension, or enabling MON (Mobility Optimized Networking), the following error is observed in /common/logs/admin/app.log: UTC [NetworkStretchService_SvcThread-154, j: ########, ....,This issue is resolved in VMware HCX 4.11.1, available at Broadcom downloads. If you are having difficulty finding and downloading software, please review the Download Broadcom products and software KB. Workaround: For the appliances in Config engine....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 400950</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-12</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413892" target="_blank" rel="noopener noreferrer">Unable to filter FW rule by ip address in VCD tenant</a></div>
-                <div class="summary">Tenant FW rule work normally Cannot filter these FW in the source and destination columns with ip address, below error return: "class java.lang.NullPointerException",Delete the default FW rule before create new FW rules</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413892</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-12</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=408232" target="_blank" rel="noopener noreferrer">Resolving SSL Certificate Trust Errors When Running PowerShell Scripts for vLCM Transition via SDDC Manager</a></div>
-                <div class="summary">When executing PowerShell scripts for transitioning to vSphere Lifecycle Manager (vLCM) Images using SDDC Manager, you may encounter an SSL connection error: Error Message: [ERROR] SSL Connection error to SDDC Manager "". Please c....,You can resolve this issue by either installing a CA-signed certificate (recommended) or importing the existing SDDC Manager certificate into your workstation’s trusted certificate store. Option 1 — Install a CA-Signed Certificate (Recommended) Repla....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 408232</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413869" target="_blank" rel="noopener noreferrer">NSX-T segment is not showing up at host cluster on vCenter</a></div>
-                <div class="summary">While connecting a newly created VM to a NSX Segment on vCenter UI, the NSX segment cannot be found among available networks. Below actions on vCenter UI are performed : -Select VM -Edit Settings -Search for the intended NSX segment at the Network A....,Go to NSX UI > Networking > Segments Find the Segment here and check which Transport Zone it belongs to. Then add this Transport Zone at the Host switch of the cluster's NSX configuration. If a Transport Node Profile is applied to this Cluster, then....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413869</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413872" target="_blank" rel="noopener noreferrer">ESXis will not be impacted by CVE-2024-37085 if they are not connected to any domain and never joined any domain before</a></div>
-                <div class="summary">ESXi version 7.x ESXi is not connected to any domain, and never joined any domain before. If checked with the below URL which redirects to the Host Client, it can be seen that the Active Directory Enabled value is set to 'No' https://</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413872</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296912" target="_blank" rel="noopener noreferrer">How to find tables distributed by legacy hash operators</a></div>
-                <div class="summary">The hash operators used to distribute data across the segments changed in Greenplum 6.x. See "Working With Hash Operator Classes in Greenplum 6" in Migrating Data from Greenplum 4.3 or 5 to Greenplum 6 for more information. This knowledge article gi....,Check that the setting "gp_use_legacy_hashops" is set to "off": show gp_use_legacy_hashops; If it is set to "on", then set it to "off": set gp_use_legacy_hashops=off; Run query to find tables distributed by legacy hash operators: SELECT n.nspname, ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 296912</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=295210" target="_blank" rel="noopener noreferrer">GPPKG Install Fails "No Such File or Directory"</a></div>
-                <div class="summary">When attempting to install a package via "gppkg", errors similar to the following may be seen: gpadmin@testserver1 ~]$ gppkg -i /tmp/postgis-2.5.4+pivotal.4.build.3-gp6-rhel7-x86_64.gppkg 20210609:12:53:40:005319 gppkg:testserver1:gpadmin-[INFO]:-S....,GPPKG looks at the gp_segment_configuration hostname fields to determine which hosts need package installation. If a single host is appearing under multiple names on this list, there will be issues during package operations. Please Note: Any changes....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 295210</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296555" target="_blank" rel="noopener noreferrer">Encountering FATAL: DTM initialization: failure during startup recovery Error on Query Attempt</a></div>
-                <div class="summary">When trying to perform database operations (ie. open connection or psql session), the error below is encountered: FATAL: DTM initialization: failure during startup recovery, retry failed, check segment status (cdbtm.c:1568) The errors below may be se....,The errors above indicate a lack of connection between primary and mirror hosts. Check the health of the connections between primary->mirror and mirror->primary through ssh and ping — connection may be only working one-way. Also check connection betw....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 296555</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296682" target="_blank" rel="noopener noreferrer">Certain queries falling back to planner when using ORCA [Optimizer]</a></div>
-                <div class="summary">When running, certain queries will fall back on the legacy planner [Postgres query optimizer] which might cause poor performance. This can happen especially after a cluster expansion.,Set the following parameter: set optimizer_trace_fallback=on; Rerun the explain The output might show us the reason why it is falling back: Example: 1056: INFO: 0A000: GPORCA failed to produce a plan, falling back to planner DETAIL: Unknown error: Pa....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 296682</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296399" target="_blank" rel="noopener noreferrer">How to install and create timescaledb extension with VMware Postgres</a></div>
-                <div class="summary">Timescaledb is a custom extension that is not currently shipped with VMware Postgres, however customers are allowed to install it at their own risk and may have questions around the installation. The article is based on these timescaledb installation....,1. Once you are able to install timescaledb through yum install, you will need to locate the VMware Postgres and Open Source (PGDG) PostgreSQL install locations: Open Source: -bash-4.2$ ls -l /usr/pgsql-11 total 12 drwxr-xr-x. 2 root root 4096 Apr 12....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 296399</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=296405" target="_blank" rel="noopener noreferrer">Benefits of doing regular VACUUMs to clear up bloat in Postgres</a></div>
-                <div class="summary">This article highlights why it is recommend to do regular vacuums to clear up bloat in order to save disk space. There's generally a confusion on the difference between regular VACUUM and VACUUM FULL. For more details, refer to 24.1. Routine Vacuumi....,Example with no regular VACUUM 1. Insert 5000 rows: insert into users values(generate_series(1,5000), generate_random_string(10000)); 2. Check number of table rows and space occupied: oid | relname | relpages | n_live_tup | n_dead_tup ----....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 296405</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Greenplum</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413861" target="_blank" rel="noopener noreferrer">A DFW rule that uses the DNAT IP as a condition does not work</a></div>
-                <div class="summary">In a DNAT configuration, the is translated into the . Refer document Configure an NSX NAT/DNAT/No SNAT/No DNAT/Reflexive NAT The DFW is configured to use the as a filtering condition. The DFW is not fu....,Change the firewall settings to "Match External Address" For more details, please refer document Configure an NSX NAT/DNAT/No SNAT/No DNAT/Reflexive NAT</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413861</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=331500" target="_blank" rel="noopener noreferrer">vSAN Health Service - File Service - Infrastructure health</a></div>
-                <div class="summary">This article explains the File Service - Infrastructure health in the vSAN Health Service and provides details on why it might report an error.,What does File Service - Infrastructure health check do? It checks the file service infrastructure health state per ESXi host in the vSAN cluster. The column 'vSAN File Service Node' checks if the vSAN file service node VM is in a powered on state. ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 331500</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413849" target="_blank" rel="noopener noreferrer">The error message "ERROR: Binaries # out of ## failed to download" appears when using the vcf-download-tool to download VMware Cloud Foundation (VCF) binaries</a></div>
-                <div class="summary">1. The error message "ERROR: Binaries # out of ## failed to download" appears when using the command below; some binaries are successfully downloaded, while others fail: vcf-download-tool binaries download --vcf-version --type=INSTALL ....,Ensure the virtual machine's network connectivity is established and rerun the vcf-download-tool command (Components that have already been downloaded will not be downloaded again): vcf-download-tool binaries download --vcf-version --ty....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413849</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413848" target="_blank" rel="noopener noreferrer">The VMware Cloud Foundation (VCF) installer appliance displays a "Path not found" error when attempting to connect to an offline depot to download binaries</a></div>
-                <div class="summary">When clicking "CONFIGURE" in the "EDIT DEPOT CONNECTION" section for an offline depot in the VCF installer, the following error appears: Path not found - /metadata/productVersionCatalog/v1/productVersionCatalog.json 404 File not found HTTP/1.0,1. Copy the PROD and all its contents to the "Document root" folder of the apache server running on the internal depot machine. The resulting structure should appear as "/PROD". 2. Set the appropriate file permissions for the newly cop....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413848</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413859" target="_blank" rel="noopener noreferrer">Kubernetes service warning on supervisor harbor</a></div>
-                <div class="summary">2 similar waring report on supervisor harbor service: System pod harbor--controller-registry-- in namespace vmware-system-registry is not running No workload running and supervisor cluster show healthy The status of the pods co....,This status indicates that the pod has successfully exited after completing the specified task and does not need to remain in the Running state. This type of pod will not have any impact on subsequent upgrades. In addition, pods in the Complete state....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413859</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Kubernetes Grid</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413858" target="_blank" rel="noopener noreferrer">Aria suite lifecycle report LCMVRAVACONFIG590047 during Aria automation upgrade</a></div>
-                <div class="summary">vRLCM report LCMVRAVACONFIG590047 but the upgrade complete is marked. Still the Aria automation stay at the old version. Below error found in vRLCM log: Manifest cannot be downloaded from the repository,8.18.1 patch for Aria Automation 8.18 only supported in vRLCM. vracli method could only be used for standalone Aria Orchestrator appliance.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413858</span>
-                    <span><span class="detail-label">Product:</span> VMware Aria Suite</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413855" target="_blank" rel="noopener noreferrer">vpxd crashes on duplicate key value violates unique constraint "pk_vpx_ip_address"</a></div>
-                <div class="summary">vpxd crashes immediately after started. The /var/log/vmware/vpxd/vpxd.log contains below similar messages: [2025-08-10T01:10:00].238Z error vpxd[07276] [Originator@6876 sub=Default opID=HB-@2879681-6df52c27] [VdbStatement] SQLError was thr....,Contact Broadcom Support to further check the issue since it need to do operation on vCenter Server database.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413855</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413850" target="_blank" rel="noopener noreferrer">NSX-T Manager fails to restore from backup with the error “doesn't have either a Cluster or a Node file”</a></div>
-                <div class="summary">NSX-T Manager fails to restore from backup with the error Error: Folder '####' on a SFTP server, that contains a backup for a selected timestamp - doesn't have either a Cluster or a Node file (Error code: 29317) NSX-T Manager /var/log/proton/nsxapi.l....,Move the backup files back to their original directory, or create a directory that meets the required structure.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413850</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413851" target="_blank" rel="noopener noreferrer">Newly deployed or restored virtual machine unable to connect to the network or CD/DVD when powered on</a></div>
-                <div class="summary">After a new virtual machine (VM) has been deployed from a template, cloned, or restored from a backup, it may fail to establish network connectivity immediately upon being powered on. This can lead to the VM being inaccessible on the network and task....,To ensure that the virtual machine's network adapter or CD/DVD drive connects automatically as soon as the virtual machine is powered on, you need to enable the "Connect At Power On" option for the respective device. Follow these steps: Locate the Vi....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413851</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=318766" target="_blank" rel="noopener noreferrer">Virtual machines lose network connectivity after a vMotion or crash with "reservation failed" errors</a></div>
-                <div class="summary">A virtual machine might fail with the following error message in vmware.log: YYYY-MM-DDTHH:MM:SS.sssZ| vcpu-1| W115: MONITOR PANIC: vmk: vcpu-0:P2M reservation failed after max retries A virtual machine might fail to enable its network adapter after ....,To workaround this issue, you need to increase the P2M buffer slots on the ESXi host. The host does not require a reboot after making this change. The new setting will only take effect on virtual machines when they are powered on or migrated onto the....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 318766</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=413681" target="_blank" rel="noopener noreferrer">Manually installed VIBs are removed after adding new ESXi host in VCF Environment</a></div>
-                <div class="summary">VIBs are removed after adding new ESXi host from SDDC The VIBs are installed manually from ESXi directly The VIBs are not included in the vLCM image SDDC Manager applies the vLCM image after adding new host /var/log/vmware/vcf/domainmanager/domainman....,To Add the VIBs to Cluster Image and Install VIBs to ESXi Hosts: 1: Import the VIBs file to the vLCM 2: Edit Image for the cluster by adding the Add-on/Components 3: Check compliance and Remediate the ESXi Hosts</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 413681</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-10-10</span>
-                </div>
-            </div>
-        </div>
-
 
         ---
 
@@ -1499,7 +1475,7 @@
                     <span><span class="detail-label">Product:</span> VMware Cloud Foundation,V...</span>
                     <span><span class="detail-label">CVE ID:</span> VCDSA36150</span>
                     <span><span class="detail-label">Published:</span> 2025-09-29</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1511,7 +1487,7 @@
                     <span><span class="detail-label">Product:</span> VCF Operations,VMware Clo...</span>
                     <span><span class="detail-label">CVE ID:</span> VCDSA36149</span>
                     <span><span class="detail-label">Published:</span> 2025-09-29</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1523,7 +1499,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36208</span>
                     <span><span class="detail-label">Published:</span> 2025-10-10</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1535,7 +1511,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Platform,VMw...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36111</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1547,7 +1523,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36110</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1559,7 +1535,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36109</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1571,7 +1547,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36108</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1583,7 +1559,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36107</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1595,7 +1571,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36106</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1607,7 +1583,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36105</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1619,7 +1595,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36104</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1631,7 +1607,7 @@
                     <span><span class="detail-label">Product:</span> Services Suite,VMware Tan...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36103</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1643,7 +1619,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36102</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1655,7 +1631,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36101</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1667,7 +1643,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36100</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1679,7 +1655,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Application ...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36099</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1691,7 +1667,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Application ...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36098</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1703,7 +1679,7 @@
                     <span><span class="detail-label">Product:</span> Operations Manager,Tanzu ...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36097</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1715,7 +1691,7 @@
                     <span><span class="detail-label">Product:</span> Operations Manager,Tanzu ...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36096</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1727,7 +1703,7 @@
                     <span><span class="detail-label">Product:</span> Operations Manager,Tanzu ...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36095</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1739,7 +1715,7 @@
                     <span><span class="detail-label">Product:</span> Operations Manager,Tanzu ...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36094</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
@@ -1751,7 +1727,7 @@
                     <span><span class="detail-label">Product:</span> Operations Manager,Tanzu ...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA36093</span>
                     <span><span class="detail-label">Published:</span> 2025-09-04</span>
-                    <span><span class="detail-label">Updated:</span> 2025-10-06</span>
+                    <span><span class="detail-label">Updated:</span> 2025-10-07</span>
                 </div>
             </div>
         </div>
