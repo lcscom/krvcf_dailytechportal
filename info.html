@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-11-30 12:01:18</title>
+    <title>Broadcom 기술 포털 - 2025-11-30 18:01:12</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-11-30 12:01:18)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-11-30 18:01:12)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -194,6 +194,13 @@
             <div class="card-content">
                 <div class="card-title"><a href="https://blogs.vmware.com/load-balancing/2025/11/26/nginx-retired-get-architectural-upgrade-with-vmware-avi/" target="_blank" rel="noopener noreferrer">Ingress NGINX 중단됨: Kubernetes용 VMware Avi로 아키텍처 업그레이드</a></div>
                 <div class="meta">2025-11-26 | 블로그: <a href="https://blogs.vmware.com/load-balancing/" target="_blank" rel="noopener noreferrer">Load Balancing</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image no-image">No Image</div>
+            <div class="card-content">
+                <div class="card-title"><a href="https://vstellar.com/2025/11/vmware-vdefend-security-services-platform-part-3-onboard-nsx-activate-platform-features/" target="_blank" rel="noopener noreferrer">VMware vDefend 보안 서비스 플랫폼 – 3부: NSX 온보드 및 플랫폼 기능 활성화</a></div>
+                <div class="meta">2025-11-29 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
             </div>
         </div>
         <div class="card">
@@ -256,13 +263,6 @@
             <div class="card-image no-image">No Image</div>
             <div class="card-content">
                 <div class="card-title"><a href="https://discoposse.com/2025/11/28/rails-8-solidqueue-database-connection-pool-configuration-on-heroku/" target="_blank" rel="noopener noreferrer">Heroku의 Rails 8 SolidQueue 데이터베이스 연결 풀 구성</a></div>
-                <div class="meta">2025-11-28 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-image no-image">No Image</div>
-            <div class="card-content">
-                <div class="card-title"><a href="https://maja.cloud/open-cloud-telekom/" target="_blank" rel="noopener noreferrer">디지털 작업 세계를 위한 강력한 기반으로 Telekom Cloud를 개방하세요.</a></div>
                 <div class="meta">2025-11-28 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
             </div>
         </div>
@@ -1399,10 +1399,10 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=419850" target="_blank" rel="noopener noreferrer">After upgrade of NSX manager from 4.1.0.2 to 4.2.1, Tier0 A/A Stateful becomes Tier0 A/A Stateless which results in datapath issue.</a></div>
-                <div class="summary">Tier0 is deployed in A/A Stateful configuration After the NSX Manager is upgraded, the Tier0 A/A Stateful configuration automatically changed to Tier0 A/A Stateless(Stateful is toggled to False) Edges stopped forwarding traffic Relevant logs to look....,Issue is resolved in 4.2.1.1 and above releases. Workaround: 1. Disconnect T1s from T0. 2. Update T0 via API by modifying the “stateful_services" field in payload as “stateful_services": { "enabled": enable, "redirection_policy": “IP_....</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=417658" target="_blank" rel="noopener noreferrer">CARR does not replace Host certificates.</a></div>
+                <div class="summary">carr.log says "Invalid vCenter name: or cluster name: provided in the input config file." vcenter_name and vcenter_cluster_name in validation_config.yaml should respectively match display_name of Compute Manager and display_n....,Edit validation_config.yaml to match display_name of Compute Manager and display_name of Compute Collection. Example: GET api/v1/fabric/compute-managers "results" : [ { "server" : "", ... } ... "display_name": "VC_DIS....</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 419850</span>
+                    <span><span class="detail-label">Article ID:</span> 417658</span>
                     <span><span class="detail-label">Product:</span> VMware NSX</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-11-28</span>
                 </div>
@@ -1411,11 +1411,11 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=370902" target="_blank" rel="noopener noreferrer">vCenter upgrade to 8.x fails with a firstboot error due to "RESTART value (XXXXXXXXXX) cannot be greater than MAXVALUE (4294965000)"</a></div>
-                <div class="summary">Attempts to upgrade vCenter Server Appliance to 8.0.x are failing with a firstboot error: VMware VirtualCenter failed firstboot. When reviewing the firstboot logs, you can find the following errors In /var/log/firstboot/firstbootInfrastructure.log: X....,Before attempting the steps below, please make sure to create a fresh offline snapshot of the vCenter Server Appliance (VCSA) in powered off state. If the affected VCSA is part of an Enhanced Linked Mode replication setup, please be aware that offlin....</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=419850" target="_blank" rel="noopener noreferrer">After upgrade of NSX manager from 4.1.0.2 to 4.2.1, Tier0 A/A Stateful becomes Tier0 A/A Stateless which results in datapath issue.</a></div>
+                <div class="summary">Tier0 is deployed in A/A Stateful configuration After the NSX Manager is upgraded, the Tier0 A/A Stateful configuration automatically changed to Tier0 A/A Stateless(Stateful is toggled to False) Edges stopped forwarding traffic Relevant logs to look....,Issue is resolved in 4.2.1.1 and above releases. Workaround: 1. Disconnect T1s from T0. 2. Update T0 via API by modifying the “stateful_services" field in payload as “stateful_services": { "enabled": enable, "redirection_policy": “IP_....</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 370902</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Article ID:</span> 419850</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-11-28</span>
                 </div>
             </div>
