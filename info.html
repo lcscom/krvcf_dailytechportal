@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-12-28 00:01:11</title>
+    <title>Broadcom 기술 포털 - 2025-12-28 06:01:15</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-12-28 00:01:11)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-12-28 06:01:15)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -883,6 +883,42 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423731" target="_blank" rel="noopener noreferrer">Unable to enable vmk vMotion interface, fails with "Operation not permitted: VSI_node_net_tcpip_instances_plumb"</a></div>
+                <div class="summary">- When listing the vmk interfaces, the vmk interface for vMotion it shows the Enabled state as 'false' using the command: esxcfg-vmknic -l - When tried to set the interface of the vMotion to true using the following command, it fails with error: esxc....,To resolve: 1. Delete the vMotion vmk interface from the CLI: esxcli network ip interface remove -i vmk2 2. Use the same IP details and recreate the vmk interface from the vCenter UI for that host and now you can see the interface is enabled to 'true....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423731</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423726" target="_blank" rel="noopener noreferrer">Buffer Overrun issues with NSX Edge during large file transfer</a></div>
+                <div class="summary">Observing the following alarm in the NSX UI: Edge NIC out of receive / transmit buffer alarm After or during a large file transfer flowing through NSX Edge Node data path, the above alarm shows NSX Edge Nodes are Large form factor size or smaller Si....,Follow the resolution steps from the following three KBs: Rx Errors observed on Edge nodes - The resolution steps will allow an increase to the queue size limit for handling bursting traffic Resize NSX Edge Node - Xlarge form factor will give more re....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423726</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423732" target="_blank" rel="noopener noreferrer">No connection to VR Server for virtual machine in the cluster: SQLite error</a></div>
+                <div class="summary">1. Replication status is Not Active 2. Replication starts working when moved to a different host that is not impacted by hardware changes or ESXi reinstallation. 3. VMs under the replication tab display the error - A replication error occurred at ....,Validate the current certificate used by ESXi - COMMAND: openssl s_client -connect :443 | openssl x509 -noout -fingerprint -sha256 STEP 1: To ensure the same certificate is used by hbr-agent, restart the hbrsrv and hbr-agent s....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423732</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware Live Recovery</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=421808" target="_blank" rel="noopener noreferrer">Perform a Configuration Drift Sync Between vCenter Server and SDDC Manager in VCF 9.x</a></div>
                 <div class="summary">SDDC Manager may report Configuration Drift Detected for a workload domain when the inventory in vCenter Server does not match the inventory stored in SDDC Manager. ,Perform a Configuration Drift Sync from the SDDC Manager UI Log in to the SDDC Manager UI: https:// In the left navigation pane, select Inventory. Identify the domain. Click the workload domain. Click Actions (top right). Click Syn....</div>
                 <div class="details">
@@ -1279,10 +1315,10 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411957" target="_blank" rel="noopener noreferrer">Reconfiguring vCenter HA fails with an error "vCenter HA has invalid configuration. Remove vCenter HA to destroy the current cluster configuration and set up vCenter HA again"</a></div>
-                <div class="summary">VCHA has to be reconfigured, in certain situations such as vCenter upgrade. Upon reconfiguring, VCHA UI interface shows invalid VCHA configuration with an error similar to "vCenter HA has invalid configuration. Remove vCenter HA to destroy the curren....,Please follow below mentioned steps to resolve VCHA reconfiguration failure: Correct the ownership of vmware-firewall-reload.flock: cd /var/tmp/ chown root:root vmware-firewall-reload.flock Redeploy VCHA. If the issue persist, please open a support c....</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=422348" target="_blank" rel="noopener noreferrer">Virtual machine migration between clusters cannot be performed due to the following error: "The operation is not allowed in the current state. DRS is non-functional due to absence of vCLS quorum. Active vCLS VMs:{active}; Required vCLS VMs:{required}."</a></div>
+                <div class="summary">Virtual machine migration between clusters fails. The task such as "Call DRS for cross vMotion placement recommendations" fails with the following error. "The operation is not allowed in the current state. DRS is non-functional due to absence of vCLS....,Enable/disable retreat mode on the cluster in order, then recreate the vCLS virtual machine.</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 411957</span>
+                    <span><span class="detail-label">Article ID:</span> 422348</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
                 </div>
@@ -1291,10 +1327,10 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=422348" target="_blank" rel="noopener noreferrer">Virtual machine migration between clusters cannot be performed due to the following error: "The operation is not allowed in the current state. DRS is non-functional due to absence of vCLS quorum. Active vCLS VMs:{active}; Required vCLS VMs:{required}."</a></div>
-                <div class="summary">Virtual machine migration between clusters fails. The task such as "Call DRS for cross vMotion placement recommendations" fails with the following error. "The operation is not allowed in the current state. DRS is non-functional due to absence of vCLS....,Enable/disable retreat mode on the cluster in order, then recreate the vCLS virtual machine.</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=411957" target="_blank" rel="noopener noreferrer">Reconfiguring vCenter HA fails with an error "vCenter HA has invalid configuration. Remove vCenter HA to destroy the current cluster configuration and set up vCenter HA again"</a></div>
+                <div class="summary">VCHA has to be reconfigured, in certain situations such as vCenter upgrade. Upon reconfiguring, VCHA UI interface shows invalid VCHA configuration with an error similar to "vCenter HA has invalid configuration. Remove vCenter HA to destroy the curren....,Please follow below mentioned steps to resolve VCHA reconfiguration failure: Correct the ownership of vmware-firewall-reload.flock: cd /var/tmp/ chown root:root vmware-firewall-reload.flock Redeploy VCHA. If the issue persist, please open a support c....</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 422348</span>
+                    <span><span class="detail-label">Article ID:</span> 411957</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
                 </div>
@@ -1397,227 +1433,11 @@
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423338" target="_blank" rel="noopener noreferrer">The date and time under the “Last Updated” field are not being updated for NSX-T in VCF Usage Meter.</a></div>
-                <div class="summary">The “Last Updated” field reflects the date and time when the NSX-T Manager instance was initially registered or last modified in Usage Meter. For vCenter Server, the “Last Updated” field reflects the date and time when Usage Meter collects metering ....,This behavior is expected. The “Last Updated” field reflects the date and time when the NSX-T Manager instance was initially registered or was last modified in Usage Meter. However, if an error occurs, a message is displayed in the Status column for ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423338</span>
-                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423622" target="_blank" rel="noopener noreferrer">vCenter Appliance が稼働している 2ノード vSAN クラスターの統合（Converge）時に VCF Installer のバリデーションが失敗する</a></div>
-                <div class="summary">免責事項： これは英文の記事 VCF Installer validation fails when converging a Two-Node vSAN Cluster hosting a vCenter Appliance (422658) の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 vCenter Appliance が稼働している 2ノード vSAN クラスターにお....,vCenter Appliance を 2ノード vSAN クラスター上で稼働させる必要がある場合、VCF Installer は使用できません。 代わりに、VMware vSphere Foundation (VVF) で利用可能な手動デプロイ方法に従ってください。 手動でのクラスター構築: 2ノード vSAN クラスターを手動で構成します。 スタンドアロン VCF Operations デプロイ: VVF を使用している場合、VCF Installerを使用せずに、VCF Operati....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423622</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
 
         ---
 
         <h2 id="cve_section">5. CVE 정보 (최근 60일 내 업데이트)</h2>
-        
-        <div class="card cve-high">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36675" target="_blank" rel="noopener noreferrer">Product Release Advisory - Python Buildpack 1.8.67 - python-buildpack-offline-cflinuxfs4</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>HIGH</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36675</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-high">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36674" target="_blank" rel="noopener noreferrer">Product Release Advisory - Python Buildpack 1.8.67 - python-buildpack-offline-cflinuxfs3</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>HIGH</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36674</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-medium">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36673" target="_blank" rel="noopener noreferrer">Product Release Advisory - Python Buildpack 1.8.66 - python-buildpack-offline-cflinuxfs4</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>MEDIUM</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36673</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-medium">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36672" target="_blank" rel="noopener noreferrer">Product Release Advisory - Python Buildpack 1.8.66 - python-buildpack-offline-cflinuxfs3</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>MEDIUM</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36672</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-high">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36671" target="_blank" rel="noopener noreferrer">Product Release Advisory - Single Sign-On for VMware Tanzu Platform 1.16.16</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>HIGH</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36671</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-medium">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36670" target="_blank" rel="noopener noreferrer">Product Release Advisory - PHP Buildpack 4.6.58 - php-buildpack-offline-cflinuxfs4</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>MEDIUM</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36670</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-medium">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36669" target="_blank" rel="noopener noreferrer">Product Release Advisory - PHP Buildpack 4.6.58 - php-buildpack-offline-cflinuxfs3</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>MEDIUM</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36669</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-high">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36668" target="_blank" rel="noopener noreferrer">Product Release Advisory - PHP Buildpack 4.6.57 - php-buildpack-offline-cflinuxfs4</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>HIGH</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36668</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-high">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36667" target="_blank" rel="noopener noreferrer">Product Release Advisory - PHP Buildpack 4.6.57 - php-buildpack-offline-cflinuxfs3</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>HIGH</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36667</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-high">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36666" target="_blank" rel="noopener noreferrer">Product Release Advisory - App Autoscaler CLI Plugin for VMware Tanzu Platform 250.6.4</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>HIGH</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36666</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-high">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36665" target="_blank" rel="noopener noreferrer">Product Release Advisory - App Autoscaler CLI Plugin for VMware Tanzu Platform 250.5.11</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>HIGH</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36665</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-critical">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36664" target="_blank" rel="noopener noreferrer">Product Release Advisory - Elastic Application Runtime Windows add-on for VMware Tanzu Platform 6.0.23+LTS-T</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>CRITICAL</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36664</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-critical">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36663" target="_blank" rel="noopener noreferrer">Product Release Advisory - Elastic Application Runtime Windows add-on for VMware Tanzu Platform 10.3.2</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>CRITICAL</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36663</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-critical">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36662" target="_blank" rel="noopener noreferrer">Product Release Advisory - Elastic Application Runtime Windows add-on for VMware Tanzu Platform 10.2.6+LTS-T</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>CRITICAL</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36662</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-critical">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36661" target="_blank" rel="noopener noreferrer">Product Release Advisory - Application Services for VMware Tanzu Platform 3.3.13</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>CRITICAL</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36661</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
-        <div class="card cve-medium">
-            <div class="card-content">
-                <div class="card-title"><a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/36660" target="_blank" rel="noopener noreferrer">Product Release Advisory - Scheduler for VMware Tanzu Platform 2.0.23</a></div>
-                <div class="details">
-                    <span><span class="detail-label">Severity:</span> <strong>MEDIUM</strong></span>
-                    <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
-                    <span><span class="detail-label">CVE ID:</span> VTDSA36660</span>
-                    <span><span class="detail-label">Published:</span> 2025-12-26</span>
-                    <span><span class="detail-label">Updated:</span> 2025-12-21</span>
-                </div>
-            </div>
-        </div>
+        <p>CVE 정보가 없습니다.</p>
         
     </div>
     <button id="scrollTopBtn" onclick="scrollToTop()">▲</button>
