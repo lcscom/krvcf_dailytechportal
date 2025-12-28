@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-12-28 18:01:15</title>
+    <title>Broadcom 기술 포털 - 2025-12-29 00:01:17</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-12-28 18:01:15)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-12-29 00:01:17)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -931,6 +931,30 @@
 
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=421998" target="_blank" rel="noopener noreferrer">Error:"update or delete on table "gateway_logical_resource" violates foreign key constraint "fk_firewa_group2gate_logi_res" on table "firewall_group"" when deleting edge gateway.</a></div>
+                <div class="summary">Deleting an edge gateway from VMware Cloud Director(VCD) UI fails with the error: could not delete: [com.vmware.vcloud.common.model.logicalresource.GatewayLogicalResourceModel#########-####-####-####-############] - ERROR: update or delete on table....,To resolve the issue, the edge gateway can be deleted via the API and then the OVDC can be deleted via the UI. Identify the UUID of the gateway in the OVDC. Navigate to the tenant portal > Data Centers > > Under Networking > E....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 421998</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=422943" target="_blank" rel="noopener noreferrer">VMware Cloud Director portal logs out when creating a network in remote site of a multi-site setup</a></div>
+                <div class="summary">Creating network from a multisite-associated tenant results in auto-logout of the VMware Cloud Director(VCD) portal. When selecting the Organization VDC(OVDC) from the remote site while creating the OVDC network. Admin and Tenant users are seeing the....,The workaround for this issue requires tenant network management from local sites. Cloud Director Engineering are aware of this issue and actively evaluating for a fix in a future release of Cloud Director. To be updated with any changes to this art....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 422943</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423679" target="_blank" rel="noopener noreferrer">削除済みのスーパーバイザー資産に割り当てていたライセンスが削除できない</a></div>
                 <div class="summary">すでに削除済みのスーパーバイザーに割り当てていたライセンスを削除しようとしたところ、「削除（REMOVE）」がグレーアウトしていて削除できません。 ライセンスの状態は割り当て済み（Assigned）となっています。 ,以下の方法でライセンスが未割り当てになりますので、その後 vSphere Client から削除ください。 vCenter Server アプライアンスのシェル（bash）に root でログインし、ldapsearch コマンドで未割り当てにしたいライセンスの AssetEntity を確認します。 vcsa# /opt/likewise/bin/ldapsearch -b "cn=LicenseService,cn=Services,dc=vsphere,dc=local" -D "cn=A....</div>
                 <div class="details">
@@ -1416,18 +1440,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 423666</span>
                     <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=422064" target="_blank" rel="noopener noreferrer">Deploying a OVA/OVF template directly on the Host client fails with error "postNFCData failed: dismiss"</a></div>
-                <div class="summary">OVF/OVA deployment on both vSphere Client and the Host Client fails. When deploying it via the Host client, it fails with error "postNFCData failed: dismiss". Every time the OVF deployment fails, both vpxa and hostd services crash with a backtrace wh....,Replace the corrupt OVF/OVA file. Ensure to check the integrity of the files to avoid any possible corruption. Note: In case the OVF is Cisco FMC appliance, check with Cisco to confirm the correct version to be deployed since some of the FMC releases....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 422064</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
                 </div>
             </div>
