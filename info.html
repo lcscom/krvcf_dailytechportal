@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2025-12-29 12:01:24</title>
+    <title>Broadcom 기술 포털 - 2025-12-29 18:01:13</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-12-29 12:01:24)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2025-12-29 18:01:13)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -194,6 +194,20 @@
             <div class="card-content">
                 <div class="card-title"><a href="https://blogs.vmware.com/vmware-japan/2025/12/howto-vsan-readynode-customize.html" target="_blank" rel="noopener noreferrer">vSAN ReadyNode를 선택하고 구성을 사용자 지정하는 방법 - Broadcom 지원 사이트 사용 가이드</a></div>
                 <div class="meta">2025-12-25 | 블로그: <a href="https://blogs.vmware.com/vmware-japan/" target="_blank" rel="noopener noreferrer">VMware Japan</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image no-image">No Image</div>
+            <div class="card-content">
+                <div class="card-title"><a href="http://joestechblog.info/from-uag-23-12-tunnel-client-24-05-to-current-a-practical-compatibility-migration-playbook/" target="_blank" rel="noopener noreferrer">UAG 23.12 + Tunnel Client 24.05에서 "현재"까지: 실용적인 호환성 + 마이그레이션 플레이북</a></div>
+                <div class="meta">2025-12-28 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image no-image">No Image</div>
+            <div class="card-content">
+                <div class="card-title"><a href="https://vmscribble.com/esxi/vmware-vms-to-proxmox-via-veeam-multiple-scsi-controllers/" target="_blank" rel="noopener noreferrer">Veeam을 통해 VMware VM을 Proxmox로 - 다중 SCSI 컨트롤러</a></div>
+                <div class="meta">2025-12-28 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
             </div>
         </div>
         <div class="card">
@@ -250,20 +264,6 @@
             <div class="card-content">
                 <div class="card-title"><a href="https://virtual-it.pl/15297-2026-6-trendow-ktore-zmienia-cyberbezpieczenstwo.html" target="_blank" rel="noopener noreferrer">2026년: 사이버 보안을 변화시킬 6가지 트렌드</a></div>
                 <div class="meta">2025-12-27 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-image no-image">No Image</div>
-            <div class="card-content">
-                <div class="card-title"><a href="https://virtualizationteam.com/cloud/vcf-9-x-deployment-tips-every-admin-should-know.html" target="_blank" rel="noopener noreferrer">모든 관리자가 알아야 할 VCF 9.x 배포 팁</a></div>
-                <div class="meta">2025-12-27 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-image no-image">No Image</div>
-            <div class="card-content">
-                <div class="card-title"><a href="https://blog.ragasys.es/crear-osds-pool-de-osd-ceph-y-agregar-almacenamiento-al-cluster-ceph" target="_blank" rel="noopener noreferrer">OSD, Ceph OSD 풀 생성 및 Ceph 클러스터에 스토리지 추가</a></div>
-                <div class="meta">2025-12-26 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
             </div>
         </div>
 
@@ -883,6 +883,486 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423783" target="_blank" rel="noopener noreferrer">"LLDP_ProcessPort: Failed to get status of port" のメッセージが syslog.log に多数出力される</a></div>
+                <div class="summary">免責事項：これは英文の記事 「High number of "LLDP_ProcessPort: Failed to get status of port" messages in syslog.log」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 - Syslog サーバおよび syslog.log ファイルで ESXi ホストに関して "LLDP_ProcessPort: ....,この問題は、ESXi 7.0 U3q および 8.0 U3 以降で修正されています。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423783</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423774" target="_blank" rel="noopener noreferrer">High number of "LLDP_ProcessPort: Failed to get status of port" messages in syslog.log</a></div>
+                <div class="summary">- Syslog servers and syslog.log file show continuous "LLDP_ProcessPort: Failed to get status of port" messages for ESXi hosts. [YYYY-MM-DDTHH:MM:SS] snmpd[###]: get_pnic_pkt_stats: fetch VSI_NODE_net_openPorts_type failed Not found [YYYY-MM-DDTHH:MM:....,This issue is fixed in ESXi 7.0 U3q, 8.0 U3 and above.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423774</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423794" target="_blank" rel="noopener noreferrer">ESXi 参加タイムアウトにより、新しいコントロール プレーン VM でワークロード クラスタのアップグレードが停止、または変更が停止する。</a></div>
+                <div class="summary">免責事項：これは英文の記事「Workload Cluster Upgrade Stuck or Change Stuck at New Control Plane VM due to ESXi Join Time-outs」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 ワークロードクラスタのアップグレード、またはコントロールプレーンノードに対するワークロードクラスタ変更を開始し....,重要: アップグレードやローリング再デプロイを進める目的で、既存のコントロールプレーン VM を削除することは適切ではありません。これにより、データ損失やクラスタ全体のデータベースが破壊される可能性があります。 ETCD 参加時のタイムアウトの原因を特定し、解消する必要があります。 これは、ワークロードクラスタ内の他のコントロールプレーンノードにおける高いリソース使用率、または既存のコントロールプレーンノードと新しいコントロールプレーンノード間のネットワーク問題が原因である可能性があります。 ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423794</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=417792" target="_blank" rel="noopener noreferrer">Workload Cluster Upgrade Stuck or Change Stuck at New Control Plane VM due to ESXi Join Time-outs</a></div>
+                <div class="summary">After initiating a workload cluster upgrade or workload cluster change to control plane nodes, the newest control plane VM reaches Running state but does not progress. While connected to the Supervisor cluster context, the following symptoms are ob....,IMPORTANT: It is not appropriate to delete an older control plane VM to progress the upgrade or rolling redeployment. This can cause data loss and potential destruction of the cluster's entire database. The cause of the ETCD join time-outs will need ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 417792</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423795" target="_blank" rel="noopener noreferrer">vCenter での vSAN パフォーマンス サービスの有効化する際の前提条件、手順、影響について</a></div>
+                <div class="summary">免責事項：これは英文の記事「Enabling vSAN Performance Service in vCenter: Prerequisites, Steps, and Impact」の日本語訳です。 記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 この KB では、vCenter で vSAN パフォーマンス サービスを有効にする方法、前提条件が必要かどうか、およびサービスを有効にすると影響....,vSAN パフォーマンスサービスは vSAN クラスタで有効にでき、これによって本番環境に影響が出ることはありません。 vSAN パフォーマンスサービスを有効にするための前提条件は次のとおりです。 ESXi バージョン要件: vSAN クラスタ内のすべてのホストは ESXi 7.0 以降を実行している必要があります。 クラスタの健全性: vSAN クラスタが適切に構成されており、未解決の健全性の問題がないことを確認します。 展開タイプ: vSAN OSA の場合、パフォーマンス サービスはオ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423795</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423762" target="_blank" rel="noopener noreferrer">ストレージ接続監視のカスタムアラームがパス障害テスト中にトリガーされない</a></div>
+                <div class="summary">免責事項： これは英文の記事「Custom alarm for storage connectivity does not trigger during path failure tests」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 ストレージ接続を監視するように構成されたカスタムアラームが、ストレージパスまたはスイッチの障害発生時にトリガーされない。 障害発生時、vCen....,冗長化された環境において、個々のパスまたはスイッチの障害をアラームで検出するには以下の手順を実施してください。 アラームのトリガー条件を [ストレージ接続が失われました] (Lost Storage Connectivity) から [ストレージ パスの冗長性が低下しました] (Degraded Storage Path Redundancy) に変更します。 注：[ストレージ接続が失われました] は、ストレージ デバイスへのアクセスが完全に失われた状態（APD）のみを監視したい場合に使用してく....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423762</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423773" target="_blank" rel="noopener noreferrer">HCX IX をデプロイするとvCenter Server のイベント ログに次のエラーメッセージが表示される: {host.name} のWWN ({wwn})が、現在登録されている WWN と 競合しています</a></div>
+                <div class="summary">免責事項：これは英文の記事「When deploying HCX IX, a error appears in the vCenter Server event log: "The WWN ({wwn}) of {host.name} conflicts with the currently registered WWN"」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 2台目以....,このエラーメッセージは無視可能です</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423773</span>
+                    <span><span class="detail-label">Product:</span> VMware HCX,VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=380090" target="_blank" rel="noopener noreferrer">Operator or admin group user fails to log in vCenter Server Appliance (VCSA)</a></div>
+                <div class="summary">Operator or admin group user fails to log in vCenter Server Appliance (VCSA) using SSH with the following error: [sudo] password for [USER ID] Traceback (most recent call last): File "/usr/lib/applmgmt/base/py/vmware/vherd/base/utils.py", ....,This issue has been fixed in 8.0U3e. Workaround To work around the issue, log in vCSA as root user and edit the following file using vim: /usr/lib/applmgmt/base/py/vmware/vherd/base/utils.py Change the line: proc = subprocess.Popen(['sud....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 380090</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=422402" target="_blank" rel="noopener noreferrer">vSAN "Quick-start" can not be used with standard virtual switches</a></div>
+                <div class="summary">When using "Quick-start" you are not able to select a standard virtual switch for the vSAN network configuration. ,The use of a DVS is required for QuickStart network configuration as it allows for uniform deployment, monitoring and configuration of all current and future hosts in the vSAN cluster. Standard switching is not allowed for use with QuickStart as it d....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 422402</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423791" target="_blank" rel="noopener noreferrer">「クラスタ上の必要な vSphere HA フェイルオーバー レベルを満たすための構成済みリソースが不足しています」というエラーのため、ワークロード クラスタに新しいノードを作成できません。</a></div>
+                <div class="summary">免責事項：これは英文の記事「Unable to Create New Nodes in Workload Clusters due to "Insufficient configured resources to satisfy the desired vSphere HA failover level on the cluster"」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください....,最終的に、本件はリソース予約に起因する問題であり、お客様の環境要件に基づいて解決する必要があります。 予約済みとして設定されているリソース量を削減するためのいくつかの提案を以下に示します： guaranteed vmclass を使用しているノードおよびノードプールの数を削減する ノードおよびノードプールに対して、より小さい guaranteed vmclass を使用する ノードおよびノードプールで best-effort vmclass を使用するよう変更する Note：ノードプールの vm....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423791</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=418670" target="_blank" rel="noopener noreferrer">Unable to Create New Nodes in Workload Clusters due to "Insufficient configured resources to satisfy the desired vSphere HA failover level on the cluster"</a></div>
+                <div class="summary">In a vSphere Supervisor environment, when attempting to create or scale up nodes in a workload cluster, the following error message is reported: Insufficient configured resources to satisfy the desired vSphere HA failover level on the cluster There a....,Ultimately this is a resource reserved issue and will need to be resolved based on your environmental needs. See the below for a few suggestions to reduce the amount of resources set as reserved: Reduce the number of nodes and node-pools using guaran....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 418670</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423786" target="_blank" rel="noopener noreferrer">vSAN「クイックスタート」は標準の仮想スイッチでは使用できません</a></div>
+                <div class="summary">免責事項：これは英文の記事「vSAN "Quick-start" can not be used with standard virtual switches」の日本語訳です。 記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 「クイックスタート」を使用する場合、vSAN ネットワーク構成に標準の仮想スイッチを選択することはできません。 ,クイックスタートのネットワーク構成では、DVS の使用が必須です。DVS を使用すると、vSAN クラスタ内の既存および将来のすべてのホストを統一的に展開、監視、構成できます。 標準スイッチはクイックスタートでは使用できず、同様の機能を実現できません。 クイックスタートの外部でネットワーク設定を変更すると、QuickStart ワークフローを使用してクラスタにホストを追加および構成できなくなり、以下の vSAN 健全性 サービスの警告がトリガーされます。 vSAN -- vSAN Health....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423786</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423772" target="_blank" rel="noopener noreferrer">When deploying HCX IX, an error appears in the vCenter Server event log: "The WWN ({wwn}) of {host.name} conflicts with the currently registered WWN"</a></div>
+                <div class="summary">Added a second IX to the vCenter Server inventory. When deploying HCX IX, an error appears in the vCenter Server event log The WWN ({wwn}) of {host.name} conflicts with the currently registered WWN,This is an ignorable error.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423772</span>
+                    <span><span class="detail-label">Product:</span> VMware HCX,VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423785" target="_blank" rel="noopener noreferrer">VKS Cluster の NTP 時刻同期に関するトラブルシューティング</a></div>
+                <div class="summary">免責事項: これは英文の記事「NTP Trouble Shooting for VKS Cluster」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 VKS Clusterにおいて、Kubernetes（k8s）ノード間の時刻同期が不正確な場合、 証明書の有効期限切れ、ログの整合性不備、分散データベースの不整合など、予期しない重大なトラブルを引き起こす要因となります。 本KBで....,時刻同期に問題がある場合、以下のステップに沿って問題の切り分けと修正を行ってください。 1. NTPクライアントの設定内容の確認 現在設定されているNTPサーバの設定を確認します。 # 設定されているNTPサーバの確認 grep server /etc/chrony.conf # NTPサーバとの同期状態を確認 chronyc sources -v #> .... #> MS Name/IP address Stratum Poll Reach LastRx Last samp....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423785</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423675" target="_blank" rel="noopener noreferrer">vCenter services fails to start with error "java.security.KeyStoreException: VKS not found"</a></div>
+                <div class="summary">Symptoms: vCenter lookupsvc and other associated services fails to start with below error: # root@vcenter: service-control --start --all Service-control failed. Error: Failed to start services in profile ALL. RC=1, stderr=Failed to start trustmanagem....,Reboot the vCenter to fix the issue.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423675</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=410633" target="_blank" rel="noopener noreferrer">Pure Storage Plugin deployment fails on vCenter</a></div>
+                <div class="summary">On vCenter UI under Administration > Client Plugin Pure Storage Plugin Status is Failed. /var/log/vmware/vsphere-ui/logs/vsphere_client_virgo.log [YYYY-MM-DDTHH:MM:SS.705Z] [ERROR] sdk-plugin-deployer-8998 com.vmware.vise.plugin.status.LocalPluginSta....,Engage Pure Storage support for further assistance.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 410633</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423684" target="_blank" rel="noopener noreferrer">Syncing vSAN HCL to vCenter is failing with the error : "Failed to upload the VSAN HCL DB. VSAN HCL DB timestamp is not updated in vCenter even after successful API"</a></div>
+                <div class="summary">When the json file is updated https://vvs.broadcom.com/service/vsan/all.json & the sync between the between the vSAN HCL of the vCenter & SDDC happens it is failing with the error : "Failed to upload the VSAN HCL DB. VSAN HCL DB timestamp is not upda....,1. Update the timezone to UTC in the vCenter using the KB : Setting the Time Zone in the vCenter Server Appliance 2. Update the timezone to UTC in SDDC. 2. Reboot both SDDC & vCenter.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423684</span>
+                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=422111" target="_blank" rel="noopener noreferrer">How to unlock VM users in VKS cluster nodes</a></div>
+                <div class="summary">User accounts on VKS cluster nodes will be locked after multiple failed login attempts due to STIG-enforced rule in VKr. This document outlines the steps to unlock a user account when it becomes locked due to repeated incorrect password entries.,1. Create a .yaml file called unlock_vmware-user.yaml as below unlock_vmware_user.yaml: apiVersion: apps/v1 kind: DaemonSet metadata: name: unlock-vmware-user namespace: kube-system spec: selector: matchLabels: app: unlock-vmware-use....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 422111</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423775" target="_blank" rel="noopener noreferrer">ESXi ホストを 7.x から 8.0U1 以降へアップグレード後、仮想フラッシュの設定が vSphere Client から編集できない</a></div>
+                <div class="summary">免責事項：これは英文の記事「After ESXi upgrading from 7.x to 8.0 U1 or later, Virtual Flash Cache cannot edit from vSphere Client(422300)」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 アップグレード前に ESXi 7.x で仮想フラッシュを設定していた ESXi ホ....,既存のキャッシュを削除し、新たなデバイスに改めて作成することができます。 以下のコマンドを実行することでキャッシュを削除できます。 # vsish -e ls /memory/liswap/dirs このコマンドで 0 のみか 0 と 1 といった値が表示されます。 この結果に基づいて以下のコマンドを実行します。 # vsish -e set /memory/llswap/dirs/0/sizeInBytes 0 # vsish -e set /memory/llswap/dirs/0/remo....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423775</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423691" target="_blank" rel="noopener noreferrer">NTP Trouble Shooting for VKS Cluster</a></div>
+                <div class="summary">In a VKS Cluster, inaccurate time synchronization between Kubernetes (k8s) nodes can cause critical issues, including certificate expiration, log inconsistency, and distributed database desynchronization. This KB describes how to verify and resolve N....,If time synchronization is failing, follow these steps to troubleshoot and resolve the issue. 1. Verify NTP Client Configuration Check the configured NTP servers and the current communication status. # Check configured NTP servers grep server /etc/ch....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423691</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=403549" target="_blank" rel="noopener noreferrer">kubectl vsphere login fails with "tls: failed to verify certificate: x509: certificate specifies an incompatible key usage Cause Identification"</a></div>
+                <div class="summary">Since replacing the Workload Platform Management(or Supervisor) certificate through vCenter -> Workload Management -> Supervisor -> Configure -> Certificate, "kubectl vsphere login" fails with below error: $ kubectl vsphere login --server=https://aa.....,To resolve the issue, generate and sign a new server certificate with the correct key usage: "TLS Web Server Authentication".</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 403549</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=375445" target="_blank" rel="noopener noreferrer">Registration of a IOFilter VASA Provider failed after upgrading to ESX 9.0</a></div>
+                <div class="summary">IOFilter shows as offline for the hosts after upgrading to ESX 9.0 and following event will be generated on vCenter : Event ID: "com.vmware.vc.sms.IoFilterVPRegisterFailure" Event message: "Registration of a IOFilter VASA Provider https://</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 375445</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware Cloud Foundation</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=314302" target="_blank" rel="noopener noreferrer">Understanding vSAN memory consumption</a></div>
+                <div class="summary">This article provides information about memory consumption in the latest versions of vSAN and provides example scenarios.,Select a vSAN-enabled cluster, then on the right, select the Monitor tab and then under vSAN -> Support > Performance for Support > SHOW SPECIFIED HOSTS > select hosts / resource pools > Memory > vSAN Memory > Memory Prospective vSAN customers may us....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 314302</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423063" target="_blank" rel="noopener noreferrer">vCenter 証明書の期限切れによる vSphere Replication UI エラー</a></div>
+                <div class="summary">免責事項：これは英文の記事「vSphere Replication UI Error Due to Expired vCenter Certificate」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 vSphere Replication経由でSite Recoveryにアクセスしようとすると、次のエラーメッセージが表示される場合があります"vSphere Replica....,この問題を解決するには、 有効で信頼できる接続を確保するために、vCenter Server証明書を更新してください。 VRMS アプライアンスを再構成して、新しく更新された vCenter Server 証明書との信頼を再確立します。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423063</span>
+                    <span><span class="detail-label">Product:</span> VMware Live Recovery</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423771" target="_blank" rel="noopener noreferrer">Contour Supervisor Service Pods Failing Readiness/Liveness Probes due to NSX Distributed Load Balancer Degraded Alarm</a></div>
+                <div class="summary">Contour supervisor service pods fail to come up and remain in a CrashLoopBackOff (CLBO) or Not Ready state on a VKS Supervisor cluster using NSX-T. When describing the Contour pods, readiness and liveness probe failures are observed with connection r....,Resolve the degraded state of the NSX Distributed Load Balancer backing the Supervisor Services. Log in to the NSX-T Manager UI. Navigate to Networking > Load Balancers > Distributed Load Balancer. Identify the DLB showing a Degraded alarm. Investiga....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423771</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service,VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=422645" target="_blank" rel="noopener noreferrer">The certmgr-tool does not work correctly in stretched supervisor environments</a></div>
+                <div class="summary">When certmgr tool command are run from a vCenter with stretched supervisor cluster (by following KB322994), they only execute on that specific supervisor node but ignore supervisor nodes residing on other clusters. Please refer to below screenshot as....,The certmgr-tool does not work correctly in stretched supervisor environments. When certmgr-tool commands are run from the VC with a stretched supervisor, they only execute on the supervisor master node and ignore CPVMs residing on other clusters.we ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 422645</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=422165" target="_blank" rel="noopener noreferrer">ゲスト OS のカスタマイズで RHEL 10.x のカスタマイズに失敗する場合があります</a></div>
+                <div class="summary">免責事項：これは英文の記事「Guest OS Customization may fail to customize RHEL 10.x」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 RHEL 10.x、AlmaLinux 10.x、Rocky Linux 10.x、および Oracle Linux 10.x 仮想マシンでは、ゲスト OS のカスタマイズが機能しない場合があ....,この問題はvSphere 8.0U3bリリースで修正されました。 回避策： カスタマイズ前に仮想マシンまたはテンプレートにてパス"/etc/sysconfig/network-scripts"を作成します。 "sudo mkdir -p /etc/sysconfig/network-scripts" or ゲストOSのカスタマイズをcloud-initエンジンへ切り替えます。詳細は「How does vSphere Guest OS Customization work with c....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 422165</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server 8.0,VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423765" target="_blank" rel="noopener noreferrer">NFSv3 データストア上の仮想マシンがバックアップ中のスナップショット統合が失敗することにより停止する可能性がある</a></div>
+                <div class="summary">免責事項：これは英文の記事「Virtual machines on NFSv3 datastores might fail due to a failed snapshot consolidation during backup. (402937)」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 この問題は、サードパーティ製バックアップソフトウェアが1つ以上のディスクをアクティブ....,失敗したVMのパワーオン方法 VMをパワーオンできるようにするには、オープン状態を強制的にクローズして、親ディスクのロックを解放させる必要があります。これには以下のいずれかの操作を行います。 バックアッププロキシ/サーバー上で、該当VMの保留中（ペンディング）のバックアップジョブを停止、または強制終了する。 もしくは: 稼働中の他の VM を移行させた後、失敗時に VM が実行されていたESXiサーバーを再起動する。 恒久対策: VMの失敗を回避するには、ESXiサーバーを ESXi 8.0 ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423765</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware vSphere ESXi 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=402937" target="_blank" rel="noopener noreferrer">Virtual machines on NFSv3 datastores might fail due to a failed snapshot consolidation during backup.</a></div>
+                <div class="summary">This failure is seen when snapshot consolidation requested while the third party backup software is still actively holding one or more disks open. You see the similar events recorded in the Host Management Agent logs (var/run/log/hostd.log) Hostd[</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 402937</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware vSphere ESXi 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423555" target="_blank" rel="noopener noreferrer">Hostname "photon-machine" in syslog output from Live Recovery Appliance</a></div>
+                <div class="summary">The hostname "photon-machine" is recorded in the SYSLOG(remote syslog server) output of the VMware Live Site Recovery appliance and the vSphere Replication appliance. Here is a output of SYSLOG(remote syslog server), MM DD HH:MM:SS ipv6-localhost ipv6-loopback 127.0.0.1</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423555</span>
+                    <span><span class="detail-label">Product:</span> VMware Live Recovery</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423753" target="_blank" rel="noopener noreferrer">How to enable ”lwisOomCheck" service</a></div>
+                <div class="summary">In ESXi host which version is 8.0 update 3e or later, The "lwisOomCheck" service has been added. However this service is disabled as default. If the ESXi host is joined to Active Directory (AD) domain, Likewise is enabled, so you will need to enable....,To enable lwisOomCheck, log into the ESXi host via Host Client, then then select "Host" -> “Manage” in the left pane. From the “Services” tab, right-click on “lwisOomCheck” and select "Start" and “Start and stop with host”.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423753</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423740" target="_blank" rel="noopener noreferrer">Horizon 再構成でマスターイメージからのクローン処理に通常より時間がかかります</a></div>
+                <div class="summary">Horizon 再構成でマスターイメージからのクローン処理に通常より時間がかかります。 通常時はクローン処理に5分程度で完了していますが、20分程度かかります。,マスターイメージの仮想マシンでスナップショットを削除して Horizon 再構成を実施します。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423740</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423610" target="_blank" rel="noopener noreferrer">Live Recovery Appliance からの syslog 出力におけるホスト名 "photon-machine" について</a></div>
+                <div class="summary">免責事項：これは英文の記事「Hostname "photon-machine" in syslog output from Live Recovery Appliance」の日本語訳です。 記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 VMware Live Site Recovery アプライアンスおよび vSphere Replication アプライアンスからの SYSLOG(リモートシ....,VMware Live Site Recovery/vSphere Replication アプライアンスの/etc/hostsファイルを更新します。 変更後：/etc/hosts # Begin /etc/hosts (network card version) ::1 ipv6-localhost ipv6-loopback 127.0.0.1</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423610</span>
+                    <span><span class="detail-label">Product:</span> VMware Live Recovery</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423761" target="_blank" rel="noopener noreferrer">kubectl vsphere ログインが「tls: 証明書の検証に失敗しました: x509: 証明書に互換性のないキー使用法が指定されています。原因の特定」で失敗します</a></div>
+                <div class="summary">免責事項：これは英文の記事「kubectl vsphere login fails with "tls: failed to verify certificate: x509: certificate specifies an incompatible key usage Cause Identification"」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 vCenter ....,本問題を解決するため、正しいキー使用目的である 「TLS Web Server Authentication」 を指定して、新しいサーバー証明書を生成および署名してください。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423761</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423044" target="_blank" rel="noopener noreferrer">vSphere 上の Windows 仮想マシンでメモリ整合性を有効化する方法</a></div>
+                <div class="summary">免責事項： これは英文の記事「How to Enable Memory Integrity on Windows Virtual Machines in vSphere」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 Windows 仮想マシンにおいて、Windows セキュリティの「メモリ整合性」機能の設定が有効化できません。 機能を有効にした状態で仮想マシンを再起動すると設定....,Windows の「メモリ整合性」機能を使用するには、その基盤となる仮想化ベースのセキュリティ (VBS: Virtualization-based Security) が仮想マシンレベルで有効化されている必要があります。 Activate Virtualization-based Security on an Existing Virtual Machine 以下の手順に従い、vSphere Client から対象の仮想マシンに対して VBS を有効化してください。 vSphere Clien....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423044</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423760" target="_blank" rel="noopener noreferrer">VKS クラスタノードで VM ユーザーのロックを解除する方法</a></div>
+                <div class="summary">免責事項：これは英文の記事「How to unlock VM users in VKS cluster nodes」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 VKS クラスタノード上のユーザーアカウントは、VKr の STIG 適用ルールにより、ログイン試行が複数回失敗するとロックされます。 このドキュメントでは、誤ったパスワードを繰り返し入力したためにユーザーアカウントが....,1. 以下の内容で unlock_vmware-user.yaml という .yaml ファイルを作成します。 unlock_vmware_user.yaml： apiVersion: apps/v1 kind: DaemonSet metadata: name: unlock-vmware-user namespace: kube-system spec: selector: matchLabels: app: unlock-vmware-user template: metad....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423760</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423759" target="_blank" rel="noopener noreferrer">When performing a brownfield import (Import Existing vCenter) in VMware Cloud Foundation (VCF) 9.x, the task fails at "Generate Inputs for configuring NSX Manager"</a></div>
+                <div class="summary">From Recent Tasks, we see that it failed at "Generate inputs for configuring NSX Manager after import" with the cause: "vCenter with the name ##### not found in the inventory" ,To resolve the inconsistency, the domain status must be manually transitioned in the SDDC Manager database to allow the Brownfield Import workflow to re-initialize and overwrite the stale metadata. Steps: Take a virtual machine snapshot of the SDDC M....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423759</span>
+                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=422860" target="_blank" rel="noopener noreferrer">HCX IX をデプロイするとvCenter Server のイベント ログに次のワーニングメッセージが表示される: WWNが変更されました</a></div>
+                <div class="summary">免責事項：これは英文の記事「When deploying HCX IX, a warning appears in the vCenter Server event log: "WWNs are changed"」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 HCX IX をデプロイするとvCenter Server のイベント ログに次のワーニングメッセージが表示されます W....,このワーニングメッセージは無視可能です</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 422860</span>
+                    <span><span class="detail-label">Product:</span> VMware HCX,VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423697" target="_blank" rel="noopener noreferrer">vSAN ファイル サービス VM が次のエラーでパワーオンできない - "File was not found. The system cannot find the file specified. Unable to enumerate all disks"</a></div>
+                <div class="summary">免責事項：これは英文の記事「Unable to power on vSAN File Services VM - "File was not found. The system cannot find the file specified. Unable to enumerate all disks"」の日本語訳です。 記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 複数ある vSAN ファイル....,影響を受ける FSVM 内のデータは 他の FSVM に存在するため、影響を受ける FSVM を以下のように再作成する対応を実施してください。 ESXi ホストをメンテナンスモードにする ESXi ホスト上の FSVM をインベントリから削除する ESXi ホストをメンテナンスモードから解除する</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423697</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423647" target="_blank" rel="noopener noreferrer">NVMe ディスク にて "Failed to read log page 0x1, retry" のエラーが発生</a></div>
+                <div class="summary">免責事項：これは英文の記事「NVMe Disk fail with error - Failed to read log page 0x1, retry」の日本語訳です。 記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 症状： vSAN ホストで NVME ディスクに障害が発生しています。,さらに調査するには、NVMe ディスクの健全性についてハードウェアベンダーに問い合わせてください。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423647</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423243" target="_blank" rel="noopener noreferrer">NVMe Disk fail with error - Failed to read log page 0x1, retry</a></div>
                 <div class="summary">Symptoms: NVME disk fails on a vSAN Host.,For further investigation engage the Server Hardware vendor to assess the health of the NVMe disk.</div>
                 <div class="details">
@@ -913,534 +1393,6 @@
                     <span><span class="detail-label">Article ID:</span> 422492</span>
                     <span><span class="detail-label">Product:</span> VMware HCX,VMware vCenter Server</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423756" target="_blank" rel="noopener noreferrer">HCXを使用した仮想マシン移行時に次のワーニングメッセージが表示される "VM may lose network connectivity after the migration because of the change in destination network(s): (Portgroup Name)"</a></div>
-                <div class="summary">免責事項：これは英文の記事「HCX migration is showing a warning "VM may lose network connectivity after the migration because of the change in destination network(s): ()"」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してく....,警告を解決するには移行元と移行先の両方の間でNetwork Extensionを使用したL2延伸を構成してください。 警告を無視して移行を続行することも可能です。「GO」ボタンを押すと警告が再度表示されますが、もう一度押してください。</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423756</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423061" target="_blank" rel="noopener noreferrer">HCX migration is showing a warning "VM may lose network connectivity after the migration because of the change in destination network(s): (Portgroup Name)"</a></div>
-                <div class="summary">The following warning appears in the migration UI during an HCX Migration. ⚠️ VM may lose network connectivity after the migration because of the change in destination network(s) : (),To resolve the warning, configure the extended network on both the source and destination systems. Ignoring the warning and proceeding with the migration is also possible. It will appear again when you press the GO button, but please press it once mo....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423061</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423749" target="_blank" rel="noopener noreferrer">Custom alarm for storage connectivity does not trigger during path failure tests</a></div>
-                <div class="summary">A custom alarm configured to monitor storage connectivity does not trigger when a storage path or switch failure occurs. Relevant events (such as "Storage path redundancy degraded") are logged in the vCenter Events tab during the failure, but the ala....,To ensure the alarm detects individual path or switch failures in a redundant environment: Change the alarm trigger condition from "Lost Storage Connectivity" to "Degraded Storage Path Redundancy". Note: Use "Lost Storage Connectivity" only if you in....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423749</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423079" target="_blank" rel="noopener noreferrer">How to Enable Memory Integrity on Windows Virtual Machines in vSphere</a></div>
-                <div class="summary">When attempting to enable the Windows Security "Memory Integrity" feature on a Windows virtual machine, the setting does not take effect. If you reboot the virtual machine with the feature enabled, you will see that the setting reverts to its disable....,The Windows "Memory Integrity" feature requires that the underlying Virtualization-based Security (VBS) be enabled at the virtual machine level. Enable Virtualization-based Security on an Existing Virtual Machine Follow the steps below to enable VBS ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423079</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423044" target="_blank" rel="noopener noreferrer">vSphere 上の Windows 仮想マシンでメモリ整合性を有効化する方法</a></div>
-                <div class="summary">免責事項： これは英文の記事「How to Enable Memory Integrity on Windows Virtual Machines in vSphere」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 Windows 仮想マシンにおいて、Windows セキュリティの「メモリ整合性」機能を有効化しようとしても、設定が有効化できません。 機能を有効にした状態で仮想マ....,Windows の「メモリ整合性」機能を使用するには、その基盤となる仮想化ベースのセキュリティ (VBS: Virtualization-based Security) が仮想マシンレベルで有効化されている必要があります。 Activate Virtualization-based Security on an Existing Virtual Machine 以下の手順に従い、vSphere Client から対象の仮想マシンに対して VBS を有効化してください。 vSphere Clien....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423044</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423745" target="_blank" rel="noopener noreferrer">[VMC] HCX Cloud の HCX アプライアンス管理 (:9443) UI にアクセス出来ない</a></div>
-                <div class="summary">免責事項：これは英文の記事「[VMC] Unable to access HCX Appliance Management (:9443) UI in HCX Cloud」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 ユーザーは VMC の HCX ハイブリッドページにはアクセスできますが、HCX Cloud Manager 管理ページ (https://</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423745</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX,VMware Cloud on AWS</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423552" target="_blank" rel="noopener noreferrer">Windows イベントログに "ディスクxx が突然取り外されました"</a></div>
-                <div class="summary">Windows イベントログ（システム）に以下の警告が出力されています。 ソース：disk イベントID：157 内容：ディスク xx が突然取り外されました。 この仮想マシンは他社製バックアップソフトウェアの PROXY サーバとして使用されており、頻繁に仮想ディスクの追加と削除を繰り返し行っています。,バックアップ終了時の仮想ディスク削除によるイベント 157 は無視して問題ありません。</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423552</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423742" target="_blank" rel="noopener noreferrer">How to replace STS_INTERNAL_SSL_CERT using vCert</a></div>
-                <div class="summary">This article explains how to replace STS_INTERNAL_SSL_CERT using vCert. vCert - Scripted vCenter expired certificate replacement,As of vCert-6.1.0-20250910.zip, it doesn't provide functionality of replacing STS_INTERNAL_SSL_CERT alone. However, vCert automatically handles STS_INTERNAL_SSL_CERT along with related operations. Here are how vCert handles STS_INTERNAL_SSL_CERT. Whe....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423742</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423735" target="_blank" rel="noopener noreferrer">Multiple Vulnerabilities identified in Harbor</a></div>
-                <div class="summary">An access control issue in Harbor allows attackers to access public and private image repositories without authentication. Successful exploitation of this vulnerability can lead to unauthorized access to sensitive data stored in Harbor.,Harbor Vulnerability affected and fixed version. CVE Number Affected Number Fixed Version CVE-2022-31671 2.4 and 2.5 2.5.1 and above CVE-2022-31670 2.4 and 2.5 2.5.1 and above CVE-2022-31669 2.5.2 2.5.3 and above CVE-2022-31668 2.5.2 2.5.3 and....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423735</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423639" target="_blank" rel="noopener noreferrer">Applying a role to perform virtual machine power operations only to specific users on vSphere Client</a></div>
-                <div class="summary">This article explains how to apply a role to perform virtual machine power operations only to specific users on vSphere Client.,Connect vSphere Client and open [Administration] -> [Access Control] -> [Roles]. Create a new role with the following privileges only: Virtual machine Interaction Answer question Console interaction Power off Po....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423639</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423731" target="_blank" rel="noopener noreferrer">Unable to enable vmk vMotion interface, fails with "Operation not permitted: VSI_node_net_tcpip_instances_plumb"</a></div>
-                <div class="summary">- When listing the vmk interfaces, the vmk interface for vMotion it shows the Enabled state as 'false' using the command: esxcfg-vmknic -l - When tried to set the interface of the vMotion to true using the following command, it fails with error: esxc....,To resolve: 1. Delete the vMotion vmk interface from the CLI: esxcli network ip interface remove -i vmk2 2. Use the same IP details and recreate the vmk interface from the vCenter UI for that host and now you can see the interface is enabled to 'true....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423731</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423726" target="_blank" rel="noopener noreferrer">Buffer Overrun issues with NSX Edge during large file transfer</a></div>
-                <div class="summary">Observing the following alarm in the NSX UI: Edge NIC out of receive / transmit buffer alarm After or during a large file transfer flowing through NSX Edge Node data path, the above alarm shows NSX Edge Nodes are Large form factor size or smaller Si....,Follow the resolution steps from the following three KBs: Rx Errors observed on Edge nodes - The resolution steps will allow an increase to the queue size limit for handling bursting traffic Resize NSX Edge Node - Xlarge form factor will give more re....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423726</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423732" target="_blank" rel="noopener noreferrer">No connection to VR Server for virtual machine in the cluster: SQLite error</a></div>
-                <div class="summary">1. Replication status is Not Active 2. Replication starts working when moved to a different host that is not impacted by hardware changes or ESXi reinstallation. 3. VMs under the replication tab display the error - A replication error occurred at ....,Validate the current certificate used by ESXi - COMMAND: openssl s_client -connect :443 | openssl x509 -noout -fingerprint -sha256 STEP 1: To ensure the same certificate is used by hbr-agent, restart the hbrsrv and hbr-agent s....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423732</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware Live Recovery</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=421998" target="_blank" rel="noopener noreferrer">Error:"update or delete on table "gateway_logical_resource" violates foreign key constraint "fk_firewa_group2gate_logi_res" on table "firewall_group"" when deleting edge gateway.</a></div>
-                <div class="summary">Deleting an edge gateway from VMware Cloud Director(VCD) UI fails with the error: could not delete: [com.vmware.vcloud.common.model.logicalresource.GatewayLogicalResourceModel#########-####-####-####-############] - ERROR: update or delete on table....,To resolve the issue, the edge gateway can be deleted via the API and then the OVDC can be deleted via the UI. Identify the UUID of the gateway in the OVDC. Navigate to the tenant portal > Data Centers > > Under Networking > E....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 421998</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=422943" target="_blank" rel="noopener noreferrer">VMware Cloud Director portal logs out when creating a network in remote site of a multi-site setup</a></div>
-                <div class="summary">Creating network from a multisite-associated tenant results in auto-logout of the VMware Cloud Director(VCD) portal. When selecting the Organization VDC(OVDC) from the remote site while creating the OVDC network. Admin and Tenant users are seeing the....,The workaround for this issue requires tenant network management from local sites. Cloud Director Engineering are aware of this issue and actively evaluating for a fix in a future release of Cloud Director. To be updated with any changes to this art....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 422943</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-27</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423679" target="_blank" rel="noopener noreferrer">削除済みのスーパーバイザー資産に割り当てていたライセンスが削除できない</a></div>
-                <div class="summary">すでに削除済みのスーパーバイザーに割り当てていたライセンスを削除しようとしたところ、「削除（REMOVE）」がグレーアウトしていて削除できません。 ライセンスの状態は割り当て済み（Assigned）となっています。 ,以下の方法でライセンスが未割り当てになりますので、その後 vSphere Client から削除ください。 vCenter Server アプライアンスのシェル（bash）に root でログインし、ldapsearch コマンドで未割り当てにしたいライセンスの AssetEntity を確認します。 vcsa# /opt/likewise/bin/ldapsearch -b "cn=LicenseService,cn=Services,dc=vsphere,dc=local" -D "cn=A....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423679</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vCenter Server 8.0</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=421808" target="_blank" rel="noopener noreferrer">Perform a Configuration Drift Sync Between vCenter Server and SDDC Manager in VCF 9.x</a></div>
-                <div class="summary">SDDC Manager may report Configuration Drift Detected for a workload domain when the inventory in vCenter Server does not match the inventory stored in SDDC Manager. ,Perform a Configuration Drift Sync from the SDDC Manager UI Log in to the SDDC Manager UI: https:// In the left navigation pane, select Inventory. Identify the domain. Click the workload domain. Click Actions (top right). Click Syn....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 421808</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=421648" target="_blank" rel="noopener noreferrer">Error: "Failed to install software on host" during NSX installation</a></div>
-                <div class="summary">When configuring an ESXi host as an NSX transport node from the NSX UI , the deployment fails with the following error: Failed to install software on host. Unable to connect the host https://#.#.#.#/sdk Selecting the Resolve option will retry to ins....,Ensure the correct subnet is configured on the ESXi host.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 421648</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409014" target="_blank" rel="noopener noreferrer">ESXi host network redundancy lost, vmnic reporting "packets completion seems stuck, issuing reset"</a></div>
-                <div class="summary">ESXi showing not responding in vCenter and having error message "Network uplink redundancy lost" vMotion stuck at 17% and eventually fails VMs unreachable over the network Intel x710 10GbE adapters used with i40en driver vobd.log shows vmnics flapp....,Engage Intel to investigate this further.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409014</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=374299" target="_blank" rel="noopener noreferrer">Deleting virtual machine or snapshot fails with error: vim.fault.GenericVmConfigFault</a></div>
-                <div class="summary">Snapshot consolidation for a virtual machine with multiple snapshots might fail with a "vim.fault.GenericVmConfigFault" Deleting a virtual machine from disk that has multiple snapshots may also fail with the same error mentioned above. [root@hostname....,To solve this issue, please apply the following steps: Using vSphere Client, shut down the guest operating system and power the virtual machine off. Next, find the virtual machine folder where the .vmx configuration file of the VM is located. open an....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 374299</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423560" target="_blank" rel="noopener noreferrer">Repair VMware Tools in Windows OS fails with error: '{GUID}.msi' missing</a></div>
-                <div class="summary">When attempting to Repair or Modify VMware Tools from Windows VM you encounter the below error: VMware Tools was previously installed using an MSI. The cached installer file C:\Program Files\Common Files\VMware\InstallerCache\{GUID}.msi is missing or....,Recommended resolution options: Fully uninstall and re-install VMTools From the VM console: Go to Control Panel → Programs and Features Select VMware Tools → Uninstall If prompted, allow the uninstall to complete even if warnings appear Reboot the VM....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423560</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESX 8.x</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=386215" target="_blank" rel="noopener noreferrer">Alert hostd performance has degraded due to high system latency</a></div>
-                <div class="summary">Symptoms: Some hosts going into not responding state causing the VM's to become inaccessible. An alarm is triggered in the VC from multiple hosts: Alarm 'Host error' on esxi host triggered by event 14803934 'Issue detected on hostname.domain.com in ....,Reboot the host to get access to all the VMs which are inaccessible because of ESXi sluggish behavior. Engage the storage/Switch vendor to investigate the cause of SCSI command failures observed in /var/run/log/vmkernel.log</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 386215</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=421260" target="_blank" rel="noopener noreferrer">vSAN datastores are not showing any information pertaining to SIOC in the performance charts in the vCenter.</a></div>
-                <div class="summary">Unable to view information for Storage I/O charts for a vSAN datastore from the vSphere UI.,vSAN datastore does not support Storage I/O control and hence is of expected behavior.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 421260</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=380664" target="_blank" rel="noopener noreferrer">vSphere UI and VAMI Pages Fail to Load After VCSA 8.0 Upgrade — Stuck on "Loading…"</a></div>
-                <div class="summary">vCenter Server update performed with no errors occurred. When attempting to access the VAMI, we see only the message "Loading..." The issue happens only on some browsers, and VAMI can be accessed using other computers or browsers. In certain cases,....,Upgrade the browser to a supported version following the guidelines of System Requirements for the New vCenter Server Appliance . Example: Google Chrome 90 or later Mozilla Firefox 80 or later Microsoft Edge 89 or later If the Browser is at support....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 380664</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423231" target="_blank" rel="noopener noreferrer">"非永続ストレージ" の警告メッセージが SAN ブート ESXi ホストで表示される</a></div>
-                <div class="summary">免責事項： これは英文の記事 「"non-persistent storage" warning message is displayed on SAN-booted ESXi host」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 SAN ブート ESXi ホストに警告メッセージが表示されます。 メッセージは以下です。: ホスト < ESXi ホストの FQDN / IP ....,スクラッチ領域を手動で設定します。 詳細については、 Creating a persistent scratch location for ESXi 8.x/7.x を参照してください。</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423231</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423690" target="_blank" rel="noopener noreferrer">VM fails to boot into guest OS after converting storage control type from IDE to SCSI</a></div>
-                <div class="summary">The vendor-provided OVA configured with an IDE storage controller when changed the adapter type from IDE to SCSI, the virtual machine failed to boot into the guest operating system and reported a boot error. Error: Warning: dracut-initqueue timeout -....,Since the OVA is provided by vendor, it is recommended to engage the vendor to confirm whether the guest OS supports the SCSI adapter type and whether any guest OS–level changes are required. While SCSI controllers offer performance enhancements over....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423690</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi 8.0</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423693" target="_blank" rel="noopener noreferrer">HCX で仮想マシンを vMotion すると次のようなエラーイベントが表示されることがある：「Cannot login USERNAME_PLACEHOLDER@##.##.##.##」</a></div>
-                <div class="summary">免責事項：これは英文の記事「An error event "Cannot login USERNAME_PLACEHOLDER@##.##.##.##" may appear during HCX migration of a virtual machine.」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 HCXの機能により仮想マシンをリモートサイトに移行した。 仮想マシンの移....,このイベントは無視できます。</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423693</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423201" target="_blank" rel="noopener noreferrer">The RAV migration fails because the "ctkEnabled" parameter is enabled.</a></div>
-                <div class="summary">When attempting to migrate a Virtual Machine using HCX RAV, the migration fails during the switchover phase relocation. Symptoms: The error message in the HCX Manager app.log UTC [VmotionService_SvcThread-12035, Ent: HybridityAdmin, , TxI....,To resolve this issue, manually disable Change Block Tracking (CBT) on the affected Virtual Machine before re-attempting the migration. 1. Power off the virtual machine. 2. Right-click the virtual machine and click Edit Settings. 3. Click the Advance....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423201</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423689" target="_blank" rel="noopener noreferrer">vCenter を 7.0U3 以降にアップデートした後、vpxd コア ダンプが生成されません</a></div>
-                <div class="summary">免責事項: これは英文の記事「vpxd core dump is not generated after updating vCenter to 7.0U3 or later」の日本語訳です。 記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事を参照してください。 vCenter を 7.0 U3 以上にアップデートした後、vpxd コアダンプが生成されません。 vCenter から suid_dumpable の値を....,この問題は、VMware vCenter Server 8.0 Update 3e リリースで解決されています。 この パッチをダウンロードするには、Broadcom Support Portalにログインしてください。 Workaround vCenter で、suid_dumpable値を 0 から 2 に更新します。 root ユーザを使用してvCenterにSSH接続します。 suid_dumpable の値を次のように設定します。 echo "2" > /proc/sys/fs/s....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423689</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=419191" target="_blank" rel="noopener noreferrer">Linux Guest VMs fail to boot after changing the SCSI Controller from LSI Logic Parallel to VMware Paravirtual</a></div>
-                <div class="summary">VM with Linux Guest OS fails to boot after the virtual SCSI Controller is changed from LSI Logic Parallel to VMware Paravirtual (PVSCSI). Following error message is seen in the VM Console during the boot failure : [ 1##.7####] dracut-initqueue[####....,Reach out to the respective Guest OS vendor to fix the issue as this is occurring within the Guest OS boot process.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 419191</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-26</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423378" target="_blank" rel="noopener noreferrer">Remove duplicate Service account entry from SDDC manager</a></div>
-                <div class="summary">Retrieving the service account secret password using a GET request displays a duplicate service account entry, as highlighted below. # TOKEN=$(curl -d '{"username" : "", "password" : ""}' -H "Content-Type: application/json....,The troubleshooting steps requires validation and updates in SDDC manager database. Please raise a Case with Broadcom Support to seek further assistance. Raise support with Broadcom</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423378</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412383" target="_blank" rel="noopener noreferrer">vSphere Replication and Site Recovery Manager gets disconnected from vCenter server post VC certificate change.</a></div>
-                <div class="summary">Below error is noticed in the vCenter Server UI for the SRM/VR plugin com.vmware.vim.vmomi.core.exception.CertificateValidationException. Server certificate chain is not trusted and thumbprint verification is not configured. The below error will be s....,Follow these steps to reconfigure vSphere Replication and Site Recovery Manager and reconnect the sites. Reconfigure vSphere Replication Reconfigure vSphere Replication Server Settings Reconfigure the Site Recovery Manager Reconfigure the VMware Live....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 412383</span>
-                    <span><span class="detail-label">Product:</span> VMware Live Recovery</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423618" target="_blank" rel="noopener noreferrer">クラスタ間の仮想マシンの移行がエラー「VCLS クォーラムがないため、DRS は機能しません。アクティブな vCLS 仮想マシン: {active}; 要求された vCLS 仮想マシン: {required}。」で実行できない</a></div>
-                <div class="summary">免責事項：これは英文の記事「Virtual machine migration between clusters cannot be performed due to the following error: "The operation is not allowed in the current state. DRS is non-functional due to absence of vCLS quorum. Active vCLS VMs:{active}; Required vCLS ....,クラスタの Retreat モードの有効と無効を順に実行し、vCLS 仮想マシンを再作成します。</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423618</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423683" target="_blank" rel="noopener noreferrer">How to Confirm and Compare ESXi Service Enable/Disable Time and Host Reboot Time</a></div>
-                <div class="summary">In certain scenarios, such as internal security reviews or company compliance audits, administrators may be required to verify when specific ESXi services were enabled or disabled and whether these actions occurred before or after a host reboot. This....,The following steps demonstrate how to confirm and compare the SSH service enable/disable time with the ESXi host reboot time. Step 1: Confirm ESXi Host Reboot Time Review the /var/run/log/vmksummary.log file to identify the ESXi host reboot events. ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423683</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423549" target="_blank" rel="noopener noreferrer">Alert "Agent unable to save configuration to disk" appears when removing WAN-OPT service</a></div>
-                <div class="summary">When removing the WAN-OPT service from a VMware HCX Service Mesh or Compute Profile, the following alert may be observed in vCenter Server associated with the HCX Interconnect appliance: Agent unable to save configuration to disk: Error syncing firmw....,If the Service Mesh status is normal and there are no persistent errors, no specific action is required. To verify the environment is functional, perform the following: Check Service Mesh Status: Ensure the HCX Service Mesh displays a "Healthy" or "G....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423549</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423548" target="_blank" rel="noopener noreferrer">エラー: /usr/lib/vmware-vmdir/bin/vdcrepadmin -f showpartnerstatus -h localhost -u administrator@######.#### のコマンドを実行時にレプリケーションパートナーを確認不可となる</a></div>
-                <div class="summary">免責事項：これは英文の記事「 Error: Cannot see replication partner when running /usr/lib/vmware-vmdir/bin/vdcrepadmin -f showpartnerstatus -h localhost -u administrator@######.#### 」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。....,以下のように正しいコマンド実行してください /usr/lib/vmware-vmdir/bin/vdcrepadmin -f showpartnerstatus -h localhost -u administrator</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423548</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423682" target="_blank" rel="noopener noreferrer">An error event 'Agent can't send heartbeats: Host is down' is recorded while vCenter is down.</a></div>
-                <div class="summary">Prerequisites: The vCenter Server Appliance (VCSA) was powered off for maintenance work. The ESXi hosts managed by vCenter remained operational. After starting the vCenter Server Appliance, the following error event was observed on specific hosts: Da....,If this error event was output due to a vCenter shutdown, it can be safely ignored.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423682</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESX 8.x,VMware vSphere ESX 7.x</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423178" target="_blank" rel="noopener noreferrer">vSAN データストアから VM フォルダを削除できない</a></div>
-                <div class="summary">免責事項：これは英文の記事「Unable to delete VM folder from vSAN datastore」の日本語訳です。 記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 VM は vSAN クラスタから削除されたか、Storage vMotion を介して移動されています。 VM の namespace フォルダ は、vCenter 上 および ESXi ホストのコマンド ライ....,これらの手順のいずれかについて不明な点がある場合は、 Broadcom サポートに問い合わせてサポートを受けてください。 CLIを利用した方法: namespace フォルダ内にファイルがある場合は、使用されていないことを確認し、ESXiホストのコマンドラインから削除してください。フォルダに移動し、ファイルを削除します。 注意: この操作は元に戻せません。 rm "ファイル名" 次に、一つ上のvSAN データストア戻って、ディレクトリを再度削除してみます。 /usr/lib/vmware/osf....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423178</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=417007" target="_blank" rel="noopener noreferrer">Snapshot-controller pod fails with ImagePullBackOff in TKGI cluster.</a></div>
-                <div class="summary">Snapshot-controller pod in kube-system namespace fails with ImagePullBackOff in TKGI clusters in air-gapped environments. snapshot-controller-1k5c8cb7c2-4eq3n 0/1 ImagePullBackOff 0 30m snapshot-controller-25d67cb913-gz....,However there is a workaround for this issue so we need to tag the registry.k8s.io to gcr.io image inside the worker node. ssh to the worker node and run the below command to tag the image. ctr -n k8s.io images tag \ registry.k8s.io/sig-storage/sna....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 417007</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Kubernetes Grid Integrated Edition</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423645" target="_blank" rel="noopener noreferrer">Usage Meter 9.x: "FIPS is not configured correctly on the appliance" displayed in Security tab</a></div>
-                <div class="summary">Symptoms: Following message is displayed on security tab in Usage Meter UI FIPS is not configured correctly on the appliance. Click Enable or Disable to resolve it. If the problem persists, raise a technical support ticket. Clicking "ENABLE" and "DIS....,To workaround the issue, follow the steps below: 1. log in appliance via SSH as usagemeter 2. run following command and confirmed locale configuration is not default settings locale 3. run following to disable FIPS mode (this command will reboot ap....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423645</span>
-                    <span><span class="detail-label">Product:</span> VMware Usage Meter</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423669" target="_blank" rel="noopener noreferrer">vSphere Client からの 仮想マシンの Power On/Off 操作ができない</a></div>
-                <div class="summary">免責事項：これは英文の記事「VM Power On/Off Operation not Triggered from vSphere Client」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 vSphere Client から仮想マシンの電源をオンまたはオフの操作を実行した後 対応する仮想マシンの電源操作のタスクが開始されません ESXiホストまたはvCenter Serve....,vSphere Client のソフトウェア要件 を確認し、Web ブラウザをサポートされているバージョンに更新してください。</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423669</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423671" target="_blank" rel="noopener noreferrer">vCenter Server の root ユーザーアカウントロックアウトポリシー の変更方法</a></div>
-                <div class="summary">免責事項：これは英文の記事「How to configure User Account Lockout Policy for vCenter」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 この KB では、vCenter の「root ユーザー アカウント ロックアウト ポリシー」を変更する方法について説明します。 参照ドキュメント の手順でロックアウトポリシーを変更しても、 ....,1. vCenter に SSH で接続 ssh root@ # もし "Command>" というプロンプトが表示された場合、"shell" と入力 shell 2. faillock.conf ファイルを編集 # 1. Backup cp -p /etc/applmgmt/appliance/faillock.conf /etc/applmgmt/appliance/faillock.conf-`date +%F_%H:%M:%S`.back # 2. ポリシーを....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423671</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=416207" target="_blank" rel="noopener noreferrer">VM Power On/Off Operation not Triggered from vSphere Client</a></div>
-                <div class="summary">When an operator attempts to power on or power off a virtual machine from the vSphere Client No corresponding task is initiated No relevant log entries are found on either the ESXi host or the vCenter Server,Update the web browser to a supported version and retry the operation. Check vSphere Client Software Requirements.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 416207</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409895" target="_blank" rel="noopener noreferrer">How to configure User Account Lockout Policy for vCenter</a></div>
-                <div class="summary">This KB explains how to configure "User Account Lockout Policy" for vCenter. If the configuration reverts after rebooting the vCenter or restarting its services as described in the referenced document, this KB provides an effective solution.,1. SSH to the vCenter ssh root@ # If the prompt is "Command>", change to the shell mode shell 2. Update faillock.conf # 1. Backup cp -p /etc/applmgmt/appliance/faillock.conf /etc/applmgmt/appliance/faillock.conf-`date +%F_%H:%M:%S`.back....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409895</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-25</span>
                 </div>
             </div>
         </div>
