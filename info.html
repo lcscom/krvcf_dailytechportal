@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2026-01-02 00:01:18</title>
+    <title>Broadcom 기술 포털 - 2026-01-02 06:01:35</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-01-02 00:01:18)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-01-02 06:01:35)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -876,6 +876,54 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=414342" target="_blank" rel="noopener noreferrer">Troubleshooting ESXi host lockup where console and network are unresponsive but hardware logs are clean.</a></div>
+                <div class="summary">ESXi host locked up and stopped logging, and it is "Not Responding" in the vCenter around the timestamp. There is a gap in vmkernel logging during the time the host was unresponsive. The inability to respond to the F2 key on the Out-of-Band Remote....,If the issue reoccurs, check if logging under /var/log is up to date with the command below ls -lthra OR tail vmkernel.log and date command If the logs are not up to date, engage the Hardware vendor to assist with sending an NMI to the ESXi host. Th....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 414342</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=418874" target="_blank" rel="noopener noreferrer">VM replication syncrhonization status is 0KB in VMware Cloud Director Availability</a></div>
+                <div class="summary">Creating a new replication in VMware Cloud Director Availability completes successfully, but the synchronization is not progressing. In the ESX logs for the host running the source virtual machine, entries similar to the following occur repeatedly: 2....,Confirm that all required network ports are opened between ESX and VMware Cloud Director Availability. For more information regarding the network requirements, please refer to the following: Network requirements and prerequisites in the Cloud Directo....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 418874</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=418261" target="_blank" rel="noopener noreferrer">Cannot start VMs due to a Bad Request error in VMware Cloud Director</a></div>
+                <div class="summary">When attempting to power on a vApp, an error similar to the following occurs: Bad Request: Error occurred in the backing network provider: The object path=[/infra/tier-1s/########-####-####-####-############] cannot be deleted as either it has childr....,Remove the segment referenced in the underlying NSX environment and attempt powering on the vApp once more.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 418261</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=320518" target="_blank" rel="noopener noreferrer">Modifying the "webapp.allowed.origins" configuration on version 10.3 and later</a></div>
+                <div class="summary">VMware Cloud Director uses a Cross-Origin Resource Sharing filter implementation to maintain a list of all valid endpoints that you can use to access the Service Provider Admin Portal and the VMware Cloud Director Tenant Portal. The CORS filtering li....,To modify the CORS settings, you will need to use the Cloud API. https://vcd.example.com/cloudapi/1.0.0/site/settings/cors This API and the majority of all /cloudapi/ APIs can be interacted with via the API Explorer. https://vcd.example.com/api-explo....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 320518</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=424033" target="_blank" rel="noopener noreferrer">Intermittent BGP Flapping due to Aggressive Keepalive/Hold Timers</a></div>
                 <div class="summary">Intermittent BGP flapping between the NSX Edge gateways and their BGP neighbors. The BGP session drops and then re-establishes automatically within a short period (approximately within a minute),To resolve the intermittent flapping, increase the BGP timers to allow for standard network variance. Recommended Action: Modify the BGP Neighbor configuration to use the NSX default values or less aggressive custom values. Recommended (Default) Valu....</div>
                 <div class="details">
@@ -1397,54 +1445,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 422317</span>
                     <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=403255" target="_blank" rel="noopener noreferrer">vCenter Server 7 to 8 Upgrade: No Networks Available for Target VCSA VM Due to Static VDS Port</a></div>
-                <div class="summary">During the vCenter Server upgrade process from version 7 to 8, users may encounter an issue where no networks are available for selection when deploying the target vCenter Server Appliance (VCSA) VM.,The most straight forward solution to this issue is setting the deploy target of the new vCenter Server Appliance as the current vCenter FQDN. Once set in the upgrade wizard, the distributed switch port groups will be visible and the correct network....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 403255</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=401812" target="_blank" rel="noopener noreferrer">VMware Cloud Foundation (VCF) supports using the VMCA as an intermediate CA.</a></div>
-                <div class="summary">vSphere allows the VMCA to function as an intermediate Certificate Authority (CA). For detailed configuration steps, please refer to:Make VMCA an Intermediate Certificate Authority Using the Certificate Manager This article clarifies the supportabili....,VMware Cloud Foundation (VCF) does not support configuring the VMCA as an intermediate CA. Implementing this configuration disrupts the certificate management workflow for both Greenfield deployments and Brownfield Import operations (vSphere-to-VCF c....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 401812</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=390137" target="_blank" rel="noopener noreferrer">Cannot add ESXi host to the vCenter Server inventory</a></div>
-                <div class="summary">When adding an ESXi Host to vCenter Server, alert is shown stating: "Cannot contact the specified host ###. The host may not be available on the network, a network configuration problem may exist, or the management services on this host may not be re....,Troubleshoot the network issue between the vCenter Server and the ESXi host, follow these steps: SSH into the vCenter and check if you can connect to ports 902 and 443. Run the following commands from a vCenter Server SSH session: curl -v telnet://<....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 390137</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=414729" target="_blank" rel="noopener noreferrer">NSX application crash alarm on NSX manager UI</a></div>
-                <div class="summary">Alarm info: NSX application crash alarm on NSX manager UI Description Application on NSX xxx has crashed. The number of core files found is 1. Collect the Support Bundle including core dump files and contact VMware Support team. Recommended Action Co....,Upgrade to the fixed versions 4.2.0 and later. VCF NSX 9.0 and later.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 414729</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX,VMware vDefend Firewall</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-12-30</span>
                 </div>
             </div>
