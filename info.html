@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2026-01-02 12:01:24</title>
+    <title>Broadcom 기술 포털 - 2026-01-02 18:01:12</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-01-02 12:01:24)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-01-02 18:01:12)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -876,6 +876,54 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423793" target="_blank" rel="noopener noreferrer">A kubernetes node shows failed task “The object ‘vim,Datastore: ds:///vmfs/volumes/UUID’ has already been deleted or has not been completely created.”</a></div>
+                <div class="summary">A Kubernetes worker node task is failing with a "NotFound" error when attempting to access a datastore volume. The worker node shows a failed task on the vCenter UI with the error: “The object ‘vim,Datastore: ds:///vmfs/volumes/’ has already be....,Note: Please consult your Kubernetes vendor documentation or support before migrating Kubernetes nodes. Migrate the Kubernetes node VM (both compute and storage) back to the ESXi host that has access to the source datastore where the PVC is stored. T....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423793</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=419848" target="_blank" rel="noopener noreferrer">Unable to access harbor UI deployed as Supervisor Service. "invalid TLS certificate" unexpected block type 'PRIVATE KEY'</a></div>
+                <div class="summary">Users are unable to access the Harbor UI despite the package being deployed successfully on Supervisor. Further verification shows that the Virtual Service VIP in AVI for the Contour is down, indicating a potential issue with the service. Virtual Ser....,The issue is resolved by regenerating the certificate signing request (CSR) and ensuring the private key is in the correct PEM format before updating the Harbor configuration. Regenerate Certificate: Regenerate a new Certificate Signing Request (CSR)....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 419848</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=424045" target="_blank" rel="noopener noreferrer">Envoy Service External IP Stuck in Pending State After Contour Tanzu Package or Guest Cluster Upgrade</a></div>
+                <div class="summary">The Envoy service in the Tanzu Kubernetes Cluster (TKC) is unable to obtain an external IP address. The TKC upgrade was performed while the Envoy service was in a Pending state. During the node rollout phase, an external IP address was temporarily ....,Restart the Cloud Provider Interface (CPI) pod in the guest cluster to trigger a resynchronization between the Supervisor vmservice and the guest cluster service. Steps: kubectl get deploy -A | grep guest-cluster-cloud-provider kubectl rollout restar....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 424045</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=372625" target="_blank" rel="noopener noreferrer">The HTTP service goes down and then comes back up in NSX within a short period of time.</a></div>
+                <div class="summary">An alarm with the Event Type "Cluster Degraded" has been triggered, and the Description indicates that "Group member of service HTTP is down." The alarm is automatically resolved by system.,This issue is addressed in NSX 4.2.0.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 372625</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423174" target="_blank" rel="noopener noreferrer">vCenter Appliance Management Interface (VAMI) inaccessible with error 'ERR_CONNECTION_REFUSED'</a></div>
                 <div class="summary">vCenter Appliance Management Interface (VAMI) https://:5480 fails to load with the following error. This site can’t be reached refused to connect. Try: Checking the connection Checking the proxy and the firewall ERR_CONNECT....,The VAMI port 5480 is blocked by firewall: Investigate with the network/firewall team if the connection is getting dropped on the network. Check the firewall between the client and vCenter and ensure port 5480 is open. Once the port 5480 is allowed, ....</div>
                 <div class="details">
@@ -1164,10 +1212,10 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=313937" target="_blank" rel="noopener noreferrer">Backup speed is slow over NBD transport mode for VMs on high-latency storage</a></div>
-                <div class="summary">This article provides a way for backup vendor to improve the backup performance for high-latency storage. Symptoms: Customer is using a storage with about 4ms latency for each IO. When using VDDK NBD/NBDSSL transport mode, backup throughput is quite ....,Option 1: Upgrade Storage Array where latency is minimal. Option 2: Utilize VIXDISKLIB_FLAG_OPEN_UNBUFFERED and NFC AIO configurable options A. Open disk with open flag VIXDISKLIB_FLAG_OPEN_UNBUFFERED to make IO handled by more efficient AIO manager ....</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=401331" target="_blank" rel="noopener noreferrer">Relocation(Storage vMotion) of the backup proxy VM when using HotAdd transport mode to restore a disk.</a></div>
+                <div class="summary">The backup proxy VM is relocated when VDDK is restoring a disk with HotAdd transport mode. The disk could not be detached by VDDK from the backup proxy VM after the restore task completes. We will see the below in the VDDK logs: No disks to remove fo....,The disk needs to be deleted manually and the restore task needs to be scheduled again</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 313937</span>
+                    <span><span class="detail-label">Article ID:</span> 401331</span>
                     <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-12-31</span>
                 </div>
@@ -1176,10 +1224,10 @@
 
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=401331" target="_blank" rel="noopener noreferrer">Relocation(Storage vMotion) of the backup proxy VM when using HotAdd transport mode to restore a disk.</a></div>
-                <div class="summary">The backup proxy VM is relocated when VDDK is restoring a disk with HotAdd transport mode. The disk could not be detached by VDDK from the backup proxy VM after the restore task completes. We will see the below in the VDDK logs: No disks to remove fo....,The disk needs to be deleted manually and the restore task needs to be scheduled again</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=313937" target="_blank" rel="noopener noreferrer">Backup speed is slow over NBD transport mode for VMs on high-latency storage</a></div>
+                <div class="summary">This article provides a way for backup vendor to improve the backup performance for high-latency storage. Symptoms: Customer is using a storage with about 4ms latency for each IO. When using VDDK NBD/NBDSSL transport mode, backup throughput is quite ....,Option 1: Upgrade Storage Array where latency is minimal. Option 2: Utilize VIXDISKLIB_FLAG_OPEN_UNBUFFERED and NFC AIO configurable options A. Open disk with open flag VIXDISKLIB_FLAG_OPEN_UNBUFFERED to make IO handled by more efficient AIO manager ....</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 401331</span>
+                    <span><span class="detail-label">Article ID:</span> 313937</span>
                     <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-12-31</span>
                 </div>
@@ -1397,54 +1445,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 423962</span>
                     <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423958" target="_blank" rel="noopener noreferrer">Duplicate entries of a virtual machine are seen in Cloud Director UI.</a></div>
-                <div class="summary">Multiple entries of the same VM are listed in VCD UI. While trying to access the VM, "This Operation is denied" error is thrown. In /opt/vmware/vcloud-director/logs/vcloud-container-debug.log contains the below error: 2025-##-## ##:30:17,173 | ERROR ....,Update vCenter credentials in VCD. From VCD Provider UI, navigate to Resources -> Infrastructure Resources -> Select the vCenter in question -> Edit -> Update the credentials and click on Save. Select the vCenter in question and click on Reconnect, R....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423958</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423959" target="_blank" rel="noopener noreferrer">ESXi fails to load image from Auto Deploy with the error "Could not boot image: Connection timed out"</a></div>
-                <div class="summary">Auto Deploy is configured for ESXi to load image to boot stateless. PXE boot loader fails to load image due to Connection timed out of /vmw/rbd/tramp of Auto Deploy service: Configuring (net0 )............ ok net0: /</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423959</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423956" target="_blank" rel="noopener noreferrer">How to identify the VM to which inaccessible pvc objects were attached.</a></div>
-                <div class="summary">Symptoms: Navigate to affected vSAN cluster > Monitor > Virtual objects. Any inaccessible pvc objects will list here. ,There can be two scenarios here: The PVC has not yet been deleted from Kubernetes side The PVC has already been deleted from Kubernetes side The PVC has not yet been deleted from Kubernetes side: Make a note of the PVCs which are to be deleted. On t....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423956</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423668" target="_blank" rel="noopener noreferrer">VMware vSAN Performance Degradation Due to Physical NIC Errors</a></div>
-                <div class="summary">Symptoms: Performance degradation may appear for virtual machines. . Inter-host packet loss observed during network testing. Elevated vSAN read and write latency (hundreds of milliseconds) appears at the virtual machine client level . vSAN ....,Engage the physical network team to investigate and address network related issues.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 423668</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
                     <span><span class="detail-label">Updated Date:</span> 2025-12-30</span>
                 </div>
             </div>
