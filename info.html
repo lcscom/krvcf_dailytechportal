@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2026-01-04 06:01:19</title>
+    <title>Broadcom 기술 포털 - 2026-01-04 12:01:10</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-01-04 06:01:19)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-01-04 12:01:10)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -876,12 +876,12 @@
         
         <div class="card">
             <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=417602" target="_blank" rel="noopener noreferrer">The HCX Manager is inaccessible via HTTPS in HCX Cloud, but it can still be accessed using the VMC on AWS vCenter plugin</a></div>
-                <div class="summary">Cannot reach HCX site on SDDC Attempting to open HCX Manager UI (https://:443) Error reported in the web browser: hcx.sddc-###-###-###-###.vmwarevmc.com took too long to respond.,In VMC on AWS, you can configure the HCX Manager's FQDN to resolve either to a Public Internet IP address, or a Private internal IP address. Refer to the HCX documentation for details: Setting DNS Resolution from Public to Private and Set HCX FQDN Re....</div>
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=372090" target="_blank" rel="noopener noreferrer">vCenter UI Displays "localhost"</a></div>
+                <div class="summary">The vCenter hostname under inventory object view of the vCenter server will be displayed as localhost instead of the vCenter FQDN. /var/log/vmware/vmon/vmon.log displays below log snippets: vmware-scaservice.yaml not present, we will go ahead and use....,Option 1: Verify if the vpxd.cfg is valid or corrupt using KB316610. Or using the below steps: Take Snapshot of the affected vCenter server (Offline Snapshots in case of ELM) Take ssh of the affected vCenter with root credentails. Go to /etc/vmware-v....</div>
                 <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 417602</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX,VMware Cloud on AWS</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-02</span>
+                    <span><span class="detail-label">Article ID:</span> 372090</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-03</span>
                 </div>
             </div>
         </div>
@@ -893,6 +893,18 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 424034</span>
                     <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-03</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=417602" target="_blank" rel="noopener noreferrer">The HCX Manager is inaccessible via HTTPS in HCX Cloud, but it can still be accessed using the VMC on AWS vCenter plugin</a></div>
+                <div class="summary">Cannot reach HCX site on SDDC Attempting to open HCX Manager UI (https://:443) Error reported in the web browser: hcx.sddc-###-###-###-###.vmwarevmc.com took too long to respond.,In VMC on AWS, you can configure the HCX Manager's FQDN to resolve either to a Public Internet IP address, or a Private internal IP address. Refer to the HCX documentation for details: Setting DNS Resolution from Public to Private and Set HCX FQDN Re....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 417602</span>
+                    <span><span class="detail-label">Product:</span> VMware HCX,VMware Cloud on AWS</span>
                     <span><span class="detail-label">Updated Date:</span> 2026-01-02</span>
                 </div>
             </div>
@@ -1374,18 +1386,6 @@
                     <span><span class="detail-label">Article ID:</span> 424028</span>
                     <span><span class="detail-label">Product:</span> VMware NSX</span>
                     <span><span class="detail-label">Updated Date:</span> 2026-01-01</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=407661" target="_blank" rel="noopener noreferrer">"An error occurred while starting service" "vpxd-svcs" | Unable to get sts url from LS</a></div>
-                <div class="summary">vSphere client is inaccessible with following error from Browser. vSphere Client service has stopped working. For troubleshooting refer Skyline Health Diagnostics. Learn more by checking VMware vSphere Documentation and Support. For appliance adminis....,To resolve this issue rebuild the service registrations using the lsdoctor tool: Take a snapshot of the vCenter Server. For vCenter in ELM mode, refer Best practices for using VMware snapshots in the vSphere environment Using the lsdoctor Tool with -....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 407661</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2025-12-31</span>
                 </div>
             </div>
         </div>
