@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2026-01-21 06:01:55</title>
+    <title>Broadcom 기술 포털 - 2026-01-21 12:01:39</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-01-21 06:01:55)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-01-21 12:01:39)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -897,6 +897,294 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426180" target="_blank" rel="noopener noreferrer">VMware Cloud Director にて vApp 単位のスナップショットの無い vApp で、スナップショットの 「現在の状態に戻す」 と 「すべて削除」 がグレーアウトされずに選択できる</a></div>
+                <div class="summary">免責事項：これは英文の記事「"Revert to Current" and "Remove All" snapshot options are selectable for a vApp without a vApp-level snapshot in VMware Cloud Director」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 VMware Cloud Dir....,この問題は VMware Cloud Director 10.6.1 で修正されています。 バージョン 10.6.1 以降では、vApp 単位のスナップショットが無い場合、対象 vApp のスナップショットメニューの 「現在の状態に戻す」 と 「すべて削除」 は正しく無効化（グレーアウト）されます。 修正前のバージョンで vApp 単位のスナップショットを持たない vApp にて各タスクを実行した場合、以下の結果となります。 「現在の状態に戻す」 : タスクは失敗します。 「すべて削除」: タス....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426180</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=425390" target="_blank" rel="noopener noreferrer">Unable to modify ESXi firewall settings once a firewall configuration task fails due to duplicate IP addresses</a></div>
+                <div class="summary">When configuring the allowed IP list which has duplicated IP entries for ESXi firewall settings, the task may fail with the following error messages in the vSphere Client: Status: An error occurred during host configuration. Error stack: Operation fa....,This issue is resolved in ESX 9.0. Workaround Reboot the ESXi host to clear the cache and reload the valid firewall configuration from the configstore.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 425390</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426171" target="_blank" rel="noopener noreferrer">How to Rename a VMware vSphere Cluster</a></div>
+                <div class="summary">In a VMware vSphere environment, administrators may need to rename a cluster to align with new naming conventions, reflect organizational changes, or improve inventory management. Renaming a cluster is a metadata-only change within the vCenter Server....,The process of renaming a cluster is straightforward and can be performed while all services are active. Procedure Log in to the vSphere Client with administrative privileges. Navigate to the Hosts and Clusters view. Locate the cluster you wish to re....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426171</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=323046" target="_blank" rel="noopener noreferrer">VMkernel log spams 'Failed to probe the VMFS header'.</a></div>
+                <div class="summary">This document's purpose is to inform the CXS engineers on the impact of VMFS probe failure messages. Symptoms: vmkernel log sporadically spams messages similar to following: xxxx-xx-xxT04:39:02.105Z cpu34:2100630)LVM: 7053: Failed to probe the VMFS h....,To check whether the probe failure is occurring on the first extent or not, open CLI (SSH or DCUI) to the host and enter following script: for dir in $(find /vmfs/volumes/ -type l -mindepth 1 -maxdepth 1 -exec echo {} \;); do res=$(vmkfstools -P -v 1....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 323046</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426037" target="_blank" rel="noopener noreferrer">2 ノードの ESXi クラスタにおいて、メンテナンスモード切り替え時に仮想マシンの自動移行 (vMotion) が失敗する</a></div>
+                <div class="summary">免責事項：これは英文の記事「 2 node ESXi cluster fails to automatically migrate VMs when placed into maintenance mode(394680)」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 クラスタの DRS が「完全自動化（Fully Automated）」に設定されているにもかかわらず、ホストを....,この問題を解決するには、クラスタのアドミッション コントロールを無効にするか、追加のホスト（3台目）をクラスタに参加させてください。 アドミッションコントロールを無効にする手順: [クラスタ] > [設定 (Configure)] > [vSphere の可用性 (vSphere Availability) > [編集 (Edit)] を選択します。 [アドミッションコントロール (Admission Control)] タブを選択して、[ホストのフェイルオーバー キャパシティの定義基準（Def....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426037</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426005" target="_blank" rel="noopener noreferrer">ホスト暗号化モード有効化の影響</a></div>
+                <div class="summary">免責事項： これは英文の記事 「Impact of activating Host Encryption Mode」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 ホスト暗号化モードの有効化時の影響について説明します。,ホスト暗号化モードの有効化は即座に反映されます。 仮想マシンの停止やESXiの再起動は不要です。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426005</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426009" target="_blank" rel="noopener noreferrer">ESXi Host Client adds sched.cpu.affinity = "all" to virtual machine configuration</a></div>
+                <div class="summary">After editing and saving virtual machine settings using the ESXi Host Client, you may observe that the parameter sched.cpu.affinity = "all" is added to the virtual machine configuration file (.vmx). This parameter is not present when the virtual mach....,No action is required. The setting sched.cpu.affinity = "all" explicitly states that the virtual machine is allowed to run on all available logical processors. This is functionally identical to the default behavior when the parameter is absent from t....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426009</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=394680" target="_blank" rel="noopener noreferrer">2 node ESXi cluster fails to automatically migrate VMs when placed into maintenance mode</a></div>
+                <div class="summary">Maintenance mode operation sits at a certain percentage without migrating VMs despite DRS fully automated configuration on the cluster. You will see the following within Monitor > DRS > Faults,To resolve this issue, disable HA admission control in the cluster or add at least 1 additional host. To disable HA admission control: Cluster > Configure > vSphere Availability > Edit Select the "Admission Control" tab and set "Define host failove....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 394680</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426011" target="_blank" rel="noopener noreferrer">ESXi Host Client で仮想マシンの設定を保存すると sched.cpu.affinity = "all" が追加される</a></div>
+                <div class="summary">免責事項：これは英文の記事「ESXi Host Client adds sched.cpu.affinity = "all" to virtual machine configuration(426009)」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 ESXi Host Client を使用して仮想マシンの設定を編集および保存した後、仮想マシン構成ファイル (.vmx) に....,対処は不要です。 設定 sched.cpu.affinity = "all" は、仮想マシンが利用可能なすべての論理プロセッサで実行可能であることを明示的に示しています。これは、構成ファイルにパラメータが存在しない場合のデフォルトの動作と機能的に同一です。 このパラメータが存在することによって、パフォーマンスやスケジューリングに悪影響が及ぶことはありません。したがって .vmx ファイルからこの行を削除する必要はありません。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426011</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=425925" target="_blank" rel="noopener noreferrer">'Failed to probe the VMFS header' メッセージが、VMkernel ログに大量出力される</a></div>
+                <div class="summary">免責事項：これは英文記事「VMkernel log spams 'Failed to probe the VMFS header'.」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 この記事では、VMFS プローブ失敗メッセージの影響について説明します。 症状： 以下メッセージが vmkernel ログへ断続的かつ大量に出力される。 xxxx-xx-xxT04:39:02.105....,先頭エクステントでプローブが失敗しているか確認するには、CLI (SSH または DCUI) を開き、以下コマンドを実行してください。 for dir in $(find /vmfs/volumes/ -type l -mindepth 1 -maxdepth 1 -exec echo {} \;); do res=$(vmkfstools -P -v 10 "$dir" 2> /dev/null | grep -A1 "Partitions spanned" | tail -n1 | sed ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 425925</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=425055" target="_blank" rel="noopener noreferrer">"ライセンスの期限が切れています。システム日付を確認するか、新規ライセンスをインストールしてください。" というエラーで ESXi ホスト上のすべての操作が失敗する</a></div>
+                <div class="summary">免責事項：これは英文の記事「"License key has expired. License Expired, "Check system date or install a new license" all operation on ESXi host fails」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 ESXi ホストに適用されているライセンスは有効であるにもか....,この問題は、ESXi 8.0u3h（ビルド 25067014）で修正されています。詳細はリリースノートをご確認ください。 回避策 以下の手順を実施してください。 該当する ESXi ホストに SSH で接続します。 以下のコマンドを実行します。 touch /etc/vmware/license.cfg vim-cmd vimsvc/license --show これらのコマンドにより、hostd にライセンスの再確認を強制し、正しい有効期限をリフレッシュさせます。 vCenter または ES....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 425055</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=313182" target="_blank" rel="noopener noreferrer">Supervisor configuration operations failing after replacing vCenter certificate</a></div>
+                <div class="summary">Symptoms: /var/log/vmware/wcp/wcpsvc.log on vCenter shows several log messages with an x509 error about an unknown certificate authority. For instance, two examples are provided below- error wcp [kubelifecycle/master_node.go:1280] [opID=659cfc6a-####....,Currently there is no resolution. This will be fixed in a future release. Workaround: To workaround the issue, restart wcpsvc on vCenter, using appliance management or as root on the vCenter Server Appliance. This will force reload the updated certif....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 313182</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426053" target="_blank" rel="noopener noreferrer">vCenter 証明書の更新後、Supervisor の構成操作が失敗する</a></div>
+                <div class="summary">免責事項：これは英文の記事「Supervisor configuration operations failing after replacing vCenter certificate (313182)」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 vCenter 上の /var/log/vmware/wcp/wcpsvc.log に、不明な認証局（unknown certi....,現時点で解決策はありません。この問題は将来のリリースで修正される予定です。 回避策: この問題を回避するには、vCenter Server Appliance 上で wcpsvc を再起動してください。これにより、更新された証明書が強制的に再読み込みされます。 アプライアンス管理（VAMI）または UI から再起動する場合： Workload Control Plane サービスを再起動します。 vCenter に root としてログインしてコマンドで再起動する場合： 以下のコマンドを実行しま....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426053</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=425908" target="_blank" rel="noopener noreferrer">Routes are not being advertised from T1 to the upstream neighbors</a></div>
+                <div class="summary">Downlinks connected to a Tier-1 are not getting advertised to the connected VRF/T0 The Tier-1 was originally configured as Distributed Only and had no downlinks (either VLAN or Overlay segments) associated Tier-1 was created on VMware NSX 3.0.x or 3.....,Resolution requires two steps Disconnect the Tier- 1 from the Tier-0. Log in to the NSX interface Navigate to Networking → Tier-1 Gateways Identify the Tier-1 with connected segments that aren't advertising Click the 3 dots beside the name and click ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 425908</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426040" target="_blank" rel="noopener noreferrer">"Revert to Current" and "Remove All" snapshot options are selectable for a vApp without a vApp-level snapshot in VMware Cloud Director</a></div>
+                <div class="summary">VMware Cloud Director 10.6 supports the creation of vApp snapshots, but the "Revert to Current" and "Remove All" options are selectable (not grayed out) even for a vApp that does not have a vApp snapshot.,This issue is fixed in VMware Cloud Director 10.6.1. In version 10.6.1 and later, "Revert to Current" and "Remove All" are correctly disabled (grayed out) when the vApp does not have a vApp snapshot. In prior versions, if these tasks are executed o....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426040</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=404300" target="_blank" rel="noopener noreferrer">Manual Installation of HBR Agent VIB on ESXi Hosts to Allow HCX Bulk Migration of Encrypted VMs</a></div>
+                <div class="summary">During an HCX 4.11 or VCF 9.x bulk migration workflow for an encrypted VM, one of the following validation alerts will be seen if the Host Based Replication agent vSphere Installation Bundle (HBR agent VIB) is not installed on the source ESXi host. ....,Please open a Broadcom support case and refer to this knowledge article in order to get assistance with manually installing the HBR agent VIB. For more information, see Creating and managing Broadcom support cases.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 404300</span>
+                    <span><span class="detail-label">Product:</span> VMware HCX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426112" target="_blank" rel="noopener noreferrer">VMware Cloud Director で「Imported Virtual Application Discovered」タスクが一時間ごとに失敗する</a></div>
+                <div class="summary">免責事項: これは英文の記事「Recurring hourly task failures for "Imported Virtual Application Discovered" in VMware Cloud Director」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事を参照してください。 VMware Cloud Director (VCD) において、「Imported Virtual....,この問題を解決するには、以下のいずれかの対応を検討してください。 検出対象の仮想マシンの削除または移動 VCD での管理が不要な仮想マシンの場合は、vCenter Server から削除するか、VCD が管理するリソースプール外のディレクトリへ移動してください。 これにより、自動検出の対象から外れます。 「仮想マシンの検出」機能の無効化 自動検出機能を不要とする場合は、機能を無効化することを検討してください。設定方法の詳細については、以下のドキュメントをご参照ください。 VMware Cloud....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426112</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426110" target="_blank" rel="noopener noreferrer">Recurring hourly task failures for "Imported Virtual Application Discovered" in VMware Cloud Director</a></div>
+                <div class="summary">In the VMware Cloud Director (VCD) console, tasks named "Imported Virtual Application Discovered {vm-name}" fail repeatedly every hour. The task details show the following error: The following IP/MAC addresses have already been used by running virtua....,To resolve this issue, consider one of the following three options: Move or Delete the Discovered VM If the VM does not need to be managed by VCD, delete the virtual machine from vCenter Server or move it to a location (folder/resource pool) that is ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426110</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426102" target="_blank" rel="noopener noreferrer">1,000 以上のネットワークが存在する場合、vCenter の UI インストーラーがフリーズする</a></div>
+                <div class="summary">免責事項: これは英文の記事「vCenter UI installer freezes when 1000+ networks exist」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事を参照してください。 vCenter の UI インストーラーを実行中、ステージ 1 でデプロイ先のネットワークを選択する画面で UI がフリーズする。 デプロイ先として指定した vCenter Server に 1....,以下のいずれかの方法を実施することで、この問題を回避してください。 デプロイ先として vCenter ではなく ESXi ホストを直接指定する。 CLI インストーラーを使用する。 vCenter Server 8.0 U3d 以前のインストーラーを使用する。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426102</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=421678" target="_blank" rel="noopener noreferrer">How to configure the "X-Forwarded-For" header in the NSX native Load balancer</a></div>
+                <div class="summary">Web servers may need information, such as client IP, for logging or other purposes. In case of LB-NAT configuration on the Pool, Web servers will see the LB-NAT IP address in the source IP. However configuring the web servers to look at those HTTP he....,To configure the X-Forwarded-For in the NSX native Load balancer, In the NSX Manager, navigate to Networking > Load Balancing > Profiles. Either edit the existing application profile assigned to the virtual server or add a new Application Profile wit....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 421678</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=319872" target="_blank" rel="noopener noreferrer">Windows virtual machine sometimes prompts that VMware Tools is not running in the vSphere Client</a></div>
+                <div class="summary">Symptoms: The Windows 10 virtual machine in the vSphere Client sometimes displays that VMware Tools is running normally, and sometimes indicates that VMware Tools is not running, and at the same time cannot obtain an IP address, resulting in the virt....,Enter the Windows operating system, go to Control Panel --> System and Security --> Power Options --> Choose when to turn off the display： Set [Turn off the display] to Never, set [Put the computer to sleep] to Never as well. Finally, click Save chan....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 319872</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=330057" target="_blank" rel="noopener noreferrer">Deployment of 3rd Party Agents and Anti-virus software on the ESXi Hypervisor and vCenter Server Appliance (VCSA)</a></div>
+                <div class="summary">This article describes the use of 3rd Party Agents and Anti-virus software on the vSphere.,The VMware Hypervisor, ESXi, uses a range of integrated, “always on” security features alongside configurable options to ensure security and trustworthiness while also ensuring performance and availability. Because of its role and fundamental positi....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 330057</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi,VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=336079" target="_blank" rel="noopener noreferrer">How to enable OpenID Connect in ADFS 2016 for vCenter Server</a></div>
+                <div class="summary">In order to establish a relying party trust between your vCenter server and your ADFS provider, identifying information and a shared secret must be established between them. This is done by creating an OpenID Connect configuration in ADFS known as an....,The steps to create an Application Group in ADFS are described below. Note that the following steps were derived from Active Directory Federation Services for Windows Server 2016. Open the AD FS Management console (Server Manager → Tools → AD FS Mana....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 336079</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426152" target="_blank" rel="noopener noreferrer">ESXi host shows Not Responding in vCenter due to missing management network route</a></div>
+                <div class="summary">An ESXi host appears in a Not Responding state within the vCenter Server inventory. Explicit vmkping from Host to vCenter is successful: vmkping -I vmk0 -d -s 1472 Standard ping from host to vCenter fails: ping returns host ....,To resolve this issue, you must add a static IPv4 route to the ESXi host to explicitly define the gateway for vCenter Server traffic. Log in to the ESXi host via SSH or the ESXi Shell. Run the following command to add a static route for the vCenter S....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 426152</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426124" target="_blank" rel="noopener noreferrer">"NCP Plugin Down" critical alert in NSX Manager UI after Active Directory/LDAPS certificate updates</a></div>
                 <div class="summary">The user account for the Tanzu Kubernetes' Network Container Plugin (NCP) authenticates in NSX Manager via LDAPS. Alarms clear on their own after some time but come back again repeatedly. There may be many Resolved alarms present even if none current....,Import any needed CA certificates to NSX Manager and update the Authentication Provider configuration as shown at: (KB 415306) Active Directory users login to NSX Manager fails with an error "Unable to get local issuer certificate and Unable to verif....</div>
                 <div class="details">
@@ -1041,6 +1329,18 @@
 
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=330226" target="_blank" rel="noopener noreferrer">NSX Edge Load balancer returns 400 bad request if URL includes Japanese character</a></div>
+                <div class="summary">NSX Edge Load Balancer returns 400 Bad Request if URL includes Japanese character. You can not get the expected response only when you use IE but you can if you use Chrome and Firefox. It works fine if URL is percent-encoded. In the Edge log file, yo....,Confirm URL is percent-encoded. If you access from IE or an outdated browser, use the latest version of Chrome or Firefox in order to guarantee URL encoding.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 330226</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=424354" target="_blank" rel="noopener noreferrer">NSX Compute Manager Registration Errors After vCenter Certificate Renewal . Error Code: 90348</a></div>
                 <div class="summary">- vCenter root CA certificate was replaced with a new certificate that does not contain a Common Name (CN) in the Issuer and Subject fields - NSX Compute Manager connectivity goes DOWN after the certificate replacement - Attempts to edit the Compute ....,Workaround: Replace the vCenter root CA certificate with a certificate that includes a Common Name (CN) in the Subject field. Edit the Compute Manager in NSX to re-import the updated certificate.</div>
                 <div class="details">
@@ -1094,6 +1394,18 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 408300</span>
                     <span><span class="detail-label">Product:</span> VMware SDDC Manager,VMware Cloud Foundation</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=312168" target="_blank" rel="noopener noreferrer">VCF Offline Depot deployment</a></div>
+                <div class="summary">Offline depots will improve the "dark site" customer experience by reducing the number of customer steps needed to distribute artifacts to multiple VCF instances multiple times. This articles offers a step-by-step workflow on how to set-up an offli....,Overview We will need to prepare a dedicated Virtual Machine, that will host the "Offline Depot". Once the Virtual Machine is ready and configured, VCF instances should be configured to point to the "Offline Depot". Offline Bundle Transfer Utility to....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 312168</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Foundation</span>
                     <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
                 </div>
             </div>
@@ -1165,318 +1477,6 @@
                 <div class="summary">While performing vCenter upgrade in vSphere+ (via VMware Cloud Console) 'Check Pre-requisite' may fail if vCenter was registered in vCenter Cloud Gateway with vCenter IP and no DNS. Symptoms: Error message on UI: No history returned from VC patch his....,Follow the below mentioned steps: 1. Update /etc/hosts file in vCenter with vCenter Cloud Gateway IP and vCenter Cloud Gateway hostname. Example: GW IP: GW FQDN: Add above mapping in the hosts file and it should show entry as below: root@....</div>
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 304812</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=302466" target="_blank" rel="noopener noreferrer">Availability of the vSphere Clients for Linux systems</a></div>
-                <div class="summary">This article provides information about the availability of the vSphere Clients for Linux systems.,The vSphere Client (C#) is only available for Windows systems while running vCenter Server 6.0 or earlier and it is not available for Linux systems. For vCenter Server 6.0, the vSphere Web Client (Flex/Flash) was introduced providing full administrat....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 302466</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=407728" target="_blank" rel="noopener noreferrer">"Failed to extract image from the host: no store copy available for inactive VIB" error while converting to an image from baseline for vSphere 8.0</a></div>
-                <div class="summary">1. The following error is seen on the vCenter UI while converting from baseline to image: 2. Reviewing the logs, the following errors are seen on ESXi host in /var/run/log/lifecycle.log: Er() lifecycle[] HostSeeding:1136 Extract depot failed: ('</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 407728</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi 8.0</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=389871" target="_blank" rel="noopener noreferrer">"Depot connection has issues. Depot Invalid User Credential", SDDC fails to download the updates from online repositories</a></div>
-                <div class="summary">SDDC Manager is no longer able to download updates from the internet facing VMware by Broadcom public repositories. Depot Settings shows following error: Unable to change the username under Depot settings. Some depot connections have issues, which m....,Download Token Download the token by following the steps in VCF Authenticated downloads Configuration Update Instructions. If you already have it, apply the same by following below instructions. Apply the Token in Download URLs Once the Download Toke....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 389871</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager,VMware Cloud Foundation</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426083" target="_blank" rel="noopener noreferrer">ESX host transport nodes and NSX edge transport nodes show a different number of tunnels formed between each other</a></div>
-                <div class="summary">On the System > Fabric > Hosts page of the NSX UI, ESX host transport nodes in the same cluster may show a different number of tunnels formed The same is true for NSX edge transport nodes on the System > Fabric > Nodes page of the NSX UI,Once an ESX host transport node has at least one VM running on it that uses an NSX-backed segment, at least one tunnel will be formed. The segment is dependent on an NSX logical router and that logical router may be configured to use one or more edge....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 426083</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=412528" target="_blank" rel="noopener noreferrer">VAMI logins failing after breaking ELM mode using domain repoint</a></div>
-                <div class="summary">vCenter was recently removed from ELM using domain repoint as described in KB https://knowledge.broadcom.com/external/article/370062 VAMI login with domain users is possible but no functionality works and metrics don't display Domain users are config...., Re-add the Administrators group to the SystemConfiguration.Administrators SSO group in the vSphere UI: >Login to vSphere UI as SSO administrator >Navigate to Administration -> Single Sign On -> Users and Groups -> Groups and click into SystemConfig....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 412528</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=322247" target="_blank" rel="noopener noreferrer">Changing or Resetting the root password in vCenter Server Appliance</a></div>
-                <div class="summary">The root account password of VMware vCenter Server Appliance fails. The root account of the vCenter Server Appliance is locked or account is expired. The root account password has been lost or forgotten. Unable to login to vCenter Server with root ac....,Process to Change or Reset the Root Password in vCenter Server Appliance(VCSA): To change the vCenter root password for the vCenter server Appliance: See Change the Password and Password Expiration Settings of the Root User To reset the root password....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 322247</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=425927" target="_blank" rel="noopener noreferrer">Workload domain or stretched cluster creation fails at Prepare Transport Node Collection task</a></div>
-                <div class="summary">Creating a workload domain or stretched cluster fails at the Prepare Transport Node Collection task. A message similar to the following is displayed: One or more transport node(s) realization failed while creating the transport node collection with p....,If you believe you have encountered this issue, open a support case with Broadcom Support and refer to this KB article. For more information, see Creating and managing Broadcom support cases.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 425927</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX,VMware SDDC Manager</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426065" target="_blank" rel="noopener noreferrer">vLR in-place upgrade from 9.0.4.x to 9.0.5 hangs</a></div>
-                <div class="summary">VLR in-place upgrade from 9.0.4.0 to 9.0.5 hangs with error message watchdog : BUG: soft lockup This issue is only observed if the VLR appliance is upgraded from 9.0.4 GA or its hot patches to 9.0.5.,Pre-requisites: Take a snapshot of the vLR and the vCenter Server appliances on the Protected (PR) site and the Disaster Recovery (DR) site If vCenter instances are running in Linked Mode, take offline snapshots to ensure consistency across both site....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 426065</span>
-                    <span><span class="detail-label">Product:</span> VMware Live Recovery</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=424036" target="_blank" rel="noopener noreferrer">"The OVF package contains advanced configuration options, which might pose a security risk" with "The Certificate is Expired" error for NSX Edge or Manager OVF deployment</a></div>
-                <div class="summary">On the vSphere Client, Deploy OVF Template for an NSX Edge, autonomous Edge or NSX Manager fails with The OVF package contains advanced configuration options, which might pose a security risk. Review the advanced configuration options below. Click ne....,For NSX Edge deployments, NSX versions 3.x, 4.x, 9.0.0, 9.0.1 are impacted. It is resolved in VCF 9.0.2 available at Broadcom downloads. For NSX Manager deployments, NSX versions 3.x and 4.0.x are impacted. It has been resolved from version NSX 4.1.0....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 424036</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX,VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=421173" target="_blank" rel="noopener noreferrer">VM guest OS I/O stall during iSCSI path failover</a></div>
-                <div class="summary">A VM guest OS experiences I/O freeze during iSCSI path failover. Other paths to the device remain available.,Reduce iscsi adapter param settings to minimum values from the ESXi command line. esxcli iscsi adapter param set --adapter= --key=NoopOutInterval --value=1 esxcli iscsi adapter param set --adapter= --key=NoopOutTimeout --value=10 ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 421173</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=324499" target="_blank" rel="noopener noreferrer">A physical NIC may be brought down due to frequent link status flapping</a></div>
-                <div class="summary">When a physical NIC experiences frequent link status flapping (i.e. consecutive link down and link up events), ESXi may turn off the physical NIC to avoid unnecessary link failover and network instability. For example, a physical NIC driver may reset....,ESX automatically alerts you to the bad hardware and disables the device to avoid the link flapping state. Work with hardware vendor or physical network team to validate the link/switchport to isolate and fix the flapping issue. If the cause of link ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 324499</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=315534" target="_blank" rel="noopener noreferrer">How to migrate VMs with Thick provision disk (Lazy or Eager Zero) from SAN (VMFS) to vSAN Datastore with the same Thick provision disk format</a></div>
-                <div class="summary">Successfully migrate VMs (Thick Provisioned) from VMFS to vSAN datastore by keeping the status of the VMDK as thick provisioned Symptoms: Some applications (e.g., Oracle RAC cluster) need the VM to be Thick Provisioned (Lazy or Eager Zero). By defaul....,The engineering team has provided a python script to achieve SvMotion and XvMotion of VMs within the same vCenter server. This script works only within the same vCenter and does not work across multiple vCenter servers. The script does not make any c....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 315534</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426063" target="_blank" rel="noopener noreferrer">vCenter Server high CPU and vpxd memory panic due to resource exhaustion and service registration corruption</a></div>
-                <div class="summary">vCenter Server Appliance (VCSA) experience 100% CPU utilization and the vmware-vpxd service fails to remain started. Symptoms: vpxd.log contains: Panic: Memory exceeds hard limit. Panic. vpxd.log shows database latency: SQL execution took too long:....,1. Vertical Scaling of VCSA Increase the CPU and Memory resources of the vCenter Server Appliance to match the "Large" or "X-Large" deployment specifications as per the VMware Configuration Maximums. Shut down the VCSA. Edit Settings via the ESXi hos....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 426063</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=392328" target="_blank" rel="noopener noreferrer">Editing host profiles in vCenter fails with error - A general profile failure occured.</a></div>
-                <div class="summary">On Host profile available on the vCenter, unable to edit the properties of the profile. /var/log/vmware/vpxd/vpxd.log logs in vCenter shows the below error loggings: YYYY-MM-DDTHH:MM:SSZ warning vpxd[07147] [Originator@6876 sub=profileUtil opID=#####....,Extract a host profile from the most updated version of the ESXi host and proceed to edit this profile.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 392328</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426055" target="_blank" rel="noopener noreferrer">vSAN Stretched cluster showing incorrect configuration type of 'Single site' when logged-in as user with Read-only permissions.</a></div>
-                <div class="summary">When logged-in to the vSphere Client using a vSphere user with Read-only permissions, UI pane at Cluster > vSAN > Configure > Fault Domains may incorrectly show the cluster as 'Single site' instead of 'Stretched cluster' and Witness info section abse....,For this to function correctly, this is required to be set both on the Cluster and the Witness inventory objects or alternatively, on a top-level inventory object such as the vCenter managing both the vSAN cluster and Witness host (and with 'Propagat....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 426055</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=378425" target="_blank" rel="noopener noreferrer">LPFC driver is not detecting all HBAs on ESXi</a></div>
-                <div class="summary">LPFC driver is not detecting all HBAs on ESXi ESXi server has three or more Emulex HBAs ESXi is running or was upgraded to 8.0U1 or 8.0U2 From vmkernel log, we can see lpfc driver fails to initialize the device because of out-of-memory - "Heap lpfc a....,Upgrade to 8.0U3 If upgrade is not possible at this time then run command esxcli system module parameters set -p "lpfc_nvme_io_channel=64" -m lpfc on all hosts in the cluster to set lpfc module parameter 'lpfc_nvme_io_channel' to 64 and then reboot t....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 378425</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi 8.0</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=369232" target="_blank" rel="noopener noreferrer">POD is failing to mount PV with error : "rpc error: code = NotFound desc = disk not attached to node"</a></div>
-                <div class="summary">When deploying a POD with Persistent volumes, Pod is stuck in ContainerCreating state $ kubectl get Pod NAME READY STATUS RESTARTS AGE pod/test-nginx 0/1 ContainerCreating 0 ...., 1. Validate in the worker VM OS if disk uuids exist under /dev/disk/by-id/ 2. If disk uuids do not exist under /dev/disk/by-id/, Turn off VM, Set disk.EnableUUID to TRUE in the vmx file, power on the VM. 3. Validate that disk uuids have been genera....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 369232</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=425907" target="_blank" rel="noopener noreferrer">Missing kube-scheduler metrics kube_pod_resource_request and kube_pod_resource_limit</a></div>
-                <div class="summary">"Include Kubernetes Scheduler metrics" enabled in TKGi Tile–Host Monitoring and kube-scheduler metrics are collected. However resource metrics kube_pod_resource_request and kube_pod_resource_limit are not present.,A fix will be available in a future patch release, please contact Tanzu Support for details. The following steps can be used as a workaround but please note that the changes are not persistent. Update the system:monitoring ClusterRole to allow access....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 425907</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Kubernetes Grid Integrated Edition</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=382781" target="_blank" rel="noopener noreferrer">Unable to upgrade vCenter from 7.0 U2b to 8.0 version, precheck fails with error "Unable to read netdumper port from netdumper configuration!"</a></div>
-                <div class="summary">vCenter server upgrade from 7.0 U2b to 8.X version failed at precheck stage. Error snippets: From requirements-upgrade-runner.log YYYY-MM-DDTHH:MM:SS.627Z INFO upgrade.states.component_states netdump:CollectRequirements: YYYY-MM-DDTHH:MM:SS.415Z INF....,This issue has been resolved in 7.0 U3 and later version. Note: While performing the upgrade of the vCenter from 7.0 U2b to 8.x, first patching the vCenter version of 7.0 U3 or later and then upgrade the vCenter to 8.x</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 382781</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server 7.0</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=345459" target="_blank" rel="noopener noreferrer">Error: "The SSL certificate of STS service cannot be verified" and "KeyUsage does not allow key encipherment" appear during vCenter Server Appliance 6.7 Upgrade</a></div>
-                <div class="summary">Upgrading vCenter Server Appliance 6.7 fails vCenter - /var/log/firstboot/firstbootStatus.json file contains: "failedSteps": "vmidentity-firstboot" vCenter - /var/log/firstboot/vmidentity-firstboot.py_####_stdout.log file contains: The SSL certifica....,Ensure that all imported certificates into vCenter Server contain the the Key Encipherment parameter under Key Usages. For more details on Certificate requirements, see Certificate Requirements for Different Solution Paths Notes: The same similar sym....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 345459</span>
-                    <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vCenter Server 6.0</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=340274" target="_blank" rel="noopener noreferrer">MPX Feature Deprecation in Virtual Machines</a></div>
-                <div class="summary">Memory protection extensions (MPX) were introduced in Intel Skylake generation CPUs and provided hardware support for bound checking. This feature will not be supported in Intel CPUs beginning with the Ice Lake generation. Starting with ESXi 6.7 P02 ....,To re-enable this feature, open the virtual_machine.vmx and add cpuid.enableMPX = TRUE. For more information, see Set Advanced Virtual Machine Attributes .</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 340274</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=318687" target="_blank" rel="noopener noreferrer">smx-provider crashes due to memory allocation issues in ESXi 6.x/7.x on HPE hosts</a></div>
-                <div class="summary">In vSphere Client the following event is seen: “An application (/bin/sfcbd) running on ESXi host has crashed (1 time(s) so far). A core file might have been created at /var/core/sfcb-smx-zdump.000.”. When reviewing the vmkernel.log, located in /var/....,Please note that Hewlett Packard Enterprise have decided to no longer maintain the smx-provider VIB. The official recommendation to solve this issue is therefore to uninstall the VIB. Be aware that uninstalling the SMX provider VIB requires a reboot ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 318687</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=318523" target="_blank" rel="noopener noreferrer">XHCI/USB 3.0 devices are not supported on hardware version 10 with Windows 10, Windows Server 2016 or OS X and hardware version 10 and earlier</a></div>
-                <div class="summary">The virtual xhci implementation of xhci version 0.96 is default for hardware version 10. The default number of ports on the root hub is 4. Some guest operating systems, for example Windows 10 and OS X, cannot recognize some ports on the root hub with....,To resolve this issue, use USB 2.0 controllers for virtual machines with operating system Windows 10, Windows Server 2016 or OS X, and hardware versions prior to 11. Below are VMware vSphere 7.0 and 8.0 references on how to use USB 2.0. Steps are the....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 318523</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=425867" target="_blank" rel="noopener noreferrer">Unable to register with Compute Manager while installing VCF</a></div>
-                <div class="summary">When NSX Manager tried to register the vCenter as Compute Manager, it fails with error similar to below. "DNS configuration for FQDN: nsx-manager.corp.local is incorrect. Please fix DNS configuration and retry Resolve workflow." On SDDC manager, you ....,Make sure the configured DNS server supports dig. From NSX Manager CLI, it is expected that the following dig commands work. root@nsx-manager.corp.local:~# dig nsx-manager.corp.local A +short root@nsx-manager.corp.local:~# dig -x 1x.x.x.21</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 425867</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=378638" target="_blank" rel="noopener noreferrer">Unable to select the "Destination First Hop Router" for Tier-1 gateways created in user-created NSX Projects during HCX extension.</a></div>
-                <div class="summary">When configuring the Network Extension from the HCX Manager UI, the only option available for the "Destination First Hop Router" is a Tier-1 router configured under the "Default" NSX project. Tier-1 gateways created in user-defined NSX projects are n....,None at the moment.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 378638</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=306553" target="_blank" rel="noopener noreferrer">vMotion of a virtual machine fails with the error: Virtual machine must be running in order to be migrated.</a></div>
-                <div class="summary">Performing a vMotion on a virtual machine fails The virtual machine is running and able to access console. Error in Client: Virtual machine must be running in order to be migrated. From ESXi host /var/log/hostd.log file: info 'vm:/vmfs/volumes/UUID/V....,To resolve this issue, restart the host management agent on source host and then retry the vMotion. For more information on restarting management agents, see Restarting Management Agents in ESXi</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 306553</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server,VMware vSphere ESXi</span>
                     <span><span class="detail-label">Updated Date:</span> 2026-01-20</span>
                 </div>
