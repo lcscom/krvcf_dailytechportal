@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2026-02-02 06:01:30</title>
+    <title>Broadcom 기술 포털 - 2026-02-02 12:01:47</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-02-02 06:01:30)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-02-02 12:01:47)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -953,6 +953,114 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427350" target="_blank" rel="noopener noreferrer">vSAN 健全性サービス - キャパシティ使用量 - クラスタおよびホストコンポーネントの使用率</a></div>
+                <div class="summary">この記事では、vSAN 健全性サービスの 「キャパシティ使用量の健全性 - クラスタおよびホストコンポーネントの使用率」チェックについて説明し、エラーが報告される原因の詳細について解説します。 Symptoms: vSphere は vSAN クラスタに対して次の警告またはエラーを報告します - 「コンポーネント」 vSAN Skyline Health で次の警告またはエラーが表示されます - 「クラスタおよびホスト コンポーネントの使用率」,Q:[キャパシティ使用量の健全性 – キャパシティ使用量の健全性 - クラスタおよびホストコンポーネントの使用率]（旧称: ホストコンポーネント）のチェックは何を判定するものですか？ この健全性チェックは、ESXiホスト上の vSAN コンポーネント数がコンポーネントの制限を超えていないことを確認します。 Q: エラー状態は何を意味していますか？ このチェックで警告またはエラーが返された場合、vSAN コンポーネントの数が ESXi ホストの制限に達したことを意味します。ホストあたりのコンポーネ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 427350</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-02-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427561" target="_blank" rel="noopener noreferrer">ESXi 8.0U3 の vmkernel ログが sfcb-vmware_bas による "Access denied by vmkernel access control policy" のメッセージでいっぱいになる</a></div>
+                <div class="summary">免責事項： これは英文の記事 「ESXi 8.0U3 vmkernel logs flooded with sfcb-vmware_bas "Access denied by vmkernel access control policy" messages」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 sfcb-vmware-base プロセスに関連する"Access deni....,これは既知の問題であり、ESXiの将来のリリースで解決される予定です。特定のセキュリティドメインの適用を無効にすることで、この大量のログを停止することができます。 回避策： SSHまたはESXi Shell経由でESXiホストにrootとしてログインします。 次のコマンドを実行してsfcbVmwPluginDomポリシーを無効にします。 esxcli system secpolicy domain set -l disabled -n sfcbVmwPluginDom vmkernel.log ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 427561</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-02-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427557" target="_blank" rel="noopener noreferrer">Task stuck when removing NSX VPC Project which is created from VKS</a></div>
+                <div class="summary">The removing task stuck in "In Progress" from Manage Projects The detail error information: NSX Manager /var/log/proton/nsxapi.log "VPC folder: kube-system_xxx" "is deletion failed under parent Project Folder in CM" "as there are child entities" ,To resolve issue login vCenter and restart VPXD service-control --stop vpxd service-control --start --all</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 427557</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-02-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427190" target="_blank" rel="noopener noreferrer">"The following IP/MAC addresses have already been used by running virtual machines: MAC addresses IP addresses: " error when powering on a virtual machine in VMware Cloud Director</a></div>
+                <div class="summary">Powering on a virtual machine in Cloud Director fails with a UI error in the form: The following IP/MAC addresses have already been used by running virtual machines: MAC addresses: IP addresses: xx:xx:xx:xx Use the Fence vApp option to use same MAC/....,Work with network design team: 1. Change the IP address of the running virtual machine out of allocated in external network. 2.Adjust allocated IP range from external network.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 427190</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-02-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427373" target="_blank" rel="noopener noreferrer">vSAN 環境でスワップファイルの作成に失敗によって、vMotion による VM の移行およびパワーオンに失敗する</a></div>
+                <div class="summary">免責事項：これは英文の記事「 Failed to create swap file in vSAN environment, resulting in failed migration and power on VM with vMotion 」の日本語訳です。記事はベストエフォートで翻訳を進めているため、ローカライズ化コンテンツは最新情報ではない可能性があります。最新情報は英語版の記事で参照してください。 Symptoms vMotion によって仮想マシンを移行した時に、移行先の ESXi ....,vMotion を再実行して仮想マシンを移行します。 この問題は vSAN 9.0 で修正済みであり、vSAN 8.0 向けの修正を含むリリースも予定しています。</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 427373</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN,VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-02-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427565" target="_blank" rel="noopener noreferrer">Prepare edge upgrade bundle https://xx.xx.xx.x:8080/repository/4.2.3.0.25077145/Edge/nub/VMware-NSX-edge-4.2.3.0.25077145.nub failed on edge TransportNode ###-###-###-###-######: clientType EDGE , target edge fabric node id ###-###-###-###-######</a></div>
+                <div class="summary">During NSX upgrade to version 4.2.3.2, Edge upgrade is failing with below error when downloading the Edge bundle from the NSX Manager repository: Prepare edge upgrade bundle https://xx.xx.xx.x:8080/repository/4.2.3.0.25077145/Edge/nub/VMware-NSX-edg....,Verify and Fix DNS Resolve any DNS issues in the environment. Ensure that both forward and reverse DNS lookups are properly configured on the DNS server. Certificate Mismatch Resolve any mismatched or expired certificates as per KB NSX Upgrade f....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 427565</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-02-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427559" target="_blank" rel="noopener noreferrer">ESXi host loses network connectivity after driver/firmware update</a></div>
+                <div class="summary">ESXi host is disconnected from the network after a driver and/or firmware update. Unable to ping the ESXi host management network IP address. VMNIC numbering changed from vmnic1–vmnic4 to vmnic0–vmnic3. The ESXi host is added to a vSphere Distributed....,To resolve the issue, reset the ESXi system configuration from DCUI and reconfigure the host. Reference Document: Reset the System Configuration</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 427559</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-02-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427554" target="_blank" rel="noopener noreferrer">VCF components failed to login with "VCF Identity Broker encountered an issue during authentication" intermittently</a></div>
+                <div class="summary">The Identity Broker was deployed with 3-node cluster structure; Sometimes, when trying to login VCF component, such as VCF Operations or Fleet Management, during redirecting the login request to Identity Broker, the web page was redirected to an erro....,Please make sure all identity broker nodes can access TCP port 389 of the domain controller.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 427554</span>
+                    <span><span class="detail-label">Product:</span> VCF Operations,VMware Cloud Foundation</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-02-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427405" target="_blank" rel="noopener noreferrer">The "Ejecting Media" task remains in a "Running" state in VMware Cloud Director after responding to a Linux door lock prompt</a></div>
+                <div class="summary">When ejecting CD/DVD media from a Linux virtual machine, the VM may become unresponsive due to a CD/DVD door lock. Note: For more details regarding the CD/DVD door lock behavior, please refer to the following article: Linux virtual machine (i....,Currently, there is no permanent resolution for this issue. Workaround: Since the Linux door lock causes the guest OS to hang until the prompt is answered, it is recommended to use the workarounds described in KB 313891, such as ejecting from the gue....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 427405</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-02-01</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=326981" target="_blank" rel="noopener noreferrer">vSAN Host Not Contributing Stats reports due to SSL errors</a></div>
                 <div class="summary">Symptoms: 1. You see a Warning in Cluster > Monitor > Virtual SAN > Performance service > All hosts contributing stats. 2. One or more ESXi hosts are listed in the Hosts Not Contributing Stats field.,To resolve the issue, renew the host certificate for each problematic node: Log in to the vCenter Server using the Web Client. Go to the Host and click > Manage/Configure > Certificate under System. Click Renew. Log in to the vCenter Server and resta....</div>
                 <div class="details">
@@ -1414,114 +1522,6 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 427457</span>
                     <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=380381" target="_blank" rel="noopener noreferrer">There is no network assigned to this virtual machine.</a></div>
-                <div class="summary">In the vCenter Server interface, the affected virtual machine shows the warning “There is no network assigned to this virtual machine” on the Summary page, indicating a missing or disconnected network adapter. The Virtual machine Edit Settings page s....,Add a new network adapter to the virtual machine .For detailed steps, refer Add a Network Adapter to a Virtual Machine If you need to prevent network adapters from being hot-added in the future, disable the Hot-Add feature in the VM’s settings. Refer....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 380381</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427451" target="_blank" rel="noopener noreferrer">Error viewing vSAN Data Protection client plugin in vCenter: “Site with the specified identifier vSAN_Cluster_UUID does not exist”</a></div>
-                <div class="summary">- The identifier is a vSAN cluster UUID and is called from the vCenter MOB in uppercase format. - When the UUID is converted to lowercase, the API works fine.,This issue is resolved in VCF9.1 where vSAN Data Protector does not call vCenter for the cluster GUID.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 427451</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426674" target="_blank" rel="noopener noreferrer">Fragmented ICMP echo requests are occasionally dropped by Edge uplink interface</a></div>
-                <div class="summary">You are doing a ping to an Edge uplink interface, with ping set to size higher than the MTU on the datapath. Some if the ICMP echo requests are dropped by the Edge's uplink interface. Statistics on the uplink interface indicate increasing counters ....,This is a condition that may occur in a VMware NSX environment. There are two approaches to mitigate this behaviour: If the Gateway Firewall is enabled on the Tier-0 instance, disable the Gateway Firewall. Otherwise all fragmented packets will have t....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 426674</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=425729" target="_blank" rel="noopener noreferrer">Host fails at 'Removing host status' in NSX during the uninstallation process</a></div>
-                <div class="summary">Host fails at 'Removing host status' in NSX during the uninstallation process,Follow the steps below: 1. Move the host out of the cluster in the vCenter. 2. Move the host back into the cluster. 3. Wait for NSX to finish the preparation.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 425729</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX,VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=326490" target="_blank" rel="noopener noreferrer">Configuring a shared disk resource for Windows Server Failover Cluster (WSFC) and migrating SQL Server Failover Cluster Instance (FCI) from SAN (RDMs) to vSAN</a></div>
-                <div class="summary">vSAN 6.7 Update 3 and later releases support SCSI-3 Persistent Reservations (SCSI3-PR) on a virtual disk level required by Windows Server Failover Cluster (WSFC) to arbitrate access to a shared disk between nodes. Support of SCSI-3 PRs enables config....,Steps to configure shared disks for SQL Server Failover Cluster on WSFC on vSAN Ensure that an Active Directory environment is available. Create virtual machines (VMs) under the guide of the OS and SQL Server supportability guide on a preferred datas....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 326490</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427432" target="_blank" rel="noopener noreferrer">NSX management cluster DNS issues observed while secondary DNS is functional and present.</a></div>
-                <div class="summary">System services and functions may be impacted if the primary DNS server is unreachable. Despite having valid secondary DNS servers configured, the system may not fail over to these servers before internal service timeouts occur. Common symptoms of th....,To resolve this issue, ensure the Primary DNS server is reachable or update the configuration to a functional server. Validate DNS Connectivity Log in to the NSX Manager CLI as the root user. Test connectivity to the DNS. If the following commands re....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 427432</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427427" target="_blank" rel="noopener noreferrer">NSX UI Error: Client 'admin' exceeded request rate of 100 per second (Error code: 102)</a></div>
-                <div class="summary">The NSX UI displays the following error message: "Error: Client 'admin' exceeded request rate of 100 per second (Error code: 102)." This error prevents navigation through the UI and the performance of management tasks. The NSX UI repeatedly reports t....,To resolve this immediately and restore access, apply the following workaround via the NSX Manager CLI (SSH as admin): Check the current limit to confirm the configuration: get service http Increase the rate limit to provide immediate relief: set ser....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 427427</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=427406" target="_blank" rel="noopener noreferrer">"This capability is not applicable for your license" error when attempting to configure SSO in VCF Operations</a></div>
-                <div class="summary">Attempt to configure a VCF Instance from VCF Operation shows the following: This capacity is not applicable for your licence. Ensure VCF entitlement is assigned for enabling the management capabilities. VCF license has been validated and properly app....,This is a known issue affecting VMware Cloud Foundation (VCF) 9.0.x. Engineering is currently working on a fix which will be included in an upcoming release. For a workaround please contact Broadcom Support for assistance.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 427406</span>
-                    <span><span class="detail-label">Product:</span> VCF Operations,VMware Cloud Foundation</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-01-30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=298524" target="_blank" rel="noopener noreferrer">Troubleshooting coredns rollout failure "Waiting for rollout to finish: 0 of 1 updated replicas are available"</a></div>
-                <div class="summary">While creating or upgrading clusters in TKGI, bosh runs apply-addons errand which deploys coredns and other required add-ons required by TKGI. It rolls out a coredns deployment object at the Kubernetes level. The coredns deployment fails if there is ....,Troubleshooting Steps Find out the failed BOSH task When cluster creation fails find the BOSH task that failed using the following command: tkgi cluster one_worker Name: one_worker Plan Name: small UUID: ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 298524</span>
-                    <span><span class="detail-label">Product:</span> VMware Tanzu Kubernetes Grid Integrated Edition</span>
                     <span><span class="detail-label">Updated Date:</span> 2026-01-30</span>
                 </div>
             </div>
