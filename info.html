@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2026-03-09 06:01:32</title>
+    <title>Broadcom 기술 포털 - 2026-03-09 12:01:16</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,7 +185,7 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-03-09 06:01:32)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-03-09 12:01:16)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
@@ -965,6 +965,30 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=432348" target="_blank" rel="noopener noreferrer">Secure boot of ESXi failed due to PSOD</a></div>
+                <div class="summary">Both secure boot and TPM 2.0 are enabled in the ESXi. Below PSOD content appear when reboot ESXi after move it from one vCenter to another vCenter: The system has found a problem on your machine and cannot continue. UEFI Secure Boot failed: Failed to....,Contact hardware vendor for further checking on device and BIOS settings If still the issue persist after hardware checking, please cleanup the TPM state with the hardware vendor support and reinstall the ESXi directly, please refer to below KB on in....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 432348</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi 8.0</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=432341" target="_blank" rel="noopener noreferrer">Internal Server Error when deleting vApp snapshot: violates foreign key constraint "fk_vm_snap_disk2vm_snapshot"</a></div>
+                <div class="summary">Deleting a vApp snapshot fails with the following error after 5 minutes: [ ########-####-####-####-############ ] Internal Server Error - Could not execute JDBC batch update; SQL [/* Method: unknown */ /* delete com.vmware.vcloud.common.model.VAppSn....,This issue is planned to be resolved in a future release. Even if this error occurs, the snapshot deletion process continues on the vCenter Server. Once the snapshot deletion is completed on the vCenter Server, the snapshot information is reflected i....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 432341</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-08</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=432334" target="_blank" rel="noopener noreferrer">HCX 9.0 Migrations do not progress: "Storage not accessible error observed"</a></div>
                 <div class="summary">HCX Migrations do not progress during "Initial Sync in Progress". From the "Events" tab, you observe the following event: "Storage not accessible error observed". Running the HCX Diagnostics from the Service Mesh reveals no port blocks/errors. The fo....,This issue is typically caused when port 902 is not open on the target side. If no issues are identified in the HCX Diagnostics, please open a support case with Broadcom Support and refer to this KB article. For more information, see Creating and man....</div>
                 <div class="details">
@@ -994,6 +1018,18 @@
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 315406</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-06</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=432331" target="_blank" rel="noopener noreferrer">vSAN cluster exhibits network partitions and inaccessible objects following a vCenter Server restoration</a></div>
+                <div class="summary">After restoring a vCenter Server from a file-based backup (e.g., following a power outage or database corruption), a vSAN cluster may experience a total or partial network partition. Symptoms include: ESXi hosts in the same vSphere cluster reporting ....,To resolve this inconsistency, you must force the vCenter Server to re-synchronize the vSAN cluster membership metadata with the ESXi hosts. Verify Connectivity: Confirm that the physical network is not the issue by running a ping test between all vS....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 432331</span>
+                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
                     <span><span class="detail-label">Updated Date:</span> 2026-03-06</span>
                 </div>
             </div>
@@ -1433,59 +1469,23 @@
 
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=432223" target="_blank" rel="noopener noreferrer">Error: "ClusterNetworkProvisionFailed - Cannot realize subnet" during VKS cluster creation in VCF 9</a></div>
+                <div class="summary">When attempting to provision a new VKS cluster in a VCF 9.x environment, the cluster may remain in a Provisioning state indefinitely. When creating a VKS cluster, the following events may appear: InfrastructureReadyFalseWarningClusterNetworkProvision....,To resolve this issue, Recreate the cluster and Modify the VKS namespace network configuration to provide a larger CIDR block while allocating smaller subnets per cluster. Example configuration: Namespace Network: /24(256 addresses....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 432223</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere Kubernetes Service</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-06</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=432224" target="_blank" rel="noopener noreferrer">Unable to delete snapshot. Task failed with Error: "An error occurred while deleting a snapshot: The specified snapshot does not exist"</a></div>
                 <div class="summary">Users are unable to delete a virtual machine snapshot. The operation fails with the following error message: An error occurred while deleting a snapshot: The specified snapshot does not exist. The virtual machine's hard disk size is incorrectly repor....,We can remove the attached CD/DVD from the VM using below steps: Log in to the host UI on which the VM recites. Right-click the affected virtual machine and select Edit Settings. Locate the CD/DVD drive in the virtual hardware list. Change the device....</div>
                 <div class="details">
                     <span><span class="detail-label">Article ID:</span> 432224</span>
                     <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-06</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=330293" target="_blank" rel="noopener noreferrer">NSX-v manager root partition is full causing new deployments to fail</a></div>
-                <div class="summary">VMware NSX for vSphere There are issues deploying new NSX components such as Edges, Logical Switches, etc. NSX Manager root filesystem is full # show filesystems /dev/root 5.6G 5.6G 0 100% / devtmpfs 7.9G 0 7.9G 0% /dev tmpfs 7.9G 132K 7.9G 1% /run /....,If you believe you have encountered this issue, please open a support case with Broadcom Support and refer to this KB article. For more information, see Creating and managing Broadcom support cases.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 330293</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX for vSphere</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-06</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=426048" target="_blank" rel="noopener noreferrer">NSX-v Edge appliance upgrade fails</a></div>
-                <div class="summary">The below error message will be noticed : Failed to deploy NSX Edge appliance (a3a####5-a3a#-###d-92f#-###31f8####8)-0.[OVF Manager internal error.] Edge system event logs confirm the NSX Manager is attempting to query a stale o....,This will require an NSX Database correction. Kindly engage Broadcom https://support.broadcom.com/</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 426048</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX for vSphere</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-06</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=432198" target="_blank" rel="noopener noreferrer">Dataplane Service crashed on edge node with coredumps</a></div>
-                <div class="summary">The NSX Edge Node experiences a sudden crash (core dump) and subsequent restart of the nsx-dataplane service. This typically occurs during firewall interface teardown, the deletion of a Service Router (SR), or when the last port on a Kernel Interface....,This issue is resolved in upcoming releases of NSX. Recovery Steps: Automatic Restart: The datapath service will automatically attempt to restart after the core dump is generated. Manual Redeploy: If the node remains in an inconsistent state or the n....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 432198</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-06</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=432191" target="_blank" rel="noopener noreferrer">Error "Host profile apply failed with error: Error: Access to perform the operation was denied" on ESXi hosts</a></div>
-                <div class="summary">Password for root or other local accounts is updated on ESXi host via automation such as powershell or other scripts. Password is successfully updated and you can login to the host client using the new credentials. Host profile is deleted and vCente....,To resolve this issue, If the host profile is deleted, you can Extract and configure host profile from one of the ESXi hosts. Update the credentials(root or other accounts) of affected ESXi hosts using host profile following the instructions provide....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 432191</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
                     <span><span class="detail-label">Updated Date:</span> 2026-03-06</span>
                 </div>
             </div>
