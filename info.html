@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Broadcom 기술 포털 - 2026-03-17 18:01:39</title>
+    <title>Broadcom 기술 포털 - 2026-03-18 00:01:17</title>
     <link rel="stylesheet" href="https://vmware.github.io/Holodeck/css/holodeck.css">
     <style>
         body {
@@ -185,10 +185,17 @@
     </div>
     <div class="container">
         <h1>Broadcom 통합 기술 포털</h1>
-        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-03-17 18:01:39)</p>
+        <p style="color: #6e7780; font-size: 0.95rem; margin-top: -30px; margin-bottom: 40px;">최근 Broadcom 기술 문서, 블로그, CVE 정보를 한눈에 모아봅니다. (업데이트: 2026-03-18 00:01:17)</p>
 
         <h2 id="blog_section">1. 블로그 (최근 3일 내 게시물)</h2>
         
+        <div class="card">
+            <div class="card-image no-image">No Image</div>
+            <div class="card-content">
+                <div class="card-title"><a href="http://thectoadvisor.com/blog/2026/03/16/ai-doesnt-fail-in-the-demo-it-fails-the-first-time-you-have-to-trust-it/" target="_blank" rel="noopener noreferrer">AI는 데모에서 실패하지 않습니다. 처음 신뢰해야 할 때 실패합니다.</a></div>
+                <div class="meta">2026-03-16 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
+            </div>
+        </div>
         <div class="card">
             <div class="card-image no-image">No Image</div>
             <div class="card-content">
@@ -249,13 +256,6 @@
             <div class="card-image no-image">No Image</div>
             <div class="card-content">
                 <div class="card-title"><a href="https://vmblog.com/news/deltas-power-cooling-and-microgrid-solutions-showcased-at-nvidia-gtc-to-bolster-the-800-vdc-architecture-of-next-gen-ai-factories/" target="_blank" rel="noopener noreferrer">차세대 AI 공장의 800VDC 아키텍처를 강화하기 위해 NVIDIA GTC에서 선보인 Delta의 전력, 냉각 및 마이크로그리드 솔루션</a></div>
-                <div class="meta">2026-03-16 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-image no-image">No Image</div>
-            <div class="card-content">
-                <div class="card-title"><a href="https://storageioblog.com/microsoft-windows-server-insider-build-nvmeof-initiator/" target="_blank" rel="noopener noreferrer">Microsoft Windows Server Insider 빌드 NVMeoF 개시자</a></div>
                 <div class="meta">2026-03-16 | 블로그: <a href="https://blogs.vmware.com/affiliates" target="_blank" rel="noopener noreferrer">Affiliates</a></div>
             </div>
         </div>
@@ -876,6 +876,162 @@
         
         <div class="card">
             <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=423919" target="_blank" rel="noopener noreferrer">Manual Update of the Secure Boot Platform Key in Virtual Machines</a></div>
+                <div class="summary">Virtual machines that do not have a valid Platform Key (PK) fail to complete automated updates to Secure Boot databases, including DB, DBX, and KEK.,Update the Platform Key that has an invalid signature by replacing it with the Windows OEM Device Key before performing any automated updates to the Secure Boot databases. Caution: If a vTPM is present and disk encryption software (such as BitLocker ....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 423919</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi 8.0,VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=402673" target="_blank" rel="noopener noreferrer">"Network failure. Check the network settings and try again." VC patch fails with error under Updates tab in VAMI</a></div>
+                <div class="summary">Unable to patch VC from VAMI (vCenter Server Appliance Management Interface), under the updates tab, the below error message is seen: "Network failure. Check the network settings and try again". The download URL is updated as per the new changes. Ref....,Allow / whitelist the connection from vCenter Server to dl.broadcom.com in the Firewall. Ensure port 443 between the vCenter Server and dl.broadcom.com is not blocked. This behavior can also be influenced by AV filtering, Deep packet inspection (DPI)....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 402673</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=418544" target="_blank" rel="noopener noreferrer">ESXi update via SDDC Manager appears blocked due to multiple precheck failures related to hardware firmware and compatibility checks</a></div>
+                <div class="summary">SDDC ESXi update prechecks fail with the following errors: Image has Hardware compatibility issues Error fetching device firmware data, Device compatibility must be verified manually NVMe SSD Controller PM173Xa: Device is incompatible with the driver....,These are warning messages reported by the precheck in SDDC Manager. Due to the HSM plugin issue, manual validation within vCenter is required. Note: These warning messages can be safely ignored as these are not upgrade blockers. Manual validation st....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 418544</span>
+                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=325499" target="_blank" rel="noopener noreferrer">Error: "error instantiating a new VM: API Error: 400: VDC Compute Policy VM_PLACEMENT_POLICY_NAME is not available in VDC ORG_VDC_NAME" causes TKG cluster creation to fail</a></div>
+                <div class="summary">Attempting to create a Tanzu Kubernetes Grid (TKG) cluster fails in Cloud Director through Container Service Extension. The vApp and initial Ephemeral VM for the TKG cluster are created but the first Control Plane node or Worker node VM is never crea....,This issue is under review by VMware Cloud Director Engineering. Subscribe to this knowledge article to get updates on this issue. Workaround: To workaround the issue ensure that all VM Placement Policies in Cloud Director have unique names if they a....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 325499</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=433298" target="_blank" rel="noopener noreferrer">Error: "Http failure during parsing" when configuring SAML</a></div>
+                <div class="summary">Configuring VMware Cloud Director (VCD) System to Use a SAML Identity Provider fails with the error below: Http failure during parsing for https://cloud.example.com/api/admin/org/########-####-####-########85f9/settings/federation,Review the load balancer configuration to allow the XML files. Workaround Bypass the LB. For additional info visit How to bypass a Load Balancer in Cloud Director using Hosts file</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 433298</span>
+                    <span><span class="detail-label">Product:</span> VMware Cloud Director</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=433394" target="_blank" rel="noopener noreferrer">NVMe over TCP targets not visible in vSphere Client for every path.</a></div>
+                <div class="summary">Note: In VMware vSphere environments, there is a distinct difference in how storage targets are identified and displayed when comparing legacy iSCSI (SCSI stack) and NVMe over TCP (NVMe stack). This article clarifies the architectural shift that resu....,This is characteristically expected behavior for NVMe over TCP on ESXi. To further verify connectivity: Navigate to Host > Configure > Storage > Storage Adapters. Select the NVMe/TCP adapter and click the Controllers tab (this replaces the functional....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 433394</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=430920" target="_blank" rel="noopener noreferrer">vCenter upgrade failed with error "vCenter upgrade failed at the VCENTER_UPGRADE_PRECHECK stage. vCenter upgrade failed. Target URL certificate verification failed."</a></div>
+                <div class="summary">vCenter upgrade failed in SDDC manager with error "vCenter upgrade failed at the VCENTER_UPGRADE_PRECHECK stage. vCenter upgrade failed. Target URL certificate verification failed." In vCenter Server log file /var/log/vmware/applmgmt/applmgmt.log....,Add SDDC Manager FQDN (hostname.example.com in this example) to NO_PROXY configuration How to configure proxy settings for vCenter Server</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 430920</span>
+                    <span><span class="detail-label">Product:</span> VMware SDDC Manager,VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=433405" target="_blank" rel="noopener noreferrer">Refresh Custom Certificate - Failed to fetch inventory details . The system may not behave in an expected manner. Reload the SDDC Manager UI by clicking the Refresh icon on your browser. If the problem persists, contact VMWare support</a></div>
+                <div class="summary">SDDC Manager upgrade is failing with Refresh Custom certificate from 5.2.0 to 5.2.1.2 DomainManager and OperationsManager Services are in Error Status: curl -X GET http://localhost/inventory/vcfservices | json_pp { "description" : "Doma....,Refer to the following Knowledgebase article: https://knowledge.broadcom.com/external/article?articleNumber=385592</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 433405</span>
+                    <span><span class="detail-label">Product:</span> VMware SDDC Manager</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=399665" target="_blank" rel="noopener noreferrer">HCX Manager 9443 UI becomes inaccessible following the deletion of the vCenter configuration</a></div>
+                <div class="summary">After deleting/unregister the vCenter configuration from HCX Manager (9443 Admin UI > Configuration > vCenter), the Admin UI on port 9443 becomes inaccessible after a reboot. Authentication to HCX Manager 443 hybridity UI fails. HCX Manager 9443 Admi....,If you believe you are experiencing this issue, please open a support case with Broadcom Support and refer to this KB article. For more information, see Creating and managing Broadcom support cases.</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 399665</span>
+                    <span><span class="detail-label">Product:</span> VMware HCX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=414290" target="_blank" rel="noopener noreferrer">Network Outage Due to Invalid vmxnet3 Driver After Windows Server 2019 Update</a></div>
+                <div class="summary">After applying Windows Updates on a Windows Server 2019 virtual machine (VM), the network connection may be lost. Inability to connect to the VM via Remote Desktop (RDP). Inside the VM, the network adapter shows as an "Unidentified Network" or has no....,If you are currently experiencing this issue, follow these steps to restore network connectivity: Access the VM Console: Use the vSphere Client or ESXi Host Client to open a console session to the affected VM, as network access is unavailable. Repair....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 414290</span>
+                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=433233" target="_blank" rel="noopener noreferrer">NSX-T Backup Fails with Authentication Error 29115 Due to SFTP Server Connection Reset</a></div>
+                <div class="summary">Attempts to configure or execute an NSX-T/NSX Manager backup to an external SFTP server fail. While the initial directory structure may be created, the process terminates with an authentication failure. Symptoms: UI Error: Authentication: Failed on F....,Identify the specific vendor firewall in the network path between the NSX-T Management Cluster and the SFTP server. Modify the firewall security policy to exclude the NSX Manager VIP and Management IP addresses from the "Multiple SSH connection block....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 433233</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=418506" target="_blank" rel="noopener noreferrer">ESXi host is reporting "Faulty TEP" alert on the NSX UI</a></div>
+                <div class="summary">- When workloads are moved to ESXi Transport Node the TEP (Tunnel Endpoint) status shows Tunnels towards Host to Host and Edges as down. - TEP tunnel failures between ESXi host to hosts and Edge nodes. - The host is only forming BFD session with VMK1....,- We referred this KB article and validated the Inter-vlan routing is good -- TEP tunnels are down between ESXi Transport Node and Edge Transport Node. (Alarm: Event type: Faulty TEP) - To resolve vmnic issue we manually flapped the problematic upli....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 418506</span>
+                    <span><span class="detail-label">Product:</span> VMware NSX</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=433383" target="_blank" rel="noopener noreferrer">vAPI Endpoint service health alarm is triggered immediately after vCenter Server update</a></div>
+                <div class="summary">Immediately after performing a vCenter Server update or a system reboot, alarm triggered 'vapi-endpoint status changed from green to yellow' /var/log/vmware/vapi/endpoint/endpoint.log shows Error similar with YYYY-MM-DDThh:mm:ss.xxxZ | ERROR | state-....,This behavior is a temporary, expected noise inherent to the vCenter Server architecture. It has no actual impact on the system or operations. The corresponding alarm displayed in the vSphere Client can be safely ignored. The alarm will automatically....</div>
+                <div class="details">
+                    <span><span class="detail-label">Article ID:</span> 433383</span>
+                    <span><span class="detail-label">Product:</span> VMware vCenter Server</span>
+                    <span><span class="detail-label">Updated Date:</span> 2026-03-17</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
                 <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=419980" target="_blank" rel="noopener noreferrer">Unable to access ESXi after changing ESXi local user expiration policy.</a></div>
                 <div class="summary">After changing ESXi local user password expiration policy with the Security.PasswordMaxDays option, ESXi could become inaccessible from Shell or SSH with local user (such as root). Reference: Configure the Passwords and Account Lockout Policy in theV....,Log in ESXi at DCUI and change local user password accordingly. ESXi should be accessible from SSH or Shell now.</div>
                 <div class="details">
@@ -1222,138 +1378,6 @@
             </div>
         </div>
 
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=409918" target="_blank" rel="noopener noreferrer">VMware tools uninstalling automatically in windows OS.</a></div>
-                <div class="summary">During a Windows patching cycle, if the Automatic VMware Tools upgrade option is enabled, a race condition may occur. If the VM reboots before the VMware Tools upgrade completes, the task remains in a suspended state. Re-installation of VMware Tools ....,There is no resolution. Please reach out to guest OS vendor. Workaround: Turn off "Check and upgrade VMware tools before each power on", and then perform Windows patching.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 409918</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi 8.0</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=326878" target="_blank" rel="noopener noreferrer">Dying Disk Handling (DDH) in vSAN</a></div>
-                <div class="summary">This article provides information about vSAN Dying Disk Handling (DDH).,*** DDH now monitors vSAN OSA cache tier disks as of vSAN 9.0 *** The Dying Disk Handling (DDH) feature in vSAN continuously monitors the health of disks and disk groups in order to detect an impending disk failure or a poorly performing disk group....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 326878</span>
-                    <span><span class="detail-label">Product:</span> VMware vSAN</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=433177" target="_blank" rel="noopener noreferrer">HCX Site-Pair Status Stuck in Pending Due to Connector Resource Exhaustion</a></div>
-                <div class="summary">VMware HCX Site-Pairs exhibit a status desync where the source side remains in "Pending" and the cloud side shows "Disconnected". This occurs when a specific site-pair (often decommissioned but not removed) generates a massive volume of jobs (3000+) ....,Please review KB: HCX Site Pairing displays "Pending" status in Connector UI after upgrade to 4.11.3 If the CPU consumption issue continues after waiting for "Job Recovery" to complete based on the steps in above KB, please open an SR with Broadcom S....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 433177</span>
-                    <span><span class="detail-label">Product:</span> VMware HCX</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=432306" target="_blank" rel="noopener noreferrer">SDDC precheck fails with SHA-1 validation during vCenter 8.0 patch</a></div>
-                <div class="summary">SDDC vCenter 8.0 patch fails precheck on vSphere SHA-1 validation. The SDDC Manager precheck reports the following error message: "vSphere SHA-1 validation. Support for certificates with weak signature algorithms has been removed in vSphere 8.0. Weak...., Log in to the SDDC Manager UI. Navigate to Inventory > Hosts. Review the list of active hosts managed by SDDC Manager for the target workload domain. Log in to the vSphere Client for the target vCenter Server. Compare the vCenter Server host invent....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 432306</span>
-                    <span><span class="detail-label">Product:</span> VMware SDDC Manager,VMware Cloud Foundation</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=433169" target="_blank" rel="noopener noreferrer">Custom log forwarding port settings not persisting in UI</a></div>
-                <div class="summary">Custom syslog port values reverting to 514,This issue is known and is benign. The custom syslog port is honored while the UI displays the incorrect syslog port value. Confirm log forwarding success/configuration Review the /storage/core/loginsight/var/stats.log file to confirm log forwarding ....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 433169</span>
-                    <span><span class="detail-label">Product:</span> VCF Operations,VMware Cloud Foundation</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=401071" target="_blank" rel="noopener noreferrer">Support for Dell PowerFlex SDC in VCF 9.0 and VVF 9.0</a></div>
-                <div class="summary">Support for Dell PowerFlex utilizes a proprietary approach called SDC (Storage Data Client). Support for VCF 9.0 and VVF 9.0 is now supported in SDC 5.0. Disclaimer: The partner products referenced in this article are hardware devices or software tha....,See the below KBs for further information: Dell PowerFlex with ESXi 8.0 and 9.0 Dell PowerFlex with VMware Cloud Foundation</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 401071</span>
-                    <span><span class="detail-label">Product:</span> VMware Cloud Foundation,VMware vSphere Foundation</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=312201" target="_blank" rel="noopener noreferrer">Dell PowerFlex with ESXi 8.0 and 9.0</a></div>
-                <div class="summary">This article provides information about support for the deployment of Dell PowerFlex software (formerly known as VxFlex OS or ScaleIO) in ESXi 9.0 and 8.0 environments. PowerFlex is fully supported in systems deploying the VMware configurations descr....,PowerFlex Dell PowerFlex is a software-based storage area network (SAN) that converges storage and compute resources to form a hyper-converged, enterprise-grade storage product. PowerFlex is elastic and delivers linearly scalable performance. Its sca....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 312201</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=301481" target="_blank" rel="noopener noreferrer">“VMware Tools Setup Wizard ended prematurely” error on VMware Tools installation</a></div>
-                <div class="summary">VMware Tools install fails on Windows VM with the error message "VMware Tools Setup Wizard ended prematurely. Sample error in vmmsi.log, MSI (s) (EC:C4) [15:15:40:894]: Invoking remote custom action. DLL: C:\Windows\Installer\MSI4395.tmp, Entrypoint:....,Change the folder and sub-folder's security settings to match those in a VMware Tools running VM.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 301481</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=432997" target="_blank" rel="noopener noreferrer">ESXi Host Loses Fiber Channel Datastores Due to Emulex HBA Silent Driver Hang</a></div>
-                <div class="summary">An ESXi host abruptly loses connectivity to Fibre Channel datastores, triggering All Paths Down (APD) and Permanent Device Loss (PDL) events. Other hosts in the cluster remain unaffected. When validating the host hardware, the physical PCIe bus succe....,Perform a hard reboot of the affected ESXi host to force a hardware PCIe bus reset and reload the lpfc driver, which will temporarily restore datastore connectivity. Identify the active driver module using the command: esxcli storage core adapter lis....</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 432997</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=433136" target="_blank" rel="noopener noreferrer">ESXi consoles (SSH and Lights Out Management) fail to connect or flicker with black screens.</a></div>
-                <div class="summary">SSH connections immediately fail as if SSH is not running, though the DCUI indicates it is. Accessing a console such as iLO, iDRAC, or ALT+F1 from DCUI results in a flickering black screen that seems to show some text very briefly. If the text can b....,This issue is currently being reviewed by ESXi engineering. Workaround Revert ESXi to the previous version to boot it up from the altbootbank to restore /dev/null - Reverting to a previous version of ESXi 6.x, 7.x or 8.x.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 433136</span>
-                    <span><span class="detail-label">Product:</span> VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="card-content">
-                <div class="card-title"><a href="https://knowledge.broadcom.com/external/article?articleNumber=406428" target="_blank" rel="noopener noreferrer">NSX-T Host Configuration Fails at 48% with Error: “Timeout waiting for host to join NSX Manager”</a></div>
-                <div class="summary">During ESXi host registration or NSX configuration on a standalone ESXi host, the configuration process fails at 48% with the following error on NSX Manager: "Failed to install software on host. Time out waiting for host to join NSX Manager.". This ....,Ensure port 1234 is not blocked by firewall/NAT between the ESXi host and the NSX Manager. Port 1234 is used by NSX Manager Agent for incoming connections from the ESXi host during the join phase.</div>
-                <div class="details">
-                    <span><span class="detail-label">Article ID:</span> 406428</span>
-                    <span><span class="detail-label">Product:</span> VMware NSX,VMware vSphere ESXi</span>
-                    <span><span class="detail-label">Updated Date:</span> 2026-03-16</span>
-                </div>
-            </div>
-        </div>
-
 
         ---
 
@@ -1367,7 +1391,7 @@
                     <span><span class="detail-label">Product:</span> VCF Operations,VCF Operat...</span>
                     <span><span class="detail-label">CVE ID:</span> VCDSA36947</span>
                     <span><span class="detail-label">Published:</span> 2026-02-24</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1379,7 +1403,7 @@
                     <span><span class="detail-label">Product:</span> VMware Fusion,VMware Work...</span>
                     <span><span class="detail-label">CVE ID:</span> VCDSA36986</span>
                     <span><span class="detail-label">Published:</span> 2026-02-26</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1391,7 +1415,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37186</span>
                     <span><span class="detail-label">Published:</span> 2026-03-11</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1403,7 +1427,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37185</span>
                     <span><span class="detail-label">Published:</span> 2026-03-11</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1415,7 +1439,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37184</span>
                     <span><span class="detail-label">Published:</span> 2026-03-11</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1427,7 +1451,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37183</span>
                     <span><span class="detail-label">Published:</span> 2026-03-11</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1439,7 +1463,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37182</span>
                     <span><span class="detail-label">Published:</span> 2026-03-11</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1451,7 +1475,7 @@
                     <span><span class="detail-label">Product:</span> RabbitMQ,VMware Tanzu Dat...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37129</span>
                     <span><span class="detail-label">Published:</span> 2026-02-27</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1463,7 +1487,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37128</span>
                     <span><span class="detail-label">Published:</span> 2026-02-27</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1475,7 +1499,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37127</span>
                     <span><span class="detail-label">Published:</span> 2026-02-27</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1487,7 +1511,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37126</span>
                     <span><span class="detail-label">Published:</span> 2026-02-27</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1499,7 +1523,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37125</span>
                     <span><span class="detail-label">Published:</span> 2026-02-27</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1511,7 +1535,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37110</span>
                     <span><span class="detail-label">Published:</span> 2026-02-26</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1523,7 +1547,7 @@
                     <span><span class="detail-label">Product:</span> VMware Tanzu Data Intelli...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37109</span>
                     <span><span class="detail-label">Published:</span> 2026-02-26</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1535,7 +1559,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37104</span>
                     <span><span class="detail-label">Published:</span> 2026-02-25</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1547,7 +1571,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37103</span>
                     <span><span class="detail-label">Published:</span> 2026-02-25</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1559,7 +1583,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37102</span>
                     <span><span class="detail-label">Published:</span> 2026-02-25</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1571,7 +1595,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37101</span>
                     <span><span class="detail-label">Published:</span> 2026-02-25</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1583,7 +1607,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37100</span>
                     <span><span class="detail-label">Published:</span> 2026-02-25</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1595,7 +1619,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37099</span>
                     <span><span class="detail-label">Published:</span> 2026-02-25</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1607,7 +1631,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37098</span>
                     <span><span class="detail-label">Published:</span> 2026-02-25</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
@@ -1619,7 +1643,7 @@
                     <span><span class="detail-label">Product:</span> Tanzu Kubernetes Runtime,...</span>
                     <span><span class="detail-label">CVE ID:</span> VTDSA37097</span>
                     <span><span class="detail-label">Published:</span> 2026-02-25</span>
-                    <span><span class="detail-label">Updated:</span> 2026-03-10</span>
+                    <span><span class="detail-label">Updated:</span> 2026-03-11</span>
                 </div>
             </div>
         </div>
